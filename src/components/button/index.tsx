@@ -18,13 +18,13 @@ const Button = ({
 }: ButtonProps) => {
 
     const buttonStyle = {
-        primary: 'bg-whitebroken text-redcolor border-1 border-redcolor text-20',
-        inverted: 'bg-redcolor text-whitebroken border-1 border-redcolor text-20',
+        primary: 'bg-whitebroken text-redcolor border-1 border-redcolor text-20 hover:bg-redcolor hover:text-whitebroken transition-all duration-300 ease-in-out',
+        inverted: 'bg-redcolor text-whitebroken border-1 border-redcolor text-20 hover:bg-whitebroken hover:text-redcolor transition-all duration-300 ease-in-out',
     }
 
     return (
         <Link href={href} target={target}>
-            <button className={`flex flex-row items-center justify-center gap-1 rounded-ten px-horizontal py-2 ${buttonStyle[variant]}`}>
+            <button className={`flex flex-row items-center justify-center gap-2 rounded-ten px-horizontal py-vertical ${buttonStyle[variant]}`}>
                 {icon}
                 {children}
             </button>

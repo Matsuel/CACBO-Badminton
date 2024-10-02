@@ -13,12 +13,13 @@ const config: Config = {
       },
       padding: {
         horizontal: "20px",
+        vertical: "6px",
       },
       borderRadius: {
         ten: "10px",
       },
       borderWidth: {
-        1: "1px",
+        1: "1.5px",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
