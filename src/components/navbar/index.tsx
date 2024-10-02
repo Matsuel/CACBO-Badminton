@@ -7,6 +7,15 @@ import Link from 'next/link'
 import Button from '../button'
 
 const Navbar = () => {
+
+    const links = [
+        { name: 'Accueil', href: '/' },
+        { name: 'Le club', href: '/club' },
+        { name: 'Adhérer', href: '/join' },
+        { name: 'Le bad', href: '/bad' },
+        { name: 'Nous contacter', href: '/contact' },
+    ]
+
     return (
         <nav className='w-full flex flex-col justify-center items-center pt-4'>
 
@@ -56,6 +65,19 @@ const Navbar = () => {
                 </div>
 
             </div>
+
+            <div className='w-[73%] h-[2px] bg-[#e0e0e0] rounded-full my-8' />
+
+            <div className='w-[73%] flex flex-row justify-start items-center gap-30'>
+
+                {links.map((link, index) => (
+                    <Link key={index} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20'>
+                        {link.name}
+                    </Link>
+                ))}
+                
+            </div>
+            
         </nav>
     )
 }

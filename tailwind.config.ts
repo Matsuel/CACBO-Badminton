@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gap: {
+        30: "30px",
+      },
       fontSize: {
         20: "20px",
       },
