@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        20: "20px",
+      },
+      padding: {
+        horizontal: "20px",
+      },
+      borderRadius: {
+        ten: "10px",
+      },
+      borderWidth: {
+        1: "1px",
+      },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
       },
