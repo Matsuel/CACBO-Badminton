@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        0: "0",
+        auto: "auto",
+      },
       gap: {
         30: "30px",
       },
@@ -26,6 +30,8 @@ const config: Config = {
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
+        Shantell: ["Shantell Sans", "cursive"],
+        SourceSerifPro: ["Source Serif Pro", "serif"],
       },
       colors: {
         background: "var(--background)",
