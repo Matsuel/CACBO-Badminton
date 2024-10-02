@@ -8,9 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        redcolor: "var(--redcolor)",
+        blackcolor: "var(--blackcolor)",
+        whitebroken: "var(--white-broken)",
       },
     },
   },
