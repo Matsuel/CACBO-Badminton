@@ -36,8 +36,9 @@ export default function Home() {
 
                             <div className="flex flex-row items-start justify-center gap-3">
                                 <Image src={GPS} alt="gps" className="mt-1"/>
-                                <h3 className="font-Shantell font-medium text-white text-3xl">Gymnase de
-                                    Carbon-Blanc</h3>
+                                <h3 className="font-Shantell font-medium text-white text-3xl">
+                                  Carbon-Blanc (33)
+                                </h3>
                             </div>
                         </div>
 
@@ -58,7 +59,7 @@ export default function Home() {
                     className="font-SourceSerifPro text-9xl text-white text-center absolute top-[-70px] left-[-30px] z-0">
                     «
                 </div>
-                <p className="w-[100%] font-Montserrat font-light italic text-xl text-wrap text-center relative z-10">
+                <p className="w-[99%] font-Inter font-light tracking-tight italic text-xl text-wrap text-center relative z-10">
                     Un club où la <strong className="font-medium">passion</strong> du badminton se vit dans une
                     ambiance <strong className="font-medium">familiale</strong> et conviviale.
                     Que vous soyez débutant ou expert, jouez et progressez dans un cadre <strong
@@ -79,7 +80,7 @@ export default function Home() {
                     <div
                         className="w-[40%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
 
-                        <p className="font-Montserrat font-light text-xl text-start">
+                        <p className="font-Inter tracking-tight font-light text-xl text-start">
                             Créé en 2007 à Carbon-Blanc, notre club réunit des passionnés de badminton de tous niveaux.
                             Ici, l&apos;ambiance est familiale et conviviale, <strong className="font-medium">propice à
                             la détente</strong> et au partage.
@@ -103,7 +104,7 @@ export default function Home() {
 
                         <Image src={Groupe} alt="groupe"/>
 
-                        <p className="w-[60%] font-Montserrat font-light text-base text-center">
+                        <p className="w-[60%] font-Inter font-light text-base text-center">
                             Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars
                             2024)
                         </p>
@@ -126,7 +127,7 @@ export default function Home() {
 
                     </div>
 
-                    <p className="w-[70%] font-Montserrat font-normal text-xl">
+                    <p className="w-[70%] font-Inter font-normal text-xl">
                         Fais partie de l’aventure : rejoins une équipe où convivialité rime avec passion.
                     </p>
 

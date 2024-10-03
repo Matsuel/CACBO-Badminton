@@ -32,6 +32,7 @@ const config: Config = {
         Montserrat: ["Montserrat", "sans-serif"],
         Shantell: ["Shantell Sans", "cursive"],
         SourceSerifPro: ["Source Serif Pro", "serif"],
+        Inter : ["Inter", "sans-serif"],
       },
       colors: {
         background: "var(--background)",

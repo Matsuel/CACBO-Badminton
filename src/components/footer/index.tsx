@@ -17,19 +17,19 @@ const Footer = () => {
 
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
-                            <Link href='/bureau' className='font-Montserrat text-redcolor'>
+                            <Link href='/bureau' className='font-Inter text-redcolor'>
                                 Bureau
                             </Link>
 
-                            <Link href='/histoire' className='font-Montserrat text-redcolor'>
+                            <Link href='/histoire' className='font-Inter text-redcolor'>
                                 Notre histoire
                             </Link>
 
-                            <Link href='/shop' className='font-Montserrat text-redcolor'>
+                            <Link href='/shop' className='font-Inter text-redcolor'>
                                 Notre boutique
                             </Link>
 
-                            <Link href='/partenaires' className='font-Montserrat text-redcolor'>
+                            <Link href='/partenaires' className='font-Inter text-redcolor'>
                                 Nos partenaires
                             </Link>
 
@@ -43,11 +43,11 @@ const Footer = () => {
 
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
-                            <Link href='/adherer' className='font-Montserrat text-redcolor'>
+                            <Link href='/adherer' className='font-Inter text-redcolor'>
                                 Adhérer
                             </Link>
 
-                            <Link href='/contact' className='font-Montserrat text-redcolor'>
+                            <Link href='/contact' className='font-Inter text-redcolor'>
                                 Nous contacter
                             </Link>
 
@@ -61,11 +61,11 @@ const Footer = () => {
 
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
-                            <Link href='/raquette' className='font-Montserrat text-redcolor'>
+                            <Link href='/raquette' className='font-Inter text-redcolor'>
                                 La raquette
                             </Link>
 
-                            <Link href='/regles' className='font-Montserrat text-redcolor'>
+                            <Link href='/regles' className='font-Inter text-redcolor'>
                                 Règles du jeu
                             </Link>
 
@@ -82,7 +82,7 @@ const Footer = () => {
 
                             <h4 className='font-Montserrat font-semibold text-redcolor text-2xl'>CACBO Badminton</h4>
 
-                            <p className='w-[50%] font-Montserrat font-normal text-redcolor text-base'>
+                            <p className='w-[50%] font-Inter font-normal text-redcolor text-base'>
                                 Complexe sportif Philippe Madrelle
                                 26 rue Pasteur, 33560 Carbon-Blanc
                             </p>
@@ -91,9 +91,9 @@ const Footer = () => {
 
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-1'>
 
-                            <h4 className='font-Montserrat font-medium text-redcolor text-base'>06 18 95 23 30</h4>
+                            <h4 className='font-Inter font-medium text-redcolor text-base'>06 18 95 23 30</h4>
 
-                            <p className='font-Montserrat font-normal text-redcolor text-base'>
+                            <p className='font-Inter font-normal text-redcolor text-base'>
                                 Ouvert le lundi (21h-23h), mardi (18h-21h) et vendredi (18h30-21h)
                             </p>
 
@@ -105,17 +105,15 @@ const Footer = () => {
 
                 <div className='w-[100%] h-[1px] bg-[#e0e0e0] rounded-full my-8' />
 
-                <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3'>
+                <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3 mb-11'>
 
-                    <h5 className='font-Montserrat font-normal text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
+                    <h5 className='font-Inter font-normal text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
 
                     <div className='w-[1px] h-[20px] bg-redcolor rounded-full' />
 
-                    <h5 className='font-Montserrat font-normal text-redcolor text-base'>Site créé par Maël Thomas et développer par Mathéo Lang.</h5>
+                    <h5 className='font-Inter font-normal text-redcolor text-base'>Site créé par Maël Thomas et développer par Mathéo Lang.</h5>
 
                 </div>
-
-
             </div>
         </footer>
     )
