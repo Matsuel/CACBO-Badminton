@@ -9,6 +9,7 @@ import Secretaire from "@/assets/secretaire.png";
 import Tresorier from "@/assets/tresorier.png";
 import Membre from "@/assets/membre.png";
 import Footer from "@/components/footer";
+import Title from "@/components/title";
 
 const Bureau = () => {
 
@@ -37,6 +38,8 @@ const Bureau = () => {
 
     return (
         <div className='w-full flex flex-col items-center min-h-screen bg-whitebroken'>
+
+            <Title title='Le bureau - CACBO Badminton'/>
 
             <Navbar/>
 
