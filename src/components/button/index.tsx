@@ -23,7 +23,7 @@ const Button = ({
 
     return (
         <Link href={href} target={target}>
-            <button className={`flex flex-row items-center justify-center gap-2 rounded-ten px-horizontal py-vertical ${buttonStyle[variant]}`}>
+            <button className={`flex flex-row items-center justify-center gap-2 rounded-ten px-horizontal py-vertical font-Montserrat font-medium ${buttonStyle[variant]}`}>
                 {icon}
                 {children}
             </button>
