@@ -73,7 +73,7 @@ export default function Home() {
             <p className="font-Montserrat font-light text-xl text-start">
               Créé en 2007 à Carbon-Blanc, notre club réunit des passionnés de badminton de tous niveaux.
               Ici, l&apos;ambiance est familiale et conviviale, <strong className="font-medium">propice à la détente</strong> et au partage.
-              Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour <strong className="font-medium">pratiquer sans pression</strong>. Envie d'en savoir plus ?
+              Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour <strong className="font-medium">pratiquer sans pression</strong>. Envie d&apos;en savoir plus ?
             </p>
 
             <div className="w-[100%] h-auto flex flex-row items-center justify-end">
