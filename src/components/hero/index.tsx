@@ -7,7 +7,7 @@ interface HeroProps {
     background: StaticImageData
     title: string
     subtitle: string
-    description: string
+    description?: boolean
     icon: StaticImport
 }
 
@@ -15,7 +15,7 @@ const Hero = ({
     background,
     title,
     subtitle,
-    description,
+    description = false,
     icon
 }: HeroProps) => {
     return (
@@ -24,7 +24,7 @@ const Hero = ({
             <div className='w-[50%] flex flex-col justify-center items-start gap-3 pl-28'>
                 <h2 className='font-Montserrat font-bold text-6xl'>{title}</h2>
                 <h3 className='font-Montserrat font-normal text-2xl text-redcolor'>{subtitle}</h3>
-                <Open />
+                {description && <Open />}
             </div>
 
             <div className='w-[50%] h-[330px] flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat rounded-ten' style={{ backgroundImage: `url(${background.src})` }}>

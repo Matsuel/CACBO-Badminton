@@ -14,7 +14,6 @@ const Bureau = () => {
                 background={HeroBureau}
                 title='Le bureau'
                 subtitle='Prêts à nous rejoindre ?'
-                description=''
                 icon={People}
             />
 
