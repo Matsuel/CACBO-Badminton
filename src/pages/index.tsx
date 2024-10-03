@@ -8,12 +8,15 @@ import GoTo from "@/assets/goto.svg";
 import Groupe from "@/assets/photo groupe.png";
 import Romain from "@/assets/Romain.png";
 import Stephane from "@/assets/Stephane.png";
-import EmojiPicker, { Emoji } from 'emoji-picker-react';
+import { Emoji } from 'emoji-picker-react';
+import Footer from "@/components/footer";
+import Title from "@/components/title";
 
 
 export default function Home() {
   return (
     <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken`}>
+      <Title />
       <Navbar />
 
       <div className="flex flex-col items-center justify-center w-[80%] h-auto mt-10 bg-cover bg-center rounded-ten" style={{ backgroundImage: `url(${Gymnase.src})` }}>
@@ -133,6 +136,8 @@ export default function Home() {
         </div>
 
       </div>
+
+      <Footer />
 
     </div>
   );
