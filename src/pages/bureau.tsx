@@ -11,10 +11,34 @@ import Membre from "@/assets/membre.png";
 import Footer from "@/components/footer";
 
 const Bureau = () => {
+
+    const personnel = [
+        {
+            name: "Laurent THOMAS",
+            role: "Président",
+            image: Chef
+        },
+        {
+            name: "Maël THOMAS",
+            role: "Secrétaire",
+            image: Secretaire
+        },
+        {
+            name: "Cédric ARMENILI",
+            role: "Trésorier",
+            image: Tresorier
+        },
+        {
+            name: "Yohann GIACOMETTI",
+            role: "Membre",
+            image: Membre
+        }
+    ]
+
     return (
         <div className='w-full flex flex-col items-center min-h-screen bg-whitebroken'>
 
-            <Navbar />
+            <Navbar/>
 
             <Hero
                 background={HeroBureau}
@@ -24,21 +48,21 @@ const Bureau = () => {
             />
 
             <div className="w-[43%] font-Montserrat font-normal text-xl text-wrap text-center mt-20">
-                Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur, ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
+                Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
+                ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents,
+                gestion du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
             </div>
 
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[105px]">
-                
-                <Personnel name={"Laurent THOMAS"} role={"Président"} image={Chef} />
-                <Personnel name={"Maël THOMAS"} role={"Secrétaire"} image={Secretaire} />
-                <Personnel name={"Cédric ARMENILI"} role={"Trésorier"} image={Tresorier} />
-                <Personnel name={"Yohann GIACOMETTI"} role={"Membre"} image={Membre} />
+
+                {personnel.map((person, index) => (
+                    <Personnel name={person.name} role={person.role} image={person.image} key={index}/>
+                ))}
 
             </div>
 
 
-
-            <Footer />
+            <Footer/>
 
         </div>
     )
