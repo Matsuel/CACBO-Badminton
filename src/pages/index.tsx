@@ -8,6 +8,7 @@ import GoTo from "@/assets/goto.svg";
 import Groupe from "@/assets/photo groupe.png";
 import Romain from "@/assets/Romain.png";
 import Stephane from "@/assets/Stephane.png";
+import EmojiPicker, { Emoji } from 'emoji-picker-react';
 
 
 export default function Home() {
@@ -102,7 +103,7 @@ export default function Home() {
           <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-3">
 
             <h3 className="font-Montserrat font-bold text-[40px]">Qu’est-ce que t’attends ?</h3>
-            <h4 className="font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous ! 😉</h4>
+            <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous ! <Emoji unified="1f609" /></h4>
 
           </div>
 
