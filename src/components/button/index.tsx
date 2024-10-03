@@ -13,8 +13,7 @@ const Button = ({
     children,
     icon,
     href,
-    target = '_self',
-    ...props
+    target = '_self'
 }: ButtonProps) => {
 
     const buttonStyle = {
