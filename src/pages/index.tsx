@@ -6,6 +6,8 @@ import GPS from "@/assets/gps.svg";
 import Button from "@/components/button";
 import GoTo from "@/assets/goto.svg";
 import Groupe from "@/assets/photo groupe.png";
+import Romain from "@/assets/Romain.png";
+import Stephane from "@/assets/Stephane.png";
 
 
 export default function Home() {
@@ -89,6 +91,43 @@ export default function Home() {
             </p>
 
           </div>
+
+        </div>
+
+      </div>
+
+      <div className="w-[80%] h-auto flex flex-row items-start justify-center gap-5 mt-24 border-1 border-redcolor rounded-ten p-8">
+
+        <div className="w-[50%] h-auto flex flex-col items-start justify-center gap-5">
+          <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-3">
+
+            <h3 className="font-Montserrat font-bold text-[40px]">Qu’est-ce que t’attends ?</h3>
+            <h4 className="font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous ! 😉</h4>
+
+          </div>
+
+          <p className="w-[70%] font-Montserrat font-normal text-xl">
+            Fais partie de l’aventure : rejoins une équipe où convivialité rime avec passion.
+          </p>
+
+        </div>
+
+        <div className="w-[50%] h-auto flex flex-row items-start justify-center gap-5">
+
+          <div className="w-[50%] h-auto flex flex-row items-start justify-center gap-5 relative">
+            <Image src={Romain} alt="romain" className="absolute bottom-[-210px] left-0" />
+            <Image src={Stephane} alt="stephane" className="absolute bottom-[-210px] ml-9" />
+
+          </div>
+
+          <div className="w-[50%] h-[100%] flex flex-col items-center justify-center gap-5">
+            <Button href="/contact" variant="inverted">
+              NOUS CONTACTER
+              <Image src={GoTo} alt="goto" className="ml-2" />
+            </Button>
+          </div>
+
+
 
         </div>
 
