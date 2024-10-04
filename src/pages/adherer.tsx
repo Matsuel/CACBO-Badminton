@@ -193,19 +193,19 @@ const Adherer = () => {
                         </h3>
 
                         <ListTitle>🚋 <span className="underline">En tram</span> :</ListTitle>
-                        <ListElement>• Ligne A du tram de Bordeaux Métropole</ListElement>
-                        <ListElement>• Arrêt la Gardette (puis 10-15 min de marche)</ListElement>
+                        <ListElement>Ligne A du tram de Bordeaux Métropole</ListElement>
+                        <ListElement>Arrêt la Gardette (puis 10-15 min de marche)</ListElement>
 
 
                         <ListTitle>🚌 <span className="underline">En bus</span> :</ListTitle>
-                        <ListElement>• Ligne 90 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
-                        <ListElement>• Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
+                        <ListElement>Ligne 90 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
+                        <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
 
 
                         <ListTitle>🚗 <span className="underline">En voiture</span> :</ListTitle>
-                        <ListElement>• Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers
+                        <ListElement>Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers
                             Carbon-Blanc</ListElement>
-                        <ListElement>• Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
+                        <ListElement>Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
 
                     </div>
 
