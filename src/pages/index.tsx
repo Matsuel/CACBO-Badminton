@@ -12,6 +12,7 @@ import {Emoji} from 'emoji-picker-react';
 import Footer from "@/components/footer";
 import Title from "@/components/title";
 import {SITE_CONFIG} from "@/constantes";
+import Subtitle from "@/components/subtitle";
 
 
 export default function Home() {
@@ -73,7 +74,8 @@ export default function Home() {
             </div>
 
             <div className="w-[80%] h-auto flex flex-col items-start justify-center gap-5">
-                <h2 className="font-Montserrat font-semibold text-3xl">Qui sommes-nous ?</h2>
+
+                <Subtitle content="Qui sommes-nous ?"/>
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-center gap-32">
 

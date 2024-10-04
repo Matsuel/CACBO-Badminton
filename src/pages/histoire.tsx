@@ -18,6 +18,7 @@ import Img7 from "@/assets/histoire/7.png";
 import CustomImage from "@/components/customImage";
 import Footer from "@/components/footer";
 import {SITE_CONFIG} from "@/constantes";
+import Subtitle from "@/components/subtitle";
 
 
 const Histoire = () => {
@@ -41,10 +42,7 @@ const Histoire = () => {
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[240px]">
 
-                <h3 className="font-Montserrat font-semibold text-black text-3xl">
-                    La naissance du club
-                    {/* Component */}
-                </h3>
+                <Subtitle content="La naissance du club"/>
 
                 {/* Paragraph 1 */}
                 <div
@@ -90,10 +88,7 @@ const Histoire = () => {
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[170px]">
 
-                <h3 className="font-Montserrat font-semibold text-black text-3xl">
-                    La renaissance de la section
-                    {/* Component */}
-                </h3>
+                <Subtitle content="La renaissance de la section"/>
 
                 {/* Paragraph2  */}
                 <div
@@ -114,10 +109,7 @@ const Histoire = () => {
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[80px]">
 
-                <h3 className="font-Montserrat font-semibold text-black text-3xl">
-                    Et le CACBO dans tout ça ?
-                    {/* Component */}
-                </h3>
+                <Subtitle content="Et le CACBO dans tout ça ?"/>
 
                 {/* Paragraph2  */}
                 <div
