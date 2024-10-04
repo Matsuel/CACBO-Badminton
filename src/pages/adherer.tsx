@@ -99,24 +99,17 @@ const Adherer = () => {
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier 📋
                         </h3>
 
-                        <p className="w-[90%] font-Inter font-light text-xl">
-                            Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :
-                        </p>
+                        <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :</ListTitle>
 
-                        <p className="font-Inter font-light text-xl">
-                            • <strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour nous
-                            transmettre vos informations essentielles.
-                        </p>
-
-                        <p className="w-[97%] font-Inter font-light text-xl">
-                            • <strong className="font-medium">Questionnaire de santé</strong> : à compléter pour évaluer
+                        <ListElement><strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
+                        <ListElement><strong className="font-medium">Questionnaire de santé</strong> : à compléter pour évaluer
                             votre condition physique.
                             <span
-                                className="text-redcolor"> Si vous répondez positivement à une ou plusieurs questions</span>,
+                                className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
                             un <strong className="font-medium">certificat
-                            médical</strong> daté de moins de 6 mois <strong className="underline">sera
-                            requis</strong> .
-                        </p>
+                                médical</strong> daté de moins de 6 mois <strong className="underline">sera
+                                requis</strong> .
+                        </ListElement>
 
                         <p className="w-[98%] font-Inter font-light text-xl">
                             Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une
