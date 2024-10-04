@@ -10,8 +10,8 @@ const Navbar = () => {
 
     const links = [
         { name: 'Accueil', href: '/' },
-        { name: 'Le club', href: '/club' },
-        { name: 'Adhérer', href: '/join' },
+        { name: 'Le club', href: '/histoire' },
+        { name: 'Adhérer', href: '/adherer' },
         { name: 'Le bad', href: '/bad' },
         { name: 'Nous contacter', href: '/contact' },
     ]
