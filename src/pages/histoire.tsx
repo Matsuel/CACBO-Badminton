@@ -17,6 +17,7 @@ import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
 import CustomImage from "@/components/customImage";
 import Footer from "@/components/footer";
+import {SITE_CONFIG} from "@/constantes";
 
 
 const Histoire = () => {
@@ -32,7 +33,7 @@ const Histoire = () => {
 
     return (
         <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title="Histoire - CACBO Badminton"/>
+            <Title title={SITE_CONFIG.club + " - " + SITE_CONFIG.title}/>
             <Navbar/>
 
             <Hero background={HeroHistory} title={"Notre histoire"} subtitle={"Le chemin parcouru depuis 2007"}

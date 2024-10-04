@@ -11,12 +11,13 @@ import Stephane from "@/assets/Stephane.png";
 import {Emoji} from 'emoji-picker-react';
 import Footer from "@/components/footer";
 import Title from "@/components/title";
+import {SITE_CONFIG} from "@/constantes";
 
 
 export default function Home() {
     return (
         <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken`}>
-            <Title/>
+            <Title title={SITE_CONFIG.title}/>
             <Navbar/>
 
             <div

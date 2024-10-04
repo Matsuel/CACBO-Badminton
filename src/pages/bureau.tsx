@@ -10,6 +10,7 @@ import Tresorier from "@/assets/tresorier.png";
 import Membre from "@/assets/membre.png";
 import Footer from "@/components/footer";
 import Title from "@/components/title";
+import {SITE_CONFIG} from "@/constantes";
 
 const Bureau = () => {
 
@@ -39,13 +40,13 @@ const Bureau = () => {
     return (
         <div className='w-full flex flex-col items-center min-h-screen bg-whitebroken'>
 
-            <Title title='Le bureau - CACBO Badminton'/>
+            <Title title={SITE_CONFIG.bureau + " - " + SITE_CONFIG.title}/>
 
             <Navbar/>
 
             <Hero
                 background={HeroBureau}
-                title='Le bureau'
+                title={SITE_CONFIG.bureau}
                 subtitle='Prêts à nous rejoindre ?'
                 icon={People}
             />
