@@ -3,8 +3,11 @@ import Navbar from "@/components/navbar";
 import HeroAdherer from "@/assets/heroadherer.png";
 import Rocket from "@/assets/rocket.svg";
 import Hero from "@/components/hero";
+import Goto from "@/assets/goto.svg";
 import {SITE_CONFIG} from "@/constantes";
 import Subtitle from "@/components/subtitle";
+import Button from "@/components/button";
+import Image from "next/image";
 
 const Adherer = () => {
     return (
@@ -23,7 +26,7 @@ const Adherer = () => {
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[90px]">
                 <Subtitle content="Pourquoi nous rejoindre ?"/>
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px]">
+                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
                     <div
                         className="w-[53%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
 
@@ -49,12 +52,11 @@ const Adherer = () => {
                     </div>
 
                     <div
-                        className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px] p-[30px] ml-[20px]">
+                        className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
 
                         <h4 className="font-Montserrat font-medium text-[32px] px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white">
                             Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
                             sans engagement avant de vous inscrire !
-
                         </h4>
 
                         <div
@@ -74,9 +76,77 @@ const Adherer = () => {
 
                         </div>
                     </div>
+                </div>
 
+            </div>
+
+            <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
+                <Subtitle content="Comment ?"/>
+
+                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
+
+                    {/* Partie Gauche */}
+                    <div
+                        className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[15px] bg-white rounded-ten p-[30px]">
+                        <h3 className="font-Montserrat font-semibold text-black text-[22px]">
+                            <span className="underline">Documents nécessaires</span> : préparez votre dossier 📋
+                        </h3>
+
+                        <p className="w-[90%] font-Inter font-light text-xl">
+                            Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :
+                        </p>
+
+                        <p className="font-Inter font-light text-xl">
+                            - <strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour nous
+                            transmettre vos informations essentielles.
+                        </p>
+
+                        <p className="w-[97%] font-Inter font-light text-xl">
+                            - <strong className="font-medium">Questionnaire de santé</strong> : à compléter pour évaluer
+                            votre condition physique.
+                            <span
+                                className="text-redcolor"> Si vous répondez positivement à une ou plusieurs questions</span>,
+                            un <strong className="font-medium">certificat
+                            médical</strong> daté de moins de 6 mois <strong className="underline">sera
+                            requis</strong> .
+                        </p>
+
+                        <p className="w-[98%] font-Inter font-light text-xl">
+                            Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une
+                            pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre
+                            inscription
+                            !
+                        </p>
+                    </div>
+
+                    {/* Partie Droite */}
+                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[15px] mt-[20px]">
+
+                        <div
+                            className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor">
+                            <h4 className="font-Montserrat font-semibold text-[24px]">
+                                Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! 🌐
+                            </h4>
+
+                            <p className="w-[90%] font-Inter font-light text-[20px] mb-3">
+                                Inscrivez-vous facilement en ligne grâce à HelloAsso ! Évitez l’impression des documents
+                                :
+                                remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en
+                                toute
+                                simplicité.
+                            </p>
+
+                            <Button href="/inscription" >
+                                S&apos;inscrire en ligne
+                                <Image src={Goto} alt="goto" className="ml-2"/>
+                            </Button>
+                        </div>
+
+
+                    </div>
 
                 </div>
+
             </div>
         </div>
     )
