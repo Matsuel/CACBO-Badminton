@@ -21,7 +21,7 @@ export default function Home() {
             <Navbar/>
 
             <div
-                className="flex flex-col items-center justify-center w-[80%] h-auto mt-10 bg-cover bg-center rounded-ten"
+                className="flex flex-col items-center justify-center w-[80%] h-auto mt-5 bg-cover bg-center rounded-ten"
                 style={{backgroundImage: `url(${Gymnase.src})`}}>
 
                 <div className="w-[100%] h-[485px] flex flex-row justify-center items-center">

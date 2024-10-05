@@ -19,7 +19,7 @@ const Hero = ({
     icon
 }: HeroProps) => {
     return (
-        <div className='w-[80%] h-auto flex flex-row items-center justify-between mt-10 bg-white rounded-ten'>
+        <div className='w-[80%] h-auto flex flex-row items-center justify-between mt-5 bg-white rounded-ten'>
 
             <div className='w-[45%] flex flex-col justify-center items-start gap-3 pl-28'>
                 <h2 className='font-Montserrat font-bold text-6xl'>{title}</h2>
