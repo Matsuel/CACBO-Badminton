@@ -39,6 +39,7 @@ const config: Config = {
         redcolor: "var(--redcolor)",
         blackcolor: "var(--blackcolor)",
         whitebroken: "var(--white-broken)",
+        redcolorhover: "var(--redcolor-hover)",
       },
     },
   },

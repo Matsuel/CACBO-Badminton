@@ -1,5 +1,5 @@
-import Facebook from "@/assets/facebook.svg";
-import Instagram from "@/assets/instagram.svg";
+import {Facebook} from "@/assets/Facebook";
+import {Instagram} from "@/assets/Instagram";
 import {Envelope} from "@/assets/Envelope";
 import {Send} from "@/assets/Send";
 

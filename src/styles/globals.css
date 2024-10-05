@@ -9,6 +9,7 @@
 :root {
   --background: #ffffff;
   --redcolor : #ff0000;
+  --redcolor-hover : rgba(255, 0, 0, 0.3);
   --blackcolor : #000000;
   --white-broken : #f8f8f8;
 }

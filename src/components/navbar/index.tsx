@@ -33,8 +33,8 @@ const Navbar = () => {
                     <div className='flex flex-row justify-center items-center gap-5'>
 
                         {NavbarSocialLinks.map((link, index) => (
-                            <Link key={index} href={link.href} target='_blank'>
-                                <Image src={link.icon} alt={link.name}/>
+                            <Link key={index} href={link.href} target='_blank' className="text-redcolor hover:text-redcolorhover">
+                                {link.icon}
                             </Link>
                         ))}
 
