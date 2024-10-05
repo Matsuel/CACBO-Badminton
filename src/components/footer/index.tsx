@@ -111,7 +111,7 @@ const Footer = () => {
 
                     <div className='w-[1px] h-[20px] bg-redcolor rounded-full' />
 
-                    <h5 className='font-Inter font-normal text-redcolor text-base'>Site créé par Maël Thomas et développer par Mathéo Lang.</h5>
+                    <h5 className='font-Inter font-normal text-redcolor text-base'>Site pensé par Maël Thomas et développé par Mathéo Lang.</h5>
 
                 </div>
             </div>
