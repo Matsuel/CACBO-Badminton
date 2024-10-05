@@ -103,7 +103,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className='w-[100%] h-[1px] bg-[#e0e0e0] rounded-full my-8' />
+                <div className='w-[100%] h-[1px] bg-redcolorhover rounded-full my-8' />
 
                 <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3 mb-11'>
 

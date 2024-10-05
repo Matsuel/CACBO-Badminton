@@ -52,7 +52,7 @@ const Partenaires = () => {
                 icon={LinkLogo}
             />
 
-            <div className="w-[49%] font-Montserrat font-normal text-xl text-wrap text-center mt-20">
+            <div className="w-[49%] font-Inter font-light text-xl text-wrap text-center mt-20">
                 Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir
                 à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous
                 accompagnent dans cette belle aventure !
