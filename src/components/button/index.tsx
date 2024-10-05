@@ -6,6 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     icon?: React.ReactNode
     href: string
     target?: '_blank' | '_self' | '_parent' | '_top'
+    rowReverse?: boolean
 }
 
 const Button = ({
@@ -13,7 +14,8 @@ const Button = ({
     children,
     icon,
     href,
-    target = '_self'
+    target = '_self',
+    rowReverse = false,
 }: ButtonProps) => {
 
     const buttonStyle = {
@@ -23,7 +25,7 @@ const Button = ({
 
     return (
         <Link href={href} target={target}>
-            <button className={`flex flex-row items-center justify-center gap-2 rounded-ten px-horizontal py-vertical font-Montserrat font-medium ${buttonStyle[variant]}`}>
+            <button className={`flex ${rowReverse ? "flex-row-reverse" : "flex-row"} items-center justify-center gap-2 rounded-ten px-horizontal py-vertical font-Montserrat font-medium ${buttonStyle[variant]}`}>
                 {icon}
                 {children}
             </button>

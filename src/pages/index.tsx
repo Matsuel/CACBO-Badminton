@@ -4,7 +4,6 @@ import Gymnase from "@/assets/Gymnase.png";
 import Logo from "@/assets/cacbo.svg";
 import GPS from "@/assets/gps.svg";
 import Button from "@/components/button";
-import GoTo from "@/assets/goto.svg";
 import Groupe from "@/assets/photo groupe.png";
 import Romain from "@/assets/Romain.png";
 import Stephane from "@/assets/Stephane.png";
@@ -13,6 +12,7 @@ import Footer from "@/components/footer";
 import Title from "@/components/title";
 import {SITE_CONFIG} from "@/constantes";
 import Subtitle from "@/components/subtitle";
+import {Goto} from "@/assets/Goto";
 
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
                             <div className="flex flex-row items-start justify-center gap-3">
                                 <Image src={GPS} alt="gps" className="mt-1"/>
                                 <h3 className="font-Shantell font-medium text-white text-3xl">
-                                  Carbon-Blanc (33)
+                                    Carbon-Blanc (33)
                                 </h3>
                             </div>
                         </div>
@@ -93,9 +93,10 @@ export default function Home() {
                         </p>
 
                         <div className="w-[100%] h-auto flex flex-row items-center justify-end">
-                            <Button variant="inverted" href="/about">
+                            <Button variant="inverted" href="/about" icon={Goto}
+                                    rowReverse={true}
+                            >
                                 DECOUVRIR NOTRE HISTOIRE
-                                <Image src={GoTo} alt="goto" className="ml-2"/>
                             </Button>
                         </div>
 
@@ -145,9 +146,11 @@ export default function Home() {
                     </div>
 
                     <div className="w-[50%] h-[100%] flex flex-col items-center justify-center gap-5">
-                        <Button href="/contact" variant="inverted">
+                        <Button href="/contact" variant="inverted"
+                                rowReverse
+                                icon={Goto}
+                        >
                             JE M&apos;INSCRIS
-                            <Image src={GoTo} alt="goto" className="ml-2"/>
                         </Button>
                     </div>
 

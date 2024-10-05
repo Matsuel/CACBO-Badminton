@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import HeroAdherer from "@/assets/heroadherer.png";
 import Rocket from "@/assets/rocket.svg";
 import Hero from "@/components/hero";
-import Goto from "@/assets/goto.svg";
+import {Goto} from "@/assets/Goto";
 import {SITE_CONFIG} from "@/constantes";
 import Subtitle from "@/components/subtitle";
 import Button from "@/components/button";
@@ -136,9 +136,11 @@ const Adherer = () => {
                                 simplicité.
                             </p>
 
-                            <Button href="/inscription">
+                            <Button href="/inscription"
+                            rowReverse
+                                    icon={Goto}
+                            >
                                 S&apos;inscrire en ligne
-                                <Image src={Goto} alt="goto" className="ml-2"/>
                             </Button>
                         </div>
 
