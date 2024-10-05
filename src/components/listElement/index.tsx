@@ -7,9 +7,12 @@ const listElement = ({
     children
 }: ListElementProps) => {
     return (
-        <p className="font-Inter font-light text-xl">
-            • {children}
-        </p>
+        <div className="flex flex-row gap-3">
+            •
+            <p className="font-Inter font-light text-xl">
+                {children}
+            </p>
+        </div>
     )
 }
 

@@ -95,7 +95,7 @@ const Adherer = () => {
 
                     {/* Partie Gauche */}
                     <div
-                        className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[15px] bg-white rounded-ten p-[30px]">
+                        className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[10px] bg-white rounded-ten p-[30px]">
                         <h3 className="font-Montserrat font-semibold text-black text-[22px]">
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
                         </h3>
@@ -214,7 +214,7 @@ const Adherer = () => {
                     <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[15px] mt-[20px]">
 
                         <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
+                            className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
                             <h4 className="font-Montserrat font-semibold text-[24px]">
                                 <span className="underline">Créneaux flexibles</span> : jouez quand vous voulez ! <Emoji name="alarm" width={24} />
                             </h4>
@@ -242,8 +242,7 @@ const Adherer = () => {
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
 
-                    <div
-                        className="w-[53%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                    <div className="w-[53%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
 
                         <h4 className="font-Montserrat font-semibold text-[24px]">
                             <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />
@@ -251,11 +250,13 @@ const Adherer = () => {
 
                         <ListTitle>Nous vous proposons deux formules adaptées à vos besoins :</ListTitle>
 
-                        <ListElement> <span className="font-medium">Formule adulte</span> : <span
-                            className="text-redcolor">50 €</span> par personne.</ListElement>
-                        <ListElement> <span className="font-medium">Formule couple</span> : <span
-                            className="text-redcolor">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que
-                            vous soyez en couple ou simplement entre amis.</ListElement>
+                        <ListElement>
+                            <span className="font-medium">Formule <span className="italic">adulte</span> </span> : <span className="text-redcolor">50 €</span> par personne.
+                        </ListElement>
+
+                        <ListElement>
+                            <span className="font-medium">Formule <span className="italic">couple</span> </span> : <span className="text-redcolor">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.
+                        </ListElement>
 
 
                     </div>

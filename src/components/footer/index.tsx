@@ -39,7 +39,7 @@ const Footer = () => {
 
                     <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
 
-                        <h4 className='font-Montserrat font-semibold text-white text-base'>LE CLUB</h4>
+                        <div className='w-full h-[24px]' />
 
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
@@ -73,7 +73,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className='w-[1px] h-[200px] bg-redcolor rounded-full' />
+                    <div className='w-[1.5px] h-[200px] bg-redcolor rounded-full' />
 
                     {/* Adresse  */}
                     <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
@@ -105,13 +105,13 @@ const Footer = () => {
 
                 <div className='w-[100%] h-[1px] bg-redcolorhover rounded-full my-8' />
 
-                <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3 mb-11'>
+                <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3 mb-8'>
 
-                    <h5 className='font-Inter font-normal text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
+                    <h5 className='font-Inter font-light text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
 
                     <div className='w-[1px] h-[20px] bg-redcolor rounded-full' />
 
-                    <h5 className='font-Inter font-normal text-redcolor text-base'>Site pensé par Maël Thomas et développé par Mathéo Lang.</h5>
+                    <h5 className='font-Inter font-light text-redcolor text-base'>Site pensé par Maël Thomas et développé par Mathéo Lang.</h5>
 
                 </div>
             </div>

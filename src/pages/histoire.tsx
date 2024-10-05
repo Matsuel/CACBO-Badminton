@@ -17,7 +17,7 @@ import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
 import CustomImage from "@/components/customImage";
 import Footer from "@/components/footer";
-import {SITE_CONFIG} from "@/constantes";
+import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/subtitle";
 import Emoji from "@/components/Emoji";
 
@@ -25,25 +25,25 @@ import Emoji from "@/components/Emoji";
 const Histoire = () => {
 
     const customImages = [
-        {image: Img1, description: "La finale d’un tournoi opposant le club à celui de la Jeunesse Yvracaise (1/2)"},
-        {image: Img2, description: "(2/2)"},
-        {image: Img3, description: "Juillet 2013"},
-        {image: Img4, description: "Septembre 2014"},
-        {image: Img5, description: "L’un des nombreux cours de l’école de badminton du club"},
-        {image: Img6, description: "Le gymnase lors de sa démolition (novembre 2019)"}
+        { image: Img1, description: "La finale d’un tournoi opposant le club à celui de la Jeunesse Yvracaise (1/2)" },
+        { image: Img2, description: "(2/2)" },
+        { image: Img3, description: "Juillet 2013" },
+        { image: Img4, description: "Septembre 2014" },
+        { image: Img5, description: "L’un des nombreux cours de l’école de badminton du club" },
+        { image: Img6, description: "Le gymnase lors de sa démolition (novembre 2019)" }
     ]
 
     return (
         <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.club + " - " + SITE_CONFIG.title}/>
-            <Navbar/>
+            <Title title={SITE_CONFIG.club + " - " + SITE_CONFIG.title} />
+            <Navbar />
 
             <Hero background={HeroHistory} title={"Notre histoire"} subtitle={"Le chemin parcouru depuis 2007"}
-                  icon={Book}/>
+                icon={Book} />
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[240px]">
 
-                <Subtitle content="La naissance du club"/>
+                <Subtitle content="La naissance du club" />
 
                 {/* Paragraph 1 */}
                 <div
@@ -55,7 +55,7 @@ const Histoire = () => {
                     des saisons 2014/15, 2015/16, 2016/17 et 2017/18. <Emoji name="medal" width={20} />
                     <div
                         className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute bottom-[-50px] right-[-50px] drop-shadow-xl">
-                        <Image src={EFB} alt="efb"/>
+                        <Image src={EFB} alt="efb" />
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ const Histoire = () => {
 
                 <div
                     className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute top-[-50px] left-[-50px] drop-shadow-xl">
-                    <Image src={Logo} alt="efb" width={64}/>
+                    <Image src={Logo} alt="efb" width={64} />
                 </div>
 
                 <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start indent-12">
@@ -78,7 +78,7 @@ const Histoire = () => {
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
                     {customImages.map((customImage, index) => (
-                        <CustomImage key={index} image={customImage.image} description={customImage.description}/>
+                        <CustomImage key={index} image={customImage.image} description={customImage.description} />
                     ))}
 
 
@@ -89,7 +89,7 @@ const Histoire = () => {
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[170px]">
 
-                <Subtitle content="La renaissance de la section"/>
+                <Subtitle content="La renaissance de la section" />
 
                 {/* Paragraph2  */}
                 <div
@@ -101,8 +101,7 @@ const Histoire = () => {
                     1056 m² comptant 2 terrains supplémentaires (7 au total) et offrant un cadre idéal pour pratiquer
                     leur passion.
 
-                    <CustomImage image={Img7}
-                                 description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"}/>
+                    <CustomImage image={Img7} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
                 </div>
 
             </div>
@@ -110,7 +109,7 @@ const Histoire = () => {
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[80px]">
 
-                <Subtitle content="Et le CACBO dans tout ça ?"/>
+                <Subtitle content="Et le CACBO dans tout ça ?" />
 
                 {/* Paragraph2  */}
                 <div
@@ -151,18 +150,18 @@ const Histoire = () => {
 
                     <div className="w-[19%] h-auto flex flex-col items-center justify-center gap-[35px]">
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
-                            <Image src={Logo2} alt="cacbo" width={95}/>
+                            <Image src={Logo2} alt="cacbo" width={95} />
                         </div>
 
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
-                            <Image src={Omnisport} alt="cacbo" width={95}/>
+                            <Image src={Omnisport} alt="cacbo" width={95} />
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }
