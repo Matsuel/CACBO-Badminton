@@ -22,7 +22,7 @@ const Personnel = ({
 
     return (
         <div className="w-auto h-auto flex flex-col items-center gap-[30px] p-10 bg-white rounded-ten">
-            <div className="w-[200px] h-[200px] rounded-ten flex justify-center items-center bg-center bg-cover" style={{backgroundImage: `url(${image.src})`}}>
+            <div className="w-[170px] h-[170px] rounded-ten flex justify-center items-center bg-center bg-cover" style={{backgroundImage: `url(${image.src})`}}>
             </div>
 
             <h3 className="flex flex-col font-Montserrat font-normal text-2xl text-center">

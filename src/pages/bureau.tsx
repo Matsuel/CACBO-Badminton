@@ -57,7 +57,7 @@ const Bureau = () => {
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
             </div>
 
-            <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[105px]">
+            <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[75px]">
 
                 {personnel.map((person, index) => (
                     <Personnel name={person.name} role={person.role} image={person.image} key={index}/>
