@@ -4,4 +4,5 @@ export enum SITE_CONFIG {
     bureau = 'Le bureau',
     club = 'Histoire',
     contact = 'Nous contacter',
+    partenaires = 'Nos partenaires',
 }

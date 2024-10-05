@@ -4,12 +4,18 @@ interface PersonnelProps {
     image: StaticImageData;
     name: string;
     role: string;
+    roleFont?: string;
+    roleParagraphWidth?: string;
+    roleFontSize?: string;
 }
 
 const Personnel = ({
     image,
     role,
-    name
+    name,
+    roleFont = "font-Shantell",
+    roleParagraphWidth = "w-auto",
+    roleFontSize = "text-2xl"
 }: PersonnelProps) => {
 
     const formattedName = name.split(' ');
@@ -26,7 +32,7 @@ const Personnel = ({
 
             <div className="w-[60px] h-[1.5px] bg-black rounded-full" />
 
-            <h4 className="font-Shantell font-normal text-2xl text-center">
+            <h4 className={`font-normal text-center ${roleFont} ${roleParagraphWidth} ${roleFontSize}`}>
                 {role}
             </h4>
 
