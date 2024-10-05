@@ -141,15 +141,15 @@ export default function Home() {
 
                 </div>
 
-                <div className="w-[50%] h-auto flex flex-row items-start justify-center gap-5">
+                <div className="w-[50%] h-[210px] flex flex-row items-start justify-center gap-16">
 
-                    <div className="w-[50%] h-auto flex flex-row items-start justify-center gap-5 relative">
-                        <Image src={Romain} alt="romain" className="absolute bottom-[-210px] left-0"/>
-                        <Image src={Stephane} alt="stephane" className="absolute bottom-[-210px] ml-9"/>
+                    <div className="w-[40%] h-full flex flex-row justify-center relative">
+                        <Image src={Romain} alt="romain" className="absolute bottom-[-30px] left-0" />
+                        <Image src={Stephane} alt="stephane" className="absolute bottom-[-30px] ml-[8rem]"/>
 
                     </div>
 
-                    <div className="w-[50%] h-[100%] flex flex-col items-center justify-center gap-5">
+                    <div className="w-[60%] h-full flex items-center justify-center">
                         <Button
                             href="/contact"
                             variant="inverted"
