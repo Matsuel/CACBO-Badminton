@@ -19,6 +19,7 @@ import CustomImage from "@/components/customImage";
 import Footer from "@/components/footer";
 import {SITE_CONFIG} from "@/constantes";
 import Subtitle from "@/components/subtitle";
+import Emoji from "@/components/Emoji";
 
 
 const Histoire = () => {
@@ -46,12 +47,12 @@ const Histoire = () => {
 
                 {/* Paragraph 1 */}
                 <div
-                    className="w-[53%] h-auto flex items-center justify-center bg-white rounded-ten p-[30px] font-Inter font-light text-[20px] relative">
+                    className="w-[53%] h-auto  bg-white rounded-ten p-[30px] font-Inter font-light text-[20px] relative">
                     Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                     Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
                     Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton
-                    (EFB) 1 étoile 🌟 lors de la saison 2013/14. Une distinction qu&apos;il conservera à 4 reprises lors
-                    des saisons 2014/15, 2015/16, 2016/17 et 2017/18. 🏅
+                    (EFB) 1 étoile <Emoji name="star" width={20} /> lors de la saison 2013/14. Une distinction qu&apos;il conservera à 4 reprises lors
+                    des saisons 2014/15, 2015/16, 2016/17 et 2017/18. <Emoji name="medal" width={20} />
                     <div
                         className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute bottom-[-50px] right-[-50px] drop-shadow-xl">
                         <Image src={EFB} alt="efb"/>
