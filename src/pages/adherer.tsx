@@ -3,8 +3,8 @@ import Navbar from "@/components/navbar";
 import HeroAdherer from "@/assets/heroadherer.png";
 import Rocket from "@/assets/rocket.svg";
 import Hero from "@/components/hero";
-import {Goto} from "@/assets/Goto";
-import {SITE_CONFIG} from "@/constantes";
+import { Goto } from "@/assets/Goto";
+import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/subtitle";
 import Button from "@/components/button";
 import Image from "next/image";
@@ -14,12 +14,13 @@ import ListElement from "@/components/listElement";
 import ListTitle from "@/components/listTitle";
 import Creaneau from "@/components/Creaneau";
 import Footer from "@/components/footer";
+import Emoji from "@/components/Emoji";
 
 const Adherer = () => {
     return (
         <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.adherer + " - " + SITE_CONFIG.title}/>
-            <Navbar/>
+            <Title title={SITE_CONFIG.adherer + " - " + SITE_CONFIG.title} />
+            <Navbar />
 
             <Hero
                 background={HeroAdherer}
@@ -30,7 +31,7 @@ const Adherer = () => {
             />
 
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[90px]">
-                <Subtitle content="Pourquoi nous rejoindre ?"/>
+                <Subtitle content="Pourquoi nous rejoindre ?" />
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
                     <div
@@ -38,17 +39,17 @@ const Adherer = () => {
 
                         <p className=" font-Inter font-light text-xl">
                             En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
-                            accueillante</strong> et
+                                accueillante</strong> et
                             <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
                             Nous offrons un cadre chaleureux où l’ambiance familiale et
                             conviviale favorise à la fois le plaisir de jouer et la progression. Que vous soyez
                             compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
-                            modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
-                            adaptées à vos besoins, et d’un esprit sans prise de tête. 😎
+                                modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
+                            adaptées à vos besoins, et d’un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
                         </p>
 
                         <p className="bg-white font-Inter font-light text-xl">
-                            De plus, nos <span className="underline">soirées régulières</span> 🎉 sont l&apos;occasion
+                            De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
                             idéale de renforcer les liens et de
                             <strong className="font-medium"> partager des moments de détente</strong> en dehors des
                             terrains. Ici, c’est avant tout le plaisir du
@@ -69,7 +70,7 @@ const Adherer = () => {
                             className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] rounded-ten">
 
                             <h3 className="font-Montserrat font-semibold text-black text-[22px]">
-                                Matériel et équipement à <span className="underline">prix préférentiels</span> ! 🏸👕
+                                Matériel et équipement à <span className="underline">prix préférentiels</span> ! <Emoji name="badminton" width={22} /> <Emoji name="tshirt" width={22} />
                             </h3>
 
                             <p className="font-Inter font-light text-xl">
@@ -77,7 +78,7 @@ const Adherer = () => {
                                 bénéficiez de <span className="underline">réductions</span> grâce à notre partenariat
                                 avec <span className="font-medium">Intersport</span>. Le club propose
                                 également des vêtements à nos couleurs – maillots, vestes, hauts, sweats... – à des prix
-                                préférentiels pour nos adhérents ! 🤑
+                                préférentiels pour nos adhérents ! <Emoji name="moneymouth" width={20} />
                             </p>
 
                         </div>
@@ -88,7 +89,7 @@ const Adherer = () => {
 
             {/* Comment ? */}
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
-                <Subtitle content="Comment ?"/>
+                <Subtitle content="Comment ?" />
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
 
@@ -96,7 +97,7 @@ const Adherer = () => {
                     <div
                         className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[15px] bg-white rounded-ten p-[30px]">
                         <h3 className="font-Montserrat font-semibold text-black text-[22px]">
-                            <span className="underline">Documents nécessaires</span> : préparez votre dossier 📋
+                            <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
                         </h3>
 
                         <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents
@@ -111,7 +112,7 @@ const Adherer = () => {
                                 className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
                             un <strong className="font-medium">certificat
                                 médical</strong> daté de moins de 6 mois <strong className="underline">sera
-                                requis</strong> .
+                                    requis</strong> .
                         </ListElement>
 
                         <p className="w-[98%] font-Inter font-light text-xl">
@@ -128,7 +129,7 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
                             <h4 className="font-Montserrat font-semibold text-[24px]">
-                                Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! 🌐
+                                Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
                             </h4>
 
                             <p className="w-[90%] font-Inter font-light text-[20px] mb-3">
@@ -161,9 +162,9 @@ const Adherer = () => {
 
                             <div className="w-auto h-auto flex flex-row items-start justify-start gap-[30px]">
 
-                                <Documents content={"Formulaire d’inscription"} href={"/"}/>
+                                <Documents content={"Formulaire d’inscription"} href={"/"} />
 
-                                <Documents content={"Questionnaire de santé"} href={"/"}/>
+                                <Documents content={"Questionnaire de santé"} href={"/"} />
                             </div>
                         </div>
 
@@ -175,7 +176,7 @@ const Adherer = () => {
 
             {/* Où et à quelle heure ? */}
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
-                <Subtitle content="Où et à quelle heure ?"/>
+                <Subtitle content="Où et à quelle heure ?" />
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
                     <div
@@ -185,24 +186,24 @@ const Adherer = () => {
                             Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
                             à
                             Carbon-Blanc
-                            (24 rue Pasteur). 📍
+                            (24 rue Pasteur). <Emoji name="pin" width={20} />
                         </p>
 
                         <h3 className="font-Montserrat font-semibold text-black text-[24px]">
                             Voies d’accès :
                         </h3>
 
-                        <ListTitle>🚋 <span className="underline">En tram</span> :</ListTitle>
+                        <ListTitle><Emoji name="tram" width={24} /> <span className="underline">En tram</span> :</ListTitle>
                         <ListElement>Ligne A du tram de Bordeaux Métropole</ListElement>
                         <ListElement>Arrêt la Gardette (puis 10-15 min de marche)</ListElement>
 
 
-                        <ListTitle>🚌 <span className="underline">En bus</span> :</ListTitle>
+                        <ListTitle><Emoji name="bus" width={24} /> <span className="underline">En bus</span> :</ListTitle>
                         <ListElement>Ligne 90 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
                         <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
 
 
-                        <ListTitle>🚗 <span className="underline">En voiture</span> :</ListTitle>
+                        <ListTitle><Emoji name="car" width={24} /> <span className="underline">En voiture</span> :</ListTitle>
                         <ListElement>Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers
                             Carbon-Blanc</ListElement>
                         <ListElement>Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
@@ -215,7 +216,7 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
                             <h4 className="font-Montserrat font-semibold text-[24px]">
-                                <span className="underline">Créneaux flexibles</span> : jouez quand vous voulez ! ⏰
+                                <span className="underline">Créneaux flexibles</span> : jouez quand vous voulez ! <Emoji name="alarm" width={24} />
                             </h4>
 
                             <Creaneau><span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ</Creaneau>
@@ -227,7 +228,7 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex items-start justify-start bg-white p-[30px] rounded-ten">
 
-                            <Image src={Map} alt="Position gymnase"/>
+                            <Image src={Map} alt="Position gymnase" />
 
                         </div>
                     </div>
@@ -237,7 +238,7 @@ const Adherer = () => {
 
             {/*à quel prix ?*/}
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
-                <Subtitle content="À quel prix ?"/>
+                <Subtitle content="À quel prix ?" />
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
 
@@ -245,7 +246,7 @@ const Adherer = () => {
                         className="w-[53%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
 
                         <h4 className="font-Montserrat font-semibold text-[24px]">
-                            <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! 💶
+                            <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />
                         </h4>
 
                         <ListTitle>Nous vous proposons deux formules adaptées à vos besoins :</ListTitle>
@@ -264,17 +265,17 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
                             <h4 className="font-Montserrat font-semibold text-[24px]">
-                                Comment offrons-nous des prix aussi bas ? 🤑
+                                Comment offrons-nous des prix aussi bas ? <Emoji name="moneymouth" width={24} />
                             </h4>
 
                             <p className="w-[92%] font-Inter font-light text-xl">
                                 Nos tarifs sont particulièrement attractifs car notre club n&apos;est pas affilié à la
                                 Fédération Française de Badminton (FFBaD). Cela signifie que <span
-                                className="font-medium">vous ne payez que la
-                                cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les
+                                    className="font-medium">vous ne payez que la
+                                    cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les
                                 contributions à la Ligue et au Comité départemental. Profitez d&apos;une adhésion simple
                                 et
-                                accessible, pour jouer en toute liberté, à un prix imbattable ! 💸
+                                accessible, pour jouer en toute liberté, à un prix imbattable ! <Emoji name="moneywings" width={20} />
                             </p>
 
 
@@ -285,7 +286,7 @@ const Adherer = () => {
 
                 </div>
             </div>
-            <Footer/>
+            <Footer />
 
         </div>
     )
