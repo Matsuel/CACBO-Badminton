@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from "@/components/title";
-import {SITE_CONFIG} from "@/constantes";
+import { SITE_CONFIG } from "@/constantes";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import LinkLogo from "@/assets/links.svg";
@@ -17,23 +17,23 @@ const Partenaires = () => {
 
     const partenaires = [
         {
-            name: "Adidas",
-            role: "Marque de sport",
-            image: Adidas
-        },
-        {
             name: "Intersport",
-            role: "Magasin de sport\n" +
-                "équipementier officiel",
+            role: "Magasin de sport équipementier officiel",
             image: Intersport
         },
         {
-            name: "Omnisport",
+            name: "Adidas",
+            role: "Marque de sport équipementier officiel",
+            image: Adidas
+        },
+        {
+            name: "CACBO",
             role: "Club Athlétique CarbonBlanais Omnisports",
             image: Omnisport
         },
         {
-            name: "Carbon-Blanc",
+            name: "Ville de\n" +
+                "Carbon-Blanc",
             role: "Collectivité\n" +
                 "territoriale",
             image: CarbonBlanc
@@ -42,8 +42,8 @@ const Partenaires = () => {
 
     return (
         <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.partenaires}/>
-            <Navbar/>
+            <Title title={SITE_CONFIG.partenaires} />
+            <Navbar />
 
             <Hero
                 background={HeroPartenaires}
@@ -52,7 +52,7 @@ const Partenaires = () => {
                 icon={LinkLogo}
             />
 
-            <div className="w-[49%] font-Inter font-light text-xl text-wrap text-center mt-20">
+            <div className="w-[45%] font-Inter font-light text-xl text-wrap text-center mt-20">
                 Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir
                 à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous
                 accompagnent dans cette belle aventure !
@@ -66,7 +66,7 @@ const Partenaires = () => {
                         role={person.role}
                         roleFont={"font-Inter"}
                         image={person.image}
-                        roleParagraphWidth={"w-[210px]"}
+                        roleParagraphWidth={"w-[200px]"}
                         roleFontSize={"text-xl"}
                         key={index}
                     />
