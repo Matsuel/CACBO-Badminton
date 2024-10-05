@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Logo from '@/assets/cacbo.svg'
 import Link from 'next/link'
-import Button from '../button'
+import Button from './Button'
 import {
     NavbarButtonLinks,
     NavbarLinks,

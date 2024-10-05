@@ -1,6 +1,6 @@
-import Title from "@/components/title";
-import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
+import Title from "@/components/Title";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 import HeroHistory from "@/assets/herohistoire.png";
 import Book from "@/assets/book.svg";
 import EFB from "@/assets/efb.png";
@@ -15,10 +15,10 @@ import Img4 from "@/assets/histoire/4.png";
 import Img5 from "@/assets/histoire/5.png";
 import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
-import CustomImage from "@/components/customImage";
-import Footer from "@/components/footer";
+import CustomImage from "@/components/CustomImage";
+import Footer from "@/components/Footer";
 import { SITE_CONFIG } from "@/constantes";
-import Subtitle from "@/components/subtitle";
+import Subtitle from "@/components/Subtitle";
 import Emoji from "@/components/Emoji";
 
 

@@ -1,16 +1,16 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Gymnase from "@/assets/Gymnase.png";
 import Logo from "@/assets/cacbo.svg";
 import GPS from "@/assets/gps.svg";
-import Button from "@/components/button";
+import Button from "@/components/Button";
 import Groupe from "@/assets/photo groupe.png";
 import Romain from "@/assets/Romain.png";
 import Stephane from "@/assets/Stephane.png";
-import Footer from "@/components/footer";
-import Title from "@/components/title";
+import Footer from "@/components/Footer";
+import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
-import Subtitle from "@/components/subtitle";
+import Subtitle from "@/components/Subtitle";
 import { Goto } from "@/assets/Goto";
 import Emoji from "@/components/Emoji";
 

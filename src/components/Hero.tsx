@@ -1,7 +1,7 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
-import Open from '../open'
+import Open from './Open'
 
 interface HeroProps {
     background: StaticImageData

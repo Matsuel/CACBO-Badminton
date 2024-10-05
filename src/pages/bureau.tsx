@@ -1,15 +1,15 @@
-import Hero from '@/components/hero'
-import Navbar from '@/components/navbar'
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
 import React from 'react'
 import HeroBureau from '@/assets/herobureau.png'
 import People from '@/assets/people.svg'
-import Personnel from "@/components/personnel";
+import Personnel from "@/components/Personnel";
 import Chef from "@/assets/chef.png";
 import Secretaire from "@/assets/secretaire.png";
 import Tresorier from "@/assets/tresorier.png";
 import Membre from "@/assets/membre.png";
-import Footer from "@/components/footer";
-import Title from "@/components/title";
+import Footer from "@/components/Footer";
+import Title from "@/components/Title";
 import {SITE_CONFIG} from "@/constantes";
 
 const Bureau = () => {

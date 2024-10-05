@@ -1,16 +1,16 @@
 import React from 'react';
-import Title from "@/components/title";
+import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
-import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 import LinkLogo from "@/assets/links.svg";
 import HeroPartenaires from "@/assets/heropartenaires.png";
-import Personnel from "@/components/personnel";
+import Personnel from "@/components/Personnel";
 import Adidas from "@/assets/partenaires/adidas.png";
 import Intersport from "@/assets/partenaires/intersport.png";
 import Omnisport from "@/assets/partenaires/omnisport.png";
 import CarbonBlanc from "@/assets/partenaires/carbonblanc.png";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 
 const Partenaires = () => {
