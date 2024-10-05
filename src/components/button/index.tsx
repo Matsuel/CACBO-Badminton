@@ -7,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     href: string
     target?: '_blank' | '_self' | '_parent' | '_top'
     rowReverse?: boolean
+    white?: boolean
 }
 
 const Button = ({
@@ -16,11 +17,12 @@ const Button = ({
     href,
     target = '_self',
     rowReverse = false,
+    white = false,
 }: ButtonProps) => {
 
     const buttonStyle = {
-        primary: 'bg-whitebroken text-redcolor border-1 border-redcolor text-20 hover:bg-redcolor hover:text-whitebroken transition-all duration-300 ease-in-out',
-        inverted: 'bg-redcolor text-whitebroken border-1 border-redcolor text-20 hover:bg-whitebroken hover:text-redcolor transition-all duration-300 ease-in-out',
+        primary: `${white ? "bg-white" : "bg-whitebroken"} text-redcolor border-1 border-redcolor text-20 hover:bg-redcolor ${white ? "hover:text-white" : "hover:text-whitebroken"} transition-all duration-300 ease-in-out`,
+        inverted: `bg-redcolor ${white ? "text-white" : "text-whitebroken"} border-1 border-redcolor text-20 ${white ? "hover:bg-white" : "hover:bg-whitebroken"} hover:text-redcolor transition-all duration-300 ease-in-out`,
     }
 
     return (

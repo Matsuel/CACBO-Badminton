@@ -93,8 +93,12 @@ export default function Home() {
                         </p>
 
                         <div className="w-[100%] h-auto flex flex-row items-center justify-end">
-                            <Button variant="inverted" href="/about" icon={Goto}
-                                    rowReverse={true}
+                            <Button
+                                variant="inverted"
+                                href="/about"
+                                icon={Goto}
+                                rowReverse
+                                white
                             >
                                 DECOUVRIR NOTRE HISTOIRE
                             </Button>
@@ -120,7 +124,7 @@ export default function Home() {
             </div>
 
             <div
-                className="w-[80%] h-auto flex flex-row items-start justify-center gap-5 mt-24 border-1 border-redcolor rounded-ten p-8">
+                className="w-[80%] h-auto flex flex-row items-start justify-center gap-5 mt-24 bg-white border-1 border-redcolor rounded-ten p-8">
 
                 <div className="w-[50%] h-auto flex flex-col items-start justify-center gap-5">
                     <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-3">
@@ -146,9 +150,12 @@ export default function Home() {
                     </div>
 
                     <div className="w-[50%] h-[100%] flex flex-col items-center justify-center gap-5">
-                        <Button href="/contact" variant="inverted"
-                                rowReverse
-                                icon={Goto}
+                        <Button
+                            href="/contact"
+                            variant="inverted"
+                            rowReverse
+                            white
+                            icon={Goto}
                         >
                             JE M&apos;INSCRIS
                         </Button>

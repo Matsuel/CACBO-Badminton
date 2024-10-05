@@ -99,10 +99,13 @@ const Adherer = () => {
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier 📋
                         </h3>
 
-                        <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :</ListTitle>
+                        <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents
+                            indispensables :</ListTitle>
 
-                        <ListElement><strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
-                        <ListElement><strong className="font-medium">Questionnaire de santé</strong> : à compléter pour évaluer
+                        <ListElement><strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour
+                            nous transmettre vos informations essentielles.</ListElement>
+                        <ListElement><strong className="font-medium">Questionnaire de santé</strong> : à compléter pour
+                            évaluer
                             votre condition physique.
                             <span
                                 className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
@@ -136,11 +139,13 @@ const Adherer = () => {
                                 simplicité.
                             </p>
 
-                            <Button href="/inscription"
-                            rowReverse
-                                    icon={Goto}
+                            <Button
+                                href="/inscription"
+                                rowReverse
+                                white
+                                icon={Goto}
                             >
-                                S&apos;inscrire en ligne
+                                S&apos;INSCRIRE EN LIGNE
                             </Button>
                         </div>
 
@@ -245,8 +250,11 @@ const Adherer = () => {
 
                         <ListTitle>Nous vous proposons deux formules adaptées à vos besoins :</ListTitle>
 
-                        <ListElement> <span className="font-medium">Formule adulte</span> : <span className="text-redcolor">50 €</span> par personne.</ListElement>
-                        <ListElement> <span className="font-medium">Formule couple</span> : <span className="text-redcolor">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</ListElement>
+                        <ListElement> <span className="font-medium">Formule adulte</span> : <span
+                            className="text-redcolor">50 €</span> par personne.</ListElement>
+                        <ListElement> <span className="font-medium">Formule couple</span> : <span
+                            className="text-redcolor">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que
+                            vous soyez en couple ou simplement entre amis.</ListElement>
 
 
                     </div>
@@ -264,7 +272,8 @@ const Adherer = () => {
                                 Fédération Française de Badminton (FFBaD). Cela signifie que <span
                                 className="font-medium">vous ne payez que la
                                 cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les
-                                contributions à la Ligue et au Comité départemental. Profitez d&apos;une adhésion simple et
+                                contributions à la Ligue et au Comité départemental. Profitez d&apos;une adhésion simple
+                                et
                                 accessible, pour jouer en toute liberté, à un prix imbattable ! 💸
                             </p>
 
