@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface EmojiProps {
     name: string
@@ -12,7 +12,18 @@ const Emoji = ({
 }: EmojiProps) => {
 
 
-    const emojiSrc = require(`../assets/emojis/${name}.svg`)
+    const [emojiSrc, setEmojiSrc] = useState<string | null>(null);
+
+    useEffect(() => {
+        const loadEmoji = async () => {
+            const { default: src } = await import(`../assets/emojis/${name}.svg`);
+            setEmojiSrc(src);
+        };
+
+        loadEmoji();
+    }, [name]);
+
+    if (!emojiSrc) return null;
 
     return (
         <Image
