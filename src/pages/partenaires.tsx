@@ -5,40 +5,12 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LinkLogo from "@/assets/links.svg";
 import HeroPartenaires from "@/assets/heropartenaires.png";
-import Personnel from "@/components/Personnel";
-import Adidas from "@/assets/partenaires/adidas.png";
-import Intersport from "@/assets/partenaires/intersport.png";
-import Omnisport from "@/assets/partenaires/omnisport.png";
-import CarbonBlanc from "@/assets/partenaires/carbonblanc.png";
 import Footer from "@/components/Footer";
+import Partenaire from '@/components/Partenaire';
+import { partenaires } from '@/constantes/partenaires';
 
 
 const Partenaires = () => {
-
-    const partenaires = [
-        {
-            name: "Intersport",
-            role: "Magasin de sport équipementier officiel",
-            image: Intersport
-        },
-        {
-            name: "Adidas",
-            role: "Marque de sport équipementier officiel",
-            image: Adidas
-        },
-        {
-            name: "CACBO",
-            role: "Club Athlétique CarbonBlanais Omnisports",
-            image: Omnisport
-        },
-        {
-            name: "Ville de\n" +
-                "Carbon-Blanc",
-            role: "Collectivité\n" +
-                "territoriale",
-            image: CarbonBlanc
-        }
-    ]
 
     return (
         <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
@@ -61,13 +33,11 @@ const Partenaires = () => {
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[105px]">
 
                 {partenaires.map((person, index) => (
-                    <Personnel
+                    <Partenaire
                         name={person.name}
-                        role={person.role}
-                        roleFont={"font-Inter"}
+                        texts={person.texts}
+                        speciality={person.speciality}
                         image={person.image}
-                        roleParagraphWidth={"w-[200px]"}
-                        roleFontSize={"text-xl"}
                         key={index}
                     />
                 ))}
