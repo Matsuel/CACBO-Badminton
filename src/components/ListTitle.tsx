@@ -8,7 +8,7 @@ const ListTitle = ({
     children
 }: ListTitleProps) => {
     return (
-        <h4 className="font-Montserrat font-normal text-black text-xl">
+        <h4 className="font-Inter font-normal text-black text-xl flex flex-row gap-3 my-2">
             {children}
         </h4>
     )

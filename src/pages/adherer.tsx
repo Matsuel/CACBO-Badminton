@@ -59,9 +59,9 @@ const Adherer = () => {
                     </div>
 
                     <div
-                        className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
+                        className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px]">
 
-                        <h4 className="font-Montserrat font-medium text-[32px] px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white">
+                        <h4 className="font-Montserrat font-medium text-[32px] px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10">
                             Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
                             sans engagement avant de vous inscrire !
                         </h4>
@@ -76,7 +76,7 @@ const Adherer = () => {
                             <p className="font-Inter font-light text-xl">
                                 En tant que membre, profitez de tarifs imbattables sur nos volants en plumes et
                                 bénéficiez de <span className="underline">réductions</span> grâce à notre partenariat
-                                avec <span className="font-medium">Intersport</span>. Le club propose
+                                avec <span className="font-medium italic">Intersport</span>. Le club propose
                                 également des vêtements à nos couleurs – maillots, vestes, hauts, sweats... – à des prix
                                 préférentiels pour nos adhérents ! <Emoji name="moneymouth" width={20} />
                             </p>
@@ -91,7 +91,7 @@ const Adherer = () => {
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
                 <Subtitle content="Comment ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
+                <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[30px]">
 
                     {/* Partie Gauche */}
                     <div
@@ -124,7 +124,7 @@ const Adherer = () => {
                     </div>
 
                     {/* Partie Droite */}
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[15px] mt-[20px]">
+                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
@@ -132,7 +132,7 @@ const Adherer = () => {
                                 Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
                             </h4>
 
-                            <p className="w-[90%] font-Inter font-light text-[20px] mb-3">
+                            <p className="w-[90%] font-Inter font-light text-[20px]">
                                 Inscrivez-vous facilement en ligne grâce à HelloAsso ! Évitez l’impression des documents
                                 :
                                 remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en
@@ -178,11 +178,11 @@ const Adherer = () => {
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
                 <Subtitle content="Où et à quelle heure ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
+                <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[30px]">
                     <div
                         className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[5px] bg-white rounded-ten p-[30px]">
 
-                        <p className="font-Montserrat font-light text-black text-xl mb-[15px]">
+                        <p className="font-Inter font-light text-black text-xl mb-[15px]">
                             Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
                             à
                             Carbon-Blanc
@@ -195,12 +195,12 @@ const Adherer = () => {
 
                         <ListTitle><Emoji name="tram" width={24} /> <span className="underline">En tram</span> :</ListTitle>
                         <ListElement>Ligne A du tram de Bordeaux Métropole</ListElement>
-                        <ListElement>Arrêt la Gardette (puis 10-15 min de marche)</ListElement>
+                        <ListElement>Arrêt <span className="italic">La Gardette</span> (puis 10-15 min de marche)</ListElement>
 
 
                         <ListTitle><Emoji name="bus" width={24} /> <span className="underline">En bus</span> :</ListTitle>
-                        <ListElement>Ligne 90 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
-                        <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
+                        <ListElement>Ligne 90 (TBM) : Arrêt <span className="italic">Pasteur</span> à proximité du complexe</ListElement>
+                        <ListElement>Ligne 7 (TBM) : Arrêt <span className="italic">La Gardette</span> (10-15 minutes à pied)</ListElement>
 
 
                         <ListTitle><Emoji name="car" width={24} /> <span className="underline">En voiture</span> :</ListTitle>
@@ -211,7 +211,7 @@ const Adherer = () => {
                     </div>
 
                     {/* Partie Droite */}
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[15px] mt-[20px]">
+                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
@@ -264,7 +264,7 @@ const Adherer = () => {
                     <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
 
                         <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
                             <h4 className="font-Montserrat font-semibold text-[24px]">
                                 Comment offrons-nous des prix aussi bas ? <Emoji name="moneymouth" width={24} />
                             </h4>
