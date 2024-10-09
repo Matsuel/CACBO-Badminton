@@ -29,7 +29,7 @@ const Histoire = () => {
         { image: Img2, description: "(2/2)" },
         { image: Img3, description: "Juillet 2013" },
         { image: Img4, description: "Septembre 2014" },
-        { image: Img5, description: "L’un des nombreux cours de l’école de badminton du club" },
+        { image: Img5, description: "L’un des nombreux cours de l’école de badminton du club (octobre 2017)" },
         { image: Img6, description: "Le gymnase lors de sa démolition (novembre 2019)" }
     ]
 
@@ -119,32 +119,22 @@ const Histoire = () => {
 
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                            Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une
-                            initiative
-                            municipale visant à regrouper et développer les activités sportives de la commune,
-                            qu&apos;elles
-                            soient de compétition ou de loisir. Il résulte de la fusion entre le Club Athlétique
-                            CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste, et le Club Léo Lagrange.
-                            Simon Cypel en devient le premier président.
+                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d'une initiative municipale visant à 
+                        regrouper et développer les activités sportives de la commune, qu'elles soient de compétition ou de loisir. 
+                        Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste 
+                        (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
 
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                            Le 10 décembre 1982, le CACBO obtient l&apos;agrément Jeunesse et Éducation Populaire (JEP),
-                            accordé
-                            par l&apos;État, renforçant ainsi son rôle d’acteur clé dans le développement sportif et
-                            éducatif.
+                        Le 10 décembre 1982, le CACBO obtient l'agrément Jeunesse et Éducation Populaire (JEP), accordé par l'État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                            En 2018, le CACBO regroupe 2 100 adhérents, 250 dirigeants élus et 16 salariés. À ce jour,
-                            il
-                            comprend 16 sections sportives : aïkido, athlétisme, badminton, basketball, cyclotourisme,
-                            danse, football, gym-aquagym, handball, judo-jujutsu, marche, musculation-fitness, ski,
-                            tennis,
-                            tennis de table et triathlon. Le CACBO reste ainsi, depuis sa création, la première
-                            association
-                            de Carbon-Blanc.
+                            En 2018, le CACBO regroupe 2 100 adhérents, 250 dirigeants élus et 16 salariés.
+                            À ce jour, il comprend 16 sections sportives : aïkido, athlétisme, badminton, basketball, cyclotourisme, danse,
+                            football, gym-aquagym, handball, judo-jujutsu, marche, musculation-fitness, ski, tennis, tennis de table et triathlon.
+                            Le CACBO reste ainsi, depuis sa création, la première association de Carbon-Blanc.
                         </p>
                     </div>
 
