@@ -7,73 +7,75 @@ const Footer = () => {
     return (
         <footer className='w-full h-auto flex flex-col justify-center items-center mt-44 bg-white'>
             <div className='w-[80%] h-auto flex flex-col items-center justify-center pt-16'>
-                <div className='w-[100%] h-auto flex flex-row items-start justify-start gap-20'>
+                <div className='w-[100%] h-auto flex flex-row flex-wrap items-start 2xl:justify-start justify-center gap-20'>
 
                     <Image src={Logo} alt='cacbo' width={140} />
 
-                    <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
+                    <div className='w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-20'>
+                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
 
-                        <h4 className='font-Montserrat font-semibold text-redcolor text-base'>LE CLUB</h4>
+                            <h4 className='font-Montserrat font-semibold text-redcolor text-base'>LE CLUB</h4>
 
-                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
+                            <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
-                            <Link href='/bureau' className='font-Inter text-redcolor'>
-                                Bureau
-                            </Link>
+                                <Link href='/bureau' className='font-Inter text-redcolor'>
+                                    Bureau
+                                </Link>
 
-                            <Link href='/histoire' className='font-Inter text-redcolor'>
-                                Notre histoire
-                            </Link>
+                                <Link href='/histoire' className='font-Inter text-redcolor'>
+                                    Notre histoire
+                                </Link>
 
-                            <Link href='/shop' className='font-Inter text-redcolor'>
-                                Notre boutique
-                            </Link>
+                                <Link href='/shop' className='font-Inter text-redcolor'>
+                                    Notre boutique
+                                </Link>
 
-                            <Link href='/partenaires' className='font-Inter text-redcolor'>
-                                Nos partenaires
-                            </Link>
+                                <Link href='/partenaires' className='font-Inter text-redcolor'>
+                                    Nos partenaires
+                                </Link>
 
-                        </div>
-
-                    </div>
-
-                    <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
-
-                        <div className='w-full h-[24px]' />
-
-                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
-
-                            <Link href='/adherer' className='font-Inter text-redcolor'>
-                                Adhérer
-                            </Link>
-
-                            <Link href='/contact' className='font-Inter text-redcolor'>
-                                Nous contacter
-                            </Link>
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
 
-                    <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
+                            <div className='w-full h-[24px]' />
 
-                        <h4 className='font-Montserrat font-semibold text-redcolor text-base'>LE BAD</h4>
+                            <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
 
-                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
+                                <Link href='/adherer' className='font-Inter text-redcolor'>
+                                    Adhérer
+                                </Link>
 
-                            <Link href='/raquette' className='font-Inter text-redcolor'>
-                                La raquette
-                            </Link>
+                                <Link href='/contact' className='font-Inter text-redcolor'>
+                                    Nous contacter
+                                </Link>
 
-                            <Link href='/regles' className='font-Inter text-redcolor'>
-                                Règles du jeu
-                            </Link>
+                            </div>
 
                         </div>
 
+                        <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
+
+                            <h4 className='font-Montserrat font-semibold text-redcolor text-base'>LE BAD</h4>
+
+                            <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
+
+                                <Link href='/raquette' className='font-Inter text-redcolor'>
+                                    La raquette
+                                </Link>
+
+                                <Link href='/regles' className='font-Inter text-redcolor'>
+                                    Règles du jeu
+                                </Link>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div className='w-[1.5px] h-[200px] bg-redcolor rounded-full' />
+                    <div className='w-[1.5px] h-[200px] bg-redcolor rounded-full lg:block hidden' />
 
                     {/* Adresse  */}
                     <div className='w-auto h-auto flex flex-col items-start justify-center gap-4'>
