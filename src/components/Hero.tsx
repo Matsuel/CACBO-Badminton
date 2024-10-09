@@ -28,8 +28,8 @@ const Hero = ({
             </div>
 
             <div className='w-[57%] h-[330px] flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat rounded-ten' style={{ backgroundImage: `url(${background.src})` }}>
-                <div className='w-[170px] h-[170px] bg-white rounded-full flex justify-center items-center ml-36'>
-                    <Image src={icon} alt='icon' />
+                <div className='w-[190px] h-[190px] bg-white rounded-full flex justify-center items-center ml-36'>
+                    <Image src={icon} alt='icon' width={100} />
                 </div>
             </div>
 

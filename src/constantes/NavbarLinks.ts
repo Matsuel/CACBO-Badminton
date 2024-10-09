@@ -17,6 +17,6 @@ export const NavbarSocialLinks = [
 ]
 
 export const NavbarButtonLinks = [
-    {name: 'NOUS ECRIRE', href: '/contact', variant: 'primary', icon: Envelope},
+    {name: 'NOUS ÉCRIRE', href: '/contact', variant: 'primary', icon: Envelope},
     {name: 'NOUS REJOINDRE', href: '/join', variant: 'inverted', icon: Send},
 ]

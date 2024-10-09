@@ -47,11 +47,11 @@ const Bureau = () => {
             <Hero
                 background={HeroBureau}
                 title={SITE_CONFIG.bureau}
-                subtitle='Prêts à nous rejoindre ?'
+                subtitle='Équipe dirigeante du club'
                 icon={People}
             />
 
-            <div className="w-[53%] font-Inter font-light text-xl text-wrap text-center mt-20">
+            <div className="w-[59%] font-Inter font-light text-xl tracking-widest leading-10 text-wrap text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
