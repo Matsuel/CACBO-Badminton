@@ -12,7 +12,7 @@ import {
 const Navbar = () => {
 
     return (
-        <nav className='w-full flex flex-col justify-center items-center pt-9'>
+        <nav className='w-full flex flex-col justify-center items-center pt-7'>
 
             <div className='w-[80%] flex flex-row justify-between'>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
 
             </div>
 
-            <div className='w-[80%] h-[1px] bg-[#e0e0e0] rounded-full my-8'/>
+            <div className='w-[80%] h-[1px] bg-[#e0e0e0] rounded-full mt-8 mb-5'/>
 
         </nav>
     )
