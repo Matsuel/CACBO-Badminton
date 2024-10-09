@@ -119,15 +119,15 @@ const Histoire = () => {
 
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d'une initiative municipale visant à 
-                        regrouper et développer les activités sportives de la commune, qu'elles soient de compétition ou de loisir. 
+                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à 
+                        regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir. 
                         Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste 
                         (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
 
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                        Le 10 décembre 1982, le CACBO obtient l'agrément Jeunesse et Éducation Populaire (JEP), accordé par l'État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
+                        Le 10 décembre 1982, le CACBO obtient l&apos;agrément Jeunesse et Éducation Populaire (JEP), accordé par l&apos;État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">

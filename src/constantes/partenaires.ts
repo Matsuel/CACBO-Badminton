@@ -1,4 +1,3 @@
-import Personnel from "@/components/Personnel";
 import Adidas from "@/assets/partenaires/adidas.png";
 import Intersport from "@/assets/partenaires/intersport.png";
 import Omnisport from "@/assets/partenaires/omnisport.png";
