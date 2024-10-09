@@ -107,11 +107,11 @@ const Footer = () => {
 
                 <div className='w-[100%] h-[1px] bg-redcolorhover rounded-full my-8' />
 
-                <div className='w-[100%] h-auto flex flex-row items-center justify-start gap-3 mb-8'>
+                <div className='w-[100%] h-auto flex lg:flex-row flex-col items-center justify-start gap-3 mb-8'>
 
                     <h5 className='font-Inter font-light text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
 
-                    <div className='w-[1px] h-[20px] bg-redcolor rounded-full' />
+                    <div className='w-[1px] h-[20px] bg-redcolor rounded-full lg:block hidden' />
 
                     <h5 className='font-Inter font-light text-redcolor text-base'>Site pensé par Maël Thomas et développé par Mathéo Lang.</h5>
 
