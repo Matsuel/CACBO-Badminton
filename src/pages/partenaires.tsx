@@ -1,28 +1,22 @@
 import React from 'react';
-import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import LinkLogo from "@/assets/links.svg";
 import HeroPartenaires from "@/assets/heropartenaires.png";
-import Footer from "@/components/Footer";
 import Partenaire from '@/components/Partenaire';
 import { partenaires } from '@/constantes/partenaires';
+import PageLayout from '@/components/Page';
 
 
 const Partenaires = () => {
 
     return (
-        <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.partenaires} />
-            <Navbar />
-
-            <Hero
-                background={HeroPartenaires}
-                title="Nos partenaires"
-                subtitle="Ils nous soutiennent pour faire grandir notre club !"
-                icon={LinkLogo}
-            />
+        <PageLayout
+            title="Nos partenaires"
+            subtitle='Ils nous soutiennent pour faire grandir notre club !'
+            icon={LinkLogo}
+            background={HeroPartenaires}
+            tabTitle={SITE_CONFIG.partenaires}
+        >
 
             <div className="w-[45%] font-Inter font-light text-xl text-wrap text-center mt-20">
                 Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir
@@ -44,8 +38,7 @@ const Partenaires = () => {
 
             </div>
 
-            <Footer />
-        </div>
+        </PageLayout>
     );
 };
 

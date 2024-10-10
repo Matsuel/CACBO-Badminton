@@ -1,6 +1,3 @@
-import Title from "@/components/Title";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import HeroHistory from "@/assets/herohistoire.png";
 import Book from "@/assets/book.svg";
 import EFB from "@/assets/efb.png";
@@ -16,10 +13,10 @@ import Img5 from "@/assets/histoire/5.png";
 import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
 import CustomImage from "@/components/CustomImage";
-import Footer from "@/components/Footer";
 import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import Emoji from "@/components/Emoji";
+import PageLayout from "@/components/Page";
 
 
 const Histoire = () => {
@@ -34,12 +31,13 @@ const Histoire = () => {
     ]
 
     return (
-        <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.club + " - " + SITE_CONFIG.title} />
-            <Navbar />
-
-            <Hero background={HeroHistory} title={"Notre histoire"} subtitle={"Le chemin parcouru depuis 2007"}
-                icon={Book} />
+        <PageLayout
+            title="Notre histoire"
+            subtitle="Le chemin parcouru depuis 2007"
+            icon={Book}
+            background={HeroHistory}
+            tabTitle={SITE_CONFIG.club}
+        >
 
             <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[240px]">
 
@@ -119,15 +117,15 @@ const Histoire = () => {
 
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à 
-                        regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir. 
-                        Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste 
-                        (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
+                            Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à
+                            regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir.
+                            Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste
+                            (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
 
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
-                        Le 10 décembre 1982, le CACBO obtient l&apos;agrément Jeunesse et Éducation Populaire (JEP), accordé par l&apos;État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
+                            Le 10 décembre 1982, le CACBO obtient l&apos;agrément Jeunesse et Éducation Populaire (JEP), accordé par l&apos;État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
                         </p>
 
                         <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
@@ -151,8 +149,7 @@ const Histoire = () => {
 
             </div>
 
-            <Footer />
-        </div>
+        </PageLayout>
     )
 }
 

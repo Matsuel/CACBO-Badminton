@@ -1,8 +1,5 @@
-import Title from "@/components/Title";
-import Navbar from "@/components/Navbar";
 import HeroAdherer from "@/assets/heroadherer.png";
 import Rocket from "@/assets/rocket.svg";
-import Hero from "@/components/Hero";
 import { Goto } from "@/assets/Goto";
 import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
@@ -13,22 +10,18 @@ import Documents from "@/components/Document";
 import ListElement from "@/components/ListElement";
 import ListTitle from "@/components/ListTitle";
 import Creaneau from "@/components/Creneau";
-import Footer from "@/components/Footer";
 import Emoji from "@/components/Emoji";
+import PageLayout from "@/components/Page";
 
 const Adherer = () => {
     return (
-        <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
-            <Title title={SITE_CONFIG.adherer + " - " + SITE_CONFIG.title} />
-            <Navbar />
-
-            <Hero
-                background={HeroAdherer}
-                title={SITE_CONFIG.adherer}
-                subtitle={"Prêts à nous rejoindre ?"}
-                icon={Rocket}
-                description
-            />
+        <PageLayout
+            title={SITE_CONFIG.adherer}
+            subtitle="Prêts à nous rejoindre ?"
+            icon={Rocket}
+            background={HeroAdherer}
+            tabTitle="Adhérer"
+        >
 
             <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[90px]">
                 <Subtitle content="Pourquoi nous rejoindre ?" />
@@ -287,9 +280,8 @@ const Adherer = () => {
 
                 </div>
             </div>
-            <Footer />
 
-        </div>
+        </PageLayout>
     )
 }
 

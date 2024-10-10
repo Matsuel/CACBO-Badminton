@@ -1,5 +1,3 @@
-import Hero from '@/components/Hero'
-import Navbar from '@/components/Navbar'
 import React from 'react'
 import HeroBureau from '@/assets/herobureau.png'
 import People from '@/assets/people.svg'
@@ -8,9 +6,8 @@ import Chef from "@/assets/chef.png";
 import Secretaire from "@/assets/secretaire.png";
 import Tresorier from "@/assets/tresorier.png";
 import Membre from "@/assets/membre.png";
-import Footer from "@/components/Footer";
-import Title from "@/components/Title";
-import {SITE_CONFIG} from "@/constantes";
+import { SITE_CONFIG } from "@/constantes";
+import PageLayout from '@/components/Page'
 
 const Bureau = () => {
 
@@ -38,18 +35,14 @@ const Bureau = () => {
     ]
 
     return (
-        <div className='w-full flex flex-col items-center min-h-screen bg-whitebroken'>
+        <PageLayout
+            title={SITE_CONFIG.bureau}
+            subtitle='Équipe dirigeante du club'
+            icon={People}
+            background={HeroBureau}
+            tabTitle={SITE_CONFIG.bureau}
+        >
 
-            <Title title={SITE_CONFIG.bureau + " - " + SITE_CONFIG.title}/>
-
-            <Navbar/>
-
-            <Hero
-                background={HeroBureau}
-                title={SITE_CONFIG.bureau}
-                subtitle='Équipe dirigeante du club'
-                icon={People}
-            />
 
             <div className="w-[59%] font-Inter font-light text-xl tracking-widest leading-10 text-wrap text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
@@ -60,15 +53,12 @@ const Bureau = () => {
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[75px]">
 
                 {personnel.map((person, index) => (
-                    <Personnel name={person.name} role={person.role} image={person.image} key={index}/>
+                    <Personnel name={person.name} role={person.role} image={person.image} key={index} />
                 ))}
 
             </div>
 
-
-            <Footer/>
-
-        </div>
+        </PageLayout>
     )
 }
 
