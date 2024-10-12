@@ -84,7 +84,7 @@ const Footer = () => {
 
                             <h4 className='font-Montserrat font-semibold text-redcolor text-2xl'>CACBO Badminton</h4>
 
-                            <p className='w-[50%] font-Inter font-normal text-redcolor text-base'>
+                            <p className='w-[52%] font-Inter font-normal text-redcolor text-base'>
                                 Complexe sportif Philippe Madrelle
                                 26 rue Pasteur, 33560 Carbon-Blanc
                             </p>
