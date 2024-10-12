@@ -141,8 +141,7 @@ const Adherer = () => {
                             <div className="w-auto h-auto flex flex-row items-center justify-start gap-[20px]">
                                 {/*<Subtitle content={"Fichiers à télécharger "}/>*/}
                                 <h3 className="font-Montserrat font-semibold text-black text-2xl">
-                                    Fichiers à télécharger
-                                    <span className="font-light"> (si inscription papier) :</span>
+                                    Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
                                 </h3>
                             </div>
 
