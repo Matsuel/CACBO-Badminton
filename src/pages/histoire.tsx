@@ -55,10 +55,7 @@ const Histoire = () => {
                         des saisons 2014/15, 2015/16, 2016/17 et 2017/18. <Emoji name="medal" width={20} />
                     </Paragraphe>
 
-                    <div
-                        className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute bottom-[-50px] right-[-50px] drop-shadow-xl">
-                        <Image src={EFB} alt="efb" />
-                    </div>
+                    <Badge image={EFB} className="bottom-[-50px] right-[-50px]" width={45} />
                 </div>
 
             </div>
