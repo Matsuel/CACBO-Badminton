@@ -8,8 +8,7 @@ import Link from 'next/link'
 import { Facebook } from '@/assets/Facebook'
 import { Instagram } from '@/assets/Instagram'
 import { Messenger } from '@/assets/Messenger'
-import ContactMap from '@/assets/contactmap.png'
-import Image from 'next/image'
+import Map from '@/components/Map'
 
 const Contact = () => {
 
@@ -115,12 +114,7 @@ const Contact = () => {
                             </p>
                         </div>
 
-                        <div
-                            className="w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] lg:p-[30px] rounded-ten">
-
-                            <Image src={ContactMap} alt='map' width={640} height={400} className="w-full h-auto object-cover" />
-
-                        </div>
+                        <Map />
                     </div>
                 </div>
 

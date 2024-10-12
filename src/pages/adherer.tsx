@@ -4,14 +4,13 @@ import { Goto } from "@/assets/Goto";
 import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import Button from "@/components/Button";
-import Image from "next/image";
-import Map from "@/assets/map.png"
 import Documents from "@/components/Document";
 import ListElement from "@/components/ListElement";
 import ListTitle from "@/components/ListTitle";
 import Creaneau from "@/components/Creneau";
 import Emoji from "@/components/Emoji";
 import PageLayout from "@/components/Page";
+import Map from "@/components/Map";
 
 const Adherer = () => {
     return (
@@ -208,12 +207,7 @@ const Adherer = () => {
 
                         </div>
 
-                        <div
-                            className="w-[100%] h-auto flex items-start justify-start bg-white p-[30px] rounded-ten">
-
-                            <Image src={Map} alt="Position gymnase" />
-
-                        </div>
+                        <Map />
                     </div>
 
                 </div>
