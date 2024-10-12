@@ -87,7 +87,7 @@ const Contact = () => {
                                 <div className='w-full h-auto flex flex-col flex-wrap lg:flex-row items-start justify-start gap-[20px] lg:gap-[30px]'>
 
                                     {SocialLinks.map((link, index) => (
-                                        <Link key={index} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
+                                        <Link key={link.name} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
                                             <div className='w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out'>
                                                 {link.icon}
                                             </div>

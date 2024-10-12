@@ -32,8 +32,7 @@ const Adherer = () => {
 
                         <p className=" font-Inter font-light text-xl">
                             En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
-                                accueillante</strong> et
-                            <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
+                                accueillante</strong> et <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
                             Nous offrons un cadre chaleureux où l’ambiance familiale et
                             conviviale favorise à la fois le plaisir de jouer et la progression. Que vous soyez
                             compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
@@ -43,10 +42,8 @@ const Adherer = () => {
 
                         <p className="bg-white font-Inter font-light text-xl">
                             De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
-                            idéale de renforcer les liens et de
-                            <strong className="font-medium"> partager des moments de détente</strong> en dehors des
-                            terrains. Ici, c’est avant tout le plaisir du
-                            sport et du partage qui prime !
+                            idéale de renforcer les liens et de <strong className="font-medium"> partager des moments de détente</strong> en dehors des
+                            terrains. Ici, c’est avant tout le plaisir du sport et du partage qui prime !
                         </p>
 
                     </div>
@@ -100,12 +97,8 @@ const Adherer = () => {
                             nous transmettre vos informations essentielles.</ListElement>
                         <ListElement><strong className="font-medium">Questionnaire de santé</strong> : à compléter pour
                             évaluer
-                            votre condition physique.
-                            <span
-                                className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
-                            un <strong className="font-medium">certificat
-                                médical</strong> daté de moins de 6 mois <strong className="underline">sera
-                                    requis</strong> .
+                            votre condition physique. <span className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
+                            un <strong className="font-medium">certificat médical</strong> daté de moins de 6 mois <strong className="underline">sera requis</strong> .
                         </ListElement>
 
                         <p className="w-[98%] font-Inter font-light text-xl">
@@ -177,9 +170,7 @@ const Adherer = () => {
 
                         <p className="font-Inter font-light text-black text-xl mb-[15px]">
                             Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
-                            à
-                            Carbon-Blanc
-                            (24 rue Pasteur). <Emoji name="pin" width={20} />
+                            à Carbon-Blanc (24 rue Pasteur). <Emoji name="pin" width={20} />
                         </p>
 
                         <h3 className="font-Montserrat font-semibold text-black text-[24px]">

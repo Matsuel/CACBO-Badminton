@@ -53,7 +53,7 @@ const Bureau = () => {
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[75px]">
 
                 {personnel.map((person, index) => (
-                    <Personnel name={person.name} role={person.role} image={person.image} key={index} />
+                    <Personnel name={person.name} role={person.role} image={person.image} key={person.name} />
                 ))}
 
             </div>

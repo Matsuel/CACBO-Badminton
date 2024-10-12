@@ -32,7 +32,7 @@ const Partenaires = () => {
                         texts={person.texts}
                         speciality={person.speciality}
                         image={person.image}
-                        key={index}
+                        key={person.name}
                     />
                 ))}
 

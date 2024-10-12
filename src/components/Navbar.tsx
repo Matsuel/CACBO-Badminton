@@ -40,7 +40,7 @@ const Navbar = () => {
                 <div className='flex flex-col md:flex-row justify-center items-center gap-10 mt-4 md:mt-0'>
                     <div className='flex flex-row justify-center items-center gap-5'>
                         {NavbarSocialLinks.map((link, index) => (
-                            <Link key={index} href={link.href} target='_blank' className="text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out w-[27px] h-[27px]">
+                            <Link key={link.name} href={link.href} target='_blank' className="text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out w-[27px] h-[27px]">
                                 {link.icon}
                             </Link>
                         ))}
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <div className='flex flex-col md:flex-row justify-center items-center gap-[25px] mt-4 md:mt-0'>
                         {NavbarButtonLinks.map((link, index) => (
                             <Button
-                                key={index}
+                                key={link.name}
                                 href={link.href}
                                 variant={link.variant as 'primary' | 'inverted'}
                                 icon={link.icon}
@@ -66,7 +66,7 @@ const Navbar = () => {
 
             <div className={`w-[80%] flex-col md:flex md:flex-row justify-start items-center gap-[30px] ${isOpen ? 'flex' : 'hidden'} md:flex`}>
                 {NavbarLinks.map((link, index) => (
-                    <Link key={index} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20'>
+                    <Link key={link.name} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20'>
                         {link.name.toUpperCase()}
                     </Link>
                 ))}

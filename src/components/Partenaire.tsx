@@ -31,7 +31,7 @@ const Partenaire = ({
 
             <div className="flex flex-col items-center gap-0">
                 {texts.map((text, index) => (
-                    <h4 key={index} className="font-light text-center font-Inter text-xl">
+                    <h4 key={text} className="font-light text-center font-Inter text-xl">
                         {text}
                     </h4>
                 ))}
