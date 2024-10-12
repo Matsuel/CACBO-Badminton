@@ -17,6 +17,8 @@ import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import Emoji from "@/components/Emoji";
 import PageLayout from "@/components/Page";
+import Paragraphe from "@/components/Paragraphe";
+import Badge from "@/components/Badge";
 
 
 const Histoire = () => {
@@ -44,13 +46,15 @@ const Histoire = () => {
                 <Subtitle content="La naissance du club" />
 
                 {/* Paragraph 1 */}
-                <div
-                    className="w-[53%] h-auto  bg-white rounded-ten p-[30px] font-Inter font-light text-[20px] relative">
-                    Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
-                    Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
-                    Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton
-                    (EFB) 1 étoile <Emoji name="star" width={20} /> lors de la saison 2013/14. Une distinction qu&apos;il conservera à 4 reprises lors
-                    des saisons 2014/15, 2015/16, 2016/17 et 2017/18. <Emoji name="medal" width={20} />
+                <div className="w-[53%] h-auto  bg-white rounded-ten p-[30px] relative">
+                    <Paragraphe className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
+                        Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
+                        Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
+                        Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton
+                        (EFB) 1 étoile <Emoji name="star" width={20} /> lors de la saison 2013/14. Une distinction qu&apos;il conservera à 4 reprises lors
+                        des saisons 2014/15, 2015/16, 2016/17 et 2017/18. <Emoji name="medal" width={20} />
+                    </Paragraphe>
+
                     <div
                         className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute bottom-[-50px] right-[-50px] drop-shadow-xl">
                         <Image src={EFB} alt="efb" />
@@ -62,16 +66,13 @@ const Histoire = () => {
             <div
                 className="w-[75%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] mb-[170px] relative gap-[30px]">
 
-                <div
-                    className="w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute top-[-50px] left-[-50px] drop-shadow-xl">
-                    <Image src={Logo} alt="efb" width={64} />
-                </div>
+                <Badge image={Logo} className="top-[-50px] left-[-50px]" />
 
-                <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start indent-12">
+                <Paragraphe className="w-[100%] indent-12">
                     En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement,
                     contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif
                     pendant près de 4 ans.
-                </p>
+                </Paragraphe>
 
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
@@ -91,13 +92,15 @@ const Histoire = () => {
 
                 {/* Paragraph2  */}
                 <div
-                    className="w-[67%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px] font-Inter font-light text-[20px]">
-                    Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
-                    fondateurs.
-                    Aujourd&apos;hui, les membres évoluent dans le complexe sportif Philippe Madrelle, une salle moderne
-                    de
-                    1056 m² comptant 2 terrains supplémentaires (7 au total) et offrant un cadre idéal pour pratiquer
-                    leur passion.
+                    className="w-[67%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
+                    <Paragraphe>
+                        Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
+                        fondateurs.
+                        Aujourd&apos;hui, les membres évoluent dans le complexe sportif Philippe Madrelle, une salle moderne
+                        de
+                        1056 m² comptant 2 terrains supplémentaires (7 au total) et offrant un cadre idéal pour pratiquer
+                        leur passion.
+                    </Paragraphe>
 
                     <CustomImage image={Img7} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
                 </div>
@@ -115,25 +118,23 @@ const Histoire = () => {
 
                     <div className="w-[81%] h-auto flex flex-col items-center justify-center gap-[30px]">
 
-
-                        <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
+                        <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à
                             regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir.
                             Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste
                             (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
+                        </Paragraphe>
 
-                        </p>
-
-                        <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
+                        <Paragraphe>
                             Le 10 décembre 1982, le CACBO obtient l&apos;agrément Jeunesse et Éducation Populaire (JEP), accordé par l&apos;État, renforçant ainsi son rôle d&apos;acteur clé dans le développement sportif et éducatif.
-                        </p>
+                        </Paragraphe>
 
-                        <p className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
+                        <Paragraphe>
                             En 2018, le CACBO regroupe 2 100 adhérents, 250 dirigeants élus et 16 salariés.
                             À ce jour, il comprend 16 sections sportives : aïkido, athlétisme, badminton, basketball, cyclotourisme, danse,
                             football, gym-aquagym, handball, judo-jujutsu, marche, musculation-fitness, ski, tennis, tennis de table et triathlon.
                             Le CACBO reste ainsi, depuis sa création, la première association de Carbon-Blanc.
-                        </p>
+                        </Paragraphe>
                     </div>
 
                     <div className="w-[19%] h-auto flex flex-col items-center justify-center gap-[35px]">

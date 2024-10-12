@@ -4,8 +4,6 @@
 - Composants à faire:
     - Subtitle (className, children) 
         - Home, Histoire, Adhérer, Contact
-    - Map
-        - Adhérer, Contact
     - Paragraphe (className, children)
         - Home, Histoire, Adhérer, Règles
     - ImageLegned (class!name, children)

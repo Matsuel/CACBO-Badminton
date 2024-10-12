@@ -13,6 +13,7 @@ import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import { Goto } from "@/assets/Goto";
 import Emoji from "@/components/Emoji";
+import Paragraphe from "@/components/Paragraphe";
 
 
 export default function Home() {
@@ -82,14 +83,14 @@ export default function Home() {
                     <div
                         className="w-[40%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
 
-                        <p className="font-Inter tracking-wide leading-8 font-light text-xl text-start">
+                        <Paragraphe className="tracking-wide">
                             Créé en 2007 à Carbon-Blanc, notre club réunit des passionnés de badminton de tous niveaux.
                             Ici, l&apos;ambiance est familiale et conviviale, <strong className="font-medium">propice à
                                 la détente</strong> et au partage.
                             Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un
                             cadre chaleureux pour <strong className="font-medium">pratiquer sans pression</strong>.
                             Envie d&apos;en savoir plus ?
-                        </p>
+                        </Paragraphe>
 
                         <div className="w-[100%] h-auto flex flex-row items-center justify-end">
                             <Button
@@ -133,9 +134,9 @@ export default function Home() {
 
                     </div>
 
-                    <p className="w-[70%] font-Inter font-normal text-xl">
-                        Fais partie de l’aventure : rejoins une équipe où convivialité rime avec passion.
-                    </p>
+                    <Paragraphe className="w-[70%] font-normal tracking-wide">
+                        Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
+                    </Paragraphe>
 
                 </div>
 

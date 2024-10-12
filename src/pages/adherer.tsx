@@ -11,6 +11,7 @@ import Creaneau from "@/components/Creneau";
 import Emoji from "@/components/Emoji";
 import PageLayout from "@/components/Page";
 import Map from "@/components/Map";
+import Paragraphe from "@/components/Paragraphe";
 
 const Adherer = () => {
     return (
@@ -29,7 +30,7 @@ const Adherer = () => {
                     <div
                         className="w-[53%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
 
-                        <p className=" font-Inter font-light text-xl">
+                        <Paragraphe>
                             En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
                                 accueillante</strong> et <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
                             Nous offrons un cadre chaleureux où l’ambiance familiale et
@@ -37,38 +38,37 @@ const Adherer = () => {
                             compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
                                 modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
                             adaptées à vos besoins, et d’un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
-                        </p>
+                        </Paragraphe>
 
-                        <p className="bg-white font-Inter font-light text-xl">
+                        <Paragraphe>
                             De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
                             idéale de renforcer les liens et de <strong className="font-medium"> partager des moments de détente</strong> en dehors des
                             terrains. Ici, c’est avant tout le plaisir du sport et du partage qui prime !
-                        </p>
+                        </Paragraphe>
 
                     </div>
 
-                    <div
-                        className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px]">
+                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px]">
 
-                        <h4 className="font-Montserrat font-medium text-[32px] px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10">
+                        <Subtitle className="px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10 !font-medium">
                             Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
                             sans engagement avant de vous inscrire !
-                        </h4>
+                        </Subtitle>
 
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] rounded-ten">
 
-                            <h3 className="font-Montserrat font-semibold text-black text-[22px]">
+                            <Subtitle className="text-[22px]">
                                 Matériel et équipement à <span className="underline">prix préférentiels</span> ! <Emoji name="badminton" width={22} /> <Emoji name="tshirt" width={22} />
-                            </h3>
+                            </Subtitle>
 
-                            <p className="font-Inter font-light text-xl">
+                            <Paragraphe>
                                 En tant que membre, profitez de tarifs imbattables sur nos volants en plumes et
                                 bénéficiez de <span className="underline">réductions</span> grâce à notre partenariat
                                 avec <span className="font-medium italic">Intersport</span>. Le club propose
                                 également des vêtements à nos couleurs – maillots, vestes, hauts, sweats... – à des prix
                                 préférentiels pour nos adhérents ! <Emoji name="moneymouth" width={20} />
-                            </p>
+                            </Paragraphe>
 
                         </div>
                     </div>
@@ -85,9 +85,10 @@ const Adherer = () => {
                     {/* Partie Gauche */}
                     <div
                         className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[10px] bg-white rounded-ten p-[30px]">
-                        <h3 className="font-Montserrat font-semibold text-black text-[22px]">
+
+                        <Subtitle className="text-[22px]">
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
-                        </h3>
+                        </Subtitle>
 
                         <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents
                             indispensables :</ListTitle>
@@ -100,30 +101,28 @@ const Adherer = () => {
                             un <strong className="font-medium">certificat médical</strong> daté de moins de 6 mois <strong className="underline">sera requis</strong> .
                         </ListElement>
 
-                        <p className="w-[98%] font-Inter font-light text-xl">
+                        <Paragraphe className="w-[98%]">
                             Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une
                             pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre
-                            inscription
-                            !
-                        </p>
+                            inscription !
+                        </Paragraphe>
                     </div>
 
                     {/* Partie Droite */}
                     <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
-                        <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
-                            <h4 className="font-Montserrat font-semibold text-[24px]">
-                                Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
-                            </h4>
+                        <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
 
-                            <p className="w-[90%] font-Inter font-light text-[20px]">
-                                Inscrivez-vous facilement en ligne grâce à HelloAsso ! Évitez l’impression des documents
-                                :
+                            <Subtitle className="text-[24px]">
+                                Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
+                            </Subtitle>
+
+                            <Paragraphe className="w-[90%]">
+                                Inscrivez-vous facilement en ligne grâce à HelloAsso ! Évitez l&apos;impression des documents:
                                 remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en
                                 toute
                                 simplicité.
-                            </p>
+                            </Paragraphe>
 
                             <Button
                                 href="/inscription"
@@ -138,10 +137,9 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
                             <div className="w-auto h-auto flex flex-row items-center justify-start gap-[20px]">
-                                {/*<Subtitle content={"Fichiers à télécharger "}/>*/}
-                                <h3 className="font-Montserrat font-semibold text-black text-2xl">
+                                <Subtitle className="!text-2xl">
                                     Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
-                                </h3>
+                                </Subtitle>
                             </div>
 
                             <div className="w-auto h-auto flex flex-row items-start justify-start gap-[30px]">
