@@ -26,7 +26,7 @@ const Partenaires = () => {
 
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[105px]">
 
-                {partenaires.map((person, index) => (
+                {partenaires.map((person) => (
                     <Partenaire
                         name={person.name}
                         texts={person.texts}

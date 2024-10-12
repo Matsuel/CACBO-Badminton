@@ -75,7 +75,7 @@ const Histoire = () => {
 
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
-                    {customImages.map((customImage, index) => (
+                    {customImages.map((customImage) => (
                         <CustomImage key={customImage.description} image={customImage.image} description={customImage.description} />
                     ))}
 
