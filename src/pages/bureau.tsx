@@ -8,6 +8,7 @@ import Tresorier from "@/assets/tresorier.png";
 import Membre from "@/assets/membre.png";
 import { SITE_CONFIG } from "@/constantes";
 import PageLayout from '@/components/Page'
+import Paragraphe from '@/components/Paragraphe';
 
 const Bureau = () => {
 
@@ -43,12 +44,11 @@ const Bureau = () => {
             tabTitle={SITE_CONFIG.bureau}
         >
 
-
-            <div className="w-[59%] font-Inter font-light text-xl tracking-widest leading-10 text-wrap text-center mt-20">
+            <Paragraphe className="w-[59%] text-xl tracking-widest leading-10 text-wrap !text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
-            </div>
+            </Paragraphe>
 
             <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[75px]">
 

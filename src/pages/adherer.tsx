@@ -161,17 +161,16 @@ const Adherer = () => {
                 <Subtitle content="Où et à quelle heure ?" />
 
                 <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[30px]">
-                    <div
-                        className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[5px] bg-white rounded-ten p-[30px]">
+                    <div className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[5px] bg-white rounded-ten p-[30px]">
 
-                        <p className="font-Inter font-light text-black text-xl mb-[15px]">
+                        <Paragraphe>
                             Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
                             à Carbon-Blanc (24 rue Pasteur). <Emoji name="pin" width={20} />
-                        </p>
+                        </Paragraphe>
 
-                        <h3 className="font-Montserrat font-semibold text-black text-[24px]">
-                            Voies d’accès :
-                        </h3>
+                        <Subtitle className="text-[24px]">
+                            Voies d&apos;accès :
+                        </Subtitle>
 
                         <ListTitle><Emoji name="tram" width={24} /> <span className="underline">En tram</span> :</ListTitle>
                         <ListElement>Ligne A du tram de Bordeaux Métropole</ListElement>
@@ -193,11 +192,11 @@ const Adherer = () => {
                     {/* Partie Droite */}
                     <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
-                        <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
-                            <h4 className="font-Montserrat font-semibold text-[24px]">
+                        <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
+
+                            <Subtitle className="text-[24px]">
                                 <span className="underline">Créneaux flexibles</span> : jouez quand vous voulez ! <Emoji name="alarm" width={24} />
-                            </h4>
+                            </Subtitle>
 
                             <Creaneau><span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ</Creaneau>
                             <Creaneau><span className="font-normal">mardi</span> → 18ᴴ - 21ᴴ</Creaneau>
@@ -219,9 +218,9 @@ const Adherer = () => {
 
                     <div className="w-[53%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
 
-                        <h4 className="font-Montserrat font-semibold text-[24px]">
+                        <Subtitle className="text-[24px]">
                             <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />
-                        </h4>
+                        </Subtitle>
 
                         <ListTitle>Nous vous proposons deux formules adaptées à vos besoins :</ListTitle>
 
@@ -238,22 +237,17 @@ const Adherer = () => {
 
                     <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
 
-                        <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
-                            <h4 className="font-Montserrat font-semibold text-[24px]">
+                        <div className="w-[100%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
+                            <Subtitle className="text-[24px]">
                                 Comment offrons-nous des prix aussi bas ? <Emoji name="moneymouth" width={24} />
-                            </h4>
+                            </Subtitle>
 
-                            <p className="w-[92%] font-Inter font-light text-xl">
+                            <Paragraphe className="w-[92%]">
                                 Nos tarifs sont particulièrement attractifs car notre club n&apos;est pas affilié à la
-                                Fédération Française de Badminton (FFBaD). Cela signifie que <span
-                                    className="font-medium">vous ne payez que la
-                                    cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les
+                                Fédération Française de Badminton (FFBaD). Cela signifie que <span className="font-medium">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les
                                 contributions à la Ligue et au Comité départemental. Profitez d&apos;une adhésion simple
-                                et
-                                accessible, pour jouer en toute liberté, à un prix imbattable ! <Emoji name="moneywings" width={20} />
-                            </p>
-
+                                et accessible, pour jouer en toute liberté, à un prix imbattable ! <Emoji name="moneywings" width={20} />
+                            </Paragraphe>
 
                         </div>
 
