@@ -13,7 +13,7 @@ const Badge = ({
     ...props
 }: BadgeProps) => {
     return (
-        <div className={`w-[105px] h-[105px] bg-white rounded-full flex justify-center items-center absolute drop-shadow-xl ${className}`} {...props}>
+        <div className={`w-[105px] h-[105px] bg-white rounded-full md:flex hidden justify-center items-center absolute drop-shadow-xl ${className}`} {...props}>
             <Image src={image} alt="efb" width={width} />
         </div>
     )

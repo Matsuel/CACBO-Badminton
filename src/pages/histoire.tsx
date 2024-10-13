@@ -41,7 +41,7 @@ const Histoire = () => {
             tabTitle={SITE_CONFIG.club}
         >
 
-            <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[240px]">
+            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[240px] mb-[100px]">
 
                 <Subtitle content="La naissance du club" />
 
@@ -61,7 +61,7 @@ const Histoire = () => {
             </div>
 
             <div
-                className="w-[75%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] mb-[170px] relative gap-[30px]">
+                className="md:w-[80%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mb-[50px] relative gap-[30px]">
 
                 <Badge image={Logo} className="top-[-50px] left-[-50px]" />
 
@@ -83,7 +83,7 @@ const Histoire = () => {
 
             </div>
 
-            <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[170px]">
+            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[170px]">
 
                 <Subtitle content="La renaissance de la section" />
 
@@ -105,7 +105,7 @@ const Histoire = () => {
             </div>
 
 
-            <div className="w-[80%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[80px]">
+            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[80px] mb-10">
 
                 <Subtitle content="Et le CACBO dans tout ça ?" />
 
