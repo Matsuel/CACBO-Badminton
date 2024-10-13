@@ -1,8 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import Gymnase from "@/assets/Gymnase.png";
-import Logo from "@/assets/cacbo.svg";
-import GPS from "@/assets/gps.svg";
 import Button from "@/components/Button";
 import Groupe from "@/assets/photo groupe.png";
 import Romain from "@/assets/Romain.png";
