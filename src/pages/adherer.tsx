@@ -58,7 +58,7 @@ const Adherer = () => {
                         <div
                             className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] rounded-ten">
 
-                            <Subtitle className="text-[22px]">
+                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                                 Matériel et équipement à <span className="underline">prix préférentiels</span> ! <Emoji name="badminton" width={22} /> <Emoji name="tshirt" width={22} />
                             </Subtitle>
 
@@ -86,7 +86,7 @@ const Adherer = () => {
                     <div
                         className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-[10px] bg-white rounded-ten p-[30px]">
 
-                        <Subtitle className="text-[22px]">
+                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
                         </Subtitle>
 
@@ -113,7 +113,7 @@ const Adherer = () => {
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
 
-                            <Subtitle className="text-[24px]">
+                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                                 Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
                             </Subtitle>
 
@@ -168,7 +168,7 @@ const Adherer = () => {
                             à Carbon-Blanc (24 rue Pasteur). <Emoji name="pin" width={20} />
                         </Paragraphe>
 
-                        <Subtitle className="text-[24px]">
+                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                             Voies d&apos;accès :
                         </Subtitle>
 
@@ -194,7 +194,7 @@ const Adherer = () => {
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
 
-                            <Subtitle className="text-[24px]">
+                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                                 <span className="underline">Créneaux flexibles</span> : jouez quand vous voulez ! <Emoji name="alarm" width={24} />
                             </Subtitle>
 
@@ -218,7 +218,7 @@ const Adherer = () => {
 
                     <div className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
 
-                        <Subtitle className="text-[24px]">
+                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
                             <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />
                         </Subtitle>
 
@@ -238,7 +238,7 @@ const Adherer = () => {
                     <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[20px]">
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
-                            <Subtitle className="text-[24px]">
+                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl  ">
                                 Comment offrons-nous des prix aussi bas ? <Emoji name="moneymouth" width={24} />
                             </Subtitle>
 
