@@ -44,7 +44,7 @@ const Bureau = () => {
             tabTitle={SITE_CONFIG.bureau}
         >
 
-            <Paragraphe className="w-[59%] tracking-widest leading-10 text-wrap !text-center mt-20">
+            <Paragraphe className="md:w-[59%] w-[90%] tracking-widest leading-10 text-wrap !text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
