@@ -23,12 +23,12 @@ const Adherer = () => {
             tabTitle="Adhérer"
         >
 
-            <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[90px]">
+            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
                 <Subtitle content="Pourquoi nous rejoindre ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
+                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
                     <div
-                        className="w-[53%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                        className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
 
                         <Paragraphe>
                             En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
@@ -48,7 +48,7 @@ const Adherer = () => {
 
                     </div>
 
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px]">
+                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
 
                         <Subtitle className="px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10 !font-medium">
                             Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
@@ -77,14 +77,14 @@ const Adherer = () => {
             </div>
 
             {/* Comment ? */}
-            <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
+            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[120px]">
                 <Subtitle content="Comment ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[30px]">
+                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start gap-[30px]">
 
                     {/* Partie Gauche */}
                     <div
-                        className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[10px] bg-white rounded-ten p-[30px]">
+                        className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-[10px] bg-white rounded-ten p-[30px]">
 
                         <Subtitle className="text-[22px]">
                             <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
@@ -109,7 +109,7 @@ const Adherer = () => {
                     </div>
 
                     {/* Partie Droite */}
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
+                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[15px]">
 
@@ -135,14 +135,14 @@ const Adherer = () => {
                         </div>
 
                         <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                            className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
                             <div className="w-auto h-auto flex flex-row items-center justify-start gap-[20px]">
                                 <Subtitle className="!text-2xl">
                                     Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
                                 </Subtitle>
                             </div>
 
-                            <div className="w-auto h-auto flex flex-row items-start justify-start gap-[30px]">
+                            <div className="w-auto h-auto flex sm:flex-row flex-col items-start justify-start gap-[30px]">
 
                                 <Documents content={"Formulaire d’inscription"} href={"/"} />
 
@@ -157,11 +157,11 @@ const Adherer = () => {
             </div>
 
             {/* Où et à quelle heure ? */}
-            <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
+            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[120px]">
                 <Subtitle content="Où et à quelle heure ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[30px]">
-                    <div className="w-[53%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[5px] bg-white rounded-ten p-[30px]">
+                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start gap-[30px]">
+                    <div className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-[5px] bg-white rounded-ten p-[30px]">
 
                         <Paragraphe>
                             Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
@@ -190,7 +190,7 @@ const Adherer = () => {
                     </div>
 
                     {/* Partie Droite */}
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
+                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px] mt-[20px]">
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start p-[20px] rounded-ten bg-white border-1 border-redcolor gap-[5px]">
 
@@ -211,12 +211,12 @@ const Adherer = () => {
             </div>
 
             {/*à quel prix ?*/}
-            <div className="w-[80%] h-auto flex flex-col items-start justify-start mt-[120px]">
+            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[120px]">
                 <Subtitle content="À quel prix ?" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start mt-[20px] gap-[30px]">
+                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
 
-                    <div className="w-[53%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
+                    <div className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
 
                         <Subtitle className="text-[24px]">
                             <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />
@@ -235,7 +235,7 @@ const Adherer = () => {
 
                     </div>
 
-                    <div className="w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
+                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[20px]">
 
                         <div className="w-[100%] h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[30px] rounded-ten">
                             <Subtitle className="text-[24px]">
@@ -262,11 +262,3 @@ const Adherer = () => {
 }
 
 export default Adherer
-
-
-// Component
-// - SEction (w-80 etc, vu que chaque section a 3 éléments, prendre en arguments les childrens pour chaque section)
-//     - Titre
-//     - Image avec description
-//     - Informations (case avec bordures rouges qui prend des childrens)
-//     - Bouton avec lien
