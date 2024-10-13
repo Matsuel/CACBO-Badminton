@@ -46,7 +46,7 @@ const Histoire = () => {
                 <Subtitle content="La naissance du club" />
 
                 {/* Paragraph 1 */}
-                <div className="w-[53%] h-auto  bg-white rounded-ten p-[30px] relative">
+                <div className="2xl:w-[53%] w-full h-auto  bg-white rounded-ten p-[30px] relative">
                     <Paragraphe className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                         Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
@@ -74,7 +74,7 @@ const Histoire = () => {
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
                     {customImages.map((customImage) => (
-                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} />
+                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} className="2xl:w-auto !w-[100%]" imageClassName="2xl:w-auto !w-[100%]" />
                     ))}
 
 
@@ -89,7 +89,7 @@ const Histoire = () => {
 
                 {/* Paragraph2  */}
                 <div
-                    className="w-[67%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
+                    className="2xl:w-[67%] w-full h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
                     <Paragraphe>
                         Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
                         fondateurs.
@@ -111,7 +111,7 @@ const Histoire = () => {
 
                 {/* Paragraph2  */}
                 <div
-                    className="w-[100%] h-auto flex flex-row items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
+                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
 
                     <div className="w-[81%] h-auto flex flex-col items-center justify-center gap-[30px]">
 
@@ -134,7 +134,7 @@ const Histoire = () => {
                         </Paragraphe>
                     </div>
 
-                    <div className="w-[19%] h-auto flex flex-col items-center justify-center gap-[35px]">
+                    <div className="lg:w-[19%] w-full h-auto flex lg:flex-col flex-row items-center lg:justify-center justify-evenly gap-[35px]">
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
                             <Image src={Logo2} alt="cacbo" width={95} />
                         </div>
