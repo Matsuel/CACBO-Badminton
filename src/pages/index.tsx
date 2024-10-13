@@ -32,7 +32,7 @@ export default function Home() {
                     <div className="md:w-[80%] w-[90%] h-full flex flex-col justify-center gap-7 2xl:pl-28 xl:pl-20 lg:pl-16 md:pl-10 pl-5">
                         <h3 className="font-Shantell font-medium text-white 2xl:text-4xl xl:text-[32px] lg:text-[28px] text-2xl ">Bienvenue !</h3>
 
-                        <h2 className="font-Montserrat font-bold text-white 2xl:text-8xl xl:text-[88px] lg:text-[80px] text-[72px]">CACBO Badminton</h2>
+                        <h2 className="font-Montserrat font-bold text-white 2xl:text-8xl xl:text-[86px] lg:text-[76px] md:text-[66px] text-[52px]">CACBO Badminton</h2>
 
                         <div className="flex flex-col items-start justify-center lg:gap-3 md:gap-2">
                             <h3 className="font-Inter font-normal text-white 2xl:text-3xl xl:text-[24px] lg:text-[20px] text-[18px]">Club de badminton
