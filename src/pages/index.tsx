@@ -126,8 +126,8 @@ export default function Home() {
                 <div className="2xl:w-[50%] w-full h-auto flex flex-col items-start justify-center gap-[50px]">
                     <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-0">
 
-                        <h3 className="font-Montserrat font-bold text-[40px]">Qu’est-ce que t’attends ?</h3>
-                        <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
+                        <h3 className="font-Montserrat font-bold xl:text-[40px] md:text-[36px] sm:text-3xl text-[26px]">Qu’est-ce que t’attends ?</h3>
+                        <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium xl:text-4xl md:text-[32px] sm:text-[28px] text-2xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
 
                     </div>
 
