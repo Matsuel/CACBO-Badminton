@@ -41,7 +41,7 @@ const Histoire = () => {
             tabTitle={SITE_CONFIG.club}
         >
 
-            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[240px] mb-[100px]">
+            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[240px] mb-[50px]">
 
                 <Subtitle content="La naissance du club" />
 
@@ -83,7 +83,7 @@ const Histoire = () => {
 
             </div>
 
-            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 mb-[170px]">
+            <div className="md:w-[80%] w-[90%] h-auto md:mt-20 flex flex-col items-start justify-center gap-5 md:mb-[170px] mb-[50px]">
 
                 <Subtitle content="La renaissance de la section" />
 
@@ -105,15 +105,15 @@ const Histoire = () => {
             </div>
 
 
-            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[80px] mb-10">
+            <div className="md:w-[80%] w-[90%] h-auto md:mt-20 mt-0 flex flex-col items-start justify-center gap-5 md:mb-[80px] mb-10">
 
                 <Subtitle content="Et le CACBO dans tout ça ?" />
 
                 {/* Paragraph2  */}
                 <div
-                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten md:p-[30px] md:pt-0 pt-[30px] gap-[30px]">
+                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten lg:p-[30px] p-0 pt-[30px] gap-[30px]">
 
-                    <div className="md:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center gap-[30px]">
+                    <div className="lg:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
 
                         <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à
@@ -134,7 +134,7 @@ const Histoire = () => {
                         </Paragraphe>
                     </div>
 
-                    <div className="lg:w-[19%] w-full h-auto flex lg:flex-col flex-row items-center lg:justify-center justify-evenly gap-[35px]">
+                    <div className="lg:w-[19%] w-full h-auto flex lg:flex-col flex-row items-center lg:justify-center justify-evenly gap-[35px] lg:mb-0 mb-3">
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
                             <Image src={Logo2} alt="cacbo" width={95} />
                         </div>
