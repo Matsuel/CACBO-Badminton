@@ -23,7 +23,7 @@ export default function Home() {
             <Title title={SITE_CONFIG.title} />
             <Navbar />
 
-            <div
+            {/* <div
                 className="flex flex-col items-center justify-center w-[80%] h-auto mt-3 bg-cover bg-center rounded-ten"
                 style={{ backgroundImage: `url(${Gymnase.src})` }}>
 
@@ -56,9 +56,9 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
-            <div className="w-[39%] h-auto mt-10 mb-36 flex flex-col relative">
+            <div className="xl:w-[39%] lg:w-[60%] md:w-[80%] w-[90%] h-auto mt-10 mb-36 flex flex-col relative">
                 <div
                     className="font-SourceSerifPro text-9xl text-white text-center absolute top-[-65px] left-[-30px] z-0">
                     «
@@ -74,15 +74,15 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="w-[80%] h-auto flex flex-col items-start justify-center gap-5">
+            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
 
                 <Subtitle content="Qui sommes-nous ?" className="ml-4" />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-center gap-32">
+                <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
 
                     {/* Texte gauche */}
                     <div
-                        className="w-[40%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
+                        className="2xl:w-[40%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
 
                         <Paragraphe className="tracking-wide">
                             Créé en 2007 à Carbon-Blanc, notre club réunit des passionnés de badminton de tous niveaux.
@@ -93,7 +93,7 @@ export default function Home() {
                             Envie d&apos;en savoir plus ?
                         </Paragraphe>
 
-                        <div className="w-[100%] h-auto flex flex-row items-center justify-end">
+                        <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
                             <Button
                                 variant="inverted"
                                 href="/about"
@@ -109,13 +109,13 @@ export default function Home() {
 
                     {/* Image droite */}
                     <div
-                        className="w-[50%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+                        className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
-                            <ImageLegend 
-                            image={Groupe} 
-                            description={"Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars 2024)"} 
-                            descriptionClassName="w-[60%] leading-5 text-base mb-3"
-                            />
+                        <ImageLegend
+                            image={Groupe}
+                            description={"Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars 2024)"}
+                            descriptionClassName="2xl:w-[60%] w-[90%] leading-5 text-base mb-3"
+                        />
 
                     </div>
 
@@ -124,32 +124,31 @@ export default function Home() {
             </div>
 
             <div
-                className="w-[80%] h-auto flex flex-row items-start justify-center gap-5 mt-40 bg-white border-1 border-redcolor rounded-ten p-5">
+                className="w-[80%] h-auto flex 2xl:flex-row flex-col items-start justify-center 2xl:gap-5 md:gap-28 gap-72 mt-40 bg-white border-1 border-redcolor rounded-ten p-5">
 
-                <div className="w-[50%] h-auto flex flex-col items-start justify-center gap-[50px]">
+                <div className="2xl:w-[50%] w-full h-auto flex flex-col items-start justify-center gap-[50px]">
                     <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-0">
 
                         <h3 className="font-Montserrat font-bold text-[40px]">Qu’est-ce que t’attends ?</h3>
-                        <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous
-                            ! <Emoji name="wink" width={36} /></h4>
+                        <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium text-4xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
 
                     </div>
 
-                    <Paragraphe className="w-[70%] font-normal tracking-wide">
+                    <Paragraphe className="2xl:w-[70%] w-full font-normal tracking-wide">
                         Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
                     </Paragraphe>
 
                 </div>
 
-                <div className="w-[50%] h-[170px] flex flex-row items-start justify-center gap-16">
+                <div className="2xl:w-[50%] w-full h-[170px] flex md:flex-row flex-col items-start justify-center gap-16">
 
-                    <div className="w-[40%] h-full flex flex-row justify-center relative">
-                        <Image src={Romain} alt="romain" className="absolute bottom-[-70px] left-0" />
-                        <Image src={Stephane} alt="stephane" className="absolute bottom-[-70px] ml-[8rem]" />
+                    <div className="md:w-[40%] w-full h-full flex flex-row justify-center relative">
+                        <Image src={Romain} alt="romain" className="absolute 2xl:bottom-[-70px] bottom-[-50px] left-0" />
+                        <Image src={Stephane} alt="stephane" className="absolute 2xl:bottom-[-70px] bottom-[-50px] ml-[8rem]" />
 
                     </div>
 
-                    <div className="w-[60%] h-full flex items-center justify-center">
+                    <div className="md:w-[60%] w-full h-full flex items-center justify-center md:mt-0 mt-16">
                         <Button
                             href="/contact"
                             variant="inverted"
