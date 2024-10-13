@@ -44,13 +44,13 @@ const Bureau = () => {
             tabTitle={SITE_CONFIG.bureau}
         >
 
-            <Paragraphe className="w-[59%] text-xl tracking-widest leading-10 text-wrap !text-center mt-20">
+            <Paragraphe className="w-[59%] tracking-widest leading-10 text-wrap !text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
             </Paragraphe>
 
-            <div className="w-auto h-auto flex flex-row justify-between gap-[70px] mt-[75px]">
+            <div className="w-auto h-auto flex flex-row flex-wrap justify-center xl:gap-[70px] lg:gap-[50px] gap-[30px] mt-[75px]">
 
                 {personnel.map((person) => (
                     <Personnel name={person.name} role={person.role} image={person.image} key={person.name} />
