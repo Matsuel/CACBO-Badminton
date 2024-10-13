@@ -14,6 +14,7 @@ import Subtitle from "@/components/Subtitle";
 import { Goto } from "@/assets/Goto";
 import Emoji from "@/components/Emoji";
 import Paragraphe from "@/components/Paragraphe";
+import ImageLegend from "@/components/ImageLegend";
 
 
 export default function Home() {
@@ -110,11 +111,11 @@ export default function Home() {
                     <div
                         className="w-[50%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
-                        <Image src={Groupe} alt="groupe" />
-
-                        <p className="w-[60%] font-Inter font-light leading-5 text-base text-center mb-3 italic">
-                            Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars 2024)
-                        </p>
+                            <ImageLegend 
+                            image={Groupe} 
+                            description={"Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars 2024)"} 
+                            descriptionClassName="w-[60%] leading-5 text-base mb-3"
+                            />
 
                     </div>
 

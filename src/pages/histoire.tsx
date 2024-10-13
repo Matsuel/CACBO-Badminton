@@ -12,13 +12,13 @@ import Img4 from "@/assets/histoire/4.png";
 import Img5 from "@/assets/histoire/5.png";
 import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
-import CustomImage from "@/components/CustomImage";
 import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import Emoji from "@/components/Emoji";
 import PageLayout from "@/components/Page";
 import Paragraphe from "@/components/Paragraphe";
 import Badge from "@/components/Badge";
+import ImageLegend from "@/components/ImageLegend";
 
 
 const Histoire = () => {
@@ -74,7 +74,7 @@ const Histoire = () => {
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
                     {customImages.map((customImage) => (
-                        <CustomImage key={customImage.description} image={customImage.image} description={customImage.description} />
+                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} />
                     ))}
 
 
@@ -99,7 +99,7 @@ const Histoire = () => {
                         leur passion.
                     </Paragraphe>
 
-                    <CustomImage image={Img7} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
+                    <ImageLegend image={Img7} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
                 </div>
 
             </div>

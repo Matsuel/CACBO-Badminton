@@ -2,8 +2,6 @@
 
 
 - Composants à faire:
-    - ImageLegned (class!name, children)
-        - Home, Histoire
     - ListElement (className, children, afficher ou non le point de début)
         - Adhérer, Contact,Règles
     - ListTitle (classNme, children)
