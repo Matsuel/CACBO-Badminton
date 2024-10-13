@@ -47,7 +47,7 @@ const Histoire = () => {
 
                 {/* Paragraph 1 */}
                 <div className="2xl:w-[53%] w-full h-auto  bg-white rounded-ten p-[30px] relative">
-                    <Paragraphe className="w-[100%] h-auto font-Inter font-light text-[20px] text-start">
+                    <Paragraphe className="w-[100%] h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                         Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
                         Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton
@@ -65,7 +65,7 @@ const Histoire = () => {
 
                 <Badge image={Logo} className="top-[-50px] left-[-50px]" />
 
-                <Paragraphe className="w-[100%] indent-12">
+                <Paragraphe className="w-[100%] md:indent-12 indent-0">
                     En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement,
                     contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif
                     pendant près de 4 ans.
@@ -74,7 +74,7 @@ const Histoire = () => {
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
                     {customImages.map((customImage) => (
-                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} className="2xl:w-auto !w-[100%]" imageClassName="2xl:w-auto !w-[100%]" />
+                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} className="2xl:!w-auto !w-[100%]" imageClassName="2xl:w-auto !w-[100%]" />
                     ))}
 
 
@@ -111,9 +111,9 @@ const Histoire = () => {
 
                 {/* Paragraph2  */}
                 <div
-                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
+                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten md:p-[30px] md:pt-0 pt-[30px] gap-[30px]">
 
-                    <div className="w-[81%] h-auto flex flex-col items-center justify-center gap-[30px]">
+                    <div className="md:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center gap-[30px]">
 
                         <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à
