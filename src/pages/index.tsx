@@ -143,8 +143,8 @@ export default function Home() {
                 <div className="2xl:w-[50%] w-full h-[170px] flex md:flex-row flex-col items-start justify-center gap-16">
 
                     <div className="md:w-[40%] w-full h-full flex flex-row justify-center relative">
-                        <Image src={Romain} alt="romain" className="absolute 2xl:bottom-[-70px] bottom-[-50px] left-0" />
-                        <Image src={Stephane} alt="stephane" className="absolute 2xl:bottom-[-70px] bottom-[-50px] ml-[8rem]" />
+                        <Image src={Romain} alt="romain" className="absolute 2xl:bottom-[-50px] bottom-[-50px] left-0" />
+                        <Image src={Stephane} alt="stephane" className="absolute 2xl:bottom-[-50px] bottom-[-50px] ml-[8rem]" />
 
                     </div>
 
