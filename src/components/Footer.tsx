@@ -26,7 +26,7 @@ const Footer = () => {
                                     Notre histoire
                                 </Link>
 
-                                <Link href='/shop' className='font-Inter text-redcolor'>
+                                <Link href='/boutique' className='font-Inter text-redcolor'>
                                     Notre boutique
                                 </Link>
 
