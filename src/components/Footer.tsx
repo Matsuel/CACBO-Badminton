@@ -11,7 +11,7 @@ const Footer = () => {
 
                     <Image src={Logo} alt='cacbo' width={140} />
 
-                    <div className='w-auto h-auto flex flex-row flex-wrap items-center sm:justify-start justify-center gap-20'>
+                    <div className='w-auto h-auto flex flex-row flex-wrap items-start sm:justify-start justify-center gap-20'>
                         <div className='w-auto h-auto flex flex-col items-start justify-center gap-6'>
 
                             <h4 className='font-Montserrat font-semibold text-redcolor text-base'>LE CLUB</h4>
