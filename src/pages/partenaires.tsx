@@ -1,7 +1,6 @@
 import React from 'react';
 import { SITE_CONFIG } from "@/constantes";
 import LinkLogo from "@/assets/links.svg";
-import HeroPartenaires from "@/assets/heropartenaires.png";
 import Partenaire from '@/components/Partenaire';
 import { partenaires } from '@/constantes/partenaires';
 import PageLayout from '@/components/Page';
@@ -14,7 +13,6 @@ const Partenaires = () => {
             title="Nos partenaires"
             subtitle='Ils nous soutiennent pour faire grandir notre club !'
             icon={LinkLogo}
-            background={HeroPartenaires}
             tabTitle={SITE_CONFIG.partenaires}
         >
 

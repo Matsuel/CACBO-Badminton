@@ -1,5 +1,4 @@
 import React from 'react'
-import HeroBureau from '@/assets/herobureau.png'
 import People from '@/assets/people.svg'
 import Personnel from "@/components/Personnel";
 import Chef from "@/assets/chef.png";
@@ -40,7 +39,6 @@ const Bureau = () => {
             title={SITE_CONFIG.bureau}
             subtitle='Équipe dirigeante du club'
             icon={People}
-            background={HeroBureau}
             tabTitle={SITE_CONFIG.bureau}
         >
 

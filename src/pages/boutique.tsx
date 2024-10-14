@@ -1,13 +1,11 @@
 import React from 'react'
 import Shop from '@/assets/shop.svg'
-import HeroShop from '@/assets/heroshop.png'
 import PageLayout from '@/components/Page'
 import Paragraphe from '@/components/Paragraphe'
 
-const boutique = () => {
+const Boutique = () => {
     return (
         <PageLayout
-            background={HeroShop}
             icon={Shop}
             tabTitle='Boutique - CACBO Badminton'
             title='Notre boutique'
@@ -24,4 +22,4 @@ const boutique = () => {
     )
 }
 
-export default boutique
+export default Boutique

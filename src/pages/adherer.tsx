@@ -1,4 +1,3 @@
-import HeroAdherer from "@/assets/heroadherer.png";
 import Rocket from "@/assets/rocket.svg";
 import { Goto } from "@/assets/Goto";
 import { SITE_CONFIG } from "@/constantes";
@@ -19,7 +18,6 @@ const Adherer = () => {
             title={SITE_CONFIG.adherer}
             subtitle="Prêts à nous rejoindre ?"
             icon={Rocket}
-            background={HeroAdherer}
             tabTitle="Adhérer"
         >
 

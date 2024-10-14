@@ -1,5 +1,4 @@
 import ContactLogo from '@/assets/contact.svg'
-import HeroContact from '@/assets/herocontact.png'
 import React from 'react'
 import PageLayout from '@/components/Page'
 import Subtitle from '@/components/Subtitle'
@@ -35,7 +34,6 @@ const Contact = () => {
             title='Nous contacter'
             subtitle='Besoin d’infos ? Nous sommes à votre écoute !'
             icon={ContactLogo}
-            background={HeroContact}
             tabTitle='Nous contacter'
         >
             <div className="w-[90%] lg:w-[80%] h-auto flex flex-col items-start justify-start mt-[60px] lg:mt-[90px]">

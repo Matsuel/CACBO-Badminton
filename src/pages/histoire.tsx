@@ -1,4 +1,3 @@
-import HeroHistory from "@/assets/herohistoire.png";
 import Book from "@/assets/book.svg";
 import EFB from "@/assets/efb.png";
 import Logo from "@/assets/cacbo.svg";
@@ -37,7 +36,6 @@ const Histoire = () => {
             title="Notre histoire"
             subtitle="Le chemin parcouru depuis 2007"
             icon={Book}
-            background={HeroHistory}
             tabTitle={SITE_CONFIG.club}
         >
 
