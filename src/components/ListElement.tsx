@@ -1,9 +1,9 @@
 
 interface ListElementProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
-const listElement = ({
+const ListElement = ({
     children
 }: ListElementProps) => {
     return (
@@ -16,4 +16,4 @@ const listElement = ({
     )
 }
 
-export default listElement
+export default ListElement
