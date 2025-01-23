@@ -56,11 +56,11 @@ const MentionsLegales = () => {
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-2 bg-white p-[30px] rounded-ten">
                         <Paragraphe>Dans le cadre des adhésions, le CACBO Badminton collecte et traite des données personnelles via la plateforme HelloAsso. Ces données sont nécessaires pour gérer les inscriptions, établir les factures et communiquer avec les membres.</Paragraphe>
 
-                        <Paragraphe>Les données sont gérées conformément au Règlement Général sur la Protection des Données (RGPD). Vous pouvez consulter la politique de confidentialité d’HelloAsso sur leur site (helloasso.com).</Paragraphe>
+                        <Paragraphe>Les données sont gérées conformément au Règlement Général sur la Protection des Données (RGPD). Vous pouvez consulter la politique de confidentialité d&apos;HelloAsso sur leur site (helloasso.com).</Paragraphe>
 
-                        <Paragraphe>Aucune donnée personnelle n’est directement collectée via ce site internet.</Paragraphe>
+                        <Paragraphe>Aucune donnée personnelle n&apos;est directement collectée via ce site internet.</Paragraphe>
 
-                        <Paragraphe>Pour toute question relative à vos données personnelles, ou pour exercer vos droits d’accès, de rectification ou de suppression, vous pouvez contacter le club à l’adresse suivante :</Paragraphe>
+                        <Paragraphe>Pour toute question relative à vos données personnelles, ou pour exercer vos droits d&apos;accès, de rectification ou de suppression, vous pouvez contacter le club à l&apos;adresse suivante :</Paragraphe>
 
                         <Paragraphe>
                             <strong className='font-medium'>CACBO Badminton</strong> <br /> {/*Dégager cette daube au plus vite */}
@@ -75,7 +75,7 @@ const MentionsLegales = () => {
                         Cookies
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-1 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Ce site peut utiliser des cookies pour améliorer votre expérience utilisateur (par exemple, pour enregistrer des préférences ou analyser les visites). Aucun cookie publicitaire ou de suivi tiers n'est utilisé sans votre consentement explicite.</Paragraphe>
+                        <Paragraphe>Ce site peut utiliser des cookies pour améliorer votre expérience utilisateur (par exemple, pour enregistrer des préférences ou analyser les visites). Aucun cookie publicitaire ou de suivi tiers n&apos;est utilisé sans votre consentement explicite.</Paragraphe>
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@ const MentionsLegales = () => {
                         Responsabilité
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-1 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Le CACBO Badminton met tout en œuvre pour assurer l'exactitude des informations diffusées sur le site. Toutefois, il ne peut être tenu responsable d’éventuelles erreurs ou omissions, ni des dommages liés à l’utilisation de ces informations ou de ce site.</Paragraphe>
+                        <Paragraphe>Le CACBO Badminton met tout en œuvre pour assurer l&apos;exactitude des informations diffusées sur le site. Toutefois, il ne peut être tenu responsable d&apos;éventuelles erreurs ou omissions, ni des dommages liés à l&apos;utilisation de ces informations ou de ce site.</Paragraphe>
                     </div>
                 </div>
 
