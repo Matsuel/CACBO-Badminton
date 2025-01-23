@@ -22,7 +22,7 @@ const Politique = () => {
                         Introduction
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-1 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Le CACBO Badminton, situé au 24 rue Pasteur, 33560 Carbon-Blanc, s'engage à protéger la vie privée de ses membres et visiteurs. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles.</Paragraphe>
+                        <Paragraphe>Le CACBO Badminton, situé au 24 rue Pasteur, 33560 Carbon-Blanc, s&apos;engage à protéger la vie privée de ses membres et visiteurs. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles.</Paragraphe>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ const Politique = () => {
                         Partage des données
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-2 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Vos données personnelles sont traitées de manière confidentielle et ne sont partagées qu'avec :</Paragraphe>
+                        <Paragraphe>Vos données personnelles sont traitées de manière confidentielle et ne sont partagées qu&apos;avec :</Paragraphe>
 
                         <div className='w-full h-auto flex flex-col items-start justify-start gap-1'>
                             <ListElement>Les membres autorisés du Bureau du CACBO Badminton</ListElement>
@@ -91,13 +91,13 @@ const Politique = () => {
                         <div className='w-full h-auto flex flex-col items-start justify-start gap-1'>
                             <ListElement>Accéder à vos données personnelles</ListElement>
                             <ListElement>Rectifier des données inexactes ou incomplètes</ListElement>
-                            <ListElement>Demander l'effacement de vos données</ListElement>
+                            <ListElement>Demander l&apos;effacement de vos données</ListElement>
                             <ListElement>Limiter le traitement de vos données</ListElement>
                             <ListElement>Vous opposer au traitement de vos données</ListElement>
                             <ListElement>Demander la portabilité de vos données</ListElement>
                         </div>
 
-                        <Paragraphe>Pour exercer ces droits, veuillez contacter Maël THOMAS, directeur de publication, à l'adresse suivante : <Link href={"mailto:cacbo.bad@hotmail.com"} className='underline'>cacbo.bad@hotmail.com</Link></Paragraphe>
+                        <Paragraphe>Pour exercer ces droits, veuillez contacter Maël THOMAS, directeur de publication, à l&apos;adresse suivante : <Link href={"mailto:cacbo.bad@hotmail.com"} className='underline'>cacbo.bad@hotmail.com</Link></Paragraphe>
                     </div>
                 </div>
 
@@ -106,7 +106,7 @@ const Politique = () => {
                         Cookies
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-1 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Notre site internet n'utilise pas de cookies pour collecter des données personnelles. Toutefois, des cookies peuvent être utilisés pour améliorer l'expérience utilisateur, tels que des cookies de mesure d'audience. Vous pouvez configurer votre navigateur pour refuser ces cookies.</Paragraphe>
+                        <Paragraphe>Notre site internet n&apos;utilise pas de cookies pour collecter des données personnelles. Toutefois, des cookies peuvent être utilisés pour améliorer l&apos;expérience utilisateur, tels que des cookies de mesure d&apos;audience. Vous pouvez configurer votre navigateur pour refuser ces cookies.</Paragraphe>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@ const Politique = () => {
                         Contact
                     </Subtitle>
                     <div className="w-full h-auto flex flex-col items-start justify-start gap-1 bg-white p-[30px] rounded-ten">
-                        <Paragraphe>Pour toute question concernant cette politique de confidentialité, veuillez contacter Maël THOMAS à l'adresse suivante : <Link href={"mailto:cacbo.bad@hotmail.com"} className='underline'>cacbo.bad@hotmail.com</Link></Paragraphe>
+                        <Paragraphe>Pour toute question concernant cette politique de confidentialité, veuillez contacter Maël THOMAS à l&apos;adresse suivante : <Link href={"mailto:cacbo.bad@hotmail.com"} className='underline'>cacbo.bad@hotmail.com</Link></Paragraphe>
                     </div>
                 </div>
 
