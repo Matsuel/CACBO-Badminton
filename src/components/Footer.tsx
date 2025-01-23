@@ -109,15 +109,23 @@ const Footer = () => {
 
                 <div className='w-[100%] h-auto flex lg:flex-row flex-col items-center justify-start gap-3 mb-8'>
 
-                    <h5 className='font-Inter font-light text-redcolor text-base'>Copyright © 2024 CACBO Badminton. Tous droits réservés.</h5>
+                    <h5 className='font-Inter font-light text-redcolor text-base'>Copyright © 2025 CACBO Badminton. Tous droits réservés.</h5>
 
                     <div className='w-[1px] h-[20px] bg-redcolor rounded-full lg:block hidden' />
 
                     <h5 className='font-Inter font-light text-redcolor text-base'>Site pensé par Maël Thomas et développé par Mathéo Lang.</h5>
 
+                    <div className='w-[1px] h-[20px] bg-redcolor rounded-full lg:block hidden' />
+
+                    <h5 className='font-Inter font-light text-redcolor text-base'><Link href={"/mentions-legales"}> Mentions légales</Link></h5>
+
+                    <div className='w-[1px] h-[20px] bg-redcolor rounded-full lg:block hidden' />
+
+                    <h5 className='font-Inter font-light text-redcolor text-base'><Link href={"/politique"}> Politique de confidentialité. </Link></h5>
+
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
 
