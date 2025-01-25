@@ -137,7 +137,7 @@ const Regles = () => {
             </Subtitle>
 
             <Paragraphe>
-              Le joueur ou l'équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c'est pareil, mais les joueurs ne changent de côté qu'en cas de point marqué sur leur service.
+              Le joueur ou l&apos;équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c&apos;est pareil, mais les joueurs ne changent de côté qu&apos;en cas de point marqué sur leur service.
             </Paragraphe>
           </div>
 
@@ -188,7 +188,7 @@ const Regles = () => {
               </ListElement>
 
               <ListElement>
-                Joueur touchant le filet ou ses supports avec sa raquette, son corps ou ses vêtements, envahissement du terrain adverse par-dessus ou par-dessous le filet ou encore l&apos;obstruction ou la distraction délibérée de l'adversaire.
+                Joueur touchant le filet ou ses supports avec sa raquette, son corps ou ses vêtements, envahissement du terrain adverse par-dessus ou par-dessous le filet ou encore l&apos;obstruction ou la distraction délibérée de l&apos;adversaire.
               </ListElement>
             </div>
           </div>
@@ -239,11 +239,11 @@ const Regles = () => {
             className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white rounded-ten p-[30px]">
 
             <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-              Que se passe-t-il en cas d'erreur ?
+              Que se passe-t-il en cas d&apos;erreur ?
             </Subtitle>
 
             <Paragraphe>
-              Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n'était pas son tour, <strong className='font-medium'>le jeu continue</strong>, mais <span className='underline'>l'erreur doit être corrigée</span> pour le prochain service et <strong className='font-medium'>le score reste maintenu</strong>.
+              Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n&apos;était pas son tour, <strong className='font-medium'>le jeu continue</strong>, mais <span className='underline'>l&apos;erreur doit être corrigée</span> pour le prochain service et <strong className='font-medium'>le score reste maintenu</strong>.
             </Paragraphe>
           </div>
 
@@ -256,7 +256,7 @@ const Regles = () => {
               </Subtitle>
 
               <Paragraphe>
-                Un "let" est déclaré si le serveur sert avant que le receveur ne soit prêt, ou si un incident imprévu se produit (comme un volant cassé).
+                Un &quot;let&quot; est déclaré si le serveur sert avant que le receveur ne soit prêt, ou si un incident imprévu se produit (comme un volant cassé).
               </Paragraphe>
             </div>
           </div>
