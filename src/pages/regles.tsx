@@ -4,6 +4,9 @@ import CurbedFile from '@/assets/curbedFile.svg'
 import Subtitle from '@/components/Subtitle'
 import Paragraphe from '@/components/Paragraphe'
 import ListElement from '@/components/ListElement'
+import Image from 'next/image'
+import Simple from '@/assets/simple.png'
+import Double from '@/assets/double.png'
 
 const Regles = () => {
   return (
@@ -60,7 +63,7 @@ const Regles = () => {
 
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px] gap-[30px]">
         <Subtitle content="2.  Les limites du terrain" />
 
         <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[15px] bg-white p-[30px] rounded-ten">
@@ -92,6 +95,32 @@ const Regles = () => {
           <ListElement>
             En <span className='underline'>jeu</span>, l&apos;intégralité du terrain, y compris les couloirs latéraux, est utilisée.
           </ListElement>
+
+        </div>
+
+        <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[15px]">
+
+          <div className="w-[50%] h-auto flex flex-col items-center rounded-ten justify-start gap-[30px] bg-white p-[30px]">
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+              En <span className='text-redcolor'>simple</span>
+            </Subtitle>
+
+            <Image
+              src={Simple}
+              alt="Terrain de badminton en simple"
+            />
+          </div>
+
+          <div className="w-[50%] h-auto flex flex-col items-center rounded-ten justify-start gap-[30px] bg-white p-[30px]">
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+              En <span className='text-redcolor'>Double</span>
+            </Subtitle>
+
+            <Image
+              src={Double}
+              alt="Terrain de badminton en double"
+            />
+          </div>
 
         </div>
       </div>
