@@ -96,6 +96,145 @@ const Regles = () => {
         </div>
       </div>
 
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
+        <Subtitle content="3.  Le service et le placement des joueurs" />
+
+        <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
+          <div
+            className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+              Comment servir et ou se mettre ?
+            </Subtitle>
+
+            <Paragraphe>
+              Le joueur ou l'équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c'est pareil, mais les joueurs ne changent de côté qu'en cas de point marqué sur leur service.
+            </Paragraphe>
+          </div>
+
+          <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
+
+            <div className="px-[20px] py-[20px] w-full border-1 border-redcolor rounded-ten bg-white leading-10 flex flex-col gap-[15px]">
+
+              <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+                Quand changer de demi-terrain ? 🔄
+              </Subtitle>
+
+              <Paragraphe>
+                Les joueurs changent de côté <strong className='font-medium'>après chaque set</strong>. Si un match atteint un troisième set, ils changent à 11 points.
+              </Paragraphe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
+        <Subtitle content="4.  Les fautes lors d’un match" />
+
+        <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
+          <div
+            className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl text-redcolor">
+              Au service
+            </Subtitle>
+
+            <ListElement>
+              Frapper le volant au-dessus de la taille, ne pas respecter la diagonale, mordre les lignes avec son pied lors du service, ou arrêter le mouvement de la raquette.
+            </ListElement>
+          </div>
+
+          <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
+
+            <div className="px-[20px] py-[20px] w-full flex flex-col rounded-ten gap-[15px] bg-white">
+
+              <Subtitle className="xl:text-[24px] md:text-[22px] text-xl text-redcolor">
+                Au cours du jeu
+              </Subtitle>
+
+              <ListElement>
+                <strong className='font-medium'>Concernant le volant</strong> : lorsqu&apos;il est envoyé hors des limites du terrain, qu&apos;il ne passe pas au-dessus du filet ou passe en dessous, qu&apos;il touche le plafond, qu&apos;il est frappé successivement par un joueur et son partenaire ou qu&apos;il est frappé 2 fois par le même joueur.
+              </ListElement>
+
+              <ListElement>
+                Joueur touchant le filet ou ses supports avec sa raquette, son corps ou ses vêtements, envahissement du terrain adverse par-dessus ou par-dessous le filet ou encore l&apos;obstruction ou la distraction délibérée de l'adversaire.
+              </ListElement>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
+        <Subtitle content="5.  Le positionnement en Doubles et le tirage au sort" />
+
+        <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
+          <div
+            className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white border-1 border-redcolor rounded-ten p-[30px]">
+
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+              La stratégie est primordiale ! 🤝
+            </Subtitle>
+
+            <Paragraphe>
+              En double, après le service, les partenaires sont libres de leurs mouvements et doivent se coordonner pour couvrir le terrain efficacement. <span className='underline'>Au service</span>, <strong className='font-medium'>un joueur se place à l&apos;avant</strong> tandis que <strong className='font-medium'>l&apos;autre reste en fond de court</strong>. Puis par la suite au cours du jeu, les joueurs se placent en <strong className='font-medium'>côté-côté</strong> <span className='underline'>lorsqu&apos;ils doivent défendre</span>.
+            </Paragraphe>
+          </div>
+
+          <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
+
+            <div className="px-[20px] py-[20px] w-full rounded-ten bg-white leading-10 flex flex-col gap-[15px]">
+
+              <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+                Le tirage au sort
+              </Subtitle>
+
+              <Paragraphe>
+                Avant le début du match, un tirage au sort détermine qui servira en premier ou choisira le côté du terrain.
+              </Paragraphe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
+        <Subtitle content="6.  Les erreurs de zone de service et les “lets”" />
+
+        <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
+          <div
+            className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white rounded-ten p-[30px]">
+
+            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+              Que se passe-t-il en cas d'erreur ?
+            </Subtitle>
+
+            <Paragraphe>
+              Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n'était pas son tour, <strong className='font-medium'>le jeu continue</strong>, mais <span className='underline'>l'erreur doit être corrigée</span> pour le prochain service et <strong className='font-medium'>le score reste maintenu</strong>.
+            </Paragraphe>
+          </div>
+
+          <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
+
+            <div className="px-[20px] py-[20px] w-full flex flex-col rounded-ten border-1 border-redcolor bg-white leading-10 gap-[15px]">
+
+              <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+                Quand arrêter un échange ? ⏸️
+              </Subtitle>
+
+              <Paragraphe>
+                Un "let" est déclaré si le serveur sert avant que le receveur ne soit prêt, ou si un incident imprévu se produit (comme un volant cassé).
+              </Paragraphe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </PageLayout>
   )
 }
