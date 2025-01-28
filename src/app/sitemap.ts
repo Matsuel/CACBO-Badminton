@@ -1,4 +1,3 @@
-
 export const BASE_URL = 'https://cacbobad.fr';
 
 export default async function sitemap() {
@@ -14,19 +13,18 @@ export default async function sitemap() {
         '/politiques',
         '/regles',
     ];
-    return paths.map((path) => {
-        return {
-            path: `${BASE_URL}${path}`,
-            priority: getPriority(`${BASE_URL}${path}`),
-            lastmod: new Date().toISOString(),
-        };
-    });
+
+    return paths.map((path) => ({
+        url: `${BASE_URL}${path}`, // Ajout du domaine pour un sitemap correct
+        priority: getPriority(path),
+        lastmod: new Date().toISOString(),
+    }));
 }
 
 function getPriority(path: string): number {
     switch (path) {
         case '/':
-            return 1;
+            return 1.0;
         case '/adherer':
             return 0.9;
         case '/boutique':
@@ -38,7 +36,7 @@ function getPriority(path: string): number {
         case '/histoire':
             return 0.5;
         case '/mentions-legales':
-            0.1;
+            return 0.1; // Ajout du return manquant
         case '/partenaires':
             return 0.4;
         case '/politiques':
