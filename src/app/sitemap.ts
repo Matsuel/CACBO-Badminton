@@ -15,7 +15,7 @@ export default async function sitemap() {
     ];
 
     return paths.map((path) => ({
-        url: `${BASE_URL}${path}`, // Ajout du domaine pour un sitemap correct
+        url: `${BASE_URL}${path}`,
         priority: getPriority(path),
         lastmod: new Date().toISOString(),
     }));
