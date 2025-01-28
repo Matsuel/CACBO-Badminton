@@ -16,8 +16,8 @@ export default async function sitemap() {
     ];
     return paths.map((path) => {
         return {
-            path,
-            priority: getPriority(path),
+            path: `${BASE_URL}${path}`,
+            priority: getPriority(`${BASE_URL}${path}`),
             lastmod: new Date().toISOString(),
         };
     });
