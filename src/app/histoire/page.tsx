@@ -11,7 +11,6 @@ import Img4 from "@/assets/histoire/4.png";
 import Img5 from "@/assets/histoire/5.png";
 import Img6 from "@/assets/histoire/6.png";
 import Img7 from "@/assets/histoire/7.png";
-import { SITE_CONFIG } from "@/constantes";
 import Subtitle from "@/components/Subtitle";
 import Emoji from "@/components/Emoji";
 import PageLayout from "@/components/Page";

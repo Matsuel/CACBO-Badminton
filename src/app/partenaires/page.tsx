@@ -1,5 +1,4 @@
 import React from 'react';
-import { SITE_CONFIG } from "@/constantes";
 import LinkLogo from "@/assets/links.svg";
 import Partenaire from '@/components/Partenaire';
 import { partenaires } from '@/constantes/partenaires';
