@@ -16,6 +16,8 @@ const config: Config = {
         30: "30px",
       },
       fontSize: {
+        "paragraph": "17px",
+        "paragraph-mobile": "14px",
         20: "20px",
       },
       padding: {

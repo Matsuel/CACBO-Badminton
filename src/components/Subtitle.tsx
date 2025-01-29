@@ -13,7 +13,7 @@ const Subtitle = ({
 }: SubtitleProps) => {
 
     return (
-        <h3 className={`font-Montserrat font-semibold text-black xl:text-3xl lg:text-[27px] text-2xl ${className}`} {...props}>
+        <h3 className={`font-Montserrat font-semibold text-black xl:text-[28px] lg:text-2xl text-[22px] ${className}`} {...props}>
             {content}
             {children}
         </h3>

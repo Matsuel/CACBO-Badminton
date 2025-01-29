@@ -1,9 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Button from "@/components/Button";
-import Groupe from "@/assets/photo groupe.png";
-import Romain from "@/assets/Romain.png";
-import Stephane from "@/assets/Stephane.png";
+import Groupe from "../../public/Hero1.png";
 import Footer from "@/components/Footer";
 import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
@@ -18,7 +16,7 @@ import Logo from "@/assets/cacbo.svg";
 
 export default function Home() {
   return (
-    <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken`}>
+    <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken gap-44`}>
       <Title title={SITE_CONFIG.title} />
       <Navbar />
 
@@ -54,22 +52,6 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <div className="xl:w-[39%] lg:w-[60%] md:w-[80%] w-[90%] h-auto mt-10 mb-36 flex flex-col relative">
-        <div
-          className="font-SourceSerifPro text-9xl text-white text-center absolute top-[-65px] left-[-30px] z-0">
-          «
-        </div>
-        <p className="w-[85%] font-Inter font-light tracking-wide leading-10 line italic text-xl text-wrap text-center relative z-10">
-          Un club où la <strong className="font-medium">passion</strong> du badminton se vit dans une
-          ambiance <strong className="font-medium">familiale</strong> et conviviale.
-          Que vous soyez débutant ou expert, jouez et progressez dans un cadre <strong className="font-medium">chaleureux</strong>, sans prise de tête.
-        </p>
-        <div
-          className="font-SourceSerifPro text-9xl text-white text-center absolute bottom-[-35px] right-[100px] z-0">
-          »
         </div>
       </div>
 
@@ -112,8 +94,8 @@ export default function Home() {
 
             <ImageLegend
               image={Groupe}
-              description={"Nous organisons régulièrement des soirées, améliorant la cohésion entre nos membres (mars 2024)"}
-              descriptionClassName="2xl:w-[60%] w-[90%] leading-5 text-base mb-3"
+              description={"Échauffement, match ou simple échange, il y a toujours du jeu au club !"}
+              descriptionClassName="w-[90%] leading-5 text-base mb-3"
             />
 
           </div>
@@ -123,45 +105,32 @@ export default function Home() {
       </div>
 
       <div
-        className="w-[80%] h-auto flex 2xl:flex-row flex-col items-start justify-center 2xl:gap-5 md:gap-28 gap-72 mt-40 bg-white border-1 border-redcolor rounded-ten p-5">
+        className="w-[80%] h-auto flex 2xl:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten p-5">
 
-        <div className="2xl:w-[50%] w-full h-auto flex flex-col items-start justify-center gap-[50px]">
-          <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-0">
+        <div className="w-auto h-auto flex flex-col items-start justify-center gap-[50px]">
+          <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-2">
 
-            <h3 className="font-Montserrat font-bold xl:text-[40px] md:text-[36px] sm:text-3xl text-[26px]">Qu’est-ce que t’attends ?</h3>
-            <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium xl:text-4xl md:text-[32px] sm:text-[28px] text-2xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
+            <h3 className="font-Montserrat font-bold xl:text-[36px] md:text-3xl sm:text-[30px] text-[26px]">Qu&apos;est-ce que t&apos;attends ?</h3>
+            <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium xl:text-[32px] md:text-[28px] text-2xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
 
           </div>
 
-          <Paragraphe className="2xl:w-[70%] w-full font-normal tracking-wide">
+          <Paragraphe className="2xl:w-[70%] w-full font-normal leading-6">
             Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
           </Paragraphe>
 
         </div>
 
-        <div className="2xl:w-[50%] w-full h-[170px] flex md:flex-row flex-col items-start justify-center gap-16">
-
-          <div className="md:w-[40%] w-full h-full flex flex-row justify-center relative">
-            <Image src={Romain} alt="romain" className="absolute 2xl:bottom-[-50px] bottom-[-50px] left-0" />
-            <Image src={Stephane} alt="stephane" className="absolute 2xl:bottom-[-50px] bottom-[-50px] ml-[8rem]" />
-
-          </div>
-
-          <div className="md:w-[60%] w-full h-full flex items-center justify-center md:mt-0 mt-16">
-            <Button
-              href="/contact"
-              variant="inverted"
-              rowReverse
-              white
-              icon={Goto}
-              className="px-[1.5rem] py-[0.75rem] text-[32px]"
-            >
-              JE M&apos;INSCRIS
-            </Button>
-          </div>
-
-
-        </div>
+        <Button
+          href="/contact"
+          variant="inverted"
+          rowReverse
+          white
+          icon={Goto}
+          className="px-[1.5rem] py-[0.75rem] text-xl mr-32"
+        >
+          JE M&apos;INSCRIS
+        </Button>
 
       </div>
 

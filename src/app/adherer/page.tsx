@@ -18,6 +18,7 @@ const Adherer = () => {
             title={SITE_CONFIG.adherer}
             subtitle="Prêts à nous rejoindre ?"
             icon={Rocket}
+            description
         >
 
             <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
@@ -30,17 +31,17 @@ const Adherer = () => {
                         <Paragraphe>
                             En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
                                 accueillante</strong> et <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
-                            Nous offrons un cadre chaleureux où l’ambiance familiale et
+                            Nous offrons un cadre chaleureux où l&apos;ambiance familiale et
                             conviviale favorise à la fois le plaisir de jouer et la progression. Que vous soyez
                             compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
                                 modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
-                            adaptées à vos besoins, et d’un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
+                            adaptées à vos besoins, et d&apos;un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
                         </Paragraphe>
 
                         <Paragraphe>
                             De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
                             idéale de renforcer les liens et de <strong className="font-medium"> partager des moments de détente</strong> en dehors des
-                            terrains. Ici, c’est avant tout le plaisir du sport et du partage qui prime !
+                            terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
                         </Paragraphe>
 
                     </div>
@@ -90,7 +91,7 @@ const Adherer = () => {
                         <ListTitle>Pour valider votre inscription, nous aurons besoin de quelques documents
                             indispensables :</ListTitle>
 
-                        <ListElement><strong className="font-medium">Formulaire d’inscription</strong> : à remplir pour
+                        <ListElement><strong className="font-medium">Formulaire d&apos;inscription</strong> : à remplir pour
                             nous transmettre vos informations essentielles.</ListElement>
                         <ListElement><strong className="font-medium">Questionnaire de santé</strong> : à compléter pour
                             évaluer
