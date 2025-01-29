@@ -19,7 +19,7 @@ const ImageLegend = ({
     return (
         <div className={`w-auto h-auto flex flex-col justify-center items-center rounded-ten gap-4 ${className}`}>
             <Image src={image} alt={description} className={`w-[100%] h-auto rounded-ten ${imageClassName}`} />
-            <p className={`w-[100%] h-auto font-Inter font-light italic text-[15px] text-center ${descriptionClassName}`}>{description}</p>
+            <p className={`w-[100%] h-auto font-Inter font-light text-[13px] text-center ${descriptionClassName}`}>{description}</p>
         </div>
     )
 }

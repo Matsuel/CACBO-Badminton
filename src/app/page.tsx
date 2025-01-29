@@ -3,6 +3,9 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Groupe from "../../public/Hero1.png";
 import Hero2 from "../../public/Hero2.png";
+import Hero3 from "../../public/Hero3.png";
+import Hero4 from "../../public/Hero4.png";
+import Hero5 from "../../public/Hero5.png";
 import Footer from "@/components/Footer";
 import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
@@ -189,6 +192,173 @@ export default function Home() {
             </div>
 
           </div>
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+
+        <Subtitle className="ml-4">
+          Une question ? On a la réponse ! <Emoji name="phone" width={24} />
+        </Subtitle>
+
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
+
+          {/* Texte gauche */}
+          <div
+            className="2xl:w-[40%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
+
+            <Paragraphe className="tracking-wide">
+              Vous avez des interrogations sur le fonctionnement du club, les inscriptions ou les équipements nécessaires ?
+            </Paragraphe>
+
+            <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+              <Button
+                className="uppercase"
+                variant="inverted"
+                href="/about"
+                icon={Goto}
+                rowReverse
+                white
+              >
+                Consulter notre faq
+              </Button>
+            </div>
+
+          </div>
+
+          {/* Image droite */}
+          <div
+            className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+
+            <ImageLegend
+              image={Hero3}
+              description={"Le badminton, c'est avant tout du plaisir et du partage sur le terrain !"}
+              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+
+        <Subtitle content="Quand peut-on venir ?" className="ml-4" />
+
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
+
+          <div
+            className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+
+            <ImageLegend
+              image={Hero4}
+              description={"Smash, défense, amorti... et surtout du plaisir !"}
+              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+            />
+
+          </div>
+
+          {/* Texte gauche */}
+          <div
+            className="2xl:w-[46%] w-[90%] h-auto flex flex-col items-start justify-center gap-4 bg-white rounded-ten p-5">
+
+            <Paragraphe>
+              Le badminton, c&apos;est encore mieux à plusieurs ! Que vous soyez débutant ou confirmé, rejoignez-nous et profitez de créneaux adaptés à tous les niveaux.
+            </Paragraphe>
+
+            <Subtitle className="text-[22px]">
+              <Emoji name="euro" width={22} /> Tarifs d&apos;adhésion :
+            </Subtitle>
+
+            <div className="w-full h-auto flex flex-col gap-3">
+              <ListElement>
+                <span className="font-medium">50 €</span> pour un adulte
+              </ListElement>
+
+              <ListElement>
+                <span className="font-medium">90 €</span> pour un couple
+              </ListElement>
+            </div>
+
+            <Paragraphe>
+              Jouez en toute liberté, échangez avec d&apos;autres passionnés et participez à nos soirées ! ⚡
+            </Paragraphe>
+
+            <div className="w-full h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+              <Button
+                className="uppercase"
+                variant="inverted"
+                href="/adherer"
+                icon={Goto}
+                rowReverse
+                white
+              >
+                Nous rejoindre
+              </Button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+
+        <Subtitle className="ml-4">
+          Les règles essentielles du bad’ <Emoji name="eyes" width={26} />
+        </Subtitle>
+
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
+
+          {/* Texte gauche */}
+          <div
+            className="2xl:w-[40%] w-[90%] h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-5">
+
+            <Subtitle className="!text-[22px]">
+              Avant d&apos;entrer sur le terrain, un rappel des bases :
+            </Subtitle>
+
+            <ListElement>
+              Un set se joue en <span className="font-medium">21 points</span>, avec <span className="font-medium">2 points d&apos;écart</span> minimum.
+            </ListElement>
+
+            <ListElement>
+              Le <span className="font-medium">service</span> doit être effectué <span className="underline">en diagonale</span>, sous la taille.
+            </ListElement>
+
+            <ListElement>
+              <span className="font-medium">Le volant touche la ligne ?</span> Il est bon !
+            </ListElement>
+
+            <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+              <Button
+                className="uppercase"
+                variant="inverted"
+                href="/regles"
+                icon={Goto}
+                rowReverse
+                white
+              >
+                Consulter les règles
+              </Button>
+            </div>
+
+          </div>
+
+          {/* Image droite */}
+          <div
+            className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+
+            <ImageLegend
+              image={Hero5}
+              description={"Ici, on joue, on rigole et on progresse ensemble !"}
+              descriptionClassName="leading-5 text-base mb-3"
+            />
+
+          </div>
+
         </div>
 
       </div>
