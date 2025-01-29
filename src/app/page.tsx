@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Groupe from "../../public/Hero1.png";
+import Hero2 from "../../public/Hero2.png";
 import Footer from "@/components/Footer";
 import Title from "@/components/Title";
 import { SITE_CONFIG } from "@/constantes";
@@ -13,6 +14,7 @@ import ImageLegend from "@/components/ImageLegend";
 import GPS from "@/assets/gps.svg";
 import Gymnase from "@/assets/Gymnase.png";
 import Logo from "@/assets/cacbo.svg";
+import ListElement from "@/components/ListElement";
 
 export default function Home() {
   return (
@@ -131,6 +133,63 @@ export default function Home() {
         >
           JE M&apos;INSCRIS
         </Button>
+
+      </div>
+
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+
+        <Subtitle content="Quand peut-on venir ?" className="ml-4" />
+
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
+
+          <div
+            className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+
+            <ImageLegend
+              image={Hero2}
+              description={"Parce que le club, c’est aussi des moments de partage après l’effort ! "}
+              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+            />
+
+          </div>
+
+          {/* Texte gauche */}
+          <div
+            className="2xl:w-[46%] w-[90%] h-auto flex flex-col items-center justify-center gap-4 bg-white rounded-ten p-5">
+
+            <Subtitle className="text-[22px]">
+              Envie de taper le volant ? Nos créneaux sont :
+            </Subtitle>
+
+            <div className="w-[100%] h-auto flex flex-row items-center justify-between">
+              <div className="flex flex-col gap-3">
+                <ListElement>
+                  <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
+                </ListElement>
+
+                <ListElement>
+                  <span className="font-normal">mardi</span> → 18ᴴ - 21ᴴ
+                </ListElement>
+
+                <ListElement>
+                  <span className="font-normal">vendredi</span> → 18ᴴ30 - 21ᴴ
+                </ListElement>
+              </div>
+
+              <Button
+                href="/adherer"
+                variant="inverted"
+                rowReverse
+                white
+                icon={Goto}
+                className="px-[1.5rem] py-[0.75rem] text-xl mr-7 uppercase"
+              >
+                en savoir plus
+              </Button>
+            </div>
+
+          </div>
+        </div>
 
       </div>
 
