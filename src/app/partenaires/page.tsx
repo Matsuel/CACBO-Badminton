@@ -28,6 +28,7 @@ const Partenaires = () => {
                         image={person.image}
                         text={person.text}
                         subterms={person.subterms}
+                        key={person.name}
                     />
                 ))}
 

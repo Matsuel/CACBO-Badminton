@@ -125,7 +125,7 @@ export default function Home() {
               </Subtitle>
 
               <div className="w-[100%] h-auto flex flex-row items-center justify-between">
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
                   <ListElement>
                     <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
                   </ListElement>
