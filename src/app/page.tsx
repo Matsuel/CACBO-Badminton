@@ -21,12 +21,12 @@ import ListElement from "@/components/ListElement";
 
 export default function Home() {
   return (
-    <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken gap-44`}>
+    <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken`}>
       <Title title={SITE_CONFIG.title} />
       <Navbar />
 
       <div
-        className="flex flex-col items-center justify-center md:w-[80%] w-[90%] h-auto md:mt-3 mt-10 bg-cover bg-center rounded-ten"
+        className="flex flex-col items-center justify-center md:w-[80%] w-[90%] h-auto mt-5 bg-cover bg-center rounded-ten"
         style={{ backgroundImage: `url(${Gymnase.src})` }}>
 
         <div className="w-[100%] h-[485px] flex flex-row justify-center items-center">
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle content="Qui sommes-nous ?" className="ml-4" />
 
@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       <div
-        className="w-[80%] h-auto flex 2xl:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten p-5">
+        className="w-[80%] h-auto flex 2xl:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten p-5 mt-44">
 
         <div className="w-auto h-auto flex flex-col items-start justify-center gap-[50px]">
           <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-2">
@@ -139,7 +139,7 @@ export default function Home() {
 
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle content="Quand peut-on venir ?" className="ml-4" />
 
@@ -196,7 +196,7 @@ export default function Home() {
 
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle className="ml-4">
           Une question ? On a la réponse ! <Emoji name="phone" width={24} />
@@ -243,7 +243,7 @@ export default function Home() {
 
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle content="Quand peut-on venir ?" className="ml-4" />
 
@@ -304,7 +304,7 @@ export default function Home() {
 
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44 mb-44">
 
         <Subtitle className="ml-4">
           Les règles essentielles du bad’ <Emoji name="eyes" width={26} />
