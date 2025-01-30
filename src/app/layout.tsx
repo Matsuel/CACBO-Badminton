@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SITE_CONFIG } from "@/constantes";
 import { BASE_URL } from "./sitemap";
 
 export const metadata: Metadata = {
-  title: SITE_CONFIG.title,
+  title: "Cacbo Badminton",
   description: "Cacbo Badminton Club",
   keywords: ["badminton", "cacbo", "club", "badminton club", "badminton club cacbo"],
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: BASE_URL,
-    title: SITE_CONFIG.title,
+    title: "Cacbo Badminton",
     description: "Cacbo Badminton Club",
     images: [
       {
@@ -22,6 +21,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: `${BASE_URL}/favicon.ico`,
+  }
 };
 
 export default function RootLayout({
