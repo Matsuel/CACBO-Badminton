@@ -1,38 +1,12 @@
 import React from 'react'
 import People from '@/assets/people.svg'
 import Personnel from "@/components/Personnel";
-import Chef from "@/assets/chef.png";
-import Secretaire from "@/assets/secretaire.png";
-import Tresorier from "@/assets/tresorier.png";
-import Membre from "@/assets/membre.png";
 import { SITE_CONFIG } from "@/constantes";
 import PageLayout from '@/components/Page'
 import Paragraphe from '@/components/Paragraphe';
+import { personnel } from '@/constantes/adherer';
 
 const Bureau = () => {
-
-    const personnel = [
-        {
-            name: "Laurent THOMAS",
-            role: "Président",
-            image: Chef
-        },
-        {
-            name: "Maël THOMAS",
-            role: "Secrétaire",
-            image: Secretaire
-        },
-        {
-            name: "Cédric ARMENILI",
-            role: "Trésorier",
-            image: Tresorier
-        },
-        {
-            name: "Yohann GIACOMETTI",
-            role: "Membre",
-            image: Membre
-        }
-    ]
 
     return (
         <PageLayout
@@ -41,7 +15,7 @@ const Bureau = () => {
             icon={People}
         >
 
-            <Paragraphe className="md:w-[59%] w-[90%] tracking-widest leading-10 text-wrap !text-center mt-20">
+            <Paragraphe className="md:w-[45%] w-[90%] leading-7 text-wrap !text-center mt-20">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.

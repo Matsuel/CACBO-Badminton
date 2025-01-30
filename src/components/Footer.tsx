@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full h-auto flex flex-row justify-around items-center bg-transparent mb-20'>
+            <div className='w-full h-auto flex flex-row justify-around items-center bg-transparent mb-20 pl-8'>
                 <div className='w-auto h-auto flex flex-row justify-center items-center gap-2'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright © 2025 CACBO Badminton. Tous droits réservés.</p>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
