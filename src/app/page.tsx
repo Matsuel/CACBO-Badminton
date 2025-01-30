@@ -61,7 +61,7 @@ export default function Home() {
             <ImageLegend
               image={Groupe}
               description={"Échauffement, match ou simple échange, il y a toujours du jeu au club !"}
-              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+              descriptionClassName="w-[90%] leading-5 mb-3"
             />
 
           </div>
@@ -112,45 +112,57 @@ export default function Home() {
             <ImageLegend
               image={Hero2}
               description={"Parce que le club, c’est aussi des moments de partage après l’effort ! "}
-              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+              descriptionClassName="w-[90%] leading-5 mb-3"
             />
 
           </div>
 
-          <Infos>
+          <div className="w-[40%] h-auto flex flex-col items-start justify-center gap-5">
+            <Infos className="w-full">
 
-            <Subtitle className="!text-[22px]">
-              Envie de taper le volant ? Nos créneaux sont :
-            </Subtitle>
+              <Subtitle className="!text-[22px]">
+                Envie de taper le volant ? Nos créneaux sont :
+              </Subtitle>
 
-            <div className="w-[100%] h-auto flex flex-row items-center justify-between">
-              <div className="flex flex-col gap-3">
-                <ListElement>
-                  <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
-                </ListElement>
+              <div className="w-[100%] h-auto flex flex-row items-center justify-between">
+                <div className="flex flex-col gap-3">
+                  <ListElement>
+                    <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
+                  </ListElement>
 
-                <ListElement>
-                  <span className="font-normal">mardi</span> → 18ᴴ - 21ᴴ
-                </ListElement>
+                  <ListElement>
+                    <span className="font-normal">mardi</span> → 18ᴴ - 21ᴴ
+                  </ListElement>
 
-                <ListElement>
-                  <span className="font-normal">vendredi</span> → 18ᴴ30 - 21ᴴ
-                </ListElement>
+                  <ListElement>
+                    <span className="font-normal">vendredi</span> → 18ᴴ30 - 21ᴴ
+                  </ListElement>
+                </div>
+
+                <Button
+                  href="/adherer"
+                  variant="inverted"
+                  rowReverse
+                  white
+                  icon={Goto}
+                  className="px-[1.5rem] py-[0.75rem] text-xl mr-7 uppercase"
+                >
+                  en savoir plus
+                </Button>
               </div>
 
-              <Button
-                href="/adherer"
-                variant="inverted"
-                rowReverse
-                white
-                icon={Goto}
-                className="px-[1.5rem] py-[0.75rem] text-xl mr-7 uppercase"
-              >
-                en savoir plus
-              </Button>
-            </div>
+            </Infos>
 
-          </Infos>
+            <Infos className="w-full items-start">
+              <Subtitle className="font-Inter font-medium !text-[22px]">
+                Complexe sportif Philippe Madrelle
+              </Subtitle>
+
+              <Paragraphe>
+                24 rue Pasteur, 33560 Carbon-Blanc 📍
+              </Paragraphe>
+            </Infos>
+          </div>
         </div>
 
       </div>
@@ -190,7 +202,7 @@ export default function Home() {
             <ImageLegend
               image={Hero3}
               description={"Le badminton, c'est avant tout du plaisir et du partage sur le terrain !"}
-              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+              descriptionClassName="w-[90%] leading-5 mb-3"
             />
 
           </div>
@@ -211,7 +223,7 @@ export default function Home() {
             <ImageLegend
               image={Hero4}
               description={"Smash, défense, amorti... et surtout du plaisir !"}
-              descriptionClassName="w-[90%] leading-5 text-base mb-3"
+              descriptionClassName="w-[90%] leading-5 mb-3"
             />
 
           </div>
@@ -305,7 +317,7 @@ export default function Home() {
             <ImageLegend
               image={Hero5}
               description={"Ici, on joue, on rigole et on progresse ensemble !"}
-              descriptionClassName="leading-5 text-base mb-3"
+              descriptionClassName="leading-5 mb-3"
             />
 
           </div>
