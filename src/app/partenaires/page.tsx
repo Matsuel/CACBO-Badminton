@@ -25,10 +25,9 @@ const Partenaires = () => {
                 {partenaires.map((person) => (
                     <Partenaire
                         name={person.name}
-                        texts={person.texts}
-                        speciality={person.speciality}
                         image={person.image}
-                        key={person.name}
+                        text={person.text}
+                        subterms={person.subterms}
                     />
                 ))}
 

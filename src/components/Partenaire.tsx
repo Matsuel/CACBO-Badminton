@@ -1,46 +1,42 @@
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 
 interface PartenaireProps {
     name: string;
     image: StaticImageData;
-    texts: string[];
-    speciality?: string;
+    text: string;
+    subterms?: string[];
 }
 
 const Partenaire = ({
     name,
     image,
-    speciality='',
-    texts
+    text,
+    subterms
 }: PartenaireProps) => {
-
-    const formattedName = name.split(' ');
 
     return (
         <div className="w-[290px] h-auto flex flex-col items-center gap-[30px] p-10 bg-white rounded-ten">
-            <div className="w-[170px] h-[170px] rounded-ten flex justify-center items-center bg-center bg-cover" style={{ backgroundImage: `url(${image.src})` }}>
-            </div>
+            <Image src={image} alt={name} width={170} height={170} className="rounded-ten" />
 
-            <h3 className="flex flex-col font-Montserrat font-medium text-2xl text-center">
-                {formattedName[0]}
-                <span className="font-semibold">{formattedName[1]}</span>
+            <h3 className="w-4/5 flex flex-col font-Montserrat font-medium text-[22px] text-center">
+                {name}
             </h3>
 
             <div className="w-[60px] h-[1.5px] bg-black rounded-full" />
 
-            <div className="flex flex-col items-center gap-0">
-                {texts.map((text) => (
-                    <h4 key={text} className="font-light text-center font-Inter text-xl">
-                        {text}
-                    </h4>
-                ))}
+            <div className="flex flex-col items-center gap-6">
+                <h4 key={text} className="font-light text-paragraph font-Inter text-xl">
+                    {text}
+                </h4>
 
-                {speciality && (
-                    <h4 className="font-medium text-center font-Inter text-xl">
-                        {speciality}
-                    </h4>
-                )}
+                <div className="w-auto h-auto flex flex-col items-center">
+                    {subterms && subterms.map((subterm) => (
+                        <h4 key={subterm} className="font-medium text-paragraph font-Inter text-xl">
+                            {subterm}
+                        </h4>
+                    ))}
+                </div>
             </div>
 
         </div>

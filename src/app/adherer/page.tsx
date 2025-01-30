@@ -52,23 +52,6 @@ const Adherer = () => {
                             Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
                             sans engagement avant de vous inscrire !
                         </Subtitle>
-
-                        <div
-                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] rounded-ten">
-
-                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                                Matériel et équipement à <span className="underline">prix préférentiels</span> ! <Emoji name="badminton" width={22} /> <Emoji name="tshirt" width={22} />
-                            </Subtitle>
-
-                            <Paragraphe>
-                                En tant que membre, profitez de tarifs imbattables sur nos volants en plumes et
-                                bénéficiez de <span className="underline">réductions</span> grâce à notre partenariat
-                                avec <span className="font-medium italic">Intersport</span>. Le club propose
-                                également des vêtements à nos couleurs – maillots, vestes, hauts, sweats... – à des prix
-                                préférentiels pour nos adhérents ! <Emoji name="moneymouth" width={20} />
-                            </Paragraphe>
-
-                        </div>
                     </div>
                 </div>
 
@@ -133,7 +116,7 @@ const Adherer = () => {
                         </div>
 
                         <div
-                            className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                            className="w-[100%] h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
                             <div className="w-auto h-auto flex flex-row items-center justify-start gap-[20px]">
                                 <Subtitle className="!text-2xl">
                                     Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
