@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
+      <div className="md:w-[81%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle content="Qui sommes-nous ?" className="ml-4" />
 
@@ -68,9 +68,9 @@ export default function Home() {
 
           {/* Texte gauche */}
           <div
-            className="2xl:w-[40%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-5">
+            className="2xl:w-[40%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten p-7">
 
-            <Paragraphe className="tracking-wide">
+            <Paragraphe className="">
               Créé en 2007 à Carbon-Blanc, notre club réunit des passionnés de badminton de tous niveaux.
               Ici, l&apos;ambiance est familiale et conviviale, <strong className="font-medium">propice à
                 la détente</strong> et au partage.

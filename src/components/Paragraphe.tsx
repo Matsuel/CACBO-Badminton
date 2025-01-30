@@ -6,7 +6,7 @@ const Paragraphe = ({
   ...props
 }: React.HTMLAttributes<HTMLHeadingElement>) => {
   return (
-    <h4 className={`font-Inter leading-8 font-light xl:text-paragraph md:text-paragraph-mobile text-base text-start ${className}`} {...props}>
+    <h4 className={`font-Inter leading-8 font-light xl:text-paragraph text-paragraph-mobile text-start ${className}`} {...props}>
       {children}
     </h4>
   )
