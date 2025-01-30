@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <footer className='w-full h-auto flex flex-col mt-32 gap-9 justify-start items-center'>
 
-            <div className='w-full h-auto flex flex-row justify-start items-center gap-20 bg-redcolor py-12 pl-44'>
+            <div className='w-full h-auto flex flex-row justify-start items-center gap-32 bg-redcolor py-12 pl-44'>
                 <div className='w-auto h-auto flex flex-row justify-center items-center gap-7'>
                     <Image src={Logo} alt='cacbo' width={100} />
 
