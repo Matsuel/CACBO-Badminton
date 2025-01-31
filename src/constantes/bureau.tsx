@@ -17,11 +17,11 @@ export const personnel = [
     },
     {
         name: "Cédric ARMENILI",
-        role: "Trésorier",
+        role: "Secrétaire",
         image: Secretaire
     },
     {
-        name: "Yohann GIACOMETTI",
+        name: "Stéphane PIERRONNET",
         role: "Membre",
         image: Membre
     }

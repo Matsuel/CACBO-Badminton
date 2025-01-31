@@ -2,7 +2,6 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import React from 'react'
 import Open from './Open'
-import HeroBackground from '@/assets/hero.png'
 
 interface HeroProps {
     title: string
@@ -26,7 +25,7 @@ const Hero = ({
                 {description && <Open />}
             </div>
 
-            <div className='w-full lg:w-[57%] h-[330px] flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat rounded-ten' style={{ backgroundImage: `url(${HeroBackground.src})` }}>
+            <div className='w-full lg:w-[57%] h-[330px] flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat rounded-ten' style={{ backgroundImage: `url('/hero.png')` }}>
                 <div className='w-[150px] h-[150px] lg:w-[190px] lg:h-[190px] bg-white rounded-full flex justify-center items-center lg:ml-36'>
                     <Image src={icon} alt='icon' width={80} />
                 </div>
