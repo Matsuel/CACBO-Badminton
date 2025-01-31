@@ -234,7 +234,7 @@ export default function Home() {
               Le badminton, c&apos;est encore mieux à plusieurs ! Que vous soyez débutant ou confirmé, rejoignez-nous et profitez de créneaux adaptés à tous les niveaux.
             </Paragraphe>
 
-            <Subtitle className="text-[22px]">
+            <Subtitle>
               <Emoji name="euro" width={22} /> Tarifs d&apos;adhésion :
             </Subtitle>
 
