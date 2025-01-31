@@ -118,7 +118,7 @@ export default function Home() {
           </div>
 
           <div className="w-[40%] h-auto flex flex-col items-start justify-center gap-5">
-            <Infos className="w-full">
+            <Infos className="w-full items-start">
 
               <Subtitle className="!text-[22px]">
                 Envie de taper le volant ? Nos créneaux sont :
