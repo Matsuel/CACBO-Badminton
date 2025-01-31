@@ -12,7 +12,7 @@ const Infos = ({
 }: InfosProps) => {
     return (
         <div
-            className={cn("w-[40%] h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-7", className)} {...props}>
+            className={cn("w-[42%] h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-7", className)} {...props}>
             {children}
         </div>
     )

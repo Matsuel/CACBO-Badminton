@@ -96,7 +96,7 @@ export default function Home() {
           rowReverse
           white
           icon={Goto}
-          className="px-[1.5rem] py-[0.75rem] text-xl mr-32"
+          className="mr-32"
         >
           JE M&apos;INSCRIS
         </Button>
@@ -150,7 +150,7 @@ export default function Home() {
                   rowReverse
                   white
                   icon={Goto}
-                  className="px-[1.5rem] py-[0.75rem] text-xl mr-7 uppercase"
+                  className="mr-7 uppercase"
                 >
                   en savoir plus
                 </Button>
