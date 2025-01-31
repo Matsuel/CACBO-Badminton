@@ -26,7 +26,7 @@ export default function Home() {
 
 
 
-      <div className="md:w-[81%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
+      <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
         <Subtitle content="Qui sommes-nous ?" />
 
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <div
-            className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+            className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
             <ImageLegend
               image={Hero2}
@@ -218,7 +218,7 @@ export default function Home() {
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <div
-            className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+            className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
             <ImageLegend
               image={Hero4}
@@ -228,7 +228,7 @@ export default function Home() {
 
           </div>
 
-          <Infos className="w-[42%]">
+          <Infos>
 
             <Paragraphe>
               Le badminton, c&apos;est encore mieux à plusieurs ! Que vous soyez débutant ou confirmé, rejoignez-nous et profitez de créneaux adaptés à tous les niveaux.
@@ -278,7 +278,7 @@ export default function Home() {
 
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
-          <Infos className="w-[41%] items-start">
+          <Infos className="w-[40.5%] items-start">
 
             <Subtitle className="!text-[22px]">
               Avant d&apos;entrer sur le terrain, un rappel des bases :
