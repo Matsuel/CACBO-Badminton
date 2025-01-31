@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
-        <Subtitle content="Qui sommes-nous ?" />
+        <Subtitle content="Qui sommes-nous ?" className="text-[28px]" />
 
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
@@ -102,7 +102,7 @@ export default function Home() {
 
       <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
-        <Subtitle content="Quand peut-on venir ?" />
+        <Subtitle content="Quand peut-on venir ?" className="text-[28px]" />
 
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
@@ -169,7 +169,7 @@ export default function Home() {
 
       <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
-        <Subtitle>
+        <Subtitle className="text-[28px]">
           Une question ? On a la réponse ! <Emoji name="phone" width={24} />
         </Subtitle>
 
@@ -213,7 +213,7 @@ export default function Home() {
 
       <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
-        <Subtitle content="Venez jouer avec nous ! 🤝" />
+        <Subtitle content="Venez jouer avec nous ! 🤝" className="text-[28px]" />
 
         <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
@@ -272,7 +272,7 @@ export default function Home() {
 
       <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44 mb-44">
 
-        <Subtitle>
+        <Subtitle className="text-[28px]">
           Les règles essentielles du bad’ <Emoji name="eyes" width={26} />
         </Subtitle>
 

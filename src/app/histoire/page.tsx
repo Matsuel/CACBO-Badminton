@@ -123,10 +123,7 @@ const Histoire = () => {
                         </Paragraphe>
 
                         <Paragraphe>
-                            En 2018, le CACBO regroupe 2 100 adhérents, 250 dirigeants élus et 16 salariés.
-                            À ce jour, il comprend 16 sections sportives : aïkido, athlétisme, badminton, basketball, cyclotourisme, danse,
-                            football, gym-aquagym, handball, judo-jujutsu, marche, musculation-fitness, ski, tennis, tennis de table et triathlon.
-                            Le CACBO reste ainsi, depuis sa création, la première association de Carbon-Blanc.
+                            En 2018, le CACBO regroupe 2 100 adhérents, 250 dirigeants élus et 16 salariés. À ce jour, il comprend 17 sections sportives : aïkido, athlétisme, badminton, basketball, boccia, cyclotourisme, danse, football, gym-aquagym, handball, judo-jujutsu, marche, musculation-fitness, ski, tennis, tennis de table et triathlon. Le CACBO reste ainsi, depuis sa création, la première association de Carbon-Blanc.
                         </Paragraphe>
                     </div>
 
