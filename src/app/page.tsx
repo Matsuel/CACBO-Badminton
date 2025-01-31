@@ -28,9 +28,9 @@ export default function Home() {
 
       <div className="md:w-[81%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44">
 
-        <Subtitle content="Qui sommes-nous ?" className="ml-4" />
+        <Subtitle content="Qui sommes-nous ?" />
 
-        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-center gap-32">
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <Infos>
             <Paragraphe className="">
@@ -104,7 +104,7 @@ export default function Home() {
 
         <Subtitle content="Quand peut-on venir ?" />
 
-        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-start gap-32">
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <div
             className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
@@ -173,7 +173,7 @@ export default function Home() {
           Une question ? On a la réponse ! <Emoji name="phone" width={24} />
         </Subtitle>
 
-        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-start gap-32">
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <Infos>
 
@@ -215,7 +215,7 @@ export default function Home() {
 
         <Subtitle content="Venez jouer avec nous ! 🤝" />
 
-        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-start gap-32">
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <div
             className="2xl:w-[45%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
@@ -276,7 +276,7 @@ export default function Home() {
           Les règles essentielles du bad’ <Emoji name="eyes" width={26} />
         </Subtitle>
 
-        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-start gap-32">
+        <div className="w-[100%] h-auto flex flex-row flex-wrap items-start justify-between">
 
           <Infos className="w-[41%] items-start">
 
