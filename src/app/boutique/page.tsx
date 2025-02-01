@@ -1,7 +1,7 @@
 import React from 'react'
 import Shop from '@/assets/shop.svg'
 import PageLayout from '@/components/Page'
-import Paragraphe from '@/components/Paragraphe'
+import Paragraphe from '@/components/UI/Paragraphe'
 
 const Boutique = () => {
     return (

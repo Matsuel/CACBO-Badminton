@@ -17,7 +17,7 @@ const Emoji = ({
 
     useEffect(() => {
         const loadEmoji = async () => {
-            const { default: src } = await import(`../assets/emojis/${name}.svg`);
+            const { default: src } = await import(`../../assets/emojis/${name}.svg`);
             setEmojiSrc(src);
         };
 

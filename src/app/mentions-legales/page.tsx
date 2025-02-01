@@ -1,8 +1,8 @@
 import PageLayout from '@/components/Page'
 import Document from '@/assets/document.svg'
 import React from 'react'
-import Subtitle from '@/components/Subtitle'
-import Paragraphe from '@/components/Paragraphe'
+import Subtitle from '@/components/UI/Subtitle'
+import Paragraphe from '@/components/UI/Paragraphe'
 import Link from 'next/link'
 
 const MentionsLegales = () => {

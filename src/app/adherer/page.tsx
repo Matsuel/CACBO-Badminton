@@ -1,16 +1,16 @@
 import Rocket from "@/assets/rocket.svg";
 import { Goto } from "@/assets/Goto";
 import { SITE_CONFIG } from "@/constantes";
-import Subtitle from "@/components/Subtitle";
-import Button from "@/components/Button";
+import Subtitle from "@/components/UI/Subtitle";
+import Button from "@/components/UI/Button";
 import Documents from "@/components/Document";
-import ListElement from "@/components/ListElement";
-import ListTitle from "@/components/ListTitle";
+import ListElement from "@/components/UI/ListElement";
+import ListTitle from "@/components/UI/ListTitle";
 import Creaneau from "@/components/Creneau";
-import Emoji from "@/components/Emoji";
+import Emoji from "@/components/UI/Emoji";
 import PageLayout from "@/components/Page";
 import Map from "@/components/Map";
-import Paragraphe from "@/components/Paragraphe";
+import Paragraphe from "@/components/UI/Paragraphe";
 
 const Adherer = () => {
     return (

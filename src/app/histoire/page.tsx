@@ -4,31 +4,16 @@ import Logo from "@/assets/cacbo.svg";
 import Logo2 from "@/assets/cacbo2.svg";
 import Omnisport from "@/assets/omnisport.svg";
 import Image from "next/image";
-import Img1 from "@/assets/histoire/1.png";
-import Img2 from "@/assets/histoire/2.png";
-import Img3 from "@/assets/histoire/3.png";
-import Img4 from "@/assets/histoire/4.png";
-import Img5 from "@/assets/histoire/5.png";
-import Img6 from "@/assets/histoire/6.png";
-import Img7 from "@/assets/histoire/7.png";
-import Subtitle from "@/components/Subtitle";
-import Emoji from "@/components/Emoji";
+import Subtitle from "@/components/UI/Subtitle";
+import Emoji from "@/components/UI/Emoji";
 import PageLayout from "@/components/Page";
-import Paragraphe from "@/components/Paragraphe";
-import Badge from "@/components/Badge";
-import ImageLegend from "@/components/ImageLegend";
+import Paragraphe from "@/components/UI/Paragraphe";
+import Badge from "@/components/UI/Badge";
+import ImageLegend from "@/components/UI/ImageLegend";
+import { customImages } from "@/constantes/histoire";
 
 
 const Histoire = () => {
-
-    const customImages = [
-        { image: Img1, description: "La finale d’un tournoi opposant le club à celui de la Jeunesse Yvracaise (1/2)" },
-        { image: Img2, description: "(2/2)" },
-        { image: Img3, description: "Juillet 2013" },
-        { image: Img4, description: "Septembre 2014" },
-        { image: Img5, description: "L’un des nombreux cours de l’école de badminton du club (octobre 2017)" },
-        { image: Img6, description: "Le gymnase lors de sa démolition (novembre 2019)" }
-    ]
 
     return (
         <PageLayout
@@ -70,7 +55,13 @@ const Histoire = () => {
                 <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
 
                     {customImages.map((customImage) => (
-                        <ImageLegend key={customImage.description} image={customImage.image} description={customImage.description} className="2xl:!w-auto !w-[100%]" imageClassName="2xl:w-auto !w-[100%]" />
+                        <ImageLegend
+                            key={customImage.description}
+                            image={customImage.image}
+                            description={customImage.description}
+                            className="2xl:!w-auto !w-[100%]"
+                            imageClassName="2xl:w-auto !w-[100%]"
+                        />
                     ))}
 
 
@@ -95,7 +86,7 @@ const Histoire = () => {
                         leur passion.
                     </Paragraphe>
 
-                    <ImageLegend image={Img7} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
+                    <ImageLegend image={"/histoire/7.png"} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
                 </div>
 
             </div>

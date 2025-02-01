@@ -1,9 +1,9 @@
 import PageLayout from '@/components/Page'
 import React from 'react'
 import Document from '@/assets/document.svg'
-import Subtitle from '@/components/Subtitle'
-import Paragraphe from '@/components/Paragraphe'
-import ListElement from '@/components/ListElement'
+import Subtitle from '@/components/UI/Subtitle'
+import Paragraphe from '@/components/UI/Paragraphe'
+import ListElement from '@/components/UI/ListElement'
 import Link from 'next/link'
 
 const Politique = () => {

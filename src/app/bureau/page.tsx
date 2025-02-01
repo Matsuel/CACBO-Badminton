@@ -3,7 +3,7 @@ import People from '@/assets/people.svg'
 import Personnel from "@/components/Personnel";
 import { SITE_CONFIG } from "@/constantes";
 import PageLayout from '@/components/Page'
-import Paragraphe from '@/components/Paragraphe';
+import Paragraphe from '@/components/UI/Paragraphe';
 import { personnel } from '@/constantes/bureau';
 
 const Bureau = () => {

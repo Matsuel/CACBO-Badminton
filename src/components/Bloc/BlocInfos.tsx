@@ -1,15 +1,15 @@
 import { cn } from '@/utils/cn'
 import React from 'react'
 
-interface InfosProps extends React.HTMLAttributes<HTMLDivElement> {
+interface BlocInfosProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode
 }
 
-const Infos = ({
+const BlocInfos = ({
     children,
     className,
     ...props
-}: InfosProps) => {
+}: BlocInfosProps) => {
     return (
         <div
             className={cn("w-[42%] h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-7", className)} {...props}>
@@ -18,4 +18,4 @@ const Infos = ({
     )
 }
 
-export default Infos
+export default BlocInfos
