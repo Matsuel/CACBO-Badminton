@@ -4,7 +4,6 @@ import Logo from "@/assets/cacbo.svg";
 import Logo2 from "@/assets/cacbo2.svg";
 import Omnisport from "@/assets/omnisport.svg";
 import Image from "next/image";
-import Subtitle from "@/components/UI/Subtitle";
 import Emoji from "@/components/UI/Emoji";
 import PageLayout from "@/components/Page";
 import Paragraphe from "@/components/UI/Paragraphe";
@@ -24,7 +23,7 @@ const Histoire = () => {
             icon={Book}
         >
 
-            <Bloc blocTitle="La naissance du club">
+            <Bloc blocTitle="La naissance du club" className="mt-0">
                 <BlocInfos className="w-[53%] h-auto relative">
                     <Paragraphe className="w-[100%] h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed

@@ -11,6 +11,8 @@ import Emoji from "@/components/UI/Emoji";
 import PageLayout from "@/components/Page";
 import Map from "@/components/Map";
 import Paragraphe from "@/components/UI/Paragraphe";
+import Bloc from "@/components/Bloc";
+import BlocInfos from "@/components/Bloc/BlocInfos";
 
 const Adherer = () => {
     return (
@@ -21,41 +23,106 @@ const Adherer = () => {
             description
         >
 
-            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
-                <Subtitle content="Pourquoi nous rejoindre ?" />
+            <Bloc blocTitle="Pourquoi nous rejoindre ?" className="mt-0">
+                <BlocInfos className="w-[53%] h-auto gap-5">
+                    <Paragraphe>
+                        En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
+                            accueillante</strong> et <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
+                        Nous offrons un cadre chaleureux où l&apos;ambiance familiale et
+                        conviviale favorise à la fois le plaisir de jouer et la progression. Que vous soyez
+                        compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
+                            modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
+                        adaptées à vos besoins, et d&apos;un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
+                    </Paragraphe>
 
-                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
-                    <div
-                        className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                    <Paragraphe>
+                        De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
+                        idéale de renforcer les liens et de <strong className="font-medium"> partager des moments de détente</strong> en dehors des
+                        terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
+                    </Paragraphe>
 
-                        <Paragraphe>
-                            En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
-                                accueillante</strong> et <strong className="font-medium"> dynamique, ouverte à tous les niveaux</strong> pratique.
-                            Nous offrons un cadre chaleureux où l&apos;ambiance familiale et
-                            conviviale favorise à la fois le plaisir de jouer et la progression. Que vous soyez
-                            compétiteur ou amateur, vous bénéficierez d&apos;<strong className="font-medium">infrastructures
-                                modernes</strong>, de <strong className="font-medium">créneaux variés </strong>
-                            adaptées à vos besoins, et d&apos;un esprit sans prise de tête. <Emoji name="sunglasses" width={20} />
-                        </Paragraphe>
+                </BlocInfos>
 
-                        <Paragraphe>
-                            De plus, nos <span className="underline">soirées régulières</span> <Emoji name="party" width={20} /> sont l&apos;occasion
-                            idéale de renforcer les liens et de <strong className="font-medium"> partager des moments de détente</strong> en dehors des
-                            terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
-                        </Paragraphe>
+                <BlocInfos className="w-[44%] border-1 border-redcolor rounded-ten">
+                    <Subtitle className="leading-10 !font-medium text-3xl">
+                        Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
+                        sans engagement avant de vous inscrire !
+                    </Subtitle>
+                </BlocInfos>
+            </Bloc>
 
-                    </div>
+            <Bloc blocTitle="Comment ?">
+                <BlocInfos className="w-[53%]">
+                    <Subtitle>
+                        <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
+                    </Subtitle>
 
-                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
+                    <ListTitle>
+                        Pour valider votre inscription, nous aurons besoin de quelques documents
+                        indispensables :
+                    </ListTitle>
 
-                        <Subtitle className="px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10 !font-medium">
-                            Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
-                            sans engagement avant de vous inscrire !
+                    <ListElement>
+                        <strong className="font-medium">Formulaire d&apos;inscription</strong> : à remplir pour
+                        nous transmettre vos informations essentielles.
+                    </ListElement>
+
+                    <ListElement>
+                        <strong className="font-medium">Questionnaire de santé</strong> : à compléter pour
+                        évaluer
+                        votre condition physique. <span className="text-redcolor"> &nbsp; Si vous répondez positivement à une ou plusieurs questions</span>,
+                        un <strong className="font-medium">certificat médical</strong> daté de moins de 6 mois <strong className="underline">sera requis</strong> .
+                    </ListElement>
+
+                    <Paragraphe>
+                        Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une
+                        pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre
+                        inscription !
+                    </Paragraphe>
+
+                </BlocInfos>
+
+                <BlocInfos className="w-[44%] gap-7 p-0 bg-transparent">
+                    <BlocInfos className="w-full border-1 border-redcolor">
+
+                        <Subtitle>
+                            Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
                         </Subtitle>
-                    </div>
-                </div>
 
-            </div>
+                        <Paragraphe>
+                            Inscrivez-vous facilement en ligne grâce à HelloAsso ! Évitez l&apos;impression des documents:
+                            remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en
+                            toute
+                            simplicité.
+                        </Paragraphe>
+
+                        <Button
+                            href="/inscription"
+                            rowReverse
+                            white
+                            icon={Goto}
+                        >
+                            S&apos;INSCRIRE EN LIGNE
+                        </Button>
+                    </BlocInfos>
+
+                    <BlocInfos className="w-full">
+                        <Subtitle>
+                            Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
+                        </Subtitle>
+
+                        <div className="w-auto h-auto flex sm:flex-row flex-col items-start justify-start gap-[30px]">
+
+                            {/* TODO: Modifier svg document avec les bonnes tailles et continue à parti d'ici */}
+                            <Documents content={"Formulaire d’inscription"} href={"/"} />
+
+                            <Documents content={"Questionnaire de santé"} href={"/"} />
+                        </div>
+
+                    </BlocInfos>
+                </BlocInfos>
+
+            </Bloc>
 
             {/* Comment ? */}
             <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[120px]">

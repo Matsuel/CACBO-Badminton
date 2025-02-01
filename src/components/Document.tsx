@@ -42,7 +42,7 @@ export const Documents = ({
                 </div>
             </Link>
 
-            <h5 className="font-Inter font-light text-[18px]">
+            <h5 className="font-Inter font-light text-paragraph">
                 {content}
             </h5>
         </div>
