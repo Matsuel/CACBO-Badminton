@@ -11,6 +11,8 @@ import Paragraphe from "@/components/UI/Paragraphe";
 import Badge from "@/components/UI/Badge";
 import ImageLegend from "@/components/UI/ImageLegend";
 import { customImages } from "@/constantes/histoire";
+import Bloc from "@/components/Bloc";
+import BlocInfos from "@/components/Bloc/BlocInfos";
 
 
 const Histoire = () => {
@@ -22,12 +24,8 @@ const Histoire = () => {
             icon={Book}
         >
 
-            <div className="md:w-[80%] w-[90%] h-auto mt-20 flex flex-col items-start justify-center gap-5 md:mb-[240px] mb-[50px]">
-
-                <Subtitle content="La naissance du club" />
-
-                {/* Paragraph 1 */}
-                <div className="2xl:w-[53%] w-full h-auto  bg-white rounded-ten p-[30px] relative">
+            <Bloc blocTitle="La naissance du club">
+                <BlocInfos className="w-[53%] h-auto relative">
                     <Paragraphe className="w-[100%] h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                         Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
@@ -37,46 +35,44 @@ const Histoire = () => {
                     </Paragraphe>
 
                     <Badge image={EFB} className="bottom-[-50px] right-[-50px]" width={45} />
-                </div>
+                </BlocInfos>
+            </Bloc>
 
-            </div>
-
-            <div
-                className="md:w-[80%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mb-[50px] relative gap-[30px]">
-
-                <Badge image={Logo} className="top-[-50px] left-[-50px]" />
-
-                <Paragraphe className="w-[100%] md:indent-12 indent-0">
-                    En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement,
-                    contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif
-                    pendant près de 4 ans.
-                </Paragraphe>
-
-                <div className="w-auto h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
-
-                    {customImages.map((customImage) => (
-                        <ImageLegend
-                            key={customImage.description}
-                            image={customImage.image}
-                            description={customImage.description}
-                            className="2xl:!w-auto !w-[100%]"
-                            imageClassName="2xl:w-auto !w-[100%]"
-                        />
-                    ))}
-
-
-                </div>
-
-
-            </div>
-
-            <div className="md:w-[80%] w-[90%] h-auto md:mt-20 flex flex-col items-start justify-center gap-5 md:mb-[170px] mb-[50px]">
-
-                <Subtitle content="La renaissance de la section" />
-
-                {/* Paragraph2  */}
+            <Bloc>
+                <div />
                 <div
-                    className="2xl:w-[67%] w-full h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] gap-[30px]">
+                    className="md:w-[90%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-[30px]">
+
+                    <Badge image={Logo} className="top-[-50px] left-[-50px]" />
+
+                    <Paragraphe className="w-[100%] md:indent-12 indent-0">
+                        En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement,
+                        contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif
+                        pendant près de 4 ans.
+                    </Paragraphe>
+
+                    <div className="w-full h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
+
+                        {customImages.map((customImage) => (
+                            <ImageLegend
+                                key={customImage.description}
+                                image={customImage.image}
+                                description={customImage.description}
+                                className="w-[45%] h-auto"
+                                imageClassName="h-auto"
+                                descriptionClassName="!w-auto"
+                            />
+                        ))}
+
+
+                    </div>
+
+
+                </div>
+            </Bloc>
+
+            <Bloc blocTitle="La renaissance de la section">
+                <BlocInfos className="w-[67%] h-auto gap-[30px]">
                     <Paragraphe>
                         Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
                         fondateurs.
@@ -87,19 +83,14 @@ const Histoire = () => {
                     </Paragraphe>
 
                     <ImageLegend image={"/histoire/7.png"} description={"La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"} />
-                </div>
 
-            </div>
+                </BlocInfos>
 
+            </Bloc>
 
-            <div className="md:w-[80%] w-[90%] h-auto md:mt-20 mt-0 flex flex-col items-start justify-center gap-5 md:mb-[80px] mb-10">
+            <Bloc blocTitle="Et le CACBO dans tout ça ?">
 
-                <Subtitle content="Et le CACBO dans tout ça ?" />
-
-                {/* Paragraph2  */}
-                <div
-                    className="w-[100%] h-auto flex lg:flex-row flex-col items-center justify-center bg-white rounded-ten lg:p-[30px] p-0 pt-[30px] gap-[30px]">
-
+                <BlocInfos className="w-[100%] flex-row">
                     <div className="lg:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
 
                         <Paragraphe>
@@ -127,9 +118,8 @@ const Histoire = () => {
                             <Image src={Omnisport} alt="cacbo" width={95} />
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </BlocInfos>
+            </Bloc>
 
         </PageLayout>
     )

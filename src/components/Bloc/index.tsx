@@ -3,7 +3,7 @@ import BlocTitle from './BlocTitle'
 import { cn } from '@/utils/cn'
 
 interface BlocProps extends React.HTMLAttributes<HTMLDivElement> {
-    blocTitle: string
+    blocTitle?: string
     blocIcon?: React.ReactNode
 }
 
