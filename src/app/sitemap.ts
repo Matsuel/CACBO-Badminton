@@ -8,10 +8,11 @@ export default async function sitemap() {
         '/bureau',
         '/contact',
         '/histoire',
-        '/mentions-legales',
         '/partenaires',
-        '/politiques',
         '/regles',
+        '/politiques',
+        '/mentions-legales',
+        '/faq',
     ];
 
     return paths.map((path) => ({
@@ -35,14 +36,15 @@ function getPriority(path: string): number {
             return 0.6;
         case '/histoire':
             return 0.5;
-        case '/mentions-legales':
-            return 0.1; // Ajout du return manquant
         case '/partenaires':
             return 0.4;
-        case '/politiques':
-            return 0.2;
         case '/regles':
             return 0.3;
+        case '/politiques':
+            return 0.2;
+        case '/mentions-legales':
+        case '/faq':
+            return 0.1;
         default:
             return 0.5;
     }
