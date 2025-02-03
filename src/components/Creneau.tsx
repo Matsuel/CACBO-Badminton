@@ -6,7 +6,7 @@ const Creaneau = ({
     children
 }: CreaneauProps) => {
     return (
-        <p className="font-Inter font-light xl:text-xl md:text-[18px] text-base flex flex-row gap-3">
+        <p className="font-Inter font-light text-paragraph flex flex-row gap-3">
             • {children}
         </p>
     )
