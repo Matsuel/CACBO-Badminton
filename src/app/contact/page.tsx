@@ -19,7 +19,7 @@ const Contact = () => {
             subtitle='Besoin d’infos ? Nous sommes à votre écoute !'
             icon={ContactLogo}
         >
-            <Bloc blocTitle='Découvrez comment nous joindre !'>
+            <Bloc blocTitle='Découvrez comment nous joindre !' className='mt-0'>
                 <BlocLeft className='bg-transparent p-0 gap-7'>
 
                     <BlocLeft className='w-full gap-5'>

@@ -7,7 +7,7 @@ export const NavbarLinks = [
     { name: 'Accueil', href: '/' },
     { name: 'Le club', href: '/histoire' },
     { name: 'Adhérer', href: '/adherer' },
-    { name: 'Le bad', href: '/bad' },
+    { name: 'Le bad', href: '/regles' },
     { name: 'Nous contacter', href: '/contact' },
     { name: 'FAQ', href: '/faq' },
 ]
