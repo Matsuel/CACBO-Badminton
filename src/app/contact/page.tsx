@@ -4,30 +4,14 @@ import PageLayout from '@/components/Page'
 import Subtitle from '@/components/UI/Subtitle'
 import Emoji from '@/components/UI/Emoji'
 import Link from 'next/link'
-import { Facebook } from '@/assets/Facebook'
-import { Instagram } from '@/assets/Instagram'
-import { Messenger } from '@/assets/Messenger'
 import Map from '@/components/Map'
+import { SocialLinks } from '@/constantes/contact'
+import Bloc from '@/components/Bloc'
+import BlocLeft from '@/components/Bloc/BlocLeft'
+import Paragraphe from '@/components/UI/Paragraphe'
+import BlocRight from '@/components/Bloc/BlocRight'
 
 const Contact = () => {
-
-    const SocialLinks = [
-        {
-            icon: Facebook,
-            link: 'https://www.facebook.com/cacbo.bad',
-            name: 'Facebook'
-        },
-        {
-            icon: Instagram,
-            link: 'https://www.instagram.com/cacbo.bad',
-            name: 'Instagram'
-        },
-        {
-            icon: Messenger,
-            link: 'https://www.messenger.com/cacbo.bad',
-            name: 'Messenger'
-        },
-    ]
 
     return (
         <PageLayout
@@ -35,87 +19,67 @@ const Contact = () => {
             subtitle='Besoin d’infos ? Nous sommes à votre écoute !'
             icon={ContactLogo}
         >
-            <div className="w-[90%] lg:w-[80%] h-auto flex flex-col items-start justify-start mt-[60px] lg:mt-[90px]">
-                <Subtitle content="Découvrez comment nous joindre !" />
+            <Bloc blocTitle='Découvrez comment nous joindre !'>
+                <BlocLeft className='bg-transparent p-0 gap-7'>
 
-                <div className="w-full h-auto flex flex-col lg:flex-row items-start justify-start mt-[20px] gap-[20px]">
+                    <BlocLeft className='w-full gap-5'>
+                        <div className='flex flex-col gap-1'>
+                            <Subtitle className='flex flex-row items-center gap-[10px]'>
+                                Par téléphone <Emoji name='phone' width={20} />
+                            </Subtitle>
 
-                    {/* Gauche  */}
-                    <div
-                        className="w-full lg:w-[53%] h-auto flex flex-col items-start justify-start gap-[20px]">
-
-                        {/* Contact */}
-                        <div className="w-full h-auto flex flex-col items-start justify-start gap-[10px] bg-white p-[20px] lg:p-[30px] rounded-ten">
-
-                            <div className="w-full h-auto flex flex-col items-start justify-start gap-[0px]">
-                                <Subtitle className='text-[20px] lg:text-[24px]'>
-                                    Par téléphone <Emoji name='phone' width={20} />
-                                </Subtitle>
-
-                                <h5 className="font-Inter font-light text-lg lg:text-xl">
-                                    <Link href={`tel:+33618952330`}>
-                                        06 18 95 23 30
-                                    </Link>
-                                </h5>
-                            </div>
-                            <div className="w-full h-auto flex flex-col items-start justify-start gap-[0px]">
-                                <Subtitle className='text-[20px] lg:text-[24px]'>
-                                    Par email <Emoji name='mail' width={20} />
-                                </Subtitle>
-
-                                <h5 className="font-Inter font-light text-lg lg:text-xl">
-                                    <Link href={`mailto:cacbo.bad@hotmail.com`}>
-                                        cacbo.bad@hotmail.com
-                                    </Link>
-                                </h5>
-                            </div>
+                            <Link href={`tel:+33618952330`} className="font-Inter font-light text-paragraph">
+                                06 18 95 23 30
+                            </Link>
                         </div>
 
-                        {/* Reseaux sociaux */}
+                        <div className='flex flex-col gap-1'>
+                            <Subtitle className='flex flex-row items-center gap-[10px]'>
+                                Par email <Emoji name='mail' width={20} />
+                            </Subtitle>
 
-                        <div className="w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[20px] lg:p-[30px] rounded-ten">
-
-                            <div className="w-full h-auto flex flex-col items-start justify-start gap-[20px]">
-                                <Subtitle className='text-[20px] lg:text-[24px]'>
-                                    Nos réseaux sociaux
-                                </Subtitle>
-
-                                <div className='w-full h-auto flex flex-col flex-wrap lg:flex-row items-start justify-start gap-[20px] lg:gap-[30px]'>
-
-                                    {SocialLinks.map((link) => (
-                                        <Link key={link.name} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
-                                            <div className='w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] flex items-center justify-center text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out'>
-                                                {link.icon}
-                                            </div>
-                                            <p className="font-Inter font-light text-lg lg:text-xl">
-                                                {link.name}
-                                            </p>
-                                        </Link>
-                                    ))}
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Droite */}
-                    <div
-                        className="w-full lg:w-[47%] h-auto flex flex-col items-start justify-start gap-[20px]">
-
-                        <div className="w-full px-[20px] py-[20px] border-1 border-redcolor rounded-ten bg-white leading-10">
-                            <h5 className="font-Inter font-medium text-xl lg:text-2xl">
-                                Complexe sportif Philippe Madrelle
-                            </h5>
-                            <p className="font-Inter font-light text-lg lg:text-xl">
-                                24 rue Pasteur, 33560 Carbon-Blanc <Emoji name='pin' width={20} />
-                            </p>
+                            <Link href={`mailto:cacbo.bad@hotmail.com`} className="font-Inter font-light text-paragraph">
+                                cacbo.bad@hotmail.com
+                            </Link>
                         </div>
 
-                        <Map />
-                    </div>
-                </div>
+                    </BlocLeft>
 
-            </div>
+                    <BlocLeft className='w-full gap-5'>
+                        <Subtitle>
+                            Nos réseaux sociaux
+                        </Subtitle>
+
+                        <div className='w-full h-auto flex flex-row gap-8 items-center'>
+                            {SocialLinks.map((link) => (
+                                <Link key={link.name} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
+                                    <div className='w-[40px] h-[40px] flex items-center justify-center text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out'>
+                                        {link.icon}
+                                    </div>
+                                    <Paragraphe>
+                                        {link.name}
+                                    </Paragraphe>
+                                </Link>
+                            ))}
+
+                        </div>
+
+                    </BlocLeft>
+                </BlocLeft>
+
+                <BlocRight className='bg-transparent p-0 gap-7'>
+                    <BlocRight className='w-full gap-5'>
+                        <Subtitle className='font-medium'>
+                            Complexe sportif Philippe Madrelle
+                        </Subtitle>
+
+                        <Paragraphe>
+                            24 rue Pasteur, 33560 Carbon-Blanc <Emoji name='pin' width={15} />
+                        </Paragraphe>
+                    </BlocRight>
+                    <Map />
+                </BlocRight>
+            </Bloc>
 
         </PageLayout>
     )
