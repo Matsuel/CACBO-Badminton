@@ -1,14 +1,17 @@
+import { cn } from '@/utils/cn'
 import React from 'react'
 
-interface BlocTitleProps {
+interface BlocTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
     children?: React.ReactNode
 }
 
 const BlocTitle = ({
-    children
+    className,
+    children,
+    ...props
 }: BlocTitleProps) => {
     return (
-        <h3 className={"font-Montserrat font-semibold text-black text-[28px]"}>
+        <h3 className={cn("font-Montserrat font-semibold text-black text-[28px]", className)} {...props}>
             {children}
         </h3>
     )

@@ -16,7 +16,7 @@ const Bloc = ({
 }: BlocProps) => {
     return (
         <div className={cn("md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-center gap-5 mt-44", className)} {...props}>
-            <BlocTitle>
+            <BlocTitle className={blocIcon ? 'flex flex-row items-center gap-3' : ''}>
                 {blocTitle} {blocIcon}
             </BlocTitle>
 
