@@ -20,7 +20,7 @@ const Hero = ({
         <div className='w-[80%] h-auto flex flex-row items-center justify-between mt-5 bg-white rounded-ten gap-0 mb-[90px]'>
 
             <div className='w-[51%] flex flex-col justify-center items-start gap-3 lg:pl-16 p-7'>
-                <h2 className='font-Montserrat font-bold text-4xl lg:text-6xl'>{title}</h2>
+                <h1 className='font-Montserrat font-bold text-4xl lg:text-6xl'>{title}</h1>
                 <h3 className='font-Inter font-normal text-xl lg:text-2xl text-redcolor'>{subtitle}</h3>
                 {description && <Open />}
             </div>
