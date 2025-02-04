@@ -45,7 +45,7 @@ const Faq = () => {
             <Bloc blocTitle='3.  Le club est-il ouvert à tous les niveaux ?' className='mt-20'>
                 <BlocFull>
                     <Paragraphe>
-                        Oui, notre club accueille aussi bien les débutants que les joueurs confirmés. Nous mettons un point d'honneur à offrir une ambiance conviviale pour tous.
+                        Oui, notre club accueille aussi bien les débutants que les joueurs confirmés. Nous mettons un point d&apos;honneur à offrir une ambiance conviviale pour tous.
                     </Paragraphe>
                 </BlocFull>
             </Bloc>
@@ -53,7 +53,7 @@ const Faq = () => {
             <Bloc blocTitle="4.  Puis-je venir essayer avant de m'inscrire ?" className='mt-20'>
                 <BlocFull>
                     <Paragraphe>
-                        Oui, nous proposons 3 séances d'essai gratuites pour découvrir le club et voir si l&apos;ambiance vous convient.
+                        Oui, nous proposons 3 séances d&apos;essai gratuites pour découvrir le club et voir si l&apos;ambiance vous convient.
                     </Paragraphe>
                 </BlocFull>
             </Bloc>
