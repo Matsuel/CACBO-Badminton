@@ -40,7 +40,7 @@ const Histoire = () => {
             <Bloc>
                 <div />
                 <div
-                    className="md:w-[90%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-[30px]">
+                    className="md:w-[94%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-[30px]">
 
                     <Badge image={Logo} className="top-[-50px] left-[-50px]" />
 
@@ -89,7 +89,7 @@ const Histoire = () => {
 
             <Bloc blocTitle="Et le CACBO dans tout ça ?">
 
-                <BlocInfos className="w-[100%] flex-row">
+                <BlocInfos className="w-[100%] flex-row items-center">
                     <div className="lg:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
 
                         <Paragraphe>
@@ -108,7 +108,7 @@ const Histoire = () => {
                         </Paragraphe>
                     </div>
 
-                    <div className="lg:w-[19%] w-full h-auto flex lg:flex-col flex-row items-center lg:justify-center justify-evenly gap-[35px] lg:mb-0 mb-3">
+                    <div className="w-[19%] h-auto flex flex-col items-center justify-center gap-[35px] mb-0">
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
                             <Image src={Logo2} alt="cacbo" width={95} />
                         </div>

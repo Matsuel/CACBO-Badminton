@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
 
                 <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
-                    <h4 className='text-white font-Montserrat font-semibold text-base'>Le bad&quot;</h4>
+                    <h4 className='text-white font-Montserrat font-semibold text-base'>Le bad’</h4>
                     <Link href='/regles' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Règles du jeu</Link>
                     <Link href='/raquette' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>La raquette</Link>
                     <Link href='/volant' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Le volant</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full h-auto flex flex-row justify-around items-center bg-transparent mb-20 pl-8'>
+            <div className='w-full h-auto flex flex-row justify-between items-center bg-transparent mb-20 px-44'>
                 <div className='w-auto h-auto flex flex-row justify-center items-center gap-2'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright © 2025 CACBO Badminton. Tous droits réservés.</p>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
