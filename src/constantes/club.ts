@@ -1,0 +1,1 @@
+export const mail = "hello@cacbobad.fr"

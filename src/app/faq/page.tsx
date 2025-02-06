@@ -20,7 +20,7 @@ const Faq = () => {
                         Nos créneaux sont les suivants :
                     </Paragraphe>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-[2px]'>
                         <ListElement>
                             Lundi : 21h - 23h
                         </ListElement>
@@ -64,7 +64,7 @@ const Faq = () => {
                         Nous proposons deux formules d&apos;adhésion :
                     </Paragraphe>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-[2px]'>
                         <ListElement>
                             Formule adulte : 50 €
                         </ListElement>
