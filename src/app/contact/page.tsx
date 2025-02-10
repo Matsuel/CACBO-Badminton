@@ -10,6 +10,7 @@ import Bloc from '@/components/Bloc'
 import BlocLeft from '@/components/Bloc/BlocLeft'
 import Paragraphe from '@/components/UI/Paragraphe'
 import BlocRight from '@/components/Bloc/BlocRight'
+import { mail } from '@/constantes/club'
 
 const Contact = () => {
 
@@ -38,8 +39,8 @@ const Contact = () => {
                                 Par email <Emoji name='mail' width={20} />
                             </Subtitle>
 
-                            <Link href={`mailto:cacbo.bad@hotmail.com`} className="font-Inter font-light text-paragraph">
-                                cacbo.bad@hotmail.com
+                            <Link href={`mailto:${mail}`} className="font-Inter font-light text-paragraph">
+                                {mail}
                             </Link>
                         </div>
 
@@ -68,8 +69,8 @@ const Contact = () => {
                 </BlocLeft>
 
                 <BlocRight className='bg-transparent p-0 gap-7'>
-                    <BlocRight className='w-full gap-5'>
-                        <Subtitle className='font-medium'>
+                    <BlocRight className='w-full gap-3 border border-redcolor'>
+                        <Subtitle className='font-Inter font-medium'>
                             Complexe sportif Philippe Madrelle
                         </Subtitle>
 

@@ -1,1 +1,1 @@
-export const mail = "hello@cacbobad.fr"
+export const mail = "hello@cacbobad.fr";

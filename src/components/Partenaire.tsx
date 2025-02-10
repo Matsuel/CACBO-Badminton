@@ -16,17 +16,17 @@ const Partenaire = ({
 }: PartenaireProps) => {
 
     return (
-        <div className="w-[290px] h-auto flex flex-col items-center gap-[30px] p-10 bg-white rounded-ten">
+        <div className="w-[230px] h-auto flex flex-col items-center gap-[30px] p-7 bg-white rounded-ten">
             <Image src={image} alt={name} width={170} height={170} className="rounded-ten" />
 
-            <h3 className="w-4/5 flex flex-col font-Montserrat font-medium text-[22px] text-center">
+            <h3 className="w-auto flex flex-col font-Montserrat font-medium text-[22px] text-center">
                 {name}
             </h3>
 
-            <div className="w-[60px] h-[1.5px] bg-black rounded-full" />
+            <div className="w-[52px] h-[2px] bg-black rounded-full" />
 
-            <div className="flex flex-col items-center gap-6">
-                <h4 key={text} className="font-light text-paragraph font-Inter text-xl">
+            <div className="w-auto h-auto flex flex-col items-center gap-6">
+                <h4 key={text} className="font-light text-paragraph font-Inter text-xl text-center">
                     {text}
                 </h4>
 
