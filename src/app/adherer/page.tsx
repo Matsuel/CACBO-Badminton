@@ -76,7 +76,7 @@ const Adherer = () => {
                         un <strong className="font-medium">certificat médical</strong> daté de moins de 6 mois <strong className="underline">sera requis</strong> .
                     </ListElement>
 
-                    <Paragraphe>
+                    <Paragraphe className="leading-normal">
                         Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une
                         pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre
                         inscription !
@@ -127,7 +127,7 @@ const Adherer = () => {
             </Bloc>
 
             <Bloc blocTitle="Où et à quelle heure ?">
-                <BlocLeft>
+                <BlocLeft className="gap-2">
                     <Paragraphe className="w-[80%]">
                         Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
                         à Carbon-Blanc (24 rue Pasteur). <Emoji name="pin" width={20} />
@@ -154,7 +154,7 @@ const Adherer = () => {
                 </BlocLeft>
 
                 <BlocRight className="gap-7 p-0 bg-transparent">
-                    <BlocRight className="w-full border-1 border-redcolor">
+                    <BlocRight className="w-full border-1 border-redcolor gap-[6px]">
                         <Subtitle>
                             Créneaux flexibles : jouez quand vous voulez ! <Emoji name="alarm" width={20} />
                         </Subtitle>

@@ -67,7 +67,7 @@ const Navbar = () => {
 
             <div className={`w-[80%] flex-col md:flex md:flex-row justify-start items-center gap-[30px] ${isOpen ? 'flex' : 'hidden'} md:flex`}>
                 {NavbarLinks.map((link) => (
-                    <Link key={link.name} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20'>
+                    <Link key={link.name} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20 hover:text-redcolor transition-all duration-300 ease-in-out'>
                         {link.name.toUpperCase()}
                     </Link>
                 ))}

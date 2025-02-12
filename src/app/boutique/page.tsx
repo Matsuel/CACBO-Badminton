@@ -11,7 +11,7 @@ const Boutique = () => {
             subtitle="Tout l'équipement du club à portée de clic !"
         >
 
-            <div className='flex flex-col items-center gap-32 mt-32'>
+            <div className='flex flex-col items-center gap-28 mt-5'>
 
 
                 <Paragraphe className="md:w-[40%] w-[90%] !text-center" >

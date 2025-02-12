@@ -50,7 +50,6 @@ export default function Home() {
           <ImageLegend
             image={"/home/1.png"}
             description={"Échauffement, match ou simple échange, il y a toujours du jeu au club !"}
-            descriptionClassName="w-[90%] leading-5 mb-3"
           />
 
         </div>
@@ -93,7 +92,6 @@ export default function Home() {
           <ImageLegend
             image={"/home/2.png"}
             description={"Parce que le club, c’est aussi des moments de partage après l’effort ! "}
-            descriptionClassName="w-[90%] leading-5 mb-3"
           />
 
         </div>
@@ -106,7 +104,7 @@ export default function Home() {
             </Subtitle>
 
             <div className="w-[100%] h-auto flex flex-row items-center justify-between">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-2">
                 <ListElement>
                   <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
                 </ListElement>
@@ -174,7 +172,6 @@ export default function Home() {
           <ImageLegend
             image={"/home/3.png"}
             description={"Le badminton, c'est avant tout du plaisir et du partage sur le terrain !"}
-            descriptionClassName="w-[90%] leading-5 mb-3"
           />
 
         </div>
@@ -187,7 +184,6 @@ export default function Home() {
           <ImageLegend
             image={"/home/4.png"}
             description={"Smash, défense, amorti... et surtout du plaisir !"}
-            descriptionClassName="w-[90%] leading-5 mb-3"
           />
 
         </div>
@@ -273,7 +269,6 @@ export default function Home() {
           <ImageLegend
             image={"/home/5.png"}
             description={"Ici, on joue, on rigole et on progresse ensemble !"}
-            descriptionClassName="leading-5 mb-3"
           />
 
         </div>
