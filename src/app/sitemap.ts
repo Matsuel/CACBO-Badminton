@@ -2,6 +2,7 @@ export const BASE_URL = 'https://cacbobad.fr';
 
 export default async function sitemap() {
     const paths = [
+        '',
         '/',
         '/adherer',
         '/boutique',
@@ -24,6 +25,7 @@ export default async function sitemap() {
 
 function getPriority(path: string): number {
     switch (path) {
+        case '':
         case '/':
             return 1.0;
         case '/adherer':
