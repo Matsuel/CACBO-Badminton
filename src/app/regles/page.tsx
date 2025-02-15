@@ -7,6 +7,10 @@ import ListElement from '@/components/UI/ListElement'
 import Image from 'next/image'
 import Simple from '@/assets/simple.png'
 import Double from '@/assets/double.png'
+import Bloc from '@/components/Bloc'
+import BlocLeft from '@/components/Bloc/BlocLeft'
+import BlocRight from '@/components/Bloc/BlocRight'
+import BlocFull from '@/components/Bloc/BlocFull'
 
 const Regles = () => {
     return (
@@ -15,59 +19,46 @@ const Regles = () => {
             title='Règles du jeu'
             subtitle="Tout ce qu'il faut savoir avant de jouer !"
         >
-            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
-                <Subtitle content="1.  Le déroulement du match" />
+            <Bloc blocTitle='1.  Le déroulement du match' className='mt-0'>
+                <BlocLeft>
+                    <Subtitle>
+                        Comment se déroule un match ? 🎯
+                    </Subtitle>
 
-                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
-                    <div
-                        className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
+                    <Paragraphe>
+                        Le badminton se joue en <strong className='font-medium'>3 sets maximum</strong>. Chaque set est remporté par le joueur ou l&apos;équipe qui marque <strong className='font-medium'>21 points</strong>. Toutefois, si les deux adversaires atteignent un score de 20-20, le jeu continue jusqu&apos;à ce qu&apos;un joueur ou une équipe ait 2 points d&apos;écart (par exemple, 22-20, 23-21, etc). Si le score atteint 29-29, la règle change : le joueur ou l&apos;équipe qui atteint <strong className='font-medium'>30 points en premier</strong> remporte le set.
+                    </Paragraphe>
 
-                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                            Comment se déroule un match ? 🎯
-                        </Subtitle>
+                    <Paragraphe>
+                        Une fois le set gagné,  <strong className='font-medium'>l&apos;équipe ou le joueur gagnant sert en premier</strong> dans le set suivant.
+                    </Paragraphe>
 
+                </BlocLeft>
+
+                <BlocRight className='border border-redcolor'>
+                    <Subtitle>
+                        ℹ️ Exemple :
+                    </Subtitle>
+
+                    <div className="gap-1 flex flex-col">
                         <Paragraphe>
-                            Le badminton se joue en <strong className='font-medium'>3 sets maximum</strong>. Chaque set est remporté par le joueur ou l&apos;équipe qui marque <strong className='font-medium'>21 points</strong>. Toutefois, si les deux adversaires atteignent un score de 20-20, le jeu continue jusqu&apos;à ce qu&apos;un joueur ou une équipe ait 2 points d&apos;écart (par exemple, 22-20, 23-21, etc). Si le score atteint 29-29, la règle change : le joueur ou l&apos;équipe qui atteint <strong className='font-medium'>30 points en premier</strong> remporte le set.
+                            <strong className='font-medium'>Set 1</strong> : 21-19 (2 pts d&apos;écart)
                         </Paragraphe>
 
                         <Paragraphe>
-                            Une fois le set gagné,  <strong className='font-medium'>l&apos;équipe ou le joueur gagnant sert en premier</strong> dans le set suivant.
+                            <strong className='font-medium'>Set 2</strong> : 18-21 (2 pts d&apos;écart)
                         </Paragraphe>
 
+                        <Paragraphe>
+                            <strong className='font-medium'>Set 3</strong> : 30-29 (point sec)
+                        </Paragraphe>
                     </div>
+                </BlocRight>
+            </Bloc>
 
-                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
-
-                        <div className="px-[20px] py-[20px] w-full border-1 border-redcolor rounded-ten bg-white leading-10 !font-medium">
-
-                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                                ℹ️ Exemple :
-                            </Subtitle>
-
-                            <Paragraphe>
-                                <strong className='font-medium'>Set 1</strong> : 21-19 (2 pts d&apos;écart)
-                            </Paragraphe>
-
-                            <Paragraphe>
-                                <strong className='font-medium'>Set 2</strong> : 18-21 (2 pts d&apos;écart)
-                            </Paragraphe>
-
-                            <Paragraphe>
-                                <strong className='font-medium'>Set 3</strong> : 30-29 (point sec)
-                            </Paragraphe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px] gap-[30px]">
-                <Subtitle content="2.  Les limites du terrain" />
-
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-[15px] bg-white p-[30px] rounded-ten">
-
-                    <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+            <Bloc blocTitle='2.  Les limites du terrain'>
+                <BlocFull>
+                    <Subtitle>
                         Simple et double : quelles différences ? 🤔
                     </Subtitle>
 
@@ -94,69 +85,42 @@ const Regles = () => {
                     <ListElement>
                         En <span className='underline'>jeu</span>, l&apos;intégralité du terrain, y compris les couloirs latéraux, est utilisée.
                     </ListElement>
+                </BlocFull>
 
-                </div>
+                <Image
+                    className='w-[49%] mt-7'
+                    src={Simple}
+                    alt="Terrain de badminton en simple"
+                />
 
-                <div className="w-[100%] h-auto flex flex-row items-start justify-start gap-[15px]">
+                <Image
+                    className='w-[49%] mt-7'
+                    src={Double}
+                    alt="Terrain de badminton en double"
+                />
+            </Bloc>
 
-                    <div className="w-[50%] h-auto flex flex-col items-center rounded-ten justify-start gap-[30px] bg-white p-[30px]">
-                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                            En <span className='text-redcolor'>simple</span>
-                        </Subtitle>
+            <Bloc blocTitle='3.  Le service et le placement des joueurs'>
+                <BlocLeft>
+                    <Subtitle>
+                        Comment servir et ou se mettre ?
+                    </Subtitle>
 
-                        <Image
-                            src={Simple}
-                            alt="Terrain de badminton en simple"
-                        />
-                    </div>
+                    <Paragraphe>
+                        Le joueur ou l&apos;équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c&apos;est pareil, mais les joueurs ne changent de côté qu&apos;en cas de point marqué sur leur service.
+                    </Paragraphe>
+                </BlocLeft>
 
-                    <div className="w-[50%] h-auto flex flex-col items-center rounded-ten justify-start gap-[30px] bg-white p-[30px]">
-                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                            En <span className='text-redcolor'>Double</span>
-                        </Subtitle>
+                <BlocRight className='border border-redcolor'>
+                    <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
+                        Quand changer de demi-terrain ? 🔄
+                    </Subtitle>
 
-                        <Image
-                            src={Double}
-                            alt="Terrain de badminton en double"
-                        />
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
-                <Subtitle content="3.  Le service et le placement des joueurs" />
-
-                <div className="w-[100%] h-auto flex lg:flex-row flex-col items-start justify-start mt-[20px] gap-[30px]">
-                    <div
-                        className="lg:w-[53%] w-full h-auto flex flex-col items-start justify-start gap-[20px] bg-white p-[30px] rounded-ten">
-
-                        <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                            Comment servir et ou se mettre ?
-                        </Subtitle>
-
-                        <Paragraphe>
-                            Le joueur ou l&apos;équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c&apos;est pareil, mais les joueurs ne changent de côté qu&apos;en cas de point marqué sur leur service.
-                        </Paragraphe>
-                    </div>
-
-                    <div className="lg:w-[47%] w-full h-auto flex flex-col items-start justify-start gap-[30px]">
-
-                        <div className="px-[20px] py-[20px] w-full border-1 border-redcolor rounded-ten bg-white leading-10 flex flex-col gap-[15px]">
-
-                            <Subtitle className="xl:text-[24px] md:text-[22px] text-xl">
-                                Quand changer de demi-terrain ? 🔄
-                            </Subtitle>
-
-                            <Paragraphe>
-                                Les joueurs changent de côté <strong className='font-medium'>après chaque set</strong>. Si un match atteint un troisième set, ils changent à 11 points.
-                            </Paragraphe>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+                    <Paragraphe>
+                        Les joueurs changent de côté <strong className='font-medium'>après chaque set</strong>. Si un match atteint un troisième set, ils changent à 11 points.
+                    </Paragraphe>
+                </BlocRight>
+            </Bloc>
 
             <div className="md:w-[80%] w-[90%] h-auto flex flex-col items-start justify-start mt-[90px]">
                 <Subtitle content="4.  Les fautes lors d’un match" />
