@@ -71,7 +71,7 @@ const Footer = () => {
                     <div className='w-[1px] h-[18px] bg-redcolor' />
                     <Link href='/mentions-legales' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Mentions légales</Link>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
-                    <Link href='/politique' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Politique de confidentialité</Link>
+                    <Link href='/politiques' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Politique de confidentialité</Link>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
                     <Link href='/faq' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>FAQ</Link>
                 </div>
