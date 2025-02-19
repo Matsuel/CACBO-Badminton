@@ -3,21 +3,21 @@ import "./globals.css";
 import { BASE_URL } from "./sitemap";
 
 export const metadata: Metadata = {
-  title: "Cacbo Badminton",
-  description: "Cacbo Badminton Club",
+  title: "CACBO Badminton",
+  description: "CACBO Badminton Club",
   keywords: ["badminton", "cacbo", "club", "badminton club", "badminton club cacbo"],
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: BASE_URL,
-    title: "Cacbo Badminton",
-    description: "Cacbo Badminton Club",
+    title: "CACBO Badminton",
+    description: "CACBO Badminton Club",
     images: [
       {
         url: `${BASE_URL}/favicon.ico`,
         width: 800,
         height: 600,
-        alt: "Cacbo Badminton Club",
+        alt: "CACBO Badminton Club",
       },
     ],
   },

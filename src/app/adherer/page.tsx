@@ -99,7 +99,8 @@ const Adherer = () => {
                         </Paragraphe>
 
                         <Button
-                            href="/inscription"
+                            href="https://www.helloasso.com/associations/cacbo-badminton/adhesions/formulaire-d-inscription"
+                            target="_blank"
                             rowReverse
                             white
                             icon={Goto}
@@ -115,10 +116,9 @@ const Adherer = () => {
 
                         <div className="w-auto h-auto flex sm:flex-row flex-col items-start justify-start gap-[30px]">
 
-                            {/* TODO: Modifier svg document avec les bonnes tailles et continue à parti d'ici */}
-                            <Documents content={"Formulaire d’inscription"} href={"/"} />
+                            <Documents content={"Formulaire d’inscription"} href={"/adherer/Formulaire d'inscription bad.pdf"} />
 
-                            <Documents content={"Questionnaire de santé"} href={"/"} />
+                            <Documents content={"Questionnaire et certificat"} href={"/adherer/Questionnaire et certificat médical.pdf"} />
                         </div>
 
                     </BlocInfos>
