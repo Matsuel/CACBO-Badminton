@@ -54,7 +54,7 @@ const Footer = () => {
 
                 <div className='w-auto h-auto flex flex-col justify-start items-start gap-[15px]'>
                     <h4 className='text-white font-Montserrat font-semibold text-base'>Nos réseaux</h4>
-                    <div className='w-auto h-auto flex flex-row justify-start items-center gap-6'>
+                    <div className='w-auto h-auto flex flex-row flex-wrap justify-start items-center gap-6'>
                         <Link href={Socials.Facebook} target='_blank'><Facebook className='text-white hover:opacity-40 transition-all ease-in-out duration-300' size={36} /></Link>
                         <Link href={Socials.Instagram} target='_blank'><Instagram className='text-white hover:opacity-40 transition-all ease-in-out duration-300' size={36} /></Link>
                         <Link href={Socials.Messenger} target='_blank'><Messenger className='text-white hover:opacity-40 transition-all ease-in-out duration-300' size={36} /></Link>

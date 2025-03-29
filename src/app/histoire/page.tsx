@@ -57,7 +57,7 @@ const Histoire = () => {
                                 key={customImage.description}
                                 image={customImage.image}
                                 description={customImage.description}
-                                className="w-[45%] h-auto"
+                                className="!w-[45%] h-auto"
                                 imageClassName="h-auto"
                                 descriptionClassName="!w-auto"
                             />
