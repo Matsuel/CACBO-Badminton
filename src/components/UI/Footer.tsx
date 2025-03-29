@@ -13,46 +13,47 @@ const Footer = () => {
     return (
         <footer className='w-full h-auto flex flex-col mt-32 gap-9 justify-start items-center'>
 
-            <div className='w-full h-auto flex flex-row justify-start items-center gap-32 bg-redcolor py-12 pl-44'>
-                <div className='w-auto h-auto flex flex-row justify-center items-center gap-7'>
+            <div className='w-full h-auto flex flex-row flex-wrap justify-start items-center bg-redcolor py-12 2xl:pl-44 xl:pl-32 lg:pl-20 md:pl-10 pl-0 xl:gap-32 lg:gap-16 gap-12'>
+
+
+                <div className='md:w-auto w-full h-auto flex md:flex-row flex-col justify-center items-center gap-7'>
                     <Image src={Logo} alt='cacbo' width={100} />
 
-                    <div className='w-[1px] h-20 bg-whitebroken' />
+                    <div className='w-[1px] h-20 bg-whitebroken md:block hidden' />
 
-                    <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
+                    <div className='md:w-auto w-4/5 h-auto flex flex-col md:justify-start justify-center md:items-start items-center gap-[2px]'>
                         <h4 className='text-white font-Montserrat font-semibold text-base'>CACBO Badminton</h4>
-                        <p className='w-[52%] text-white font-Inter font-normal text-[13px]'>Complexe sportif Philippe Madrelle 24 rue Pasteur, 33560 Carbon-Blanc</p>
+                        <p className='md:w-[52%] w-auto text-white font-Inter font-normal text-[13px]'>Complexe sportif Philippe Madrelle 24 rue Pasteur, 33560 Carbon-Blanc</p>
+                        <Link href='tel:0618952330' className='text-white font-Inter font-semibold text-[13px]'>06 18 95 23 30</Link>
+                        <p className='text-white text-[13px] font-Inter italic'>Ouvert le lundi (21h-23h), mardi (18h-21h) et vendredi (18h30-21h)</p>
+                    </div>
+                </div>
 
-                        <div className='w-full flex flex-col'>
-                            <Link href='tel:0618952330' className='text-white font-Inter font-semibold text-[13px]'>06 18 95 23 30</Link>
-                            <p className='text-white text-[13px] font-Inter italic'>Ouvert le lundi (21h-23h), mardi (18h-21h) et vendredi (18h30-21h)</p>
+                <div className='md:w-auto w-full h-auto flex flex-row flex-wrap justify-center items-start xl:gap-32 lg:gap-16 gap-12'>
+                    <div className='w-auto h-auto flex flex-row justify-center items-end gap-5'>
+                        <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
+                            <h4 className='text-white font-Montserrat font-semibold text-base'>Le club</h4>
+                            <Link href='/bureau' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Le bureau</Link>
+                            <Link href='/histoire' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Notre histoire</Link>
+                            <Link href='/boutique' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Notre boutique</Link>
+                        </div>
+
+                        <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
+                            <Link href='/adherer' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Adhérer</Link>
+                            <Link href='/contact' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Nous contacter</Link>
+                            <Link href='/partenaires' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Nos partenaires</Link>
                         </div>
                     </div>
-                </div>
-
-                <div className='w-auto h-auto flex flex-row justify-center items-end gap-5'>
-                    <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
-                        <h4 className='text-white font-Montserrat font-semibold text-base'>Le club</h4>
-                        <Link href='/bureau' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Le bureau</Link>
-                        <Link href='/histoire' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Notre histoire</Link>
-                        <Link href='/boutique' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Notre boutique</Link>
-                    </div>
 
                     <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
-                        <Link href='/adherer' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Adhérer</Link>
-                        <Link href='/contact' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Nous contacter</Link>
-                        <Link href='/partenaires' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Nos partenaires</Link>
+                        <h4 className='text-white font-Montserrat font-semibold text-base'>Le bad’</h4>
+                        <Link href='/regles' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Règles du jeu</Link>
+                        <Link href='/raquette' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>La raquette</Link>
+                        <Link href='/volant' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Le volant</Link>
                     </div>
                 </div>
 
-                <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
-                    <h4 className='text-white font-Montserrat font-semibold text-base'>Le bad’</h4>
-                    <Link href='/regles' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Règles du jeu</Link>
-                    <Link href='/raquette' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>La raquette</Link>
-                    <Link href='/volant' className='text-white font-Inter font-normal text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Le volant</Link>
-                </div>
-
-                <div className='w-auto h-auto flex flex-col justify-start items-start gap-[15px]'>
+                <div className='md:w-auto w-full h-auto flex flex-col justify-start md:items-start items-center gap-[15px]'>
                     <h4 className='text-white font-Montserrat font-semibold text-base'>Nos réseaux</h4>
                     <div className='w-auto h-auto flex flex-row flex-wrap justify-start items-center gap-6'>
                         <Link href={Socials.Facebook} target='_blank'><Facebook className='text-white hover:opacity-40 transition-all ease-in-out duration-300' size={36} /></Link>
@@ -63,8 +64,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full h-auto flex flex-row justify-between items-center bg-transparent mb-20 px-44'>
-                <div className='w-auto h-auto flex flex-row justify-center items-center gap-2'>
+            <div className='w-full h-auto flex flex-row flex-wrap justify-between items-center bg-transparent mb-20 2xl:px-44 xl:px-32 lg:px-20 md:px-10 sm:px-5 px-2 md:gap-0 gap-6'>
+                <div className='w-auto h-auto flex flex-row flex-wrap justify-center items-center gap-2'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright © 2025 CACBO Badminton. Tous droits réservés.</p>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Site pensé par Maël THOMAS et développé par Mathéo LANG.</p>
@@ -76,7 +77,7 @@ const Footer = () => {
                     <Link href='/faq' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>FAQ</Link>
                 </div>
 
-                <div className='w-auto h-auto flex flex-row justify-center items-center gap-2'>
+                <div className='md:w-auto w-full h-auto flex flex-row justify-center items-center gap-2'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Une section de</p>
                     <Image src={Omnisport} alt='omnisport' width={95} />
                 </div>
