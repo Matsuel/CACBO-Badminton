@@ -89,8 +89,8 @@ const Histoire = () => {
 
             <Bloc blocTitle="Et le CACBO dans tout ça ?">
 
-                <BlocInfos className="w-[100%] flex-row items-center">
-                    <div className="lg:w-[81%] w-[90%] h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
+                <BlocInfos className="w-full lg:flex-row flex-col items-center">
+                    <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
 
                         <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à
@@ -108,7 +108,7 @@ const Histoire = () => {
                         </Paragraphe>
                     </div>
 
-                    <div className="w-[19%] h-auto flex flex-col items-center justify-center gap-[35px] mb-0">
+                    <div className="lg:w-1/5 w-full h-auto flex lg:flex-col flex-row items-center lg:justify-center justify-around lg:gap-[35px] mb-0">
                         <div className="w-[130px] h-[130px] bg-whitebroken rounded-full flex justify-center items-center">
                             <Image src={Logo2} alt="cacbo" width={95} />
                         </div>
