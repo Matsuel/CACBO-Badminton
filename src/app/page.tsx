@@ -160,27 +160,21 @@ export default function Home() {
 
         </BlocInfos>
 
-        <div
-          className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+        <ImageLegend
+          className="lg:w-[50%] w-full h-auto"
+          image={"/home/3.png"}
+          description={"Le badminton, c'est avant tout du plaisir et du partage sur le terrain !"}
+        />
 
-          <ImageLegend
-            image={"/home/3.png"}
-            description={"Le badminton, c'est avant tout du plaisir et du partage sur le terrain !"}
-          />
-
-        </div>
       </Bloc>
 
       <Bloc blocTitle="Venez jouer avec nous ! 🤝">
-        <div
-          className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
-          <ImageLegend
-            image={"/home/4.png"}
-            description={"Smash, défense, amorti... et surtout du plaisir !"}
-          />
-
-        </div>
+        <ImageLegend
+          className="lg:w-[50%] w-full h-auto"
+          image={"/home/4.png"}
+          description={"Smash, défense, amorti... et surtout du plaisir !"}
+        />
 
         <BlocInfos>
 
@@ -257,15 +251,11 @@ export default function Home() {
 
         </BlocInfos>
 
-        <div
-          className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
-
-          <ImageLegend
-            image={"/home/5.png"}
-            description={"Ici, on joue, on rigole et on progresse ensemble !"}
-          />
-
-        </div>
+        <ImageLegend
+          className="lg:w-[50%] w-full h-auto"
+          image={"/home/5.png"}
+          description={"Ici, on joue, on rigole et on progresse ensemble !"}
+        />
       </Bloc>
 
       <Footer />
