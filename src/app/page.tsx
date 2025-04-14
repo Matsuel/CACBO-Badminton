@@ -63,7 +63,7 @@ export default function Home() {
 
           </div>
 
-          <Paragraphe className="2xl:w-[70%] w-full font-normal leading-6">
+          <Paragraphe className="2xl:w-[70%] w-full font-normal leading-6 mb-5">
             Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
           </Paragraphe>
 
@@ -75,7 +75,7 @@ export default function Home() {
           rowReverse
           white
           icon={Goto}
-          className="mr-20 text-xl px-5 py-[15px] uppercase"
+          className="lg:mr-20 text-xl px-5 py-[15px] uppercase"
         >
           JE M&apos;INSCRIS
         </Button>
@@ -97,7 +97,7 @@ export default function Home() {
               Envie de taper le volant ? Nos créneaux sont :
             </Subtitle>
 
-            <div className="w-[100%] h-auto flex flex-row items-center justify-between">
+            <div className="w-[100%] h-auto flex lg:flex-row flex-col gap-5 lg:items-center items-start justify-between">
               <div className="flex flex-col gap-2">
                 <ListElement>
                   <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
