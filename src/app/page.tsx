@@ -44,15 +44,12 @@ export default function Home() {
           </div>
         </BlocInfos>
 
-        <div
-          className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
+        <ImageLegend
+          className="lg:w-[50%] w-full h-auto"
+          image={"/home/1.png"}
+          description={"Échauffement, match ou simple échange, il y a toujours du jeu au club !"}
+        />
 
-          <ImageLegend
-            image={"/home/1.png"}
-            description={"Échauffement, match ou simple échange, il y a toujours du jeu au club !"}
-          />
-
-        </div>
       </Bloc>
 
       <div
@@ -86,18 +83,15 @@ export default function Home() {
       </div>
 
       <Bloc blocTitle="Quand peut-on venir ?">
-        <div
-          className="2xl:w-[50%] w-[90%] h-auto flex flex-col items-center justify-center gap-3 bg-white rounded-ten">
 
-          <ImageLegend
-            image={"/home/2.png"}
-            description={"Parce que le club, c’est aussi des moments de partage après l’effort ! "}
-          />
+        <ImageLegend
+          className="lg:w-[50%] w-full h-auto"
+          image={"/home/2.png"}
+          description={"Parce que le club, c’est aussi des moments de partage après l’effort ! "}
+        />
 
-        </div>
-
-        <div className="w-[42%] h-auto flex flex-col items-start justify-center gap-5">
-          <BlocInfos className="w-full">
+        <div className="lg:w-[42%] w-full h-auto flex flex-col items-start justify-center gap-5">
+          <BlocInfos className="lg:w-full">
 
             <Subtitle className="!text-[22px]">
               Envie de taper le volant ? Nos créneaux sont :
@@ -132,7 +126,7 @@ export default function Home() {
 
           </BlocInfos>
 
-          <BlocInfos className="w-full">
+          <BlocInfos className="lg:w-full">
             <Subtitle className="font-Inter font-medium !text-[22px]">
               Complexe sportif Philippe Madrelle
             </Subtitle>
