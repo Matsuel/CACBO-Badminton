@@ -13,23 +13,22 @@ const Footer = () => {
     return (
         <footer className='w-full h-auto flex flex-col mt-32 gap-9 justify-start items-center'>
 
-            <div className='w-full h-auto flex flex-row flex-wrap justify-start items-center bg-redcolor py-12 2xl:pl-44 xl:pl-32 lg:pl-20 md:pl-10 pl-0 xl:gap-32 lg:gap-16 gap-12'>
+            <div className='w-full h-auto flex flex-row flex-wrap justify-around items-center bg-redcolor py-12 px-[6%] gap-16'>
 
-
-                <div className='md:w-auto w-full h-auto flex md:flex-row flex-col justify-center items-center gap-7'>
+                <div className='w-[450px] h-auto flex md:flex-row flex-col justify-center items-center gap-7'>
                     <Image src={Logo} alt='cacbo' width={100} />
 
                     <div className='w-[1px] h-20 bg-whitebroken md:block hidden' />
 
-                    <div className='md:w-auto w-4/5 h-auto flex flex-col md:justify-start justify-center md:items-start items-center gap-[2px]'>
+                    <div className='w-full h-auto flex flex-col justify-start items-start gap-[2px]'>
                         <h4 className='text-white font-Montserrat font-semibold text-base'>CACBO Badminton</h4>
-                        <p className='md:w-[52%] w-auto text-white font-Inter font-normal text-[13px]'>Complexe sportif Philippe Madrelle 24 rue Pasteur, 33560 Carbon-Blanc</p>
+                        <p className='w-auto text-white font-Inter font-normal text-[13px]'>Complexe sportif Philippe Madrelle 24 rue Pasteur, 33560 Carbon-Blanc</p>
                         <Link href='tel:0618952330' className='text-white font-Inter font-semibold text-[13px]'>06 18 95 23 30</Link>
-                        <p className='text-white text-[13px] font-Inter italic'>Ouvert le lundi (21h-23h), mardi (18h-21h) et vendredi (18h30-21h)</p>
+                        <p className='w-auto text-white text-[13px] font-Inter italic'>Ouvert le lundi (21h-23h), mardi (18h-21h) et vendredi (18h30-21h)</p>
                     </div>
                 </div>
 
-                <div className='md:w-auto w-full h-auto flex flex-row flex-wrap justify-center items-start xl:gap-32 lg:gap-16 gap-12'>
+                <div className='md:w-auto w-full h-auto flex flex-row flex-wrap justify-center items-start sm:gap-16 gap-8'>
                     <div className='w-auto h-auto flex flex-row justify-center items-end gap-5'>
                         <div className='w-auto h-auto flex flex-col justify-start items-start gap-1'>
                             <h4 className='text-white font-Montserrat font-semibold text-base'>Le club</h4>
