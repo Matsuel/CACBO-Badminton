@@ -54,7 +54,7 @@ const Adherer = () => {
             </Bloc>
 
             <Bloc blocTitle="Comment ?">
-                <BlocLeft className="w-[53%]">
+                <BlocLeft>
                     <Subtitle>
                         <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
                     </Subtitle>

@@ -24,7 +24,7 @@ const Histoire = () => {
         >
 
             <Bloc blocTitle="La naissance du club" className="mt-0">
-                <BlocInfos className="w-[53%] h-auto relative">
+                <BlocInfos className="lg:w-[53%] h-auto relative">
                     <Paragraphe className="w-[100%] h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                         Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
@@ -71,7 +71,7 @@ const Histoire = () => {
             </Bloc>
 
             <Bloc blocTitle="La renaissance de la section">
-                <BlocInfos className="w-[67%] h-auto gap-[30px]">
+                <BlocInfos className="lg:w-[67%] h-auto gap-[30px]">
                     <Paragraphe>
                         Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
                         fondateurs.

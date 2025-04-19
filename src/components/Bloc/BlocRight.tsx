@@ -12,7 +12,7 @@ const BlocRight = ({
 }: BlocRightProps) => {
     return (
         <div
-            className={cn("w-[44.9%] h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-7", className)} {...props}>
+            className={cn("lg:w-[44.9%] w-full h-auto flex flex-col items-start justify-center gap-3 bg-white rounded-ten p-7", className)} {...props}>
             {children}
         </div>
     )

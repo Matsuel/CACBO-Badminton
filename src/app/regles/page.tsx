@@ -88,13 +88,13 @@ const Regles = () => {
                 </BlocFull>
 
                 <Image
-                    className='w-[49%] mt-7'
+                    className='lg:w-[49%] w-full mt-7'
                     src={Simple}
                     alt="Terrain de badminton en simple"
                 />
 
                 <Image
-                    className='w-[49%] mt-7'
+                    className='lg:w-[49%] w-full mt-7'
                     src={Double}
                     alt="Terrain de badminton en double"
                 />
