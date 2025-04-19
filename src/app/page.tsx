@@ -93,7 +93,7 @@ export default function Home() {
         <div className="lg:w-[42%] w-full h-auto flex flex-col items-start justify-center gap-5">
           <BlocInfos className="lg:w-full">
 
-            <Subtitle className="!text-[22px]">
+            <Subtitle>
               Envie de taper le volant ? Nos créneaux sont :
             </Subtitle>
 
@@ -127,7 +127,7 @@ export default function Home() {
           </BlocInfos>
 
           <BlocInfos className="lg:w-full">
-            <Subtitle className="font-Inter font-medium !text-[22px]">
+            <Subtitle className="font-Inter font-medium">
               Complexe sportif Philippe Madrelle
             </Subtitle>
 
@@ -220,7 +220,7 @@ export default function Home() {
       <Bloc blocTitle="Les règles essentielles du bad’" blocIcon={<Emoji name="eyes" width={24} />}>
         <BlocInfos>
 
-          <Subtitle className="!text-[22px]">
+          <Subtitle>
             Avant d&apos;entrer sur le terrain, un rappel des bases :
           </Subtitle>
 
