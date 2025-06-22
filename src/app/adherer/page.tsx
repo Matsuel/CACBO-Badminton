@@ -85,7 +85,7 @@ const Adherer = () => {
                 </BlocLeft>
 
                 <BlocRight className="gap-7 p-0 bg-transparent">
-                    <BlocInfos className="w-full border-1 border-redcolor">
+                    <BlocInfos className="lg:w-full border-1 border-redcolor">
 
                         <Subtitle>
                             Adhésion simplifiée : <span className="underline">inscrivez-vous en ligne</span> ! <Emoji name="globmeridian" width={24} />
@@ -109,12 +109,12 @@ const Adherer = () => {
                         </Button>
                     </BlocInfos>
 
-                    <BlocInfos className="w-full">
+                    <BlocInfos className="lg:w-full">
                         <Subtitle>
                             Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
                         </Subtitle>
 
-                        <div className="w-auto h-auto flex sm:flex-row flex-col items-start justify-start gap-[30px]">
+                        <div className="w-auto h-auto flex flex-col items-start justify-start gap-[30px]">
 
                             <Documents content={"Formulaire d’inscription"} href={"/adherer/Formulaire d'inscription bad.pdf"} />
 
@@ -154,7 +154,7 @@ const Adherer = () => {
                 </BlocLeft>
 
                 <BlocRight className="gap-7 p-0 bg-transparent">
-                    <BlocRight className="w-full border-1 border-redcolor gap-[6px]">
+                    <BlocRight className="lg:w-full border-1 border-redcolor gap-[6px]">
                         <Subtitle>
                             Créneaux flexibles : jouez quand vous voulez ! <Emoji name="alarm" width={20} />
                         </Subtitle>

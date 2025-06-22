@@ -23,7 +23,7 @@ const Contact = () => {
             <Bloc blocTitle='Découvrez comment nous joindre !' className='mt-0'>
                 <BlocLeft className='bg-transparent p-0 gap-7'>
 
-                    <BlocLeft className='w-full gap-5'>
+                    <BlocLeft className='lg:w-full gap-5'>
                         <div className='flex flex-col gap-1'>
                             <Subtitle className='flex flex-row items-center gap-[10px]'>
                                 Par téléphone <Emoji name='phone' width={20} />
@@ -46,12 +46,12 @@ const Contact = () => {
 
                     </BlocLeft>
 
-                    <BlocLeft className='w-full gap-5'>
+                    <BlocLeft className='lg:w-full gap-5'>
                         <Subtitle>
                             Nos réseaux sociaux
                         </Subtitle>
 
-                        <div className='w-full h-auto flex flex-row gap-8 items-center'>
+                        <div className='lg:w-full h-auto flex flex-row gap-8 items-center'>
                             {SocialLinks.map((link) => (
                                 <Link key={link.name} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
                                     <div className='w-[40px] h-[40px] flex items-center justify-center text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out'>
@@ -69,7 +69,7 @@ const Contact = () => {
                 </BlocLeft>
 
                 <BlocRight className='bg-transparent p-0 gap-7'>
-                    <BlocRight className='w-full gap-3 border border-redcolor'>
+                    <BlocRight className='lg:w-full gap-3 border border-redcolor'>
                         <Subtitle className='font-Inter font-medium'>
                             Complexe sportif Philippe Madrelle
                         </Subtitle>
