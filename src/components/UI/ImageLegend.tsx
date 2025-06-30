@@ -18,7 +18,7 @@ const ImageLegend = ({
     imageClassName
 }: ImageLegendProps) => {
     return (
-        <div className={cn(`w-auto h-auto flex flex-col justify-center items-center rounded-ten gap-3 pb-3`, className)}>
+        <div className={cn(`w-auto h-auto flex flex-col justify-center items-center rounded-ten gap-3 pb-3 bg-white`, className)}>
             <Image src={image} width={3000} height={1500} alt={description} className={cn(`w-auto h-auto rounded-ten`, imageClassName)} />
             <p className={cn(`w-auto h-auto font-Inter font-light text-[13px] text-center`, descriptionClassName)}>{description}</p>
         </div>

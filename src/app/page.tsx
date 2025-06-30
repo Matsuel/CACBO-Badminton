@@ -15,7 +15,7 @@ import BlocInfos from "@/components/Bloc/BlocInfos";
 
 export default function Home() {
   return (
-    <div className={`w-full flex flex-col items-center min-h-screen bg-whitebroken`}>
+    <div className="w-full flex flex-col items-center min-h-screen bg-whitebroken">
       <Title title={SITE_CONFIG.title} />
       <Navbar />
       <HomeHero />
@@ -53,17 +53,17 @@ export default function Home() {
       </Bloc>
 
       <div
-        className="w-[80%] h-auto flex 2xl:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten p-10 mt-44">
+        className="md:w-[80%] w-[90%] h-auto flex lg:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten lg:p-10 p-5 mt-44">
 
-        <div className="w-auto h-auto flex flex-col items-start justify-center gap-[50px]">
+        <div className="w-auto h-auto flex flex-col items-start justify-center lg:self-auto self-start lg:gap-[50px] gap-5">
           <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-2">
 
-            <h3 className="font-Montserrat font-bold xl:text-[36px] md:text-3xl sm:text-[30px] text-[26px]">Qu&apos;est-ce que t&apos;attends ?</h3>
-            <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium xl:text-[32px] md:text-[28px] text-2xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
+            <h3 className="font-Montserrat font-bold 2xl:text-[36px] md:text-3xl sm:text-[26px] text-[22px]">Qu&apos;est-ce que t&apos;attends ?</h3>
+            <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium 2xl:text-[32px] md:text-[28px] text-xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
 
           </div>
 
-          <Paragraphe className="2xl:w-[70%] w-full font-normal leading-6 mb-5">
+          <Paragraphe className="2xl:w-[70%] w-full font-normal mb-5">
             Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
           </Paragraphe>
 
@@ -75,7 +75,7 @@ export default function Home() {
           rowReverse
           white
           icon={Goto}
-          className="lg:mr-20 text-xl px-5 py-[15px] uppercase"
+          className="2xl:mr-20  uppercase lg:self-auto self-end"
         >
           JE M&apos;INSCRIS
         </Button>
@@ -118,7 +118,7 @@ export default function Home() {
                 rowReverse
                 white
                 icon={Goto}
-                className="uppercase"
+                className="uppercase lg:self-auto self-end"
               >
                 en savoir plus
               </Button>

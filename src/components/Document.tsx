@@ -28,7 +28,7 @@ export const Documents = ({
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <div className="relative w-[60px] h-[60px]">
+                <div className="relative w-12 h-12">
                     <Image
                         src={File}
                         alt={"Formulaire d’inscription"}

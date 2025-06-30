@@ -9,7 +9,7 @@ const ListElement = ({
     return (
         <div className="flex flex-row gap-3 xl:text-paragraph text-paragraph-mobile ml-1">
             •
-            <p className="font-Inter font-light xl:text-paragraph md:text-paragraph-mobile">
+            <p className="font-Inter font-light xl:text-paragraph lg:text-paragraph-mobile">
                 {children}
             </p>
         </div>

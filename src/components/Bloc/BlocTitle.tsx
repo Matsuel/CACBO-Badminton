@@ -11,7 +11,7 @@ const BlocTitle = ({
     ...props
 }: BlocTitleProps) => {
     return (
-        <h3 className={cn("font-Montserrat font-semibold text-black md:text-[28px] text-[18px]", className)} {...props}>
+        <h3 className={cn("font-Montserrat font-semibold text-black 2xl:text-[28px] lg:text-[22px] text-[18px]", className)} {...props}>
             {children}
         </h3>
     )

@@ -27,7 +27,7 @@ const Button = ({
     }
 
     return (
-        <Link href={href} target={target} className={`flex ${rowReverse ? "flex-row-reverse" : "flex-row"} items-center justify-center gap-2 rounded-ten px-[15px] py-[10px] font-Montserrat font-medium lg:text-paragraph text-paragraph-mobile leading-none ${buttonStyle[variant]} ${className}`}>
+        <Link href={href} target={target} className={`flex ${rowReverse ? "flex-row-reverse" : "flex-row"} items-center justify-center gap-2 rounded-ten px-[15px] py-[10px] font-Montserrat font-medium xl:text-paragraph text-paragraph-mobile leading-none ${buttonStyle[variant]} ${className}`}>
             {icon}
             {children}
         </Link>

@@ -89,8 +89,8 @@ const Histoire = () => {
 
             <Bloc blocTitle="Et le CACBO dans tout ça ?">
 
-                <BlocInfos className="w-full lg:flex-row flex-col items-center">
-                    <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-2">
+                <BlocInfos className="lg:w-full lg:flex-row flex-col items-center">
+                    <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-5">
 
                         <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à

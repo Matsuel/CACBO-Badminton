@@ -115,7 +115,6 @@ const Adherer = () => {
                         </Subtitle>
 
                         <div className="w-auto h-auto flex flex-col items-start justify-start gap-[30px]">
-
                             <Documents content={"Formulaire d’inscription"} href={"/adherer/Formulaire d'inscription bad.pdf"} />
 
                             <Documents content={"Questionnaire et certificat"} href={"/adherer/Questionnaire et certificat médical.pdf"} />
