@@ -25,7 +25,7 @@ const Histoire = () => {
 
             <Bloc blocTitle="La naissance du club" className="mt-0">
                 <BlocInfos className="lg:w-[53%] h-auto relative">
-                    <Paragraphe className="w-[100%] h-auto">
+                    <Paragraphe className="w-full h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
                         Cassim, Laurent Thomas et Julien Larcher. Quelques années plus tard, le club s&apos;affilie à la
                         Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton
@@ -40,26 +40,26 @@ const Histoire = () => {
             <Bloc>
                 <div />
                 <div
-                    className="md:w-[94%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-[30px]">
+                    className="md:w-[94%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-30">
 
                     <Badge image={Logo} className="top-[-50px] left-[-50px]" />
 
-                    <Paragraphe className="w-[100%] md:indent-12 indent-0">
+                    <Paragraphe className="w-full md:indent-12 indent-0">
                         En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement,
                         contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif
                         pendant près de 4 ans.
                     </Paragraphe>
 
-                    <div className="w-full h-auto flex flex-row flex-wrap items-center justify-center gap-[30px]">
+                    <div className="w-full h-auto flex flex-row flex-wrap items-center justify-center gap-30">
 
                         {customImages.map((customImage) => (
                             <ImageLegend
                                 key={customImage.description}
                                 image={customImage.image}
                                 description={customImage.description}
-                                className="!w-[45%] h-auto"
+                                className="w-[45%]! h-auto"
                                 imageClassName="h-auto"
-                                descriptionClassName="!w-auto"
+                                descriptionClassName="w-auto!"
                             />
                         ))}
 
@@ -71,7 +71,7 @@ const Histoire = () => {
             </Bloc>
 
             <Bloc blocTitle="La renaissance de la section">
-                <BlocInfos className="lg:w-[67%] h-auto gap-[30px]">
+                <BlocInfos className="lg:w-[67%] h-auto gap-30">
                     <Paragraphe>
                         Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
                         fondateurs.
@@ -90,7 +90,7 @@ const Histoire = () => {
             <Bloc blocTitle="Et le CACBO dans tout ça ?">
 
                 <BlocInfos className="lg:w-full lg:flex-row flex-col items-center">
-                    <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-[30px] gap-5">
+                    <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-30 gap-5">
 
                         <Paragraphe>
                             Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à

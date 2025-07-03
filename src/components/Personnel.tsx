@@ -20,7 +20,7 @@ const Personnel = ({
     const formattedName = name.split(' ');
 
     return (
-        <div className="sm:w-auto w-[80%] h-auto flex flex-col items-center gap-[30px] p-8 bg-white rounded-ten">
+        <div className="sm:w-auto w-[80%] h-auto flex flex-col items-center gap-30 p-8 bg-white rounded-ten">
 
             <Image src={image} alt={name} width={170} height={170} className="rounded-ten" />
 

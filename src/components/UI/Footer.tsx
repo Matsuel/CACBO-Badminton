@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className='w-[450px] h-auto flex md:flex-row flex-col justify-center items-center gap-7'>
                     <Image src={Logo} alt='cacbo' width={100} />
 
-                    <div className='w-[1px] h-20 bg-whitebroken md:block hidden' />
+                    <div className='w-px h-20 bg-whitebroken md:block hidden' />
 
                     <div className='w-full h-auto flex flex-col justify-start items-start gap-[2px]'>
                         <h4 className='text-white font-Montserrat font-semibold text-base'>CACBO Badminton</h4>
@@ -66,13 +66,13 @@ const Footer = () => {
             <div className='w-full h-auto flex flex-row flex-wrap justify-between items-center bg-transparent mb-16 2xl:px-44 xl:px-32 lg:px-20 md:px-10 sm:px-5 px-2 md:gap-0 gap-6'>
                 <div className='w-auto h-auto flex flex-row flex-wrap justify-center items-center gap-2'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright &copy; 2025 CACBO Badminton. Tous droits réservés.</p>
-                    <div className='w-[1px] h-[18px] bg-redcolor' />
+                    <div className='w-px h-[18px] bg-redcolor' />
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Site pensé par Maël THOMAS et développé par Mathéo LANG.</p>
-                    <div className='w-[1px] h-[18px] bg-redcolor' />
+                    <div className='w-px h-[18px] bg-redcolor' />
                     <Link href='/mentions-legales' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Mentions légales</Link>
-                    <div className='w-[1px] h-[18px] bg-redcolor' />
+                    <div className='w-px h-[18px] bg-redcolor' />
                     <Link href='/politiques' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>Politique de confidentialité</Link>
-                    <div className='w-[1px] h-[18px] bg-redcolor' />
+                    <div className='w-px h-[18px] bg-redcolor' />
                     <Link href='/faq' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>FAQ</Link>
                 </div>
 

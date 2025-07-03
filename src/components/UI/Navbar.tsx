@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className='md:flex flex-row justify-center items-center gap-7 hidden'>
                     <Image src={Logo} alt='cacbo' height={50} />
 
-                    <div className="w-[1px] h-[70%] bg-redcolor rounded-full hidden md:block" />
+                    <div className="w-px h-[70%] bg-redcolor rounded-full hidden md:block" />
 
                     <div className='flex flex-col justify-center'>
                         <h1 className='font-Montserrat font-semibold text-redcolor text-2xl leading-7'>CACBO Badminton</h1>
@@ -63,9 +63,9 @@ const Navbar = () => {
 
             </div>
 
-            <div className='w-[80%] h-[1px] bg-[#e0e0e0] rounded-full my-8 hidden md:block' />
+            <div className='w-[80%] h-px bg-[#e0e0e0] rounded-full my-8 hidden md:block' />
 
-            <div className={`w-[80%] flex-col md:flex md:flex-row justify-start items-center gap-[30px] ${isOpen ? 'flex' : 'hidden'} md:flex`}>
+            <div className={`w-[80%] flex-col md:flex md:flex-row justify-start items-center gap-30 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
                 {NavbarLinks.map((link) => (
                     <Link key={link.name} href={link.href} className='font-Montserrat font-medium text-blackcolor text-20 hover:text-redcolor transition-all duration-300 ease-in-out'>
                         {link.name.toUpperCase()}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 ))}
             </div>
 
-            <div className='w-[80%] h-[1px] bg-[#e0e0e0] rounded-full mt-8 mb-5 hidden md:block' />
+            <div className='w-[80%] h-px bg-[#e0e0e0] rounded-full mt-8 mb-5 hidden md:block' />
         </nav>
     )
 }

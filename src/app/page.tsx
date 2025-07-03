@@ -31,7 +31,7 @@ export default function Home() {
             Envie d&apos;en savoir plus ?
           </Paragraphe>
 
-          <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+          <div className="w-full h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
             <Button
               variant="inverted"
               href="/histoire"
@@ -56,7 +56,7 @@ export default function Home() {
         className="md:w-[80%] w-[90%] h-auto flex lg:flex-row flex-col items-center justify-between bg-white border-1 border-redcolor rounded-ten lg:p-10 p-5 mt-44">
 
         <div className="w-auto h-auto flex flex-col items-start justify-center lg:self-auto self-start lg:gap-[50px] gap-5">
-          <div className="w-[100%] h-auto flex flex-col items-start justify-center gap-2">
+          <div className="w-full h-auto flex flex-col items-start justify-center gap-2">
 
             <h3 className="font-Montserrat font-bold 2xl:text-[36px] md:text-3xl sm:text-[26px] text-[22px]">Qu&apos;est-ce que t&apos;attends ?</h3>
             <h4 className="flex flex-row items-center gap-4 font-Montserrat font-medium 2xl:text-[32px] md:text-[28px] text-xl text-redcolor italic">Rejoins-nous ! <Emoji name="wink" width={36} /></h4>
@@ -97,7 +97,7 @@ export default function Home() {
               Envie de taper le volant ? Nos créneaux sont :
             </Subtitle>
 
-            <div className="w-[100%] h-auto flex lg:flex-row flex-col gap-5 lg:items-center items-start justify-between">
+            <div className="w-full h-auto flex lg:flex-row flex-col gap-5 lg:items-center items-start justify-between">
               <div className="flex flex-col gap-2">
                 <ListElement>
                   <span className="font-normal">lundi</span> → 21ᴴ - 23ᴴ
@@ -145,7 +145,7 @@ export default function Home() {
             Vous avez des interrogations sur le fonctionnement du club, les inscriptions ou les équipements nécessaires ?
           </Paragraphe>
 
-          <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+          <div className="w-full h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
             <Button
               className="uppercase"
               variant="inverted"
@@ -236,7 +236,7 @@ export default function Home() {
             <span className="font-medium">Le volant touche la ligne ?</span> Il est bon !
           </ListElement>
 
-          <div className="w-[100%] h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
+          <div className="w-full h-auto flex flex-row items-center justify-end lg:mt-3 md:mt-5">
             <Button
               className="uppercase"
               variant="inverted"

@@ -20,7 +20,7 @@ const Bloc = ({
                 {blocTitle} {blocIcon}
             </BlocTitle>
 
-            <div className="w-[100%] h-auto flex lg:flex-row flex-col flex-wrap items-start justify-between lg:gap-0 gap-7">
+            <div className="w-full h-auto flex lg:flex-row flex-col flex-wrap items-start justify-between lg:gap-0 gap-7">
                 {children}
             </div>
 

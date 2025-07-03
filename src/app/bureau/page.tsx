@@ -15,7 +15,7 @@ const Bureau = () => {
             icon={People}
         >
 
-            <Paragraphe className="md:w-[45%] w-[90%] leading-7 text-wrap !text-center mb-[90px]">
+            <Paragraphe className="md:w-[45%] w-[90%] leading-7 text-wrap text-center! mb-[90px]">
                 Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
                 ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
                 du compte bancaire) et de la résolution des problèmes et des conflits en son sein.

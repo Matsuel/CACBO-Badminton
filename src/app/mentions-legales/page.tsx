@@ -16,7 +16,7 @@ const MentionsLegales = () => {
 
             <div className="md:w-[80%] w-[90%] h-auto flex flex-col gap-10 items-start justify-start">
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Editeur du site
                     </BlocTitle>
@@ -29,7 +29,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Hébergement
                     </BlocTitle>
@@ -40,7 +40,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Propriété intellectuelle
                     </BlocTitle>
@@ -49,7 +49,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Données personnelles
                     </BlocTitle>
@@ -70,7 +70,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Cookies
                     </BlocTitle>
@@ -79,7 +79,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Responsabilité
                     </BlocTitle>
@@ -88,7 +88,7 @@ const MentionsLegales = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Modification des mentions légales
                     </BlocTitle>

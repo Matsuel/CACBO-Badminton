@@ -14,7 +14,7 @@ const Boutique = () => {
             <div className='flex flex-col items-center gap-28 mt-5'>
 
 
-                <Paragraphe className="md:w-[40%] w-[90%] !text-center" >
+                <Paragraphe className="md:w-[40%] w-[90%] text-center!" >
                     Notre boutique est accessible directement via HelloAsso !
                     Vous pouvez facilement parcourir et acheter les articles aux couleurs du club en toute sécurité.
                     Profitez de cette plateforme pratique pour passer commande et soutenir notre club.

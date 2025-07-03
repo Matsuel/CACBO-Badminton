@@ -17,7 +17,7 @@ const Politique = () => {
 
             <div className="md:w-[80%] w-[90%] h-auto flex flex-col gap-10 items-start justify-start">
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Introduction
                     </BlocTitle>
@@ -26,7 +26,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Données collectées
                     </BlocTitle>
@@ -43,7 +43,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Utilisation des données
                     </BlocTitle>
@@ -58,7 +58,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Partage des données
                     </BlocTitle>
@@ -72,7 +72,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Sécurité des données
                     </BlocTitle>
@@ -81,7 +81,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Vos droits
                     </BlocTitle>
@@ -101,7 +101,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Cookies
                     </BlocTitle>
@@ -110,7 +110,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Modifications de la politique de confidentialité
                     </BlocTitle>
@@ -119,7 +119,7 @@ const Politique = () => {
                     </div>
                 </div>
 
-                <div className="w-[100%] h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
+                <div className="w-full h-auto flex flex-col items-start justify-start mt-[20px] gap-5">
                     <BlocTitle>
                         Contact
                     </BlocTitle>

@@ -46,7 +46,7 @@ const Adherer = () => {
                 </BlocLeft>
 
                 <BlocRight className="border-1 border-redcolor rounded-ten">
-                    <Subtitle className="leading-10 !font-medium text-3xl">
+                    <Subtitle className="leading-10 font-medium! text-3xl">
                         Profitez de <strong className="font-semibold text-redcolor">3</strong> séances d&apos;essai
                         sans engagement avant de vous inscrire !
                     </Subtitle>
@@ -114,7 +114,7 @@ const Adherer = () => {
                             Fichiers à télécharger <span className="font-light"> (si inscription papier) :</span>
                         </Subtitle>
 
-                        <div className="w-auto h-auto flex flex-col items-start justify-start gap-[30px]">
+                        <div className="w-auto h-auto flex flex-col items-start justify-start gap-30">
                             <Documents content={"Formulaire d’inscription"} href={"/adherer/Formulaire d'inscription bad.pdf"} />
 
                             <Documents content={"Questionnaire et certificat"} href={"/adherer/Questionnaire et certificat médical.pdf"} />

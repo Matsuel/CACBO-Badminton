@@ -1,10 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --leading-0: 0;
+  --leading-auto: auto;
+
+  --gap-30: 30px;
+
+  --text-20: 20px;
+  --text-paragraph: 17px;
+  --text-paragraph-mobile: 14px;
+
+  --padding-horizontal: 20px;
+  --padding-vertical: 6px;
+
+  --radius-ten: 10px;
+
+  --border-width-1: 1.5px;
+
+  --font-Montserrat: Montserrat, sans-serif;
+  --font-Shantell: Shantell Sans, cursive;
+  --font-Source-serif-pro: Source Serif Pro, serif;
+  --font-Inter: Inter, sans-serif;
+
+  --color-background: var(--background);
+  --color-redcolor: var(--redcolor);
+  --color-blackcolor: var(--blackcolor);
+  --color-whitebroken: var(--white-broken);
+  --color-redcolorhover: var(--redcolor-hover);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 :root {
   --background: #ffffff;

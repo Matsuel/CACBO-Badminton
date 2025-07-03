@@ -16,7 +16,7 @@ const Partenaire = ({
 }: PartenaireProps) => {
 
     return (
-        <div className="w-[230px] h-auto flex flex-col items-center gap-[30px] p-7 bg-white rounded-ten">
+        <div className="w-[230px] h-auto flex flex-col items-center gap-30 p-7 bg-white rounded-ten">
             <Image src={image} alt={name} width={170} height={170} className="rounded-ten" />
 
             <h3 className="w-auto flex flex-col font-Montserrat font-medium text-[22px] text-center">

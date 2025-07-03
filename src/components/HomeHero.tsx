@@ -10,7 +10,7 @@ const HomeHero = () => {
             className="flex flex-col items-center justify-center md:w-[80%] w-[90%] h-auto mt-5 bg-cover bg-center rounded-ten"
             style={{ backgroundImage: `url(${Gymnase.src})` }}>
 
-            <div className="w-[100%] h-[485px] flex flex-row justify-center items-center">
+            <div className="w-full h-[485px] flex flex-row justify-center items-center">
 
                 <div className="md:w-[80%] w-[90%] h-full flex flex-col justify-center gap-7 2xl:pl-28 xl:pl-20 lg:pl-16 md:pl-10 pl-5">
                     <h3 className="font-Shantell font-medium text-white 2xl:text-4xl xl:text-[32px] lg:text-[28px] text-2xl ">Bienvenue !</h3>
@@ -18,12 +18,12 @@ const HomeHero = () => {
                     <h1 className="font-Montserrat font-bold text-white 2xl:text-8xl xl:text-[86px] lg:text-[76px] md:text-[66px] sm:text-[52px] text-[40px]">CACBO Badminton</h1>
 
                     <div className="flex flex-col items-start justify-center lg:gap-3 md:gap-2">
-                        <h3 className="font-Inter font-normal text-white 2xl:text-3xl xl:text-[24px] lg:text-[20px] text-[18px]">Club de badminton
+                        <h3 className="font-Inter font-normal text-white 2xl:text-3xl xl:text-[24px] lg:text-20 text-[18px]">Club de badminton
                             pour <strong>adultes</strong>, badistes depuis <strong>2007</strong></h3>
 
                         <div className="flex flex-row items-start justify-center gap-3">
                             <Image src={GPS} alt="gps" className="mt-1" />
-                            <h3 className="font-Shantell font-medium text-white 2xl:text-3xl xl:text-[24px] lg:text-[20px] text-[18px]">
+                            <h3 className="font-Shantell font-medium text-white 2xl:text-3xl xl:text-[24px] lg:text-20 text-[18px]">
                                 Carbon-Blanc (33)
                             </h3>
                         </div>

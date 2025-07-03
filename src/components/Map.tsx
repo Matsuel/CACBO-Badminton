@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Map = () => {
     return (
-        <div className="w-[100%] h-auto flex items-start justify-start bg-white p-7 rounded-ten">
+        <div className="w-full h-auto flex items-start justify-start bg-white p-7 rounded-ten">
             <Image src={MapImage} alt="Position gymnase" />
         </div>
     )
