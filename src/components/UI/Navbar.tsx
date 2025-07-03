@@ -27,7 +27,7 @@ const Navbar = () => {
             {/* Navbar for larger screens */}
             <div className={`w-[80%] flex-col md:flex md:flex-row justify-between ${isOpen ? 'flex' : 'hidden'} md:flex`}>
 
-                <div className='flex flex-row justify-center items-center gap-7'>
+                <div className='md:flex flex-row justify-center items-center gap-7 hidden'>
                     <Image src={Logo} alt='cacbo' height={50} />
 
                     <div className="w-[1px] h-[70%] bg-redcolor rounded-full hidden md:block" />

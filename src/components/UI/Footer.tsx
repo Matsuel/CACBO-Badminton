@@ -63,9 +63,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full h-auto flex flex-row flex-wrap justify-between items-center bg-transparent mb-20 2xl:px-44 xl:px-32 lg:px-20 md:px-10 sm:px-5 px-2 md:gap-0 gap-6'>
+            <div className='w-full h-auto flex flex-row flex-wrap justify-between items-center bg-transparent mb-16 2xl:px-44 xl:px-32 lg:px-20 md:px-10 sm:px-5 px-2 md:gap-0 gap-6'>
                 <div className='w-auto h-auto flex flex-row flex-wrap justify-center items-center gap-2'>
-                    <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright © 2025 CACBO Badminton. Tous droits réservés.</p>
+                    <p className='text-redcolor font-Inter font-light text-[13px]'>Copyright &copy; 2025 CACBO Badminton. Tous droits réservés.</p>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Site pensé par Maël THOMAS et développé par Mathéo LANG.</p>
                     <div className='w-[1px] h-[18px] bg-redcolor' />
@@ -76,7 +76,7 @@ const Footer = () => {
                     <Link href='/faq' className='text-redcolor font-Inter font-light text-[13px] hover:opacity-40 transition-all ease-in-out duration-300'>FAQ</Link>
                 </div>
 
-                <div className='md:w-auto w-full h-auto flex flex-row justify-center items-center gap-2'>
+                <div className='w-full h-auto flex flex-row justify-center items-center gap-2 mt-5'>
                     <p className='text-redcolor font-Inter font-light text-[13px]'>Une section de</p>
                     <Image src={Omnisport} alt='omnisport' width={95} />
                 </div>
