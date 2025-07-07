@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className='w-full h-auto flex flex-row items-center justify-between bg-white px-5 py-3 rounded-xl'>
+        <nav className='w-full h-auto flex flex-row items-center justify-between bg-white px-5 py-3 rounded-xl shadow-default'>
             <Image
                 src="/logo.svg"
                 alt="CACBO Badminton Logo"

@@ -57,6 +57,8 @@ layer(base);
   --gap-header: var(--header-gap);
   --gap-body: var(--body-gap);
   --gap-content: var(--content-gap);
+
+  --shadow-default: 0 0 6px rgba(16, 12, 8, 0.1);
 }
 
 /*
