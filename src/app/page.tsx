@@ -7,6 +7,7 @@ import Bloc from "../components/Bloc";
 import BlocText from "@/components/BlocText";
 import BlocSubtitle from "@/components/BlocSubtitle";
 import ExternalLink from "@/assets/ExternalLink";
+import Caroussel from "@/components/Caroussel";
 
 export default function Home() {
   return (
@@ -58,6 +59,15 @@ export default function Home() {
           </Button>
 
         </Bloc>
+
+        <Caroussel
+          images={[
+            "/acceuil/caroussel1.png",
+            "/acceuil/caroussel2.png",
+            "/acceuil/caroussel2.png"
+          ]}
+          title="Notre club en photos"
+        />
       </Content>
     </PageLayout>
   );
