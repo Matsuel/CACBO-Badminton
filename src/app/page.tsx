@@ -68,6 +68,28 @@ export default function Home() {
           ]}
           title="Notre club en photos"
         />
+
+        <Bloc title="Envie de taper dans le volant ?">
+          <h4 className="font-Poppins text-[15px] font-medium leading-4">
+            Nos créneaux sont les :
+          </h4>
+
+          <ul className="list-disc pl-7">
+            <li className="font-Poppins font-light text-[15px] leading-4">lundis → 21h - 23h</li>
+            <li className="font-Poppins font-light text-[15px] leading-4">mardis → 18h - 21h</li>
+            <li className="font-Poppins font-light text-[15px] leading-4">vendredis → 18h30 - 21h</li>
+          </ul>
+
+          <BlocText>
+            Notre complexe sportif se situe au <span className="font-medium">24 rue Pasteur</span> à Carbon-Blanc. 📍
+          </BlocText>
+
+          <Button href="/" variant="inverted">
+            En savoir plus
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
       </Content>
     </PageLayout>
   );
