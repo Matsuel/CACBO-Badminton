@@ -7,6 +7,14 @@ layer(base);
 
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --leading-0: 0;
   --leading-auto: auto;
@@ -28,12 +36,16 @@ layer(base);
   --font-Shantell: Shantell Sans, cursive;
   --font-Source-serif-pro: Source Serif Pro, serif;
   --font-Inter: Inter, sans-serif;
+  --font-Poppins: Poppins, sans-serif;
 
   --color-background: var(--background);
   --color-redcolor: var(--redcolor);
   --color-blackcolor: var(--blackcolor);
   --color-whitebroken: var(--white-broken);
   --color-redcolorhover: var(--redcolor-hover);
+
+  --gap-header: var(--header-gap);
+  --gap-body: var(--body-gap);
 }
 
 /*
@@ -55,9 +67,11 @@ layer(base);
 }
 
 :root {
-  --background: #ffffff;
-  --redcolor: #ff0000;
+  --background: #FAFAFA;
+  --redcolor: #FF1C1C;
   --redcolor-hover: rgba(255, 0, 0, 0.3);
   --blackcolor: #000000;
   --white-broken: #f8f8f8;
+  --header-gap: 50px;
+  --body-gap: 40px;
 }
