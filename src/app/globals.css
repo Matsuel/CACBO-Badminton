@@ -15,6 +15,14 @@ layer(base);
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --leading-0: 0;
   --leading-auto: auto;
@@ -37,6 +45,7 @@ layer(base);
   --font-Source-serif-pro: Source Serif Pro, serif;
   --font-Inter: Inter, sans-serif;
   --font-Poppins: Poppins, sans-serif;
+  --font-Space-Grotesk: 'Space Grotesk', sans-serif;
 
   --color-background: var(--background);
   --color-redcolor: var(--redcolor);
@@ -46,6 +55,7 @@ layer(base);
 
   --gap-header: var(--header-gap);
   --gap-body: var(--body-gap);
+  --gap-content: var(--content-gap);
 }
 
 /*
@@ -74,4 +84,5 @@ layer(base);
   --white-broken: #f8f8f8;
   --header-gap: 50px;
   --body-gap: 40px;
+  --content-gap: 15px;
 }
