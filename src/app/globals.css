@@ -52,6 +52,7 @@ layer(base);
   --color-blackcolor: var(--blackcolor);
   --color-whitebroken: var(--white-broken);
   --color-redcolorhover: var(--redcolor-hover);
+  --color-redpale: var(--redpale);
 
   --gap-header: var(--header-gap);
   --gap-body: var(--body-gap);
@@ -79,6 +80,7 @@ layer(base);
 :root {
   --background: #FAFAFA;
   --redcolor: #FF1C1C;
+  --redpale: #FF6464;
   --redcolor-hover: rgba(255, 0, 0, 0.3);
   --blackcolor: #000000;
   --white-broken: #f8f8f8;

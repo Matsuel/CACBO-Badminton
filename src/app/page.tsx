@@ -1,6 +1,12 @@
 import Button from "@/components/Button";
+import Content from "@/components/Content";
 import PageLayout from "@/components/PageLayout";
 import { SendHorizontal } from "lucide-react";
+import Image from "next/image";
+import Bloc from "../components/Bloc";
+import BlocText from "@/components/BlocText";
+import BlocSubtitle from "@/components/BlocSubtitle";
+import ExternalLink from "@/assets/ExternalLink";
 
 export default function Home() {
   return (
@@ -24,6 +30,35 @@ export default function Home() {
           Nous contacter
         </Button>
       </div>
+
+      <Content>
+        <Image
+          src="/acceuil/1.png"
+          alt="Photo de groupe de badminton"
+          width={500}
+          height={300}
+        />
+
+        <Bloc title="Créé en 2007 à Carbon-Blanc. ">
+          <BlocText>
+            Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
+          </BlocText>
+
+          <BlocSubtitle>
+            Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
+          </BlocSubtitle>
+
+          <BlocText>
+            Envie d'en savoir plus ?
+          </BlocText>
+
+          <Button href={"/histoire"} variant="inverted">
+            Découvrir notre histoire
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
+      </Content>
     </PageLayout>
   );
 }
