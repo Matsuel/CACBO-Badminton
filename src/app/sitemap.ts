@@ -14,6 +14,9 @@ export default async function sitemap() {
         '/politiques',
         '/mentions-legales',
         '/faq',
+        '/favicon.ico',
+        '/volant',
+        '/raquette',
     ];
 
     return paths.map((path) => ({
@@ -41,11 +44,14 @@ function getPriority(path: string): number {
         case '/partenaires':
             return 0.4;
         case '/regles':
+        case '/volant':
+        case '/raquette':
             return 0.3;
         case '/politiques':
             return 0.2;
         case '/mentions-legales':
         case '/faq':
+        case '/favicon.ico':
             return 0.1;
         default:
             return 0.5;
