@@ -49,6 +49,11 @@ export default function Home() {
           title="Notre club en photos"
         />
 
+        <Bloc title="Envie de taper dans le volant ?">
+          
+
+        </Bloc>
+
         <Bloc title="Créé en 2007 à Carbon-Blanc. ">
           <BlocText>
             Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
