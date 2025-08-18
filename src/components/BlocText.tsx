@@ -2,7 +2,8 @@ import { cn } from '@/utils/cn'
 import React from 'react'
 
 interface BlocTextProps extends React.HTMLAttributes<HTMLDivElement> {
-    // Define any additional props if needed
+    className?: string;
+    children: React.ReactNode;
 }
 
 const BlocText = ({

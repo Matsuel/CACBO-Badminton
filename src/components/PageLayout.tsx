@@ -3,7 +3,8 @@ import React from 'react'
 import Navbar from './UI/Navbar'
 
 interface PageLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
-    // Define any additional props if needed
+    className?: string;
+    children: React.ReactNode;
 }
 
 const PageLayout = ({

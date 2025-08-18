@@ -2,7 +2,8 @@ import { cn } from '@/utils/cn'
 import React from 'react'
 
 interface BlocSubtitleProps extends React.HTMLAttributes<HTMLDivElement> {
-    // Define any additional props if needed
+    className?: string;
+    children: React.ReactNode;
 }
 
 const BlocSubtitle = ({
