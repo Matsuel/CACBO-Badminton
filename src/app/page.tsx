@@ -40,6 +40,15 @@ export default function Home() {
           height={300}
         />
 
+        <Caroussel
+          images={[
+            "/acceuil/caroussel1.png",
+            "/acceuil/caroussel2.png",
+            "/acceuil/caroussel2.png"
+          ]}
+          title="Notre club en photos"
+        />
+
         <Bloc title="Créé en 2007 à Carbon-Blanc. ">
           <BlocText>
             Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
@@ -50,7 +59,7 @@ export default function Home() {
           </BlocSubtitle>
 
           <BlocText>
-            Envie d'en savoir plus ?
+            Envie d&apos;en savoir plus ?
           </BlocText>
 
           <Button href={"/histoire"} variant="inverted">
@@ -59,15 +68,6 @@ export default function Home() {
           </Button>
 
         </Bloc>
-
-        <Caroussel
-          images={[
-            "/acceuil/caroussel1.png",
-            "/acceuil/caroussel2.png",
-            "/acceuil/caroussel2.png"
-          ]}
-          title="Notre club en photos"
-        />
 
         <Bloc title="Envie de taper dans le volant ?">
           <h4 className="font-Poppins text-[15px] font-medium leading-4">
