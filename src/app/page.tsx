@@ -1,13 +1,14 @@
+import ExternalLink from "@/assets/ExternalLink";
+import BlocSubtitle from "@/components/BlocSubtitle";
+import BlocText from "@/components/BlocText";
 import Button from "@/components/Button";
+import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
 import PageLayout from "@/components/PageLayout";
 import { SendHorizontal } from "lucide-react";
 import Image from "next/image";
 import Bloc from "../components/Bloc";
-import BlocText from "@/components/BlocText";
-import BlocSubtitle from "@/components/BlocSubtitle";
-import ExternalLink from "@/assets/ExternalLink";
-import Caroussel from "@/components/Caroussel";
+import ImageLegend from "@/components/ImageLegend";
 
 export default function Home() {
   return (
@@ -49,32 +50,7 @@ export default function Home() {
           title="Notre club en photos"
         />
 
-        <Bloc title="Envie de taper dans le volant ?">
-          
-
-        </Bloc>
-
-        <Bloc title="Créé en 2007 à Carbon-Blanc. ">
-          <BlocText>
-            Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
-          </BlocText>
-
-          <BlocSubtitle>
-            Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
-          </BlocSubtitle>
-
-          <BlocText>
-            Envie d&apos;en savoir plus ?
-          </BlocText>
-
-          <Button href={"/histoire"} variant="inverted">
-            Découvrir notre histoire
-            <ExternalLink size={10} />
-          </Button>
-
-        </Bloc>
-
-        <Bloc title="Envie de taper dans le volant ?">
+        <Bloc title="Envie de taper dans le volant ?" key={"want-to-hit-the-shuttlecock"}>
           <h4 className="font-Poppins text-[15px] font-medium leading-4">
             Nos créneaux sont les :
           </h4>
@@ -95,6 +71,33 @@ export default function Home() {
           </Button>
 
         </Bloc>
+
+        <Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
+          <BlocText>
+            Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
+          </BlocText>
+
+          <BlocSubtitle>
+            Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
+          </BlocSubtitle>
+
+          <BlocText>
+            Envie d&apos;en savoir plus ?
+          </BlocText>
+
+          <Button href={"/histoire"} variant="inverted">
+            Découvrir notre histoire
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
+
+        <ImageLegend
+          src="/acceuil/partage.png"
+          description="Parce que le club, c’est aussi des moments de partage après l’effort ! "
+        />
+
+
       </Content>
     </PageLayout>
   );
