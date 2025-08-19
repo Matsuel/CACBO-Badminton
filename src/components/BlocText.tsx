@@ -1,3 +1,4 @@
+import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn'
 import React from 'react'
 
@@ -12,7 +13,7 @@ const BlocText = ({
     ...props
 }: BlocTextProps) => {
     return (
-        <p className={cn("text-black font-Poppins font-light text-[15px] leading-4", className)} {...props}>
+        <p className={cn(`${textVariants.text}`, className)} {...props}>
             {children}
         </p>
     )

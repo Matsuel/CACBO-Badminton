@@ -9,6 +9,7 @@ import { SendHorizontal } from "lucide-react";
 import Image from "next/image";
 import Bloc from "../components/Bloc";
 import ImageLegend from "@/components/ImageLegend";
+import { textVariants } from "@/constantes/theme";
 
 export default function Home() {
   return (
@@ -96,6 +97,31 @@ export default function Home() {
           src="/acceuil/partage.png"
           description="Parce que le club, c’est aussi des moments de partage après l’effort ! "
         />
+
+        <Bloc title="Venez jouer avec nous ! 🤝">
+          <BlocText>
+            Le badminton, c&apos;est encore mieux à plusieurs ! Que vous soyez débutant ou confirmé, rejoignez-nous et profitez de créneaux adaptés à tous les niveaux.
+          </BlocText>
+
+          <h4 className={textVariants.h4}>
+            💶 Tarifs d’adhésion :
+          </h4>
+
+          <ul className="list-disc pl-7">
+            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-bold">50 €</span> pour un adulte</li>
+            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-bold">90 €</span> pour un couple</li>
+          </ul>
+
+          <BlocText>
+            Jouez en toute liberté, échangez avec d&apos;autres passionnés et participez à nos soirées ! ⚡
+          </BlocText>
+
+          <Button href="/" variant="inverted">
+            Nous rejoindre
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
 
 
       </Content>
