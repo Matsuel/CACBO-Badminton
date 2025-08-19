@@ -22,7 +22,7 @@ const ImageLegend = ({
                 width={1000}
                 height={1000}
             />
-            <p className={`w-4/5 text-center text-redpale ${textVariants.secondary}`}>
+            <p className={`text-center text-redpale ${textVariants.secondary}`}>
                 {description}
             </p>
         </div>

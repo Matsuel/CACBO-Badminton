@@ -116,8 +116,64 @@ export default function Home() {
             Jouez en toute liberté, échangez avec d&apos;autres passionnés et participez à nos soirées ! ⚡
           </BlocText>
 
-          <Button href="/" variant="inverted">
+          <Button href="/adherer" variant="inverted">
             Nous rejoindre
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
+
+        <ImageLegend
+          src="/acceuil/plaisir.png"
+          description="Smash, défense, amorti... et surtout du plaisir !"
+        />
+
+        <Bloc title="Les règles essentielles du bad’">
+          <h4 className={textVariants.h4}>
+            Avant d’entrer sur le terrain, un rappel des bases :
+          </h4>
+
+          <ul className="list-disc pl-7">
+            <li className="font-Poppins font-light text-[15px] leading-4">Le service doit être effectué en diagonale, sous la taille.</li>
+            <li className="font-Poppins font-light text-[15px] leading-4">Un set se joue en 21 points, avec 2 points d’écart minimum.</li>
+            <li className="font-Poppins font-light text-[15px] leading-4">Le volant touche la ligne ? Il est bon !</li>
+          </ul>
+
+          <Button variant="inverted" href="/regles">
+            En savoir plus
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
+
+        <ImageLegend
+          src="/acceuil/ensemble.png"
+          description="Ici, on joue, on rigole et on progresse ensemble !"
+        />
+
+        <Bloc title="Une question ? On a la réponse !">
+          <BlocText>
+            Vous avez des interrogations sur le fonctionnement du club, les inscriptions ou les équipements nécessaires ?
+          </BlocText>
+
+          <Button variant="inverted" href="/faq">
+            Voir notre FAQ
+            <ExternalLink size={10} />
+          </Button>
+        </Bloc>
+
+        <ImageLegend
+          src="/acceuil/ensemble2.png"
+          description="Ici, on joue, on rigole et on progresse ensemble !"
+        />
+
+        <Bloc title="Eh, qu’est-ce t’attends ?" subtitile="Rejoins-nous ! 😉">
+          <BlocText>
+            Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
+          </BlocText>
+
+          <Button variant="inverted" href="/adherer">
+            Je m’inscris
             <ExternalLink size={10} />
           </Button>
 
