@@ -1,28 +1,27 @@
-import President from '@/assets/bureau/president.png'
-import Tresorier from '@/assets/bureau/tresorier.png'
-import Secretaire from '@/assets/bureau/secretaire.png'
-import Membre from '@/assets/bureau/membre.png'
-
 
 export const personnel = [
     {
-        name: "Laurent THOMAS",
+        firstName: "Laurent",
+        lastName: "THOMAS",
         role: "Président",
-        image: President
+        color: "#03FFE2"
     },
     {
-        name: "Maël THOMAS",
+        firstName: "Maël",
+        lastName: "THOMAS",
         role: "Trésorier",
-        image: Tresorier
+        color: "#FF004A"
     },
     {
-        name: "Cédric ARMENILI",
+        firstName: "Cédric",
+        lastName: "ARMENILI",
         role: "Secrétaire",
-        image: Secretaire
+        color: "#FFFD02"
     },
     {
-        name: "Stéphane PIERRONNET",
+        firstName: "Stéphane",
+        lastName: "PIERRONNET",
         role: "Membre",
-        image: Membre
+        color: "#03FFA0"
     }
 ]
