@@ -1,38 +1,39 @@
-import React from 'react'
-import People from '@/assets/people.svg'
-import Personnel from "@/components/Personnel";
-import { SITE_CONFIG } from "@/constantes";
-import PageLayout from '@/components/Page'
-import Paragraphe from '@/components/UI/Paragraphe';
-import { personnel } from '@/constantes/bureau';
+import Bloc from '@/components/Bloc';
+import BlocText from '@/components/BlocText';
+import Content from '@/components/Content';
+import Header from '@/components/Header';
+import PageLayout from '@/components/PageLayout';
+import SingleTitle from '@/components/SingleTitle';
+import Image from 'next/image';
 
 const Bureau = () => {
 
     return (
-        <PageLayout
-            title={SITE_CONFIG.bureau}
-            subtitle='Équipe dirigeante du club'
-            icon={People}
-        >
+        <PageLayout>
+            <Header
+                title='BUREAU'
+                subtitle="Équipe dirigeante du club"
+            />
 
-            <Paragraphe className="md:w-[45%] w-[90%] leading-7 text-wrap text-center! mb-[90px]">
-                Les membres du Bureau veillent au bon fonctionnement du club et au respect des règlements en vigueur,
-                ils s&apos;occupent de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion
-                du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
-            </Paragraphe>
+            <Content>
+                <Image
+                    src="/bureau/1.png"
+                    alt="Photo devant une table avec des raquettes"
+                    width={500}
+                    height={300}
+                />
 
-            <div className="w-auto h-auto flex flex-row flex-wrap justify-center gap-[70px] mb-14">
+                <Bloc title='Quésaco ?'>
+                    <BlocText>
+                        Le Bureau veille au bon fonctionnement du club et au respect des règlements en vigueur, il s&apos;occupe de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
+                    </BlocText>
+                </Bloc>
 
-                {personnel.map((person) => (
-                    <Personnel
-                        name={person.name}
-                        role={person.role}
-                        image={person.image}
-                        key={person.name}
-                    />
-                ))}
+                <SingleTitle>
+                    Composition du Bureau
+                </SingleTitle>
+            </Content>
 
-            </div>
 
         </PageLayout>
     )

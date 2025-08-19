@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button';
 import { SendHorizontal } from 'lucide-react';
 import { Url } from 'url';
+import { textVariants } from '@/constantes/theme';
 
 interface HeaderProps {
     h2?: string;
@@ -24,11 +25,11 @@ const Header = ({
                 {h2}
             </h2>}
 
-            <h1 className="font-Space-Grotesk text-[38px] font-bold text-redcolor leading-7">
+            <h1 className={`${textVariants.h1} text-redcolor`}>
                 {title}
             </h1>
 
-            <h3 className="font-Poppins text-[13px] text-redcolor leading-none flex flex-col">
+            <h3 className={`${textVariants.secondary} text-redpale`}>
                 {subtitle}
             </h3>
 
