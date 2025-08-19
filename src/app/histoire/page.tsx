@@ -23,7 +23,7 @@ const Histoire = () => {
             icon={Book}
         >
 
-            <Bloc blocTitle="La naissance du club" className="mt-0">
+            <Bloc title="La naissance du club" className="mt-0">
                 <BlocInfos className="lg:w-[53%] h-auto relative">
                     <Paragraphe className="w-full h-auto">
                         Le CACBO Badminton voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed
@@ -37,7 +37,7 @@ const Histoire = () => {
                 </BlocInfos>
             </Bloc>
 
-            <Bloc>
+            <Bloc title="">
                 <div />
                 <div
                     className="md:w-[94%] w-[90%] h-auto flex flex-col items-center justify-center bg-white rounded-ten p-[30px] md:mb-[170px] mt-20 mb-[50px] relative gap-30">
@@ -70,7 +70,7 @@ const Histoire = () => {
                 </div>
             </Bloc>
 
-            <Bloc blocTitle="La renaissance de la section">
+            <Bloc title="La renaissance de la section">
                 <BlocInfos className="lg:w-[67%] h-auto gap-30">
                     <Paragraphe>
                         Cependant, en septembre 2022, il renaît sous l&apos;impulsion de Laurent Thomas, l&apos;un de ses
@@ -87,7 +87,7 @@ const Histoire = () => {
 
             </Bloc>
 
-            <Bloc blocTitle="Et le CACBO dans tout ça ?">
+            <Bloc title="Et le CACBO dans tout ça ?">
 
                 <BlocInfos className="lg:w-full lg:flex-row flex-col items-center">
                     <div className="lg:w-4/5 w-full h-auto flex flex-col items-center justify-center lg:gap-30 gap-5">

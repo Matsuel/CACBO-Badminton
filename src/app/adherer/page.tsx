@@ -25,7 +25,7 @@ const Adherer = () => {
             description
         >
 
-            <Bloc blocTitle="Pourquoi nous rejoindre ?" className="mt-0">
+            <Bloc title="Pourquoi nous rejoindre ?" className="mt-0">
                 <BlocLeft className="gap-5">
                     <Paragraphe>
                         En rejoignant notre club, vous intégrez une <strong className="font-medium">communauté
@@ -53,7 +53,7 @@ const Adherer = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle="Comment ?">
+            <Bloc title="Comment ?">
                 <BlocLeft>
                     <Subtitle>
                         <span className="underline">Documents nécessaires</span> : préparez votre dossier <Emoji name="clipboard" width={22} />
@@ -125,7 +125,7 @@ const Adherer = () => {
 
             </Bloc>
 
-            <Bloc blocTitle="Où et à quelle heure ?">
+            <Bloc title="Où et à quelle heure ?">
                 <BlocLeft className="gap-2">
                     <Paragraphe className="w-[80%]">
                         Nous nous situons au <span className="underline">Complexe sportif Philippe Madrelle</span>,
@@ -168,7 +168,7 @@ const Adherer = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle="À quel prix ?">
+            <Bloc title="À quel prix ?">
                 <BlocLeft>
                     <Subtitle>
                         <span className="underline">Tarifs avantageux</span> : adhérez à prix réduits ! <Emoji name="euro" width={24} />

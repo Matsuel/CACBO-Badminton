@@ -19,7 +19,7 @@ const Regles = () => {
             title='Règles du jeu'
             subtitle="Tout ce qu'il faut savoir avant de jouer !"
         >
-            <Bloc blocTitle='1.  Le déroulement du match' className='mt-0'>
+            <Bloc title='1.  Le déroulement du match' className='mt-0'>
                 <BlocLeft>
                     <Subtitle>
                         Comment se déroule un match ? 🎯
@@ -56,7 +56,7 @@ const Regles = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle='2.  Les limites du terrain'>
+            <Bloc title='2.  Les limites du terrain'>
                 <BlocFull>
                     <Subtitle>
                         Simple et double : quelles différences ? 🤔
@@ -100,7 +100,7 @@ const Regles = () => {
                 />
             </Bloc>
 
-            <Bloc blocTitle='3.  Le service et le placement des joueurs'>
+            <Bloc title='3.  Le service et le placement des joueurs'>
                 <BlocLeft>
                     <Subtitle>
                         Comment servir et ou se mettre ?
@@ -122,7 +122,7 @@ const Regles = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle='4.  Les fautes lors d’un match'>
+            <Bloc title='4.  Les fautes lors d’un match'>
                 <BlocLeft>
                     <Subtitle className="text-redcolor">
                         Au service
@@ -149,7 +149,7 @@ const Regles = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle='5.  Le positionnement en Doubles et le tirage au sort'>
+            <Bloc title='5.  Le positionnement en Doubles et le tirage au sort'>
                 <BlocLeft className='border border-redcolor'>
                     <Subtitle>
                         La stratégie est primordiale ! 🤝
@@ -171,7 +171,7 @@ const Regles = () => {
                 </BlocRight>
             </Bloc>
 
-            <Bloc blocTitle='6.  Les erreurs de zone de service et les “lets”'>
+            <Bloc title='6.  Les erreurs de zone de service et les “lets”'>
                 <BlocLeft>
                     <Subtitle>
                         Que se passe-t-il en cas d&apos;erreur ?
