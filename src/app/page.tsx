@@ -4,35 +4,28 @@ import BlocText from "@/components/BlocText";
 import Button from "@/components/Button";
 import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
+import Header from "@/components/Header";
+import ImageLegend from "@/components/ImageLegend";
 import PageLayout from "@/components/PageLayout";
-import { SendHorizontal } from "lucide-react";
+import { textVariants } from "@/constantes/theme";
 import Image from "next/image";
 import Bloc from "../components/Bloc";
-import ImageLegend from "@/components/ImageLegend";
-import { textVariants } from "@/constantes/theme";
 
 export default function Home() {
   return (
     <PageLayout>
-      <div className="w-full h-auto flex flex-col items-start justify-center gap-content">
-        <h2 className="font-Poppins text-[13px] text-redcolor leading-4">
-          Bienvenue
-        </h2>
-
-        <h1 className="font-Space-Grotesk text-[38px] font-bold text-redcolor leading-7">
-          CACBO Badminton
-        </h1>
-
-        <h3 className="font-Poppins text-[13px] text-redcolor leading-none flex flex-col">
-          <span>Club de badminton pour adultes, </span>
-          <span>basé à Carbon-Blanc (33)</span>
-        </h3>
-
-        <Button href={"/contact"} variant="inverted">
-          <SendHorizontal size={14} />
-          Nous contacter
-        </Button>
-      </div>
+      <Header
+        h2="Bienvenue"
+        title="CACBO Badminton"
+        subtitle={
+          <>
+            <span>Club de badminton pour adultes, </span>
+            <span>basé à Carbon-Blanc (33)</span>
+          </>
+        }
+        cta="Nous contacter"
+        ctahref="/contact"
+      />
 
       <Content>
         <Image
@@ -167,7 +160,7 @@ export default function Home() {
           description="Ici, on joue, on rigole et on progresse ensemble !"
         />
 
-        <Bloc title="Eh, qu’est-ce t’attends ?" subtitile="Rejoins-nous ! 😉">
+        <Bloc title="Eh, qu’est-ce t’attends ?" subtitile="Rejoins-nous ! 😉" className="border border-redcolor">
           <BlocText>
             Fais partie de l&apos;aventure : rejoins une équipe où convivialité rime avec passion.
           </BlocText>
