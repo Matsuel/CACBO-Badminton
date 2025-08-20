@@ -4,8 +4,10 @@ import Content from "@/components/Content"
 import Header from "@/components/Header"
 import PageLayout from "@/components/PageLayout"
 import SingleTitle from "@/components/SingleTitle"
+import { SocialLinks } from "@/constantes/contact"
 import { textVariants } from "@/constantes/theme"
 import Image from "next/image"
+import Link from "next/link"
 
 const Contact = () => {
 
@@ -46,7 +48,42 @@ const Contact = () => {
                         hello@cacbobad.fr
                     </BlocText>
                 </Bloc>
-            </Content>
+
+                <Bloc>
+                    <h3 className={textVariants.h3}>
+                        Nos réseaux sociaux
+                    </h3>
+
+                    <div className="flex flex-row gap-30">
+                        {SocialLinks.map(link => (
+                            <Link key={link.name} href={link.link} className="w-[30px] h-[30px] text-redcolor hover:text-redpale transition-colors duration-300">
+                                {link.icon}
+                            </Link>
+                        ))}
+                    </div>
+                </Bloc>
+
+                <SingleTitle>
+                    Ou nous rejoindre 👇
+                </SingleTitle>
+
+                <Bloc className="border border-redcolor">
+                    <h4 className={textVariants.h4}>
+                        Complexe sportif Philippe Madrelle
+                    </h4>
+                    <BlocText>
+                        24 rue Pasteur, 33560 Carbon-Blanc
+                    </BlocText>
+                </Bloc>
+
+                <Image
+                src="/contact/map.png"
+                alt="Carte du complexe sportif Philippe Madrelle"
+                width={5000}
+                height={5000}
+            />
+
+        </Content>
 
         </PageLayout>
     )
