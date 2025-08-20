@@ -59,7 +59,7 @@ export default function Home() {
             Notre complexe sportif se situe au <span className="font-medium">24 rue Pasteur</span> à Carbon-Blanc. 📍
           </BlocText>
 
-          <Button href="/" variant="inverted">
+          <Button href="/contact" variant="inverted">
             En savoir plus
             <ExternalLink size={10} />
           </Button>
@@ -79,7 +79,7 @@ export default function Home() {
             Envie d&apos;en savoir plus ?
           </BlocText>
 
-          <Button href={"/histoire"} variant="inverted">
+          <Button href="/histoire" variant="inverted">
             Découvrir notre histoire
             <ExternalLink size={10} />
           </Button>
