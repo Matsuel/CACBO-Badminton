@@ -64,6 +64,52 @@ const Histoire = () => {
                     ]}
                     title="Retour en images"
                 />
+
+                <ImageLegend
+                    src="/histoire/j2013.png"
+                    description="Juillet 2013"
+                />
+
+                <ImageLegend
+                    src="/histoire/s2014.png"
+                    description="Septembre 2014"
+                />
+
+                <ImageLegend
+                    src="/histoire/o2017.png"
+                    description="L’un des nombreux cours de l’école de badminton du club (octobre 2017)"
+                />
+
+                <ImageLegend
+                    src="/histoire/n2019.png"
+                    description="Le gymnase lors de sa démolition (novembre 2019)"
+                />
+
+                <Bloc title="La renaissance de la section">
+                    <BlocText>
+                        Cependant, en septembre 2022, il renaît sous l’impulsion de Laurent THOMAS, l’un de ses fondateurs.
+                    </BlocText>
+
+                    <BlocText>
+                        Aujourd&apos;hui, les joueurs évoluent dans le complexe sportif Philippe Madrelle, une salle moderne de 1056 m² comptant 2 terrains supplémentaires (7 au total) et offrant un cadre idéal pour pratiquer leur passion.
+                    </BlocText>
+                </Bloc>
+
+                <ImageLegend
+                    src="/histoire/s2022.png"
+                    description="La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"
+                />
+
+                <Bloc title="Et le CACBO dans tout ça ?">
+                    <BlocText>
+                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir.
+                    </BlocText>
+
+                    <BlocText>
+                        Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
+                    </BlocText>
+                </Bloc>
+
             </Content>
 
         </PageLayout>
