@@ -3,6 +3,7 @@ import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Button from "@/components/Button"
 import Content from "@/components/Content"
+import Documents from "@/components/Document"
 import Header from "@/components/Header"
 import PageLayout from "@/components/PageLayout"
 import Register from "@/components/Register"
@@ -94,6 +95,11 @@ const Adherer = () => {
                         S’inscrire en ligne
                         <ExternalLink size={10} />
                     </Button>
+                </Bloc>
+
+                <Bloc subtitile="Fichiers à télécharger (si inscription papier)">
+                    <Documents href="/adherer/Formulaire d'inscription bad.pdf" content="Formulaire d’inscription" />
+                    <Documents href="/adherer/Questionnaire et certificat médical.pdf" content="Questionnaire de santé" />
                 </Bloc>
 
             </Content>
