@@ -47,10 +47,6 @@ const Bureau = () => {
                     ))}
 
                 </div>
-
-                <SingleTitle>
-                    Composition du Bureau
-                </SingleTitle>
             </Content>
 
 
