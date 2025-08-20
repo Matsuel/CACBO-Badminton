@@ -55,7 +55,7 @@ const Adherer = () => {
                     </BlocText>
                 </Bloc>
 
-                <Bloc>
+                <Bloc className="border border-redcolor">
                     <h4 className={`${textVariants.h4}`}>
                         Profitez de <span className="text-redcolor">3</span> séances d’essai sans engagement avant de vous inscrire !
                     </h4>
@@ -82,7 +82,7 @@ const Adherer = () => {
 
                 </Bloc>
 
-                <Bloc subtitile="Adhésion simplifiée : inscrivez-vous en ligne ! 🌐">
+                <Bloc subtitile="Adhésion simplifiée : inscrivez-vous en ligne ! 🌐" className="border border-redcolor">
                     <BlocText>
                         Inscrivez-vous facilement en ligne grâce à HelloAsso !
                     </BlocText>
@@ -100,6 +100,104 @@ const Adherer = () => {
                 <Bloc subtitile="Fichiers à télécharger (si inscription papier)">
                     <Documents href="/adherer/Formulaire d'inscription bad.pdf" content="Formulaire d’inscription" />
                     <Documents href="/adherer/Questionnaire et certificat médical.pdf" content="Questionnaire de santé" />
+                </Bloc>
+
+                <SingleTitle>
+                    Où et à quelle heure ?
+                </SingleTitle>
+
+                <Bloc>
+                    <BlocText>
+                        Nous nous situons au Complexe sportif Philippe Madrelle, à Carbon-Blanc (24 rue Pasteur). 📍
+                    </BlocText>
+
+                    <h4 className={textVariants.h4}>
+                        Voies d’accès :
+                    </h4>
+
+                    <BlocText className="text-redcolor">
+                        🚗  En voiture :
+                    </BlocText>
+
+                    <ul className="list-disc pl-7">
+                        <li className="font-Poppins font-light text-[15px] leading-4">Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers Carbon-Blanc</li>
+                        <li className="font-Poppins font-light text-[15px] leading-4">Suivez la D10 jusqu&apos;à la Rue Pasteur</li>
+                    </ul>
+
+                    <BlocText className="text-redcolor">
+                        🚌  En bus :
+                    </BlocText>
+
+                    <ul className="list-disc pl-7">
+                        <li className="font-Poppins font-light text-[15px] leading-4">Ligne 93 (TBM) : Arrêt Pasteur à proximité du complexe</li>
+                        <li className="font-Poppins font-light text-[15px] leading-4">Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</li>
+                    </ul>
+
+                    <BlocText className="text-redcolor">
+                        🚋  En tram :
+                    </BlocText>
+
+                    <ul className="list-disc pl-7">
+                        <li className="font-Poppins font-light text-[15px] leading-4">Ligne A du tram à direction de La Gardette (puis 10-15 min de marche)</li>
+                    </ul>
+
+                    <Image
+                        src="/adherer/map.png"
+                        alt="Carte d'accès au complexe sportif Philippe Madrelle"
+                        width={5000}
+                        height={5000}
+                    />
+                </Bloc>
+
+                <Bloc className="border border-redcolor">
+
+                    <h4 className={textVariants.h4}>
+                        Créneaux flexibles : jouez quand vous voulez ! ⏰
+                    </h4>
+
+                    <ul className="list-disc pl-7">
+                        <li className="font-Poppins font-light text-[15px] leading-4">lundi → 21h - 23h</li>
+                        <li className="font-Poppins font-light text-[15px] leading-4">mardi → 18h - 21h</li>
+                        <li className="font-Poppins font-light text-[15px] leading-4">vendredi → 18h30 - 21h</li>
+                    </ul>
+
+                </Bloc>
+
+                <SingleTitle>
+                    À quel prix ?
+                </SingleTitle>
+
+                <Bloc className="border border-redcolor">
+                    <h3 className={textVariants.h3}>
+                        Tarifs avantageux : adhérez à prix réduits ! 💶
+                    </h3>
+
+                    <BlocText>
+                        Nous vous proposons deux formules adaptées à vos besoins :
+                    </BlocText>
+
+                    <ul className="list-disc pl-7">
+                        <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Formule adulte</span> : <span className="text-redpale">50 €</span> par personne.</li>
+                        <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Formule couple</span> : <span className="text-redpale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</li>
+                    </ul>
+                </Bloc>
+
+                <Bloc>
+                    <h4 className={textVariants.h4}>
+                        Comment offrons-nous des prix aussi bas ? 🤑
+                    </h4>
+
+                    <BlocText>
+                        Nos tarifs sont particulièrement attractifs car notre club n&apos;est pas affilié à la Fédération Française de Badminton (FFBaD).
+                    </BlocText>
+
+                    <BlocText>
+                        Cela signifie que <span className="text-redpale">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
+                    </BlocText>
+
+                    <BlocText>
+                        Profitez d&apos;une adhésion simple et accessible, pour jouer en toute liberté, à un prix imbattable ! 💸
+                    </BlocText>
                 </Bloc>
 
             </Content>
