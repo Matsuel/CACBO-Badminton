@@ -1,5 +1,6 @@
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
+import Caroussel from "@/components/Caroussel"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import ImageLegend from "@/components/ImageLegend"
@@ -55,6 +56,14 @@ const Histoire = () => {
                         En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement, contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif pendant près de 4 ans.
                     </BlocText>
                 </Bloc>
+
+                <Caroussel
+                    images={[
+                        "/histoire/caroussel1.png",
+                        "/histoire/caroussel2.png"
+                    ]}
+                    title="Retour en images"
+                />
             </Content>
 
         </PageLayout>
