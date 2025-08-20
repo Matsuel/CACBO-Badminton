@@ -10,6 +10,7 @@ import PageLayout from "@/components/PageLayout";
 import { textVariants } from "@/constantes/theme";
 import Image from "next/image";
 import Bloc from "../components/Bloc";
+import { SendHorizontal } from "lucide-react";
 
 export default function Home() {
   return (
@@ -23,8 +24,12 @@ export default function Home() {
             <span>basé à Carbon-Blanc (33)</span>
           </>
         }
-        cta="Nous contacter"
-        ctahref="/contact"
+        cta={
+          <Button href="/contact" variant="inverted">
+            <SendHorizontal size={14} />
+            Nous contacter
+          </Button>
+        }
       />
 
       <Content>

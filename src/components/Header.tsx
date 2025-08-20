@@ -1,23 +1,18 @@
-import React from 'react'
-import Button from './Button';
-import { SendHorizontal } from 'lucide-react';
-import { Url } from 'url';
 import { textVariants } from '@/constantes/theme';
+import React from 'react';
 
 interface HeaderProps {
     h2?: string;
     title: string;
     subtitle: React.ReactNode;
-    cta?: string;
-    ctahref?: string;
+    cta?: React.ReactNode;
 }
 
 const Header = ({
     h2,
     title,
     subtitle,
-    cta,
-    ctahref
+    cta
 }: HeaderProps) => {
     return (
         <div className="w-full h-auto flex flex-col items-start justify-center gap-content">
@@ -33,10 +28,7 @@ const Header = ({
                 {subtitle}
             </h3>
 
-            {cta && <Button href={ctahref as unknown as Url} variant="inverted">
-                <SendHorizontal size={14} />
-                {cta}
-            </Button>}
+            {cta}
         </div>
     )
 }
