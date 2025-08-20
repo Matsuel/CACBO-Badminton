@@ -21,10 +21,10 @@ const Register = ({
                 INSCRIPTIONS {open ? "OUVERTES" : "FERMÉES"} !
             </span>
 
-            {open ? 
-            <Check strokeWidth={3} className='text-redcolor' /> : <X strokeWidth={3} />
+            {open ?
+                <Check strokeWidth={3} className='text-redcolor' /> : <X strokeWidth={3} />
             }
-            
+
         </div>
     )
 }
