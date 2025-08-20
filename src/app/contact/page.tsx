@@ -1,86 +1,52 @@
-import ContactLogo from '@/assets/contact.svg'
-import React from 'react'
-import PageLayout from '@/components/Page'
-import Subtitle from '@/components/UI/Subtitle'
-import Emoji from '@/components/UI/Emoji'
-import Link from 'next/link'
-import Map from '@/components/Map'
-import { SocialLinks } from '@/constantes/contact'
-import Bloc from '@/components/Bloc'
-import BlocLeft from '@/components/Bloc/BlocLeft'
-import Paragraphe from '@/components/UI/Paragraphe'
-import BlocRight from '@/components/Bloc/BlocRight'
-import { mail } from '@/constantes/club'
+import Bloc from "@/components/Bloc"
+import BlocText from "@/components/BlocText"
+import Content from "@/components/Content"
+import Header from "@/components/Header"
+import PageLayout from "@/components/PageLayout"
+import SingleTitle from "@/components/SingleTitle"
+import { textVariants } from "@/constantes/theme"
+import Image from "next/image"
 
 const Contact = () => {
 
     return (
-        <PageLayout
-            title='Nous contacter'
-            subtitle='Besoin d’infos ? Nous sommes à votre écoute !'
-            icon={ContactLogo}
-        >
-            <Bloc title='Découvrez comment nous joindre !' className='mt-0'>
-                <BlocLeft className='bg-transparent p-0 gap-7'>
+        <PageLayout>
 
-                    <BlocLeft className='lg:w-full gap-5'>
-                        <div className='flex flex-col gap-1'>
-                            <Subtitle className='flex flex-row items-center gap-[10px]'>
-                                Par téléphone <Emoji name='phone' width={20} />
-                            </Subtitle>
+            <Header
+                title="NOUS CONTACTER"
+                subtitle="Besoin d’infos ? Nous sommes à votre écoute !"
+            />
 
-                            <Link href={`tel:+33618952330`} className="font-Inter font-light text-paragraph">
-                                06 18 95 23 30
-                            </Link>
-                        </div>
+            <Content>
+                <Image
+                    src="/contact/1.png"
+                    alt="Photo devant une table avec des raquettes"
+                    width={500}
+                    height={300}
+                />
 
-                        <div className='flex flex-col gap-1'>
-                            <Subtitle className='flex flex-row items-center gap-[10px]'>
-                                Par email <Emoji name='mail' width={20} />
-                            </Subtitle>
+                <SingleTitle>
+                    Vous pouvez nous joindre 👇
+                </SingleTitle>
 
-                            <Link href={`mailto:${mail}`} className="font-Inter font-light text-paragraph">
-                                {mail}
-                            </Link>
-                        </div>
+                <Bloc>
+                    <h4 className={textVariants.h4}>
+                        Par téléphone
+                    </h4>
 
-                    </BlocLeft>
+                    <BlocText>
+                        06 18 95 23 30
+                    </BlocText>
 
-                    <BlocLeft className='lg:w-full gap-5'>
-                        <Subtitle>
-                            Nos réseaux sociaux
-                        </Subtitle>
+                    <h4 className={textVariants.h4}>
+                        Par mail
+                    </h4>
 
-                        <div className='lg:w-full h-auto flex flex-row gap-8 items-center'>
-                            {SocialLinks.map((link) => (
-                                <Link key={link.name} target='_blank' href={link.link} className="flex flex-row justify-center items-center gap-[15px]">
-                                    <div className='w-[40px] h-[40px] flex items-center justify-center text-redcolor hover:text-redcolorhover transition-all duration-300 ease-in-out'>
-                                        {link.icon}
-                                    </div>
-                                    <Paragraphe>
-                                        {link.name}
-                                    </Paragraphe>
-                                </Link>
-                            ))}
-
-                        </div>
-
-                    </BlocLeft>
-                </BlocLeft>
-
-                <BlocRight className='bg-transparent p-0 gap-7'>
-                    <BlocRight className='lg:w-full gap-3 border border-redcolor'>
-                        <Subtitle className='font-Inter font-medium'>
-                            Complexe sportif Philippe Madrelle
-                        </Subtitle>
-
-                        <Paragraphe>
-                            24 rue Pasteur, 33560 Carbon-Blanc <Emoji name='pin' width={15} />
-                        </Paragraphe>
-                    </BlocRight>
-                    <Map />
-                </BlocRight>
-            </Bloc>
+                    <BlocText>
+                        hello@cacbobad.fr
+                    </BlocText>
+                </Bloc>
+            </Content>
 
         </PageLayout>
     )
