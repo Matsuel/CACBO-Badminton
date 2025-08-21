@@ -49,6 +49,24 @@ const Regles = () => {
                         Une fois le set gagné, <span className="font-medium">l&apos;équipe ou le joueur gagnant sert en premier</span> dans le set suivant.
                     </BlocText>
                 </Bloc>
+
+                <Bloc>
+                    <h3 className={textVariants.h3}>
+                        ℹ️ Exemple :
+                    </h3>
+
+                    <BlocText>
+                        <span className="font-medium">Set 1</span> : 21-19 (2 pts d’écart)
+                    </BlocText>
+
+                    <BlocText>
+                        <span className="font-medium">Set 2</span> : 18-21 (2 pts d’écart)
+                    </BlocText>
+
+                    <BlocText>
+                        <span className="font-medium">Set 3</span> : 30-29 (point sec)
+                    </BlocText>
+                </Bloc>
             </Content>
 
         </PageLayout>
