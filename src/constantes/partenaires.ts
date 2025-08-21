@@ -1,16 +1,19 @@
-import Omnisport from "@/assets/partenaires/omnisport.png";
-import CarbonBlanc from "@/assets/partenaires/carbonblanc.png";
+
 
 export const partenaires = [
     {
         name: "Ville de Carbon-Blanc",
-        text: "Collectivité territoriale",
-        image: CarbonBlanc
+        role: "Collectivité",
+        image: "/partenaires/carbon-blanc.png"
     },
     {
         name: "CACBO",
-        text: "Club Omnisport",
-        subterms: ["Club Athlétique", "CarbonBlanais", "Omnisports"],
-        image: Omnisport
+        role: "Club Omnisport",
+        image: "/partenaires/omnisport.png"
+    },
+    {
+        name: "Intersport",
+        role: "Fournisseur officiel",
+        image: "/partenaires/intersport.png"
     }
 ]

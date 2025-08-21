@@ -1,39 +1,49 @@
-import React from 'react';
-import LinkLogo from "@/assets/links.svg";
-import Partenaire from '@/components/Partenaire';
-import { partenaires } from '@/constantes/partenaires';
-import PageLayout from '@/components/Page';
-import Paragraphe from '@/components/UI/Paragraphe';
-
+import Bloc from "@/components/Bloc";
+import BlocText from "@/components/BlocText";
+import Content from "@/components/Content";
+import Header from "@/components/Header";
+import PageLayout from "@/components/PageLayout";
+import Partenaire from "@/components/Partenaire";
+import { partenaires } from "@/constantes/partenaires";
+import Image from "next/image";
 
 const Partenaires = () => {
 
     return (
-        <PageLayout
-            title="Nos partenaires"
-            subtitle='Ils nous soutiennent pour faire grandir notre club !'
-            icon={LinkLogo}
-        >
+        <PageLayout>
 
-            <Paragraphe className="w-[42%] text-center">
-                Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir
-                à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous
-                accompagnent dans cette belle aventure !
-            </Paragraphe>
+            <Header
+                title="PARTENAIRES"
+                subtitle="Ils nous soutiennent pour faire grandir notre club !"
+            />
 
-            <div className="w-auto h-auto flex flex-row justify-center gap-[70px] mt-[105px]">
+            <Content>
+                <Image
+                    src="/partenaires/1.png"
+                    alt="Photo devant une table remplit de volants"
+                    width={500}
+                    height={300}
+                />
 
-                {partenaires.map((person) => (
-                    <Partenaire
-                        name={person.name}
-                        image={person.image}
-                        text={person.text}
-                        subterms={person.subterms}
-                        key={person.name}
-                    />
-                ))}
+                <Bloc>
+                    <BlocText>
+                        Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous accompagnent dans cette belle aventure !
+                    </BlocText>
+                </Bloc>
 
-            </div>
+                <div className='w-full h-auto flex flex-col items-start justify-start gap-5'>
+
+                    {partenaires.map(partenaire => (
+                        <Partenaire
+                            key={partenaire.name}
+                            name={partenaire.name}
+                            role={partenaire.role}
+                            image={partenaire.image}
+                        />
+                    ))}
+
+                </div>
+            </Content>
 
         </PageLayout>
     );

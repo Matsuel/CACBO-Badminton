@@ -1,46 +1,45 @@
-import Image, { StaticImageData } from 'next/image';
-import React from 'react'
+import { textVariants } from '@/constantes/theme';
+import Image from 'next/image';
 
 interface PartenaireProps {
     name: string;
-    image: StaticImageData;
-    text: string;
-    subterms?: string[];
+    role: string;
+    image: string;
 }
 
 const Partenaire = ({
-    name,
     image,
-    text,
-    subterms
+    name,
+    role
 }: PartenaireProps) => {
-
     return (
-        <div className="w-[230px] h-auto flex flex-col items-center gap-30 p-7 bg-white rounded-ten">
-            <Image src={image} alt={name} width={170} height={170} className="rounded-ten" />
+        <div className={"w-full h-auto flex flex-row items-center justify-start p-5 gap-[25px] bg-white rounded-xl shadow-default"}>
 
-            <h3 className="w-auto flex flex-col font-Montserrat font-medium text-[22px] text-center">
-                {name}
-            </h3>
-
-            <div className="w-[52px] h-[2px] bg-black rounded-full" />
-
-            <div className="w-auto h-auto flex flex-col items-center gap-6">
-                <h4 key={text} className="font-light text-paragraph font-Inter text-xl text-center">
-                    {text}
-                </h4>
-
-                <div className="w-auto h-auto flex flex-col items-center">
-                    {subterms && subterms.map((subterm) => (
-                        <h4 key={subterm} className="font-medium text-paragraph font-Inter text-xl">
-                            {subterm}
-                        </h4>
-                    ))}
-                </div>
+            <div
+                className='w-[100px] h-[100px] flex items-center justify-center rounded-xl bg-whitebroken'
+            >
+                <Image
+                    src={image}
+                    alt='volant de badminton'
+                    className='w-auto h-auto'
+                    width={100}
+                    height={100}
+                />
             </div>
 
+            <div className='flex flex-col gap-content'>
+                <div className='flex flex-col'>
+                    <span className={`${textVariants.h3} text-redcolor`}>{name}</span>
+                </div>
+
+                <p className={textVariants.text}>
+                    {role}
+                </p>
+            </div>
+
+
         </div>
-    );
+    )
 }
 
 export default Partenaire
