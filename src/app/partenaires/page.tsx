@@ -21,8 +21,9 @@ const Partenaires = () => {
                 <Image
                     src="/partenaires/1.png"
                     alt="Photo devant une table remplit de volants"
-                    width={500}
-                    height={300}
+                    className="w-full h-auto"
+                    width={5000}
+                    height={3000}
                 />
 
                 <Bloc>
@@ -31,7 +32,7 @@ const Partenaires = () => {
                     </BlocText>
                 </Bloc>
 
-                <div className='w-full h-auto flex flex-col items-start justify-start gap-5'>
+                <div className='w-full h-auto flex flex-col md:flex-row flex-wrap items-start justify-start gap-5'>
 
                     {partenaires.map(partenaire => (
                         <Partenaire
