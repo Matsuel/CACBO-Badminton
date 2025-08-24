@@ -5,5 +5,6 @@ export const textVariants = {
     h4: "font-Poppins text-[17px] leading-[16px] font-semibold",
     text: "font-Poppins text-[17px] leading-[16px] font-normal",
     secondary: "font-Poppins text-[14px] leading-[16px] font-normal",
+    footer: "font-Poppins font-normal text-[15px] leading-[14px] text-white",
     cta: "font-Poppins text-[13px] leading-[16px] font-normal"
 }
