@@ -3,25 +3,21 @@ export const personnel = [
     {
         firstName: "Laurent",
         lastName: "THOMAS",
-        role: "Président",
-        color: "#03FFE2"
+        role: "Président"
     },
     {
         firstName: "Maël",
         lastName: "THOMAS",
-        role: "Trésorier",
-        color: "#FF004A"
+        role: "Trésorier"
     },
     {
         firstName: "Cédric",
         lastName: "ARMENILI",
-        role: "Secrétaire",
-        color: "#FFFD02"
+        role: "Secrétaire"
     },
     {
         firstName: "Stéphane",
         lastName: "PIERRONNET",
-        role: "Membre",
-        color: "#03FFA0"
+        role: "Membre"
     }
 ]

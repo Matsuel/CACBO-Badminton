@@ -5,27 +5,28 @@ interface MembreProps {
     firstName: string;
     lastName: string;
     role: string;
-    color: string;
+    index: number;
 }
 
 const Membre = ({
     firstName,
     lastName,
     role,
-    color
+    index
 }: MembreProps) => {
     return (
         <div className={"w-full h-auto flex flex-row items-center justify-start p-5 gap-[25px] bg-white rounded-xl shadow-default"}>
 
             <div
-                className='w-[100px] h-[100px] flex items-center justify-center rounded-xl'
+                className='w-[98] h-[98] flex items-center justify-center rounded-xl bg-redcolor'
                 style={{
-                    backgroundColor: color
+                    opacity: 1 - index * 0.2
                 }}
             >
                 <Image
-                    src={"/bureau/volant.png"}
+                    src="/bureau/volant.svg"
                     alt='volant de badminton'
+                    className='w-10 h-auto'
                     width={100}
                     height={100}
                 />

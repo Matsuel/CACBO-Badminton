@@ -36,13 +36,13 @@ const Bureau = () => {
                         Composition du Bureau
                     </SingleTitle>
 
-                    {personnel.map(personnel => (
+                    {personnel.map((personnel, index) => (
                         <Membre
-                            key={personnel.color}
+                            key={personnel.role}
                             firstName={personnel.firstName}
                             lastName={personnel.lastName}
                             role={personnel.role}
-                            color={personnel.color}
+                            index={index}
                         />
                     ))}
 
