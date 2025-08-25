@@ -1,3 +1,4 @@
+import { socials } from '@/constantes/footer'
 import { textVariants } from '@/constantes/theme'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -90,13 +91,39 @@ const Footer = () => {
 
                 <div className='w-full h-[1px] bg-redpale/60' />
 
-                <div className='w-full h-auto flex flex-col items-center'>
-                    <p className={`font-Poppins text-[11px] leading-4 text-white`}>
-                        © {currentYear} CACBO Badminton. Tous droits réservés.
-                    </p>
-                    <p className={`font-Poppins text-[11px] leading-4 text-white`}>
-                        Site pensé par <Link href="#" target='_blank' className='underline'>Maël THOMAS</Link> et développé par <Link href="https://matheolang.fr" target='_blank' className='underline'>Mathéo LANG.</Link>
-                    </p>
+                <div className='w-full h-auto flex flex-col items-center gap-content'>
+
+                    <div className='w-full h-auto flex flex-col items-center'>
+                        <p className={`font-Poppins text-[11px] leading-4 text-white`}>
+                            © {currentYear} CACBO Badminton. Tous droits réservés.
+                        </p>
+                        <p className={`font-Poppins text-[11px] leading-4 text-white`}>
+                            Site pensé par <Link href="#" target='_blank' className='underline'>Maël THOMAS</Link> et développé par <Link href="https://matheolang.fr" target='_blank' className='underline'>Mathéo LANG.</Link>
+                        </p>
+                    </div>
+
+                    <div className='w-auto h-auto flex flex-row gap-content'>
+                        {socials.map((social) => (
+                            <Link key={social.icon.type} href={social.link} target='_blank' className='flex items-center justify-center text-white transition-colors hover:text-white/80 duration-300'>
+                                {social.icon}
+                            </Link>
+                        ))}
+                    </div>
+
+                    <div className='w-full h-auto flex items-center justify-center flex-row gap-1'>
+                        <p className='font-Poppins text-[11px] leading-4 text-white'>
+                            Section membre de
+                        </p>
+
+                        <Image
+                            src="/cacbo.svg"
+                            alt="CACBO Logo"
+                            className='w-13'
+                            width={100}
+                            height={100}
+                        />
+
+                    </div>
                 </div>
 
                 {/* Liens et section membre de ... */}

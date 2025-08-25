@@ -23,7 +23,7 @@ const Navbar = () => {
                     Nous contacter
                 </Button>
                 <button
-                    className='text-redcolor'
+                    className='text-redcolor cursor-pointer'
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {!isOpen ? <Menu size={25} /> : <X size={25} />}
