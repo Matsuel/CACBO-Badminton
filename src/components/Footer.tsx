@@ -24,6 +24,8 @@ const Footer = () => {
                 </div>
             ))}
 
+            <div className='w-full h-[1px] bg-redpale/60' />
+
             <div className='w-full h-auto flex flex-col items-center gap-5'>
                 <Image
                     src="/logowhite.svg"
@@ -38,10 +40,10 @@ const Footer = () => {
                 </p>
 
                 <div className='w-auto h-auto flex flex-col'>
-                    <p className={`${textVariants.footer} leading-5`}>
+                    <p className={`${textVariants.footer} !leading-5`}>
                         Complexe sportif Philippe Madrelle
                     </p>
-                    <p className={`${textVariants.footer} leading-5`}>
+                    <p className={`${textVariants.footer} !leading-5`}>
                         24 rue Pasteur, 33560 Carbon-Blanc
                     </p>
                 </div>
@@ -50,7 +52,7 @@ const Footer = () => {
                     Tél. 06 18 95 23 30
                 </Link>
 
-                <p className={`${textVariants.footer} text-center leading-5 px-5`}>
+                <p className={`${textVariants.footer} text-center !leading-5 px-5`}>
                     Ouvert le <span className='font-semibold'>lundi</span> (21h-23h), <span className='font-semibold'>mardi</span> (18h-21h)
                     et <span className='font-semibold'>vendredi</span> (18h30-21h)
                 </p>
