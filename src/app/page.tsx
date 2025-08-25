@@ -37,8 +37,8 @@ export default function Home() {
           src="/acceuil/1.png"
           alt="Photo de groupe de badminton"
           className="rounded-xl"
-          width={500}
-          height={300}
+          width={2000}
+          height={2000}
         />
 
         <Caroussel

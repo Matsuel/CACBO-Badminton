@@ -22,8 +22,9 @@ const Histoire = () => {
                 <Image
                     src="/histoire/1.png"
                     alt="Photo devant une table avec des raquettes"
-                    width={500}
-                    height={300}
+                    className="rounded-xl"
+                    width={2000}
+                    height={2000}
                 />
 
                 <Bloc title="La naissance du club">

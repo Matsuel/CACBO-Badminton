@@ -21,9 +21,9 @@ const Partenaires = () => {
                 <Image
                     src="/partenaires/1.png"
                     alt="Photo devant une table remplit de volants"
-                    className="w-full h-auto"
-                    width={5000}
-                    height={3000}
+                    className="w-full h-auto rounded-xl"
+                    width={2000}
+                    height={2000}
                 />
 
                 <Bloc>
