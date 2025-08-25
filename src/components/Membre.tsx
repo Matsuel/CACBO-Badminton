@@ -18,7 +18,7 @@ const Membre = ({
         <div className={"w-full h-auto flex flex-row items-center justify-start p-5 gap-[25px] bg-white rounded-xl shadow-default"}>
 
             <div
-                className='w-[98] h-[98] flex items-center justify-center rounded-xl bg-redcolor'
+                className='w-[98px] h-[98px] flex items-center justify-center rounded-xl bg-redcolor'
                 style={{
                     opacity: 1 - index * 0.2
                 }}
@@ -26,7 +26,7 @@ const Membre = ({
                 <Image
                     src="/bureau/volant.svg"
                     alt='volant de badminton'
-                    className='w-10 h-auto'
+                    className='w-16 h-auto flex justify-center items-center object-center pt-2'
                     width={100}
                     height={100}
                 />
