@@ -1,13 +1,8 @@
-import CurbedFile from '@/assets/curbedFile.svg'
-import PageLayout from '@/components/Page'
+import PageLayout from "@/components/PageLayout"
 
 const Regles = () => {
     return (
-        <PageLayout
-            icon={CurbedFile}
-            title='Volants'
-            subtitle="Tout ce qu'il faut savoir sur les volants de badminton"
-        >
+        <PageLayout>
         </PageLayout>
     )
 }

@@ -32,7 +32,7 @@ const Footer = () => {
                     INFOS PRATIQUES
                 </h4>
                 <Link href="/faq" className={`${textVariants.footer}`}>
-                    Faq
+                    FAQ
                 </Link>
                 <Link href="/adherer" className={`${textVariants.footer}`}>
                     Adhérer

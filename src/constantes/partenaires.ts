@@ -10,10 +10,5 @@ export const partenaires = [
         name: "CACBO",
         role: "Club Omnisport",
         image: "/partenaires/omnisport.png"
-    },
-    {
-        name: "Intersport",
-        role: "Fournisseur officiel",
-        image: "/partenaires/intersport.png"
     }
 ]
