@@ -36,6 +36,7 @@ export default function Home() {
         <Image
           src="/acceuil/1.png"
           alt="Photo de groupe de badminton"
+          className="rounded-xl"
           width={500}
           height={300}
         />
