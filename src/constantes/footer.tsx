@@ -21,3 +21,74 @@ export const socials = [
         icon: <HelloAsso size={16} />
     }
 ]
+
+export const footerLinks = [
+    {
+        title: "CLUB",
+        links: [
+            {
+                title: "Bureau",
+                link: "/bureau"
+            },
+            {
+                title: "Histoire",
+                link: "/histoire"
+            },
+            {
+                title: "Boutique",
+                link: "/boutique"
+            },
+            {
+                title: "Partenaires",
+                link: "/partenaires"
+            }
+        ]
+    },
+    {
+        title: "INFOS PRATIQUES",
+        links: [
+            {
+                title: "FAQ",
+                link: "/faq"
+            },
+            {
+                title: "Adhérer",
+                link: "/adherer"
+            },
+            {
+                title: "Nous contacter",
+                link: "/contact"
+            }
+        ]
+    },
+    {
+        title: "RESSOURCES",
+        links: [
+            {
+                title: "Règles du jeu",
+                link: "/regles"
+            },
+            {
+                title: "Guide du volant",
+                link: "/volant"
+            },
+            {
+                title: "Guide de la raquette",
+                link: "/raquette"
+            }
+        ]
+    },
+    {
+        title: "",
+        links: [
+            {
+                title: "Mentions légales",
+                link: "/mentions-legales"
+            },
+            {
+                title: "Politique de confidentialité",
+                link: "/politiques"
+            }
+        ]
+    }
+]

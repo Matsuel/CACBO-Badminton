@@ -1,4 +1,4 @@
-import { socials } from '@/constantes/footer'
+import { footerLinks, socials } from '@/constantes/footer'
 import { textVariants } from '@/constantes/theme'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,53 +10,19 @@ const Footer = () => {
 
     return (
         <footer className='w-full h-auto flex flex-col gap-10 p-5 pt-10 bg-redcolor'>
-            <div className='w-auto h-auto flex flex-col gap-4'>
-                <h4 className={`${textVariants.footer} font-semibold`}>
-                    CLUB
-                </h4>
-                <Link href="/bureau" className={`${textVariants.footer}`}>
-                    Bureau
-                </Link>
-                <Link href="/histoire" className={`${textVariants.footer}`}>
-                    Histoire
-                </Link>
-                <Link href="/boutique" className={`${textVariants.footer}`}>
-                    Boutique
-                </Link>
-                <Link href="/partenaires" className={`${textVariants.footer}`}>
-                    Partenaires
-                </Link>
-            </div>
 
-            <div className='w-auto h-auto flex flex-col gap-4'>
-                <h4 className={`${textVariants.footer} font-semibold`}>
-                    INFOS PRATIQUES
-                </h4>
-                <Link href="/faq" className={`${textVariants.footer}`}>
-                    FAQ
-                </Link>
-                <Link href="/adherer" className={`${textVariants.footer}`}>
-                    Adhérer
-                </Link>
-                <Link href="/contact" className={`${textVariants.footer}`}>
-                    Nous contacter
-                </Link>
-            </div>
-
-            <div className='w-auto h-auto flex flex-col gap-4'>
-                <h4 className={`${textVariants.footer} font-semibold`}>
-                    RESSOURCES
-                </h4>
-                <Link href="/regles" className={`${textVariants.footer}`}>
-                    Règles du jeu
-                </Link>
-                <Link href="/volant" className={`${textVariants.footer}`}>
-                    Guide du volant
-                </Link>
-                <Link href="/raquette" className={`${textVariants.footer}`}>
-                    Guide de la raquette
-                </Link>
-            </div>
+            {footerLinks.map(section => (
+                <div className='w-auto h-auto flex flex-col gap-4' key={section.title}>
+                    <h4 className={`${textVariants.footer} font-semibold`}>
+                        {section.title}
+                    </h4>
+                    {section.links.map(link => (
+                        <Link href={link.link} className={`${textVariants.footer}`} key={link.title}>
+                            {link.title}
+                        </Link>
+                    ))}
+                </div>
+            ))}
 
             <div className='w-full h-auto flex flex-col items-center gap-5'>
                 <Image
@@ -125,8 +91,6 @@ const Footer = () => {
 
                     </div>
                 </div>
-
-                {/* Liens et section membre de ... */}
             </div>
 
         </footer>
