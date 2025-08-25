@@ -98,6 +98,8 @@ const Footer = () => {
                         Site pensé par <Link href="#" target='_blank' className='underline'>Maël THOMAS</Link> et développé par <Link href="https://matheolang.fr" target='_blank' className='underline'>Mathéo LANG.</Link>
                     </p>
                 </div>
+
+                {/* Liens et section membre de ... */}
             </div>
 
         </footer>
