@@ -20,7 +20,7 @@ const Header = ({
                 {h2}
             </h2>}
 
-            <h1 className={`${textVariants.h1} text-redcolor`}>
+            <h1 className={`${textVariants.h1} text-redcolor uppercase`}>
                 {title}
             </h1>
 

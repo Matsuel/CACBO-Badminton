@@ -41,6 +41,26 @@ export default function Home() {
           height={2000}
         />
 
+        <Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
+          <BlocText>
+            Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
+          </BlocText>
+
+          <BlocSubtitle>
+            Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
+          </BlocSubtitle>
+
+          <BlocText>
+            Envie d&apos;en savoir plus ?
+          </BlocText>
+
+          <Button href="/histoire" variant="inverted">
+            Découvrir notre histoire
+            <ExternalLink size={10} />
+          </Button>
+
+        </Bloc>
+
         <Caroussel
           images={[
             "/acceuil/caroussel1.png",
@@ -67,26 +87,6 @@ export default function Home() {
 
           <Button href="/contact" variant="inverted">
             En savoir plus
-            <ExternalLink size={10} />
-          </Button>
-
-        </Bloc>
-
-        <Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
-          <BlocText>
-            Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
-          </BlocText>
-
-          <BlocSubtitle>
-            Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
-          </BlocSubtitle>
-
-          <BlocText>
-            Envie d&apos;en savoir plus ?
-          </BlocText>
-
-          <Button href="/histoire" variant="inverted">
-            Découvrir notre histoire
             <ExternalLink size={10} />
           </Button>
 

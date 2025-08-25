@@ -19,8 +19,9 @@ const ImageLegend = ({
             <Image
                 src={src}
                 alt={description}
-                width={1000}
-                height={1000}
+                className='rounded-[10px]'
+                width={2000}
+                height={2000}
             />
             <p className={`text-center text-redpale ${textVariants.secondary}`}>
                 {description}
