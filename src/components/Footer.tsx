@@ -13,9 +13,9 @@ const Footer = () => {
 
             {footerLinks.map(section => (
                 <div className='w-auto h-auto flex flex-col gap-4' key={section.title}>
-                    <h4 className={`${textVariants.footer} font-semibold`}>
+                    {section.title && <h4 className={`${textVariants.footer} font-semibold`}>
                         {section.title}
-                    </h4>
+                    </h4>}
                     {section.links.map(link => (
                         <Link href={link.link} className={`${textVariants.footer}`} key={link.title}>
                             {link.title}
