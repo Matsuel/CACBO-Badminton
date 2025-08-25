@@ -23,7 +23,7 @@ const Caroussel = ({
                         alt={`Image ${index + 1}`}
                         width={180}
                         height={300}
-                        className='flex-shrink-0'
+                        className='flex-shrink-0 rounded-xl'
                     />
                 ))}
             </div>
