@@ -13,7 +13,7 @@ export const socials = [
         icon: <Instagram size={16} />
     },
     {
-        link: "https://facebook.com/cacbo.bad",
+        link: "https://www.messenger.com/cacbo.bad",
         icon: <Messenger size={16} />
     },
     {
