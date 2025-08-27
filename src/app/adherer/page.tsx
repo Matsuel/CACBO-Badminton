@@ -19,8 +19,8 @@ const Adherer = () => {
                 subtitle="Prêts à nous rejoindre ?"
                 cta={
                     <Register
-                        saison="24/25"
-                        open={false}
+                        saison="25/26"
+                        open={true}
                     />
                 }
             />
