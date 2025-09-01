@@ -92,7 +92,7 @@ const Adherer = () => {
                         Évitez l’impression des documents : remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en toute simplicité.
                     </BlocText>
 
-                    <Button variant="inverted" href="/regles">
+                    <Button variant="inverted" href="https://www.helloasso.com/associations/cacbo-badminton">
                         S’inscrire en ligne
                         <ExternalLink size={10} />
                     </Button>
