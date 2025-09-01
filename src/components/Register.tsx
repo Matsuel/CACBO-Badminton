@@ -22,7 +22,7 @@ const Register = ({
             </span>
 
             {open ?
-                <Check strokeWidth={3} className='text-redcolor' /> : <X strokeWidth={3} />
+                <Check strokeWidth={3} className='text-redcolor ml-2' /> : <X strokeWidth={3} className='ml-2' />
             }
 
         </div>
