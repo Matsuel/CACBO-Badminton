@@ -99,8 +99,8 @@ const Adherer = () => {
                 </Bloc>
 
                 <Bloc subtitile="Fichiers à télécharger (si inscription papier)">
-                    <Documents href="/adherer/Formulaire d'inscription bad.pdf" content="Formulaire d’inscription" />
-                    <Documents href="/adherer/Questionnaire et certificat médical.pdf" content="Questionnaire de santé" />
+                    <Documents href="/adherer/Fiche d'inscription 2025-2026.pdf" content="Fiche d'inscription 2025-2026" />
+                    <Documents href="/adherer/Certificat médical.pdf" content="Certificat médical" />
                 </Bloc>
 
                 <SingleTitle>
