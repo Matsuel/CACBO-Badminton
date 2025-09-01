@@ -3,6 +3,7 @@ import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import PageLayout from "@/components/PageLayout"
+import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
 import { SocialLinks } from "@/constantes/contact"
 import { textVariants } from "@/constantes/theme"
@@ -28,63 +29,67 @@ const Contact = () => {
                     height={2000}
                 />
 
-                <SingleTitle>
-                    Vous pouvez nous joindre 👇
-                </SingleTitle>
+                <Parent>
+                    <SingleTitle>
+                        Vous pouvez nous joindre 👇
+                    </SingleTitle>
 
-                <Bloc>
-                    <h4 className={textVariants.h4}>
-                        Par téléphone
-                    </h4>
+                    <Bloc>
+                        <h4 className={textVariants.h4}>
+                            Par téléphone
+                        </h4>
 
-                    <BlocText>
-                        06 18 95 23 30
-                    </BlocText>
+                        <BlocText>
+                            06 18 95 23 30
+                        </BlocText>
 
-                    <h4 className={textVariants.h4}>
-                        Par mail
-                    </h4>
+                        <h4 className={textVariants.h4}>
+                            Par mail
+                        </h4>
 
-                    <BlocText>
-                        hello@cacbobad.fr
-                    </BlocText>
-                </Bloc>
+                        <BlocText>
+                            hello@cacbobad.fr
+                        </BlocText>
+                    </Bloc>
 
-                <Bloc>
-                    <h3 className={textVariants.h3}>
-                        Nos réseaux sociaux
-                    </h3>
+                    <Bloc>
+                        <h3 className={textVariants.h3}>
+                            Nos réseaux sociaux
+                        </h3>
 
-                    <div className="flex flex-row gap-30">
-                        {SocialLinks.map(link => (
-                            <Link key={link.name} href={link.link} className="w-[30px] h-[30px] text-redcolor hover:text-redpale transition-colors duration-300">
-                                {link.icon}
-                            </Link>
-                        ))}
-                    </div>
-                </Bloc>
+                        <div className="flex flex-row gap-30">
+                            {SocialLinks.map(link => (
+                                <Link key={link.name} href={link.link} className="w-[30px] h-[30px] text-redcolor hover:text-redpale transition-colors duration-300">
+                                    {link.icon}
+                                </Link>
+                            ))}
+                        </div>
+                    </Bloc>
+                </Parent>
 
-                <SingleTitle>
-                    Ou nous rejoindre 👇
-                </SingleTitle>
+                <Parent>
+                    <SingleTitle>
+                        Ou nous rejoindre 👇
+                    </SingleTitle>
 
-                <Bloc className="border border-redcolor">
-                    <h4 className={textVariants.h4}>
-                        Complexe sportif Philippe Madrelle
-                    </h4>
-                    <BlocText>
-                        24 rue Pasteur, 33560 Carbon-Blanc
-                    </BlocText>
-                </Bloc>
+                    <Bloc className="border border-redcolor">
+                        <h4 className={textVariants.h4}>
+                            Complexe sportif Philippe Madrelle
+                        </h4>
+                        <BlocText>
+                            24 rue Pasteur, 33560 Carbon-Blanc
+                        </BlocText>
+                    </Bloc>
 
-                <Image
-                src="/contact/map.png"
-                alt="Carte du complexe sportif Philippe Madrelle"
-                width={5000}
-                height={5000}
-            />
+                    <Image
+                        src="/contact/map.png"
+                        alt="Carte du complexe sportif Philippe Madrelle"
+                        width={5000}
+                        height={5000}
+                    />
+                </Parent>
 
-        </Content>
+            </Content>
 
         </PageLayout>
     )

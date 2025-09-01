@@ -4,6 +4,7 @@ import Content from '@/components/Content';
 import Header from '@/components/Header';
 import Membre from '@/components/Membre';
 import PageLayout from '@/components/PageLayout';
+import Parent from '@/components/Parent';
 import SingleTitle from '@/components/SingleTitle';
 import { personnel } from '@/constantes/bureau';
 import Image from 'next/image';
@@ -32,7 +33,7 @@ const Bureau = () => {
                     </BlocText>
                 </Bloc>
 
-                <div className='w-full h-auto flex flex-col items-start justify-start gap-5'>
+                <Parent>
                     <SingleTitle>
                         Composition du Bureau
                     </SingleTitle>
@@ -47,7 +48,7 @@ const Bureau = () => {
                         />
                     ))}
 
-                </div>
+                </Parent>
             </Content>
 
 
