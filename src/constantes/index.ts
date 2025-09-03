@@ -5,6 +5,6 @@ export enum SITE_CONFIG {
     club = 'Histoire',
     contact = 'Nous contacter',
     partenaires = 'Nos partenaires',
-    volant = 'Volants',
-    raquette = 'Raquettes',
+    volant = 'Guide du volant',
+    raquette = 'Guide de la raquette',
 }
