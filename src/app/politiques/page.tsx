@@ -15,6 +15,7 @@ const Politique = () => {
             <Header
                 title="Politique de confidentialité"
                 subtitle="Dernière mise à jour le 25/08/2025"
+                h1ClassName='hyphens-auto'
             />
 
             <Content>

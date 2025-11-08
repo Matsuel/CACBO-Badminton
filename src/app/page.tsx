@@ -18,6 +18,7 @@ export default function Home() {
       <Header
         h2="Bienvenue"
         title="CACBO Badminton"
+        h1ClassName="break-normal"
         subtitle={
           <>
             <span>Club de badminton pour adultes, </span>

@@ -6,12 +6,14 @@ interface HeaderProps {
     title: string;
     subtitle: React.ReactNode;
     cta?: React.ReactNode;
+    h1ClassName?: string;
 }
 
 const Header = ({
     h2,
     title,
     subtitle,
+    h1ClassName,
     cta
 }: HeaderProps) => {
     return (
@@ -20,7 +22,7 @@ const Header = ({
                 {h2}
             </h2>}
 
-            <h1 className={`${textVariants.h1} text-redcolor uppercase break-normal`}
+            <h1 className={`${textVariants.h1} text-redcolor uppercase ${h1ClassName}`}
             >
                 {title}
             </h1>
