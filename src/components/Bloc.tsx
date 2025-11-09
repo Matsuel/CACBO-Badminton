@@ -1,3 +1,4 @@
+import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const Bloc = ({
         <div className={cn("w-full h-auto flex flex-col items-start justify-start p-5 gap-content bg-white rounded-xl shadow-default", className)} {...props}>
             <div className={`${title || subtitile ? "flex" : "hidden"} flex-col`}>
                 {title && (
-                    <h3 className="font-Space-Grotesk text-xl text-redcolor leading-4 font-semibold">
+                    <h3 className={`${textVariants.h3} text-redcolor`}>
                         {title}
                     </h3>
                 )}

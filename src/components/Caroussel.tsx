@@ -1,3 +1,4 @@
+import { textVariants } from '@/constantes/theme';
 import Image from 'next/image';
 import React from 'react'
 
@@ -12,9 +13,9 @@ const Caroussel = ({
 }: CarousselProps) => {
     return (
         <div className='w-full h-auto flex flex-col items-start justify-center gap-content'>
-            <h3 className='font-Space-Grotesk text-[24px] leading-4 font-bold text-redcolor'>
+            <h2 className={`${textVariants.h2} text-redcolor`}>
                 {title}
-            </h3>
+            </h2>
             <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto whitespace-nowrap'>
                 {images.map((image, index) => (
                     <Image
@@ -23,7 +24,7 @@ const Caroussel = ({
                         alt={`Image ${index + 1}`}
                         width={180}
                         height={300}
-                        className='flex-shrink-0 rounded-xl'
+                        className='shrink-0 rounded-xl'
                     />
                 ))}
             </div>

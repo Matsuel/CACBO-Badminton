@@ -72,11 +72,11 @@ export default function Home() {
         />
 
         <Bloc title="Envie de taper dans le volant ?" key={"want-to-hit-the-shuttlecock"}>
-          <h4 className="font-Poppins text-[15px] font-medium leading-4">
+          <h4 className={`${textVariants.h4}`}>
             Nos créneaux sont les :
           </h4>
 
-          <ul className="list-disc pl-7">
+          <ul className="list-disc pl-7 gap-content">
             <li className="font-Poppins font-light text-[15px] leading-4">lundis → 21h - 23h</li>
             <li className="font-Poppins font-light text-[15px] leading-4">mardis → 18h - 21h</li>
             <li className="font-Poppins font-light text-[15px] leading-4">vendredis → 18h30 - 21h</li>
