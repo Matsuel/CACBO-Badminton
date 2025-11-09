@@ -22,10 +22,10 @@ export default function Home() {
         title="CACBO Badminton"
         h1ClassName="break-normal"
         subtitle={
-          <>
+          <div className="flex flex-col">
             <span>Club de badminton pour adultes, </span>
             <span>basé à Carbon-Blanc (33)</span>
-          </>
+          </div>
         }
         cta={
           <Button href="/contact" variant="inverted">

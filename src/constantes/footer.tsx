@@ -36,7 +36,7 @@ export const footerLinks = [
             },
             {
                 title: "Boutique",
-                link: "/boutique"
+                link: "https://www.helloasso.com/associations/cacbo-badminton"
             },
             {
                 title: "Partenaires",
