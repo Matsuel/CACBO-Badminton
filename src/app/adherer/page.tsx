@@ -5,6 +5,8 @@ import Button from "@/components/Button"
 import Content from "@/components/Content"
 import Documents from "@/components/Document"
 import Header from "@/components/Header"
+import List from "@/components/List"
+import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import Register from "@/components/Register"
@@ -78,10 +80,10 @@ const Adherer = () => {
                             Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Formulaire d’inscription</span> : à remplir pour nous transmettre vos informations essentielles.</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Questionnaire de santé</span> : à compléter pour évaluer votre condition physique. <span className="text-redcolor">Si vous répondez positivement à une ou plusieurs questions</span>, un <span className="font-medium">certificat médical</span> daté de moins de 6 mois sera requis.</li>
-                        </ul>
+                        <List>
+                            <ListElement><span className="font-medium">Formulaire d’inscription</span> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
+                            <ListElement><span className="font-medium">Questionnaire de santé</span> : à compléter pour évaluer votre condition physique. <span className="text-redcolor">Si vous répondez positivement à une ou plusieurs questions</span>, un <span className="font-medium">certificat médical</span> daté de moins de 6 mois sera requis.</ListElement>
+                        </List>
 
                         <BlocText>
                             Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre inscription !
@@ -129,27 +131,27 @@ const Adherer = () => {
                             🚗  En voiture :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4">Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers Carbon-Blanc</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4">Suivez la D10 jusqu&apos;à la Rue Pasteur</li>
-                        </ul>
+                        <List>
+                            <ListElement>Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers Carbon-Blanc</ListElement>
+                            <ListElement>Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
+                        </List>
 
                         <BlocText className="text-redcolor">
                             🚌  En bus :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4">Ligne 93 (TBM) : Arrêt Pasteur à proximité du complexe</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4">Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</li>
-                        </ul>
+                        <List>
+                            <ListElement>Ligne 93 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
+                            <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
+                        </List>
 
                         <BlocText className="text-redcolor">
                             🚋  En tram :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4">Ligne A du tram à direction de La Gardette (puis 10-15 min de marche)</li>
-                        </ul>
+                        <List>
+                            <ListElement>Ligne A du tram à direction de La Gardette (puis 10-15 min de marche)</ListElement>
+                        </List>
 
                         <Image
                             src="/adherer/map.png"
@@ -165,12 +167,11 @@ const Adherer = () => {
                             Créneaux flexibles : jouez quand vous voulez ! ⏰
                         </h4>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4">lundi → 21h - 23h</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4">mardi → 18h - 21h</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4">vendredi → 18h30 - 21h</li>
-                        </ul>
-
+                        <List>
+                            <ListElement>lundi → 21h - 23h</ListElement>
+                            <ListElement>mardi → 18h - 21h</ListElement>
+                            <ListElement>vendredi → 18h30 - 21h</ListElement>
+                        </List>
                     </Bloc>
                 </Parent>
 
@@ -189,10 +190,10 @@ const Adherer = () => {
                             Nous vous proposons deux formules adaptées à vos besoins :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Formule adulte</span> : <span className="text-redpale">50 €</span> par personne.</li>
-                            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-medium">Formule couple</span> : <span className="text-redpale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</li>
-                        </ul>
+                        <List>
+                            <ListElement><span className="font-medium">Formule adulte</span> : <span className="text-redpale">50 €</span> par personne.</ListElement>
+                            <ListElement><span className="font-medium">Formule couple</span> : <span className="text-redpale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</ListElement>
+                        </List>
                     </Bloc>
 
                     <Bloc>

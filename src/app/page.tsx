@@ -6,11 +6,13 @@ import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
 import Header from "@/components/Header";
 import ImageLegend from "@/components/ImageLegend";
+import List from "@/components/List";
+import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
 import { textVariants } from "@/constantes/theme";
+import { SendHorizontal } from "lucide-react";
 import Image from "next/image";
 import Bloc from "../components/Bloc";
-import { SendHorizontal } from "lucide-react";
 
 export default function Home() {
   return (
@@ -76,11 +78,11 @@ export default function Home() {
             Nos créneaux sont les :
           </h4>
 
-          <ul className="list-disc pl-7 gap-content">
-            <li className="font-Poppins font-light text-[15px] leading-4">lundis → 21h - 23h</li>
-            <li className="font-Poppins font-light text-[15px] leading-4">mardis → 18h - 21h</li>
-            <li className="font-Poppins font-light text-[15px] leading-4">vendredis → 18h30 - 21h</li>
-          </ul>
+          <List>
+            <ListElement>lundis → 21h - 23h</ListElement>
+            <ListElement>mardis → 18h - 21h</ListElement>
+            <ListElement>vendredis → 18h30 - 21h</ListElement>
+          </List>
 
           <BlocText>
             Notre complexe sportif se situe au <span className="font-medium">24 rue Pasteur</span> à Carbon-Blanc. 📍
@@ -107,10 +109,10 @@ export default function Home() {
             💶 Tarifs d’adhésion :
           </h4>
 
-          <ul className="list-disc pl-7">
-            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-bold">50 €</span> pour un adulte</li>
-            <li className="font-Poppins font-light text-[15px] leading-4"><span className="font-bold">90 €</span> pour un couple</li>
-          </ul>
+          <List>
+            <ListElement><span className="font-bold">50 €</span> pour un adulte</ListElement>
+            <ListElement><span className="font-bold">90 €</span> pour un couple</ListElement>
+          </List>
 
           <BlocText>
             Jouez en toute liberté, échangez avec d&apos;autres passionnés et participez à nos soirées ! ⚡
@@ -133,12 +135,11 @@ export default function Home() {
             Avant d’entrer sur le terrain, un rappel des bases :
           </h4>
 
-          <ul className="list-disc pl-7">
-            <li className="font-Poppins font-light text-[15px] leading-4">Le service doit être effectué en diagonale, sous la taille.</li>
-            <li className="font-Poppins font-light text-[15px] leading-4">Un set se joue en 21 points, avec 2 points d’écart minimum.</li>
-            <li className="font-Poppins font-light text-[15px] leading-4">Le volant touche la ligne ? Il est bon !</li>
-          </ul>
-
+          <List>
+            <ListElement>Le service doit être effectué en diagonale, sous la taille.</ListElement>
+            <ListElement>Un set se joue en 21 points, avec 2 points d’écart minimum.</ListElement>
+            <ListElement>Le volant touche la ligne ? Il est bon !</ListElement>
+          </List>
           <Button variant="inverted" href="/regles">
             En savoir plus
             <ExternalLink size={10} />
@@ -178,7 +179,6 @@ export default function Home() {
           </Button>
 
         </Bloc>
-
 
       </Content>
     </PageLayout>

@@ -2,8 +2,9 @@ import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
+import List from "@/components/List"
+import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
-import { textVariants } from "@/constantes/theme"
 import Image from "next/image"
 
 const Faq = () => {
@@ -53,10 +54,10 @@ const Faq = () => {
                         Nous proposons deux formules d’adhésion :
                     </BlocText>
 
-                    <ul className="list-disc pl-7">
-                        <li className={textVariants.text}>la formule adulte à 50€</li>
-                        <li className={textVariants.text}>la formule couple à 90€ pour 2 personnes.</li>
-                    </ul>
+                    <List>
+                        <ListElement>la formule adulte à 50€</ListElement>
+                        <ListElement>la formule couple à 90€ pour 2 personnes.</ListElement>
+                    </List>
                 </Bloc>
 
                 <Bloc title="Utilisez-vous des volants en plumes ou en nylon ?">

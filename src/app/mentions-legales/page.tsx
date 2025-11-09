@@ -2,10 +2,11 @@ import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
+import List from "@/components/List"
+import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
-import { textVariants } from "@/constantes/theme"
 import Link from "next/link"
 
 const MentionsLegales = () => {
@@ -119,11 +120,11 @@ const MentionsLegales = () => {
                             Le CACBO Badminton s&apos;efforce d&apos;assurer l&apos;exactitude des informations diffusées sur le site. Toutefois, il ne saurait être tenu responsable :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>d’éventuelles erreurs ou omissions,</li>
-                            <li className={textVariants.text}>d’une interruption temporaire du site (maintenance, problème technique),</li>
-                            <li className={textVariants.text}>ou de tout dommage direct ou indirect lié à l’utilisation du site.</li>
-                        </ul>
+                        <List>
+                            <ListElement>d’éventuelles erreurs ou omissions,</ListElement>
+                            <ListElement>d’une interruption temporaire du site (maintenance, problème technique),</ListElement>
+                            <ListElement>ou de tout dommage direct ou indirect lié à l’utilisation du site.</ListElement>
+                        </List>
                     </Bloc>
                 </Parent>
 

@@ -2,6 +2,8 @@ import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
+import List from "@/components/List"
+import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
@@ -86,10 +88,10 @@ const Regles = () => {
                             En simple, les joueurs utilisent le terrain restreint (les lignes intérieures sur les côtés et les lignes de fond).
                         </h4>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Au service, le volant doit atterrir dans le carré de service diagonalement opposé au serveur. Si le service est court ou hors de cette zone, il est considéré comme faute.</li>
-                            <li className={textVariants.text}>En jeu, toute la partie du terrain située entre les lignes intérieures est valable.</li>
-                        </ul>
+                        <List>
+                            <ListElement>Au service, le volant doit atterrir dans le carré de service diagonalement opposé au serveur. Si le service est court ou hors de cette zone, il est considéré comme faute.</ListElement>
+                            <ListElement>En jeu, toute la partie du terrain située entre les lignes intérieures est valable.</ListElement>
+                        </List>
                     </Bloc>
                 </Parent>
 
@@ -127,19 +129,19 @@ const Regles = () => {
                             Au service
                         </h4>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Frapper le volant au-dessus de la taille, ne pas respecter la diagonale, mordre les lignes avec son pied lors du service, ou arrêter le mouvement de la raquette.</li>
-                        </ul>
+                        <List>
+                            <ListElement>Frapper le volant au-dessus de la taille, ne pas respecter la diagonale, mordre les lignes avec son pied lors du service, ou arrêter le mouvement de la raquette.</ListElement>
+                        </List>
 
 
                         <h4 className={textVariants.h4}>
                             Au cours du jeu
                         </h4>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Concernant le volant : lorsqu&apos;il est envoyé hors des limites du terrain, qu&apos;il ne passe pas au-dessus du filet ou passe en dessous, qu&apos;il touche le plafond, qu&apos;il est frappé successivement par un joueur et son partenaire ou qu&apos;il est frappé 2 fois par le même joueur.</li>
-                            <li className={textVariants.text}>Joueur touchant le filet ou ses supports avec sa raquette, son corps ou ses vêtements, envahissement du terrain adverse par-dessus ou par-dessous le filet ou encore l’obstruction ou la distraction délibérée de l&apos;adversaire.</li>
-                        </ul>
+                        <List>
+                            <ListElement>Concernant le volant : lorsqu&apos;il est envoyé hors des limites du terrain, qu&apos;il ne passe pas au-dessus du filet ou passe en dessous, qu&apos;il touche le plafond, qu&apos;il est frappé successivement par un joueur et son partenaire ou qu&apos;il est frappé 2 fois par le même joueur.</ListElement>
+                            <ListElement>Joueur touchant le filet ou ses supports avec sa raquette, son corps ou ses vêtements, envahissement du terrain adverse par-dessus ou par-dessous le filet ou encore l’obstruction ou la distraction délibérée de l&apos;adversaire.</ListElement>
+                        </List>
 
                     </Bloc>
                 </Parent>

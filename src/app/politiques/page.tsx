@@ -2,6 +2,8 @@ import Bloc from '@/components/Bloc'
 import BlocText from '@/components/BlocText'
 import Content from '@/components/Content'
 import Header from '@/components/Header'
+import List from '@/components/List'
+import ListElement from '@/components/ListElement'
 import PageLayout from '@/components/PageLayout'
 import Parent from '@/components/Parent'
 import SingleTitle from '@/components/SingleTitle'
@@ -37,13 +39,13 @@ const Politique = () => {
                         <BlocText>
                             Dans le cadre des adhésions et de la vie associative, les informations personnelles sont recueillies par notre partenaire HelloAsso et peuvent inclure :
                         </BlocText>
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Nom et prénom</li>
-                            <li className={textVariants.text}>Adresse postale</li>
-                            <li className={textVariants.text}>Adresse email</li>
-                            <li className={textVariants.text}>Numéro de téléphone</li>
-                            <li className={textVariants.text}>Date de naissance</li>
-                        </ul>
+                        <List>
+                            <ListElement>Nom et prénom</ListElement>
+                            <ListElement>Adresse postale</ListElement>
+                            <ListElement>Adresse email</ListElement>
+                            <ListElement>Numéro de téléphone</ListElement>
+                            <ListElement>Date de naissance</ListElement>
+                        </List>
                     </Bloc>
                 </Parent>
 
@@ -61,12 +63,12 @@ const Politique = () => {
                             Les données collectées sont utilisées uniquement pour :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Gérer les adhésions, inscriptions aux activités du club et les paiements</li>
-                            <li className={textVariants.text}>Communiquer avec les adhérents (informations pratiques, événements, convocations)</li>
-                            <li className={textVariants.text}>Établir les documents administratifs (factures, attestations)</li>
-                            <li className={textVariants.text}>Respecter nos obligations légales et réglementaires (notamment comptables et fiscales)</li>
-                        </ul>
+                        <List>
+                            <ListElement>Gérer les adhésions, inscriptions aux activités du club et les paiements</ListElement>
+                            <ListElement>Communiquer avec les adhérents (informations pratiques, événements, convocations)</ListElement>
+                            <ListElement>Établir les documents administratifs (factures, attestations)</ListElement>
+                            <ListElement>Respecter nos obligations légales et réglementaires (notamment comptables et fiscales)</ListElement>
+                        </List>
 
                         <BlocText>
                             Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD – n°2016/679).
@@ -92,12 +94,11 @@ const Politique = () => {
                             Elles ne sont partagées qu’avec :
                         </BlocText>
 
-                        <ul className="list-disc pl-7">
-                            <li className={textVariants.text}>Les membres autorisés du Bureau du CACBO (Omnisports)</li>
-                            <li className={textVariants.text}>Les membres autorisés du Bureau du CACBO Badminton</li>
-                            <li className={textVariants.text}>La plateforme HelloAsso, conforme au RGPD, pour la gestion des inscriptions et paiements</li>
-                        </ul>
-
+                        <List>
+                            <ListElement>Les membres autorisés du Bureau du CACBO (Omnisports)</ListElement>
+                            <ListElement>Les membres autorisés du Bureau du CACBO Badminton</ListElement>
+                            <ListElement>La plateforme HelloAsso, conforme au RGPD, pour la gestion des inscriptions et paiements</ListElement>
+                        </List>
                         <BlocText>
                             Aucune donnée n&apos;est transmise ou vendue à des tiers à des fins commerciales.
                         </BlocText>
