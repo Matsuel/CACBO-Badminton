@@ -31,7 +31,7 @@ const Contact = () => {
 
                 <Parent>
                     <SingleTitle>
-                        Vous pouvez nous joindre 👇
+                        Vous pouvez nous joindre
                     </SingleTitle>
 
                     <Bloc>

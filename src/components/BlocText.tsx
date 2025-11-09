@@ -1,6 +1,6 @@
 import { textVariants } from '@/constantes/theme';
-import { cn } from '@/utils/cn'
-import React from 'react'
+import { cn } from '@/utils/cn';
+import type React from 'react';
 
 interface BlocTextProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;

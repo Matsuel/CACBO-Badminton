@@ -2,7 +2,6 @@ import { footerLinks, socials } from '@/constantes/footer'
 import { textVariants } from '@/constantes/theme'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Footer = () => {
 
@@ -24,7 +23,7 @@ const Footer = () => {
                 </div>
             ))}
 
-            <div className='w-full h-[1px] bg-redpale/60' />
+            <div className='w-full h-px bg-redpale/60' />
 
             <div className='w-full h-auto flex flex-col items-center gap-5'>
                 <Image
@@ -40,10 +39,10 @@ const Footer = () => {
                 </p>
 
                 <div className='w-auto h-auto flex flex-col'>
-                    <p className={`${textVariants.footer} !leading-5`}>
+                    <p className={`${textVariants.footer} leading-5!`}>
                         Complexe sportif Philippe Madrelle
                     </p>
-                    <p className={`${textVariants.footer} !leading-5`}>
+                    <p className={`${textVariants.footer} leading-5!`}>
                         24 rue Pasteur, 33560 Carbon-Blanc
                     </p>
                 </div>
@@ -52,20 +51,20 @@ const Footer = () => {
                     Tél. 06 18 95 23 30
                 </Link>
 
-                <p className={`${textVariants.footer} text-center !leading-5 px-5`}>
+                <p className={`${textVariants.footer} text-center leading-5! px-5`}>
                     Ouvert le <span className='font-semibold'>lundi</span> (21h-23h), <span className='font-semibold'>mardi</span> (18h-21h)
                     et <span className='font-semibold'>vendredi</span> (18h30-21h)
                 </p>
 
-                <div className='w-full h-[1px] bg-redpale/60' />
+                <div className='w-full h-px bg-redpale/60' />
 
                 <div className='w-full h-auto flex flex-col items-center gap-content'>
 
                     <div className='w-full h-auto flex flex-col items-center'>
-                        <p className={`font-Poppins text-[11px] leading-4 text-white`}>
+                        <p className={`font-Poppins text-[11px] leading-4 text-white text-center`}>
                             © {currentYear} CACBO Badminton. Tous droits réservés.
                         </p>
-                        <p className={`font-Poppins text-[11px] leading-4 text-white`}>
+                        <p className={`font-Poppins text-[11px] leading-4 text-white text-center`}>
                             Site pensé par <Link href="#" target='_blank' className='underline'>Maël THOMAS</Link> et développé par <Link href="https://matheolang.fr" target='_blank' className='underline'>Mathéo LANG.</Link>
                         </p>
                     </div>
