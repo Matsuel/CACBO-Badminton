@@ -1,6 +1,7 @@
+import { textVariants } from '@/constantes/theme'
 import { cn } from '@/utils/cn'
-import Link, { LinkProps } from 'next/link'
-import React from 'react'
+import Link, { type LinkProps } from 'next/link'
+import type React from 'react'
 
 interface ButtonProps extends LinkProps, React.ButtonHTMLAttributes<HTMLAnchorElement> {
     variant?: 'primary' | 'inverted'
@@ -20,7 +21,7 @@ const Button = ({
 
     return (
         <Link
-            className={cn(`border border-redcolor rounded-[10px] flex flex-row items-center justify-center gap-2 px-2 py-1 text-[12px] leading-auto font-Poppins transition-colors duration-300 ${variants[variant]}`, className)}
+            className={cn(`border border-redcolor rounded-xl flex flex-row items-center justify-center gap-2 px-3 py-2 transition-colors duration-300 ${variants[variant]} ${textVariants.cta}`, className)}
             {...props}
         >
             {children}

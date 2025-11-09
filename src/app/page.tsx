@@ -28,9 +28,9 @@ export default function Home() {
           </div>
         }
         cta={
-          <Button href="/contact" variant="inverted">
+          <Button href="/adherer" variant="inverted">
             <SendHorizontal size={14} />
-            Nous contacter
+            Nous rejoindre
           </Button>
         }
       />

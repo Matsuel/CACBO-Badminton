@@ -74,6 +74,21 @@ const Adherer = () => {
                         Comment ?
                     </SingleTitle>
 
+                    <Bloc subtitile="Adhésion simplifiée : inscrivez-vous en ligne ! 🌐" className="border border-redcolor">
+                        <BlocText>
+                            Inscrivez-vous facilement en ligne grâce à HelloAsso !
+                        </BlocText>
+
+                        <BlocText>
+                            Évitez l’impression des documents : remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en toute simplicité.
+                        </BlocText>
+
+                        <Button variant="inverted" href="https://www.helloasso.com/associations/cacbo-badminton">
+                            S’inscrire en ligne
+                            <ExternalLink size={10} />
+                        </Button>
+                    </Bloc>
+
                     <Bloc title="Documents nécessaires : préparez votre dossier 📋">
 
                         <BlocText>
@@ -89,21 +104,6 @@ const Adherer = () => {
                             Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre inscription !
                         </BlocText>
 
-                    </Bloc>
-
-                    <Bloc subtitile="Adhésion simplifiée : inscrivez-vous en ligne ! 🌐" className="border border-redcolor">
-                        <BlocText>
-                            Inscrivez-vous facilement en ligne grâce à HelloAsso !
-                        </BlocText>
-
-                        <BlocText>
-                            Évitez l’impression des documents : remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en toute simplicité.
-                        </BlocText>
-
-                        <Button variant="inverted" href="https://www.helloasso.com/associations/cacbo-badminton">
-                            S’inscrire en ligne
-                            <ExternalLink size={10} />
-                        </Button>
                     </Bloc>
 
                     <Bloc subtitile="Fichiers à télécharger (si inscription papier)">

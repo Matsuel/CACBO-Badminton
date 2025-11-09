@@ -6,5 +6,5 @@ export const textVariants = {
     text: "font-Poppins text-[17px] leading-[16px] font-normal",
     secondary: "font-Poppins text-[14px] leading-[16px] font-normal",
     footer: "font-Poppins font-normal text-[15px] leading-[14px] text-white",
-    cta: "font-Poppins text-[13px] leading-[16px] font-normal"
+    cta: "font-Poppins text-[15px] leading-[16px] font-normal"
 }
