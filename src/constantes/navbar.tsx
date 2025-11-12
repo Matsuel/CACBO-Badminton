@@ -1,5 +1,5 @@
 import { BriefcaseIcon, DocumentTextIcon, HeartIcon, MagnifyingGlassIcon, PaperAirplaneIcon, ShoppingBagIcon, TrophyIcon, UserPlusIcon } from "@heroicons/react/24/solid";
-import { NavbarLinkType } from "..";
+import type { NavbarLinkType } from "..";
 
 export const navbarLinks: NavbarLinkType[] = [
     {

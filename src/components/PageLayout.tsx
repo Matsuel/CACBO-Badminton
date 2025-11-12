@@ -1,7 +1,7 @@
-import { cn } from '@/utils/cn'
-import React from 'react'
-import Navbar from './UI/Navbar'
+import type React from 'react';
+import { cn } from '@/utils/cn';
 import Footer from './Footer';
+import Navbar from './UI/Navbar';
 
 interface PageLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
