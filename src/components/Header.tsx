@@ -1,5 +1,5 @@
+import type React from 'react';
 import { textVariants } from '@/constantes/theme';
-import React from 'react';
 
 interface HeaderProps {
     h2?: string;

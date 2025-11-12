@@ -1,6 +1,6 @@
-import { textVariants } from '@/constantes/theme';
 import Image from 'next/image';
-import React from 'react'
+import type React from 'react';
+import { textVariants } from '@/constantes/theme';
 
 interface CarousselProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string;
