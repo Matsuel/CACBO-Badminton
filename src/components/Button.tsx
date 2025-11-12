@@ -4,7 +4,7 @@ import Link, { type LinkProps } from 'next/link'
 import type React from 'react'
 
 interface ButtonProps extends LinkProps, React.ButtonHTMLAttributes<HTMLAnchorElement> {
-    variant?: 'primary' | 'inverted'
+    variant?: 'primary' | 'inverted' | 'ghost';
 }
 
 const Button = ({
@@ -17,6 +17,7 @@ const Button = ({
     const variants = {
         primary: "bg-white text-redcolor hover:bg-redcolor hover:text-white",
         inverted: "bg-redcolor text-white hover:bg-white hover:text-redcolor",
+        ghost: "bg-transparent text-redcolor hover:bg-redcolor hover:text-white border-transparent hover:border-redcolor"
     }
 
     return (

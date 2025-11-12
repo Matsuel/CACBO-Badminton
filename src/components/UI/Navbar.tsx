@@ -1,9 +1,9 @@
 "use client";
-import { Mail, Menu, X } from 'lucide-react';
+import { navbarLinks } from '@/constantes/navbar';
+import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import Button from '../Button';
-import { navbarLinks } from '@/constantes/navbar';
 import NavbarLink from './NavbarLink';
 
 const Navbar = () => {
@@ -22,8 +22,7 @@ const Navbar = () => {
                 />
 
                 <div className='flex flex-row items-center gap-5'>
-                    <Button href='/contact'>
-                        <Mail size={14} />
+                    <Button href='/contact' variant='ghost'>
                         Nous contacter
                     </Button>
                     <button
