@@ -25,6 +25,7 @@ const Navbar = () => {
                 <button
                     className='text-redcolor cursor-pointer'
                     onClick={() => setIsOpen(!isOpen)}
+                    type='button'
                 >
                     {!isOpen ? <Menu size={25} /> : <X size={25} />}
                 </button>
