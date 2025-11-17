@@ -1,10 +1,10 @@
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
-import Caroussel from "@/components/Caroussel"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
-import ImageLegend from "@/components/ImageLegend"
 import PageLayout from "@/components/PageLayout"
+import Parent from "@/components/Parent"
+import SingleTitle from "@/components/SingleTitle"
 import Image from "next/image"
 
 
@@ -27,89 +27,38 @@ const Histoire = () => {
                     height={2000}
                 />
 
-                <Bloc title="La naissance du club">
+                <Parent>
 
-                    <BlocText>
-                        Le club voit le jour en 2007, grâce à l&apos;initiative de trois passionnés : Ahmed CASSIM, Laurent THOMAS et Julien LARCHER.
-                    </BlocText>
+                    <SingleTitle>
+                        Les prémices du club (2007-2010)
+                    </SingleTitle>
 
-                    <BlocText>
-                        Quelques années plus tard, le club s’affilie à la Fédération Française de Badminton (FFBaD) et décroche son premier label École Française de Badminton (EFB) 1 étoile ⭐ lors de la saison 2013/14.
-                    </BlocText>
+                    <Bloc>
+                        <BlocText>
+                            Le club voit le jour le <span className="text-redpale font-medium">15 mars 2007</span>, à l’initiative de trois passionnés : Ahmed KASSIM (président), Laurent THOMAS (secrétaire) et Julien LARCHER (trésorier). 🖋️
+                        </BlocText>
 
-                    <BlocText>
-                        Une distinction qu&apos;il conservera à 4 reprises lors des saisons 2014/15, 2015/16, 2016/17 et 2017/18. 🏅
-                    </BlocText>
-                </Bloc>
+                        <BlocText>
+                            Les premiers créneaux se tiennent au gymnase Gaston Lacoste, sur <span className="text-redpale font-medium">5 terrains tracés et 3 créneaux hebdomadaires</span> de deux heures, réunissant dès la première saison près de <span className="text-redpale font-medium">70 adhérents</span>.
+                        </BlocText>
 
-                <ImageLegend
-                    src="/histoire/ecolebad.png"
-                    description="Notre école de badminton saison 2014/15"
-                />
+                        <BlocText>
+                            <span className="font-medium">Dès 2008</span>, la section consolide ses bases avec une fréquentation élevée, en maintenant 3 créneaux hebdomadaires et un <span className="text-redpale font-medium">taux d’occupation moyen de 60% des terrains</span> à chaque séance.
+                        </BlocText>
 
-                <ImageLegend
-                    src="/histoire/finale.png"
-                    description="La finale d’un tournoi opposant le club à celui de la Jeunesse Yvracaise (1/2)"
-                />
+                        <BlocText>
+                            Les responsables notent déjà un fort engouement et la nécessité d’un encadrement de qualité pour les jeunes, amorçant la <span className="text-redpale font-medium">création de l’école de badminton</span> dès la saison suivante pour les plus jeunes. 🧒
+                        </BlocText>
 
-                <Bloc>
-                    <BlocText>
-                        En juillet 2018, la fermeture définitive du gymnase Gaston Lacoste, menacé d&apos;effondrement, contraint le club à une mise en sommeil. Après sa démolition en novembre 2019, le club reste inactif pendant près de 4 ans.
-                    </BlocText>
-                </Bloc>
+                        <BlocText>
+                            <span className="font-medium">En 2009</span>, le club franchit une nouvelle étape : on compte <span className="text-redpale font-medium">près de 87 licenciés</span>, et la section envisage de dépasser la barre symbolique des 100 adhérents.
+                        </BlocText>
 
-                <Caroussel
-                    images={[
-                        "/histoire/caroussel1.png",
-                        "/histoire/caroussel2.png"
-                    ]}
-                    title="Retour en images"
-                />
-
-                <ImageLegend
-                    src="/histoire/j2013.png"
-                    description="Juillet 2013"
-                />
-
-                <ImageLegend
-                    src="/histoire/s2014.png"
-                    description="Septembre 2014"
-                />
-
-                <ImageLegend
-                    src="/histoire/o2017.png"
-                    description="L’un des nombreux cours de l’école de badminton du club (octobre 2017)"
-                />
-
-                <ImageLegend
-                    src="/histoire/n2019.png"
-                    description="Le gymnase lors de sa démolition (novembre 2019)"
-                />
-
-                <Bloc title="La renaissance de la section">
-                    <BlocText>
-                        Cependant, en septembre 2022, il renaît sous l’impulsion de Laurent THOMAS, l’un de ses fondateurs.
-                    </BlocText>
-
-                    <BlocText>
-                        Aujourd&apos;hui, les joueurs évoluent dans le complexe sportif Philippe Madrelle, une salle moderne de 1056 m² comptant 2 terrains supplémentaires (7 au total) et offrant un cadre idéal pour pratiquer leur passion.
-                    </BlocText>
-                </Bloc>
-
-                <ImageLegend
-                    src="/histoire/s2022.png"
-                    description="La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"
-                />
-
-                <Bloc title="Et le CACBO dans tout ça ?">
-                    <BlocText>
-                        Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25 mai 1972 d&apos;une initiative municipale visant à regrouper et développer les activités sportives de la commune, qu&apos;elles soient de compétition ou de loisir.
-                    </BlocText>
-
-                    <BlocText>
-                        Il résulte de la fusion entre le Club Athlétique CarbonBlanais (CACB), fondé le 1er octobre 1925 par Gaston Lacoste (le club de football de la ville), et le Club Léo Lagrange, regroupant déjà plusieurs sections. Simon Cypel en devient le premier président.
-                    </BlocText>
-                </Bloc>
+                        <BlocText>
+                            Les premières rencontres amicales avec d’autres clubs, comme Saint-Louis-de-Montferrand, sont organisées, et un tournoi interne devient un rendez-vous régulier.
+                        </BlocText>
+                    </Bloc>
+                </Parent>
 
             </Content>
 
