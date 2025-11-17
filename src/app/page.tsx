@@ -21,6 +21,7 @@ export default function Home() {
         h2="Bienvenue"
         title="CACBO Badminton"
         h1ClassName="break-normal"
+        className="gap-5!"
         subtitle={
           <div className="flex flex-col">
             <span>Club de badminton pour adultes, </span>
