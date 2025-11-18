@@ -1,5 +1,5 @@
 import { textVariants } from '@/constantes/theme';
-import React from 'react'
+import React from 'react';
 
 interface SingleTitleProps {
     children: React.ReactNode;

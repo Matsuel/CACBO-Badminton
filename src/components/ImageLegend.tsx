@@ -1,7 +1,6 @@
 import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn';
 import Image from 'next/image';
-import React from 'react'
 
 interface ImageLegendProps {
     src: string;
@@ -19,7 +18,7 @@ const ImageLegend = ({
             <Image
                 src={src}
                 alt={description}
-                className='rounded-[10px]'
+                className='rounded-ten'
                 width={2000}
                 height={2000}
             />
