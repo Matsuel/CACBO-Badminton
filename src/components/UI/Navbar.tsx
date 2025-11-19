@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <nav className='w-full h-auto flex flex-col gap-[50px]'>
+        <nav className='w-full h-auto flex flex-col gap-[50px] absolute top-0 p-5'>
 
             <div className='w-full h-auto flex flex-row items-center justify-between bg-white px-5 py-3 rounded-xl shadow-default'>
                 <Image
@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
 
             <div
-                className='w-full h-auto flex-col gap-content'
+                className='w-full h-auto flex-col gap-content bg-background rounded-xl'
                 style={{
                     display: isOpen ? "flex" : "none"
                 }}
