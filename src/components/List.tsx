@@ -1,5 +1,5 @@
-import { cn } from '@/utils/cn';
 import type React from 'react';
+import { cn } from '@/utils/cn';
 
 interface ListProps extends React.HTMLAttributes<HTMLUListElement> {
     children: React.ReactNode;

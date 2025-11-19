@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Caroussel from "@/components/Caroussel"
@@ -7,7 +8,6 @@ import ImageLegend from "@/components/ImageLegend"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
-import Image from "next/image"
 
 
 const Histoire = () => {

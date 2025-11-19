@@ -1,5 +1,5 @@
+import type React from 'react'
 import { cn } from '@/utils/cn'
-import React from 'react'
 
 interface BlocSubtitleProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;

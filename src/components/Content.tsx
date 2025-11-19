@@ -1,5 +1,5 @@
+import type React from 'react'
 import { cn } from '@/utils/cn'
-import React from 'react'
 
 interface ContentProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;

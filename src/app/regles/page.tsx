@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
@@ -8,7 +9,6 @@ import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
 import { textVariants } from "@/constantes/theme"
-import Image from "next/image"
 
 const Regles = () => {
     return (

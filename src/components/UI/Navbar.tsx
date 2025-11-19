@@ -1,8 +1,8 @@
 "use client";
-import { navbarLinks } from '@/constantes/navbar';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
+import { navbarLinks } from '@/constantes/navbar';
 import Button from '../Button';
 import NavbarLink from './NavbarLink';
 

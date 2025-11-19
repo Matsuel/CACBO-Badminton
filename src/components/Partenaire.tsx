@@ -1,5 +1,5 @@
-import { textVariants } from '@/constantes/theme';
 import Image from 'next/image';
+import { textVariants } from '@/constantes/theme';
 
 interface PartenaireProps {
     name: string;

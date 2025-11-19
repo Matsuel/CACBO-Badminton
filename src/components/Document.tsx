@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import File from "@/assets/file.svg";
 import FileRed from "@/assets/fileRed.svg";
-import { useState } from "react";
 
 interface DocumentsProps {
     content: string;
@@ -18,7 +18,7 @@ export const Documents = ({
     const [isHovered, setIsHovered] = useState<boolean>(false);
 
     return (
-        <div className="w-auto h-auto flex flex-row items-center justify-start gap-[20px]">
+        <div className="w-auto h-auto flex flex-row items-center justify-start gap-5">
 
             <Link
                 href={href}

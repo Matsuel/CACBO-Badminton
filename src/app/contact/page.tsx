@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
@@ -7,8 +9,6 @@ import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
 import { SocialLinks } from "@/constantes/contact"
 import { textVariants } from "@/constantes/theme"
-import Image from "next/image"
-import Link from "next/link"
 
 const Contact = () => {
 

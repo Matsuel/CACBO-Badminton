@@ -1,6 +1,6 @@
+import type React from 'react'
 import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn'
-import React from 'react'
 
 interface BlocProps extends React.HTMLAttributes<HTMLDivElement> {
     title?: string;

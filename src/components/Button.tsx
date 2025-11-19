@@ -1,7 +1,7 @@
-import { textVariants } from '@/constantes/theme'
-import { cn } from '@/utils/cn'
 import Link, { type LinkProps } from 'next/link'
 import type React from 'react'
+import { textVariants } from '@/constantes/theme'
+import { cn } from '@/utils/cn'
 
 interface ButtonProps extends LinkProps, React.ButtonHTMLAttributes<HTMLAnchorElement> {
     variant?: 'primary' | 'inverted' | 'ghost';

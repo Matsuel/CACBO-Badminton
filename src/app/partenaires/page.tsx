@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Bloc from "@/components/Bloc";
 import BlocText from "@/components/BlocText";
 import Content from "@/components/Content";
@@ -5,7 +6,6 @@ import Header from "@/components/Header";
 import PageLayout from "@/components/PageLayout";
 import Partenaire from "@/components/Partenaire";
 import { partenaires } from "@/constantes/partenaires";
-import Image from "next/image";
 
 const Partenaires = () => {
 

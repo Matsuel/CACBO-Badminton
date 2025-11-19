@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
@@ -5,7 +6,6 @@ import Header from "@/components/Header"
 import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
-import Image from "next/image"
 
 const Faq = () => {
     return (

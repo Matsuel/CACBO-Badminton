@@ -1,8 +1,7 @@
+import Image from 'next/image'
 import Content from '@/components/Content'
 import PageLayout from '@/components/PageLayout'
 import { textVariants } from '@/constantes/theme'
-import Image from 'next/image'
-import React from 'react'
 
 const NotFound = () => {
     return (

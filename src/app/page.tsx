@@ -1,3 +1,5 @@
+import { SendHorizontal } from "lucide-react";
+import Image from "next/image";
 import ExternalLink from "@/assets/ExternalLink";
 import BlocSubtitle from "@/components/BlocSubtitle";
 import BlocText from "@/components/BlocText";
@@ -10,8 +12,6 @@ import List from "@/components/List";
 import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
 import { textVariants } from "@/constantes/theme";
-import { SendHorizontal } from "lucide-react";
-import Image from "next/image";
 import Bloc from "../components/Bloc";
 
 export default function Home() {

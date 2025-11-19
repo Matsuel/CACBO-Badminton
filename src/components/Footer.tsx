@@ -1,7 +1,7 @@
-import { footerLinks, socials } from '@/constantes/footer'
-import { textVariants } from '@/constantes/theme'
 import Image from 'next/image'
 import Link from 'next/link'
+import { footerLinks, socials } from '@/constantes/footer'
+import { textVariants } from '@/constantes/theme'
 
 const Footer = () => {
 

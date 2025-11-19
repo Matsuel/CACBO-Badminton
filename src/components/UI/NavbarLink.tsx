@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import type { NavbarLinkType } from '@/index'
 import { textVariants } from '@/constantes/theme'
+import type { NavbarLinkType } from '@/index'
 import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 const NavbarLink = ({
     title,

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
@@ -7,7 +8,6 @@ import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
 import SingleTitle from "@/components/SingleTitle"
-import Link from "next/link"
 
 const MentionsLegales = () => {
     return (

@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn';
-import Image from 'next/image';
 
 interface ImageLegendProps {
     src: string;

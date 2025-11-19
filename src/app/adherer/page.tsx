@@ -1,3 +1,4 @@
+import Image from "next/image"
 import ExternalLink from "@/assets/ExternalLink"
 import Bloc from "@/components/Bloc"
 import BlocText from "@/components/BlocText"
@@ -12,7 +13,6 @@ import Parent from "@/components/Parent"
 import Register from "@/components/Register"
 import SingleTitle from "@/components/SingleTitle"
 import { textVariants } from "@/constantes/theme"
-import Image from "next/image"
 
 const Adherer = () => {
     return (
