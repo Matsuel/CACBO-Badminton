@@ -6,12 +6,10 @@ export const metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="fr">
-            <body
-                className="antialiased"
-            >
-                {children}
-            </body>
-        </html>
+        <div
+            className="antialiased"
+        >
+            {children}
+        </div>
     );
 }
