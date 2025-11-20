@@ -69,7 +69,7 @@ const Contact = () => {
 
                 <Parent>
                     <SingleTitle>
-                        Ou nous rejoindre 👇
+                        Où nous rejoindre 👇
                     </SingleTitle>
 
                     <Bloc className="border border-redcolor">

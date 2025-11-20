@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import File from "@/assets/file.svg";
 import FileRed from "@/assets/fileRed.svg";
+import { textVariants } from "@/constantes/theme";
 
 interface DocumentsProps {
     content: string;
@@ -42,7 +43,7 @@ export const Documents = ({
                 </div>
             </Link>
 
-            <h5 className="font-Inter font-light text-paragraph">
+            <h5 className={textVariants.text}>
                 {content}
             </h5>
         </div>

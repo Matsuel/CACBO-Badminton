@@ -7,7 +7,7 @@ export const partenaires = [
         image: "/partenaires/carbon-blanc.png"
     },
     {
-        name: "CACBO",
+        name: "Club Athlétique CarbonBlanais Omnisports",
         role: "Club Omnisport",
         image: "/partenaires/omnisport.png"
     }

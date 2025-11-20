@@ -107,8 +107,8 @@ const Adherer = () => {
                     </Bloc>
 
                     <Bloc subtitile="Fichiers à télécharger (si inscription papier)">
-                        <Documents href="/adherer/Fiche d'inscription 2025-2026.pdf" content="Fiche d'inscription 2025-2026" />
-                        <Documents href="/adherer/Certificat médical.pdf" content="Certificat médical" />
+                        <Documents href="/adherer/Fiche d'inscription 2025-2026.pdf" content="Formulaire d’inscription" />
+                        <Documents href="/adherer/Certificat médical.pdf" content="Certificat médical + questionnaire de santé" />
                     </Bloc>
                 </Parent>
 
@@ -206,7 +206,7 @@ const Adherer = () => {
                         </BlocText>
 
                         <BlocText>
-                            Cela signifie que <span className="text-redpale">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
+                            Cela signifie que <span className="text-redpale font-medium!">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
                         </BlocText>
 
                         <BlocText>

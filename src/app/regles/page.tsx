@@ -92,6 +92,15 @@ const Regles = () => {
                             <ListElement>Au service, le volant doit atterrir dans le carré de service diagonalement opposé au serveur. Si le service est court ou hors de cette zone, il est considéré comme faute.</ListElement>
                             <ListElement>En jeu, toute la partie du terrain située entre les lignes intérieures est valable.</ListElement>
                         </List>
+
+                        <h4 className={`${textVariants.h4} text-redpale`}>
+                            En double, le terrain s’élargit pour inclure les couloirs latéraux extérieurs.
+                        </h4>
+
+                        <List>
+                            <ListElement>Au service, il doit atterrir dans le carré de service diagonalement opposé ou dans les couloirs de service latéraux.</ListElement>
+                            <ListElement>En jeu, l’intégralité du terrain, y compris les couloirs latéraux, est utilisée.</ListElement>
+                        </List>
                     </Bloc>
                 </Parent>
 

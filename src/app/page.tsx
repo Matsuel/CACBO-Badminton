@@ -1,7 +1,4 @@
-import { SendHorizontal } from "lucide-react";
-import Image from "next/image";
 import ExternalLink from "@/assets/ExternalLink";
-import BlocSubtitle from "@/components/BlocSubtitle";
 import BlocText from "@/components/BlocText";
 import Button from "@/components/Button";
 import Caroussel from "@/components/Caroussel";
@@ -12,6 +9,8 @@ import List from "@/components/List";
 import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
 import { textVariants } from "@/constantes/theme";
+import { SendHorizontal } from "lucide-react";
+import Image from "next/image";
 import Bloc from "../components/Bloc";
 
 export default function Home() {
@@ -50,9 +49,9 @@ export default function Home() {
             Notre club réunit des passionnés de badminton de tous niveaux. L’ambiance y est familiale et conviviale, propice à la détente et au partage.
           </BlocText>
 
-          <BlocSubtitle>
+          <h4 className={`${textVariants.h4} text-redcolor`}>
             Que vous soyez compétiteur ou simplement en quête de loisirs, vous trouverez chez nous un cadre chaleureux pour pratiquer sans pression.
-          </BlocSubtitle>
+          </h4>
 
           <BlocText>
             Envie d&apos;en savoir plus ?
