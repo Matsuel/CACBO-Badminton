@@ -18,7 +18,7 @@ const ImageLegend = ({
             <Image
                 src={src}
                 alt={description}
-                className='rounded-ten'
+                className='rounded-xl'
                 width={2000}
                 height={2000}
             />

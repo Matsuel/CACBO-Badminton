@@ -110,7 +110,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/2.png"
 					description="La finale d’un tournoi opposant le club à celui de la Jeunesse Yvracaise"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
@@ -223,7 +223,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/3.png"
 					description="Juillet 2013"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
@@ -299,7 +299,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/4.png"
 					description="Notre école de badminton saison 2014/15"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Caroussel
@@ -314,7 +314,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/5.png"
 					description="Septembre 2014"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
@@ -367,7 +367,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/6.png"
 					description="L’un des nombreux cours de l’école de badminton du club (octobre 2017)"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
@@ -400,7 +400,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/7.png"
 					description="Le gymnase lors de sa démolition (novembre 2019)"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
@@ -473,7 +473,7 @@ const Histoire = () => {
 				<ImageLegend
 					src="/histoire/8.png"
 					description="La nouvelle salle du complexe remplaçant le précédent gymnase à la réouverture du club, en septembre 2022"
-					className="rounded-ten"
+					className="rounded-xl"
 				/>
 
 				<Parent>
