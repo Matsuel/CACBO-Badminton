@@ -11,6 +11,7 @@ import Parent from "@/components/Parent";
 import SingleTitle from "@/components/SingleTitle";
 import { textVariants } from "@/constantes/theme";
 import Palmares from "@/components/Palmares";
+import President from "@/components/President";
 
 const Histoire = () => {
 	return (
@@ -511,6 +512,26 @@ const Histoire = () => {
 							subtitle="Départementale 2"
 							legend="Saison 2014/15 (vétéran hommes)"
 						/>
+					</Bloc>
+				</Parent>
+
+				<Parent>
+					<SingleTitle>Nos présidents depuis 2007</SingleTitle>
+
+					<Bloc>
+						<President date="2007-2010" name="Ahmed KASSIM" />
+
+						<President date="2010-2013" name="Pierre DANGAYS" />
+
+						<President date="2013-2015" name="Wolfgang SCHRADER" />
+
+						<President date="2015-2016" name="Éric PRIVAT" />
+
+						<President date="2016-2017" name="Guillaume BENTABET" />
+
+						<President date="2017-2018" name="Christophe LECLERCQ" />
+
+						<President date="2022-" name="Laurent THOMAS" />
 					</Bloc>
 				</Parent>
 
