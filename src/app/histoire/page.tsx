@@ -10,6 +10,7 @@ import PageLayout from "@/components/PageLayout";
 import Parent from "@/components/Parent";
 import SingleTitle from "@/components/SingleTitle";
 import { textVariants } from "@/constantes/theme";
+import Palmares from "@/components/Palmares";
 
 const Histoire = () => {
 	return (
@@ -34,9 +35,9 @@ const Histoire = () => {
 						un engagement associatif fort.
 					</BlocIntro>
 
-                    <BlocIntro>
-                        À travers cette page, nous revenons sur les grandes étapes qui ont marqué notre histoire, des débuts modestes jusqu’à la réouverture du club en 2022, symbole d’un véritable renouveau.
-                    </BlocIntro>
+					<BlocIntro>
+						À travers cette page, nous revenons sur les grandes étapes qui ont marqué notre histoire, des débuts modestes jusqu’à la réouverture du club en 2022, symbole d’un véritable renouveau.
+					</BlocIntro>
 				</Parent>
 
 				<Parent>
@@ -490,6 +491,26 @@ const Histoire = () => {
 							Pendant plus d’une décennie, nos équipes ont signé de belles
 							performances et ont marqué l’histoire de la section.
 						</BlocText>
+					</Bloc>
+
+					<Bloc>
+						<Palmares
+							title="Champion"
+							subtitle="District libournais A"
+							legend="Saisons 2012/13 et 2013/14 (senior mixte)"
+						/>
+
+						<Palmares
+							title="Vice-champion"
+							subtitle="District libournais A"
+							legend="Saison 2016/17 (senior mixte)"
+						/>
+
+						<Palmares
+							title="Vice-champion"
+							subtitle="Départementale 2"
+							legend="Saison 2014/15 (vétéran hommes)"
+						/>
 					</Bloc>
 				</Parent>
 
