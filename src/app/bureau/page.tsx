@@ -44,6 +44,7 @@ const Bureau = () => {
                             firstName={personnel.firstName}
                             lastName={personnel.lastName}
                             role={personnel.role}
+                            description={personnel.description}
                             index={index}
                         />
                     ))}
