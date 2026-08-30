@@ -22,7 +22,7 @@ export const navbarLinks: NavbarLinkType[] = [
     },
     {
         title: "Boutique",
-        href: "/boutique",
+        href: "https://www.helloasso.com/associations/cacbo-badminton/boutiques/vente-de-volants?fbclid=PAVERFWAUBD0VwZG9mAmZkaWQWUNcsqYWeWvXnRmCgpxBhjIce5DwCwmV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp00EmJehP0bNKfu4ANVinjc-ZSLNGsAAmvigexzVNOzoMg9i9JVXktkP02zI_aem_iAk9f6w4A01bz1dBF-trbw",
         description: "",
         icon: <ShoppingBagIcon className="w-5" />
     },
