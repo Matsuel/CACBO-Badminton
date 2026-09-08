@@ -107,8 +107,9 @@ const Adherer = () => {
                     </Bloc>
 
                     <Bloc subtitile="Fichiers à télécharger (si inscription papier)">
-                        <Documents href="/adherer/Fiche d'inscription 2025-2026.pdf" content="Formulaire d’inscription" />
-                        <Documents href="/adherer/Certificat médical.pdf" content="Certificat médical + questionnaire de santé" />
+                        <Documents href="/adherer/Questionnaire santé FFBaD (page 1).pdf" content="Questionnaire de santé (obligatoire)" />
+                        <Documents href="/adherer/Fiche d'inscription 26-27 (club).pdf" content="Formulaire d’inscription" />
+                        <Documents href="/adherer/Certificat médical (club).pdf" content="Certificat médical (à fournir si le questionnaire est positif)" />
                     </Bloc>
                 </Parent>
 
