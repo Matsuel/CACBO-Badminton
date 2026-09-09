@@ -18,7 +18,7 @@ const Navbar = () => {
         <nav
             className={cn(
                 'w-full flex flex-col gap-[50px] p-5',
-                isOpen ? 'fixed inset-0 z-50 h-dvh overflow-hidden' : 'absolute top-0 h-auto'
+                isOpen ? 'fixed inset-0 z-50 h-dvh overflow-hidden bg-white' : 'absolute top-0 h-auto'
             )}
         >
 
@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
 
             <div
-                className='w-full flex-1 min-h-0 flex-col gap-content bg-white rounded-xl overflow-y-auto overscroll-contain'
+                className='w-full flex-1 min-h-0 flex-col gap-content bg-white rounded-xl overflow-y-auto overscroll-contain scrollbar-none'
                 style={{
                     display: isOpen ? "flex" : "none"
                 }}

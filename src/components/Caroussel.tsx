@@ -16,14 +16,14 @@ const Caroussel = ({
             <h2 className={`${textVariants.h2} text-redcolor`}>
                 {title}
             </h2>
-            <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto whitespace-nowrap'>
+            <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto whitespace-nowrap scrollbar-none'>
                 {images.map((image, index) => (
                     <Image
                         key={index}
                         src={image}
                         alt={`Image ${index + 1}`}
-                        width={180}
-                        height={300}
+                        width={280}
+                        height={360}
                         className='shrink-0 rounded-xl'
                     />
                 ))}
