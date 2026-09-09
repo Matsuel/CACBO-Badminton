@@ -11,10 +11,10 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 	return (
 		<div
 			className={
-				"w-full h-auto flex flex-row items-center justify-start p-5 gap-[25px] bg-white rounded-xl shadow-default"
+				"w-full h-auto flex flex-row items-center justify-start p-5 gap-6.25 bg-white rounded-xl shadow-default"
 			}
 		>
-			<div className="w-[100px] h-[100px] flex items-center justify-center rounded-xl bg-whitebroken shrink-0">
+			<div className="w-25 h-25 flex items-center justify-center rounded-xl bg-whitebroken shrink-0">
 				<Image
 					src={image}
 					alt="volant de badminton"
@@ -24,7 +24,7 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 				/>
 			</div>
 
-			<div className="flex flex-col gap-content">
+			<div className="flex flex-col gap-2">
 				<div className="flex flex-col">
 					<span className={`${textVariants.h3} text-redcolor`}>{name}</span>
 				</div>

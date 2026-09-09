@@ -87,6 +87,14 @@ const Contact = () => {
                         width={5000}
                         height={5000}
                     />
+
+                    <Bloc subtitile="Nos créneaux">
+                        <BlocText>
+                            {/* TODO: Mettre les couleurs comme sur Figma */}
+                            Lundi 21h-23h Mardi 18h-21h
+                            Vendredi 18h30-21h
+                        </BlocText>
+                    </Bloc>
                 </Parent>
 
             </Content>

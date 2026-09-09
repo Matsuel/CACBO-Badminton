@@ -43,6 +43,12 @@ const Adherer = () => {
                         Pourquoi nous rejoindre ?
                     </SingleTitle>
 
+                    <Bloc className="border border-redcolor">
+                        <h4 className={`${textVariants.h4}`}>
+                            Profitez de <span className="text-redcolor">-25% chez Sport Article</span> (hors cordages/volants) grâce à notre partenariat ! 
+                        </h4>
+                    </Bloc>
+
                     <Bloc>
                         <BlocText>
                             En rejoignant notre club, vous intégrez une <span className="font-medium">communauté accueillante</span> et <span className="font-medium">dynamique</span>, <span className="font-medium">ouverte à tous les niveaux</span> de pratique.
