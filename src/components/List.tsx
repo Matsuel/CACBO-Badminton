@@ -11,7 +11,7 @@ const List = ({
     ...props
 }: ListProps) => {
     return (
-        <ul className={cn("list-disc pl-7 flex flex-col gap-content", className)} {...props}>
+        <ul className={cn("list-disc pl-7 flex flex-col gap-0",className)} {...props}>
             {children}
         </ul>
     )

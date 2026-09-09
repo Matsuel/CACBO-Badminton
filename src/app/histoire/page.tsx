@@ -527,11 +527,11 @@ const Histoire = () => {
 
 						<President date="2013-2015" name="Wolfgang SCHRADER" />
 
-						<President date="2015-2016" name="Éric PRIVAT" />
+						<President date="2015-2018" name="Éric PRIVAT" />
 
-						<President date="2016-2017" name="Guillaume BENTABET" />
+						<President date="2017-2018" name="Guillaume BENTABET" />
 
-						<President date="2017-2018" name="Christophe LECLERCQ" />
+						<President date="2018-2019" name="Christophe LECLERCQ" />
 
 						<President date="2022-" name="Laurent THOMAS" />
 					</Bloc>
@@ -568,7 +568,7 @@ const Histoire = () => {
 							départ prometteur pour une nouvelle section.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>1056 m2</h2>
+						<h2 className={`${textVariants.h2} text-redpale`}>1056 m²</h2>
 
 						<BlocText>Surface de la salle Philippe Madrelle.</BlocText>
 

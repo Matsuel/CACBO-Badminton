@@ -14,6 +14,7 @@ const ImageLegend = ({
     className
 }: ImageLegendProps) => {
     return (
+        // TODO: mettre les phtos en vertical avec le contenu au centre
         <div className={cn('w-full h-auto flex flex-col items-center justify-center gap-content bg-transparent', className)}>
             <Image
                 src={src}

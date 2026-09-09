@@ -80,9 +80,9 @@ export default function Home() {
 					<h4 className={`${textVariants.h4}`}>Nos créneaux sont les :</h4>
 
 					<List>
-						<ListElement>lundis → 21h - 23h</ListElement>
-						<ListElement>mardis → 18h - 21h</ListElement>
-						<ListElement>vendredis → 18h30 - 21h</ListElement>
+						<ListElement className="font-bold">lundis → 21h - 23h</ListElement>
+						<ListElement className="font-bold">mardis → 18h - 21h</ListElement>
+						<ListElement className="font-bold">vendredis → 18h30 - 21h</ListElement>
 					</List>
 
 					<BlocText>
@@ -109,7 +109,7 @@ export default function Home() {
 						à tous les niveaux.
 					</BlocText>
 
-					<h4 className={textVariants.h4}>💶 Tarifs d’adhésion :</h4>
+					<h4 className={textVariants.h4}>Tarifs d’adhésion :</h4>
 
 					<List>
 						<ListElement>
