@@ -12,7 +12,7 @@ const Content = ({
     ...props
 }: ContentProps) => {
     return (
-        <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-body", className)} {...props}>
+        <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-body p-5", className)} {...props}>
             {children}
         </div>
     )

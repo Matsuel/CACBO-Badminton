@@ -19,14 +19,14 @@ const Regles = () => {
                 subtitle="Tout ce qu'il faut savoir avant de jouer !"
             />
 
+            <Image
+                src="/regles/1.png"
+                alt="Photo devant une table avec des raquettes"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/regles/1.png"
-                    alt="Photo devant une table avec des raquettes"
-                    className="rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Parent>
                     <SingleTitle>

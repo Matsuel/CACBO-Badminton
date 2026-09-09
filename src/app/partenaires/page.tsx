@@ -17,14 +17,14 @@ const Partenaires = () => {
                 subtitle="Ils nous soutiennent pour faire grandir notre club !"
             />
 
+            <Image
+                src="/partenaires/1.png"
+                alt="Photo devant une table remplit de volants"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/partenaires/1.png"
-                    alt="Photo devant une table remplit de volants"
-                    className="w-full h-auto rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Bloc>
                     <BlocText>

@@ -7,25 +7,25 @@ import Content from "@/components/Content";
 import Header from "@/components/Header";
 import ImageLegend from "@/components/ImageLegend";
 import PageLayout from "@/components/PageLayout";
+import Palmares from "@/components/Palmares";
 import Parent from "@/components/Parent";
+import President from "@/components/President";
 import SingleTitle from "@/components/SingleTitle";
 import { textVariants } from "@/constantes/theme";
-import Palmares from "@/components/Palmares";
-import President from "@/components/President";
 
 const Histoire = () => {
 	return (
 		<PageLayout>
 			<Header title="HISTOIRE" subtitle="Le chemin parcouru depuis 2007" />
 
+			<Image
+				src="/histoire/1.png"
+				alt="Photo devant une table avec des raquettes"
+				width={2000}
+				height={2000}
+			/>
+
 			<Content>
-				<Image
-					src="/histoire/1.png"
-					alt="Photo devant une table avec des raquettes"
-					className="rounded-xl"
-					width={2000}
-					height={2000}
-				/>
 
 				<Parent>
 					<BlocIntro>
@@ -37,7 +37,9 @@ const Histoire = () => {
 					</BlocIntro>
 
 					<BlocIntro>
-						À travers cette page, nous revenons sur les grandes étapes qui ont marqué notre histoire, des débuts modestes jusqu’à la réouverture du club en 2022, symbole d’un véritable renouveau.
+						À travers cette page, nous revenons sur les grandes étapes qui ont
+						marqué notre histoire, des débuts modestes jusqu’à la réouverture du
+						club en 2022, symbole d’un véritable renouveau.
 					</BlocIntro>
 				</Parent>
 

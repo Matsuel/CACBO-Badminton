@@ -16,14 +16,14 @@ const Faq = () => {
                 subtitle="Toutes les infos pratiques sur notre club !"
             />
 
+            <Image
+                src="/faq/1.png"
+                alt="Photo d'un match"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/faq/1.png"
-                    alt="Photo d'un match"
-                    className="rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Bloc title="Quels sont les créneaux horaires pour pratiquer ?">
                     <BlocText>

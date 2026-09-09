@@ -20,7 +20,7 @@ const Header = ({
     cta
 }: HeaderProps) => {
     return (
-        <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-content", className)}>
+        <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-content p-5", className)}>
             {h2 && <h2 className="font-Poppins text-[13px] text-redcolor leading-4">
                 {h2}
             </h2>}

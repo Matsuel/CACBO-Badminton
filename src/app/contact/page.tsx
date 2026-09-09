@@ -20,14 +20,14 @@ const Contact = () => {
                 subtitle="Besoin d’infos ? Nous sommes à votre écoute !"
             />
 
+            <Image
+                src="/contact/1.png"
+                alt="Photo devant une table avec des raquettes"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/contact/1.png"
-                    alt="Photo devant une table avec des raquettes"
-                    className="rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Parent>
                     <SingleTitle>

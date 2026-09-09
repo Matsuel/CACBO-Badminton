@@ -19,14 +19,14 @@ const Regles = () => {
                 subtitle="Tout savoir sur sa raquette"
             />
 
+            <Image
+                src="/raquette/1.png"
+                alt="Photo de plusieurs raquettes"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/raquette/1.png"
-                    alt="Photo de plusieurs raquettes"
-                    className="rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Parent>
                     <SingleTitle>

@@ -35,14 +35,14 @@ export default function Home() {
 				}
 			/>
 
+			<Image
+				src="/acceuil/1.png"
+				alt="Photo de groupe de badminton"
+				width={2000}
+				height={2000}
+			/>
+
 			<Content>
-				<Image
-					src="/acceuil/1.png"
-					alt="Photo de groupe de badminton"
-					className="rounded-xl"
-					width={2000}
-					height={2000}
-				/>
 
 				<Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
 					<BlocText>

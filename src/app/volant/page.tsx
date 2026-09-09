@@ -16,14 +16,14 @@ const Regles = () => {
                 subtitle="Bien connaître son volant"
             />
 
+            <Image
+                src="/volant/1.png"
+                alt="Photo d'un volant de badminton"
+                width={2000}
+                height={2000}
+            />
+
             <Content>
-                <Image
-                    src="/volant/1.png"
-                    alt="Photo d'un volant de badminton"
-                    className="rounded-xl"
-                    width={2000}
-                    height={2000}
-                />
 
                 <Parent>
                     <SingleTitle>
