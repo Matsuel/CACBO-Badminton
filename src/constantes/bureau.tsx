@@ -21,6 +21,7 @@ export const personnel = [
     {
         firstName: "Jimmy",
         lastName: "BERT",
-        role: "Membre"
+        role: "Membre",
+        "description": "En charge des partenariats et compétitions du club."
     },
 ]

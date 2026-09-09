@@ -24,7 +24,7 @@ const Membre = ({
                 <div
                     className='w-24.5 h-24.5 flex items-center justify-center rounded-xl bg-redcolor'
                     style={{
-                        opacity: 1 - index * 0.2
+                        backgroundColor: `rgba(255, 28, 28, ${1 - index * 0.2})`
                     }}
                 >
                     <Image
@@ -36,7 +36,7 @@ const Membre = ({
                     />
                 </div>
 
-                <div className='flex flex-col gap-content'>
+                <div className='flex flex-col gap-2'>
                     <div className='flex flex-col'>
                         <span className={`${textVariants.h3} text-redcolor`}>{firstName}</span>
                         <span className={`${textVariants.h3} text-redcolor`}>{lastName}</span>
