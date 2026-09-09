@@ -49,48 +49,47 @@ const Histoire = () => {
 					<Bloc>
 						<BlocText>
 							Le club voit le jour le{" "}
-							<span className="text-redpale font-medium">15 mars 2007</span>, à
+							<span className="font-medium">15 mars 2007</span>, à
 							l’initiative de trois passionnés : Ahmed KASSIM (président),
 							Laurent THOMAS (secrétaire) et Julien LARCHER (trésorier). 🖋️
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
+						<p className="font-Poppins font-semibold text-xl text-redpale leading-4">
 							L’objectif : développer une pratique loisir accessible à tous,
 							dans une ambiance conviviale et respectueuse.
 						</p>
 
 						<BlocText>
 							Les premiers créneaux se tiennent au gymnase Gaston Lacoste, sur{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								5 terrains tracés et 3 créneaux hebdomadaires
 							</span>{" "}
 							de deux heures, réunissant dès la première saison près de{" "}
-							<span className="text-redpale font-medium">70 adhérents</span>.
+							<span className="font-medium">70 adhérents</span>.
 						</BlocText>
 
 						<BlocText>
 							<span className="font-medium">Dès 2008</span>, la section
 							consolide ses bases avec une fréquentation élevée, en maintenant 3
 							créneaux hebdomadaires et un{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								taux d’occupation moyen de 60% des terrains
 							</span>{" "}
 							à chaque séance.
 						</BlocText>
 
-						<BlocText>
-							Les responsables notent déjà un fort engouement et la nécessité
-							d’un encadrement de qualité pour les jeunes, amorçant la{" "}
-							<span className="text-redpale font-medium">
-								création de l’école de badminton
-							</span>{" "}
-							dès la saison suivante pour les plus jeunes. 🧒
-						</BlocText>
+					</Bloc>
+
+					<p className="p-5 font-Poppins font-normal text-2xl text-redpale leading-5">
+						Les responsables notent déjà un fort engouement et la nécessité d’un encadrement de qualité pour les jeunes, amorçant la création de l’école de badminton dès la saison suivante pour les plus jeunes. 🧒
+					</p>
+
+					<Bloc>
 
 						<BlocText>
 							<span className="font-medium">En 2009</span>, le club franchit une
 							nouvelle étape : on compte{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								près de 87 licenciés
 							</span>
 							, et la section envisage de dépasser la barre symbolique des 100
@@ -105,7 +104,7 @@ const Histoire = () => {
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-Poppins font-semibold text-2xl text-redcolor leading-5">
+				<p className="p-5 font-Poppins font-semibold text-2xl text-redpale leading-5">
 					Les premières années sont marquées par un fort engouement, une gestion
 					saine et une belle cohésion autour des valeurs de partage et
 					d’apprentissage.
@@ -123,14 +122,14 @@ const Histoire = () => {
 					<Bloc>
 						<BlocText>
 							En mars 2010, après quatre années d’activité,{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								la section connaît ses premiers changements de direction
 							</span>{" "}
 							avec l’élection d’un nouveau bureau, mené par Pierre DANGAYS, qui
 							prend la suite d’Ahmed KASSIM.
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
+						<p className="font-Poppins font-semibold text-xl text-redpale leading-4">
 							Sous sa présidence, le club entre dans une véritable phase de
 							structuration et de modernisation. 🔝
 						</p>
@@ -138,7 +137,7 @@ const Histoire = () => {
 						<BlocText>
 							L’organisation interne se consolide, le Bureau gagne en efficacité
 							et la communication du club franchit un cap décisif :{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								création du logo, nouveaux maillots, lancement d’un site
 								internet et développement d’une communication locale renforcée
 								dans la vie locale.
@@ -148,18 +147,31 @@ const Histoire = () => {
 						<BlocText>
 							Cette période est également celle d’une forte expansion. Durant la
 							saison 2011/12,{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								le club atteint 111 licenciés
 							</span>
 							, dont 28 jeunes inscrits à l’école de badminton.
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
-							Le club obtient sa première labellisation École Française de
-							Badminton (EFB) 1 étoile ⭐ lors de la saison 2010/11, une
-							distinction qu’il conservera sept saisons consécutives, témoignant
-							de la qualité et de la continuité de sa formation jeune.
-						</p>
+					</Bloc>
+
+					<p className="p-5 font-Poppins font-normal text-2xl text-redpale leading-5">
+						Le club obtient sa première labellisation École Française de
+						Badminton (EFB) 1 étoile ⭐ lors de la saison 2010/11, une
+						distinction qu’il conservera sept saisons consécutives, témoignant
+						de la qualité et de la continuité de sa formation jeune.
+					</p>
+
+					<Caroussel
+						images={[
+							"/histoire/carousel1.png",
+							"/histoire/carousel2.png",
+							"/histoire/carousel3.png",
+						]}
+						title="Retour en images"
+					/>
+
+					<Bloc>
 
 						<BlocText>
 							La section, forte de 3 créneaux adultes et 2 jeunes, s’impose
@@ -168,15 +180,15 @@ const Histoire = () => {
 
 						<BlocText>
 							La mixité est un atout : environ{" "}
-							<span className="text-redpale font-medium">42% de femmes</span>{" "}
+							<span className="font-medium">42% de femmes</span>{" "}
 							parmi les licenciés, et un public venant à{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								40% de Carbon-Blanc et 60% des communes voisines
 							</span>{" "}
 							(Ambès, Yvrac, Sainte-Eulalie, Bassens…).
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
+						<p className="font-Poppins font-semibold text-xl text-redpale leading-4">
 							Sur le plan sportif, la dynamique est remarquable.
 						</p>
 
@@ -184,14 +196,14 @@ const Histoire = () => {
 							Les équipes adultes participent aux interclubs du district
 							libournais, avec des résultats significatifs : en 2011, l’équipe
 							mixte termine{" "}
-							<span className="text-redpale font-medium">4e/14</span> et frôle
+							<span className="font-medium">4e/14</span> et frôle
 							la montée en interdistrict, l’équipe hommes se classe 6e/8 après
 							s’être extraite des poules de brassage.
 						</BlocText>
 
 						<BlocText>
 							L’école de badminton progresse également, avec des{" "}
-							<span className="text-redpale font-medium">
+							<span className="font-medium">
 								jeunes classés 3e et 4e en catégorie minime.
 							</span>
 						</BlocText>
@@ -203,25 +215,27 @@ const Histoire = () => {
 						</BlocText>
 
 						<BlocText>
-							<span className="font-medium">En 2013</span>, la section atteint
-							son apogée :{" "}
-							<span className="text-redpale font-medium">
-								près de 110 licenciés
-							</span>
-							, une structure bien établie, un budget excédentaire de 3 000 €.
-						</BlocText>
-
-						<BlocText>
-							Cette période voit également la montée en puissance des tournois
-							internes, des événements conviviaux et d’un réel esprit d’équipe
-							qui soude les adhérents autour de valeurs communes.
+							Durant la saison 2012/13, la section atteint son apogée : près de 110 licenciés et une structure bien établie.
 						</BlocText>
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-Poppins font-semibold text-2xl text-redcolor leading-5">
-					Une ère de renouveau et de cohésion, où la rigueur et la convivialité
-					ont permis de poser des bases solides pour l’avenir du club.
+				<p className="p-5 font-Poppins font-normal text-2xl text-redpale leading-5">
+					Lors de cette même saison, l’équipe senior mixte du club réalise une performance majeure en remportant le titre de Champion du District libournais. 🏆
+				</p>
+
+				<Bloc>
+					<BlocText>
+						Cette même année, elle se hisse ensuite à la 6ᵉ place du classement interdistrict sur 48 équipes engagées, confirmant l’un des plus beaux résultats sportifs de l’histoire de la section.
+					</BlocText>
+
+					<BlocText>
+						Cette période voit également la montée en puissance des tournois internes, des événements conviviaux et d’un réel esprit d’équipe qui soude les adhérents autour de valeurs communes.
+					</BlocText>
+				</Bloc>
+
+				<p className="p-5 font-Poppins font-bold text-2xl text-redpale leading-5">
+					Une ère de renouveau et de cohésion, où la rigueur et la convivialité ont permis de poser des bases solides pour l’avenir du club.
 				</p>
 
 				<ImageLegend
@@ -236,7 +250,7 @@ const Histoire = () => {
 					<Bloc>
 						<BlocText>
 							En juin 2013,{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								le club connaît un nouveau tournant
 							</span>{" "}
 							avec l’élection de Wolfgang SCHRADER à la présidence.
@@ -244,11 +258,11 @@ const Histoire = () => {
 
 						<BlocText>
 							La section compte{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								105 à 110 adhérents
 							</span>
 							, dont près d’un quart de jeunes, et conserve des{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								résultats solides dans les compétitions
 							</span>{" "}
 							interclubs : l’équipe mixte termine 1ère du district libournais,
@@ -263,13 +277,20 @@ const Histoire = () => {
 						</BlocText>
 
 						<BlocText>
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								Le club continue de participer activement à la vie locale
 							</span>{" "}
 							: tournois internes, rencontres interclubs (avec Yvrac,
 							Sainte-Eulalie, Ambès, Bègles…), et sorties de fin d’année pour
 							les jeunes.
 						</BlocText>
+					</Bloc>
+
+					<p className="p-5 font-Poppins font-bold text-2xl text-redpale leading-5">
+						L’équipe senior mixte remporte pour la deuxième fois consécutive le titre de Champion du District libournais et finit 5e en poule interdistrict (sur 38 équipes engagées). 🏆
+					</p>
+
+					<Bloc>
 
 						<BlocText>
 							La saison 2014/15 marque néanmoins le début de difficultés
@@ -277,7 +298,7 @@ const Histoire = () => {
 							à cause du développement d’autres sections du CACBO.
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
+						<p className="font-Poppins font-semibold text-xl text-redpale leading-4">
 							Sous son impulsion, le club oriente davantage son activité vers la
 							compétition et les interclubs. ⚔️
 						</p>
@@ -285,7 +306,7 @@ const Histoire = () => {
 						<BlocText>
 							Cette évolution marque une transition dans l’esprit du club,
 							jusque-là centré sur le loisir et la convivialité.{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								La pratique devient plus compétitive, avec une forte dynamique
 								autour des classements et des résultats sportifs.
 							</span>
@@ -304,15 +325,6 @@ const Histoire = () => {
 					src="/histoire/4.png"
 					description="Notre école de badminton saison 2014/15"
 					className="rounded-xl"
-				/>
-
-				<Caroussel
-					images={[
-						"/histoire/carousel1.png",
-						"/histoire/carousel2.png",
-						"/histoire/carousel3.png",
-					]}
-					title="Retour en images"
 				/>
 
 				<ImageLegend
@@ -334,12 +346,19 @@ const Histoire = () => {
 
 						<BlocText>
 							La section reste très active avec{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								environ 100 licenciés
 							</span>
 							, une école de badminton structurée et des équipes vétérans
 							performantes.
 						</BlocText>
+					</Bloc>
+
+					<p className="font-Poppins font-normal text-xl text-redpale leading-4">
+						Les vétérans se classent 2e en division 2 (district libournais) durant la saison 2014/15 et sont récompensés par le COGIBAD (comité départemental). 🥈
+					</p>
+
+					<Bloc>
 
 						<BlocText>
 							Cependant, une instabilité progressive s’installe au sein du
@@ -351,15 +370,15 @@ const Histoire = () => {
 						<BlocText>
 							Malgré cela, la section continue de défendre ses couleurs en
 							interclubs à travers une{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								structure compétitive solide
 							</span>
 							, avec{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								trois équipes engagées en interclubs
 							</span>{" "}
 							(mixte, hommes et vétérans) tout en conservant une{" "}
-							<span className="font-medium text-redpale">
+							<span className="font-medium">
 								vie associative dynamique
 							</span>{" "}
 							: tournois internes, entraînements collectifs, et moments
@@ -385,7 +404,7 @@ const Histoire = () => {
 							supprimée.
 						</BlocText>
 
-						<p className="font-Poppins font-semibold text-xl text-redcolor leading-4">
+						<p className="font-Poppins font-semibold text-xl text-redpale leading-4">
 							La situation est aggravée par la fermeture définitive du gymnase
 							Gaston Lacoste, berceau historique du club, en juillet 2018 pour
 							raisons de sécurité.
@@ -439,12 +458,13 @@ const Histoire = () => {
 							une adhésion à moindre coût comparé aux prix affichés dans les
 							clubs affiliés, rendant la pratique plus inclusive.
 						</BlocText>
+					</Bloc>
 
-						<BlocText>
-							En contrepartie, le club renonce aux compétitions officielles et
-							aux interclubs, pour se concentrer exclusivement sur le badminton
-							loisir, dans un esprit bon enfant et sans prise de tête.
-						</BlocText>
+					<p className="font-Poppins font-normal text-xl text-redpale leading-4">
+						Ce retour marque une volonté claire de renouer avec les valeurs qui ont façonné le club à ses débuts, loin des tensions et de la recherche de performance qui avaient progressivement éloigné les adhérents du loisir pur.
+					</p>
+
+					<Bloc>
 
 						<BlocText>
 							Ce positionnement séduit immédiatement : de nombreux joueurs,
@@ -454,21 +474,20 @@ const Histoire = () => {
 						</BlocText>
 
 						<BlocText>
-							Depuis sa réouverture, le club multiplie les initiatives pour
-							renforcer la cohésion et la convivialité.
+							Depuis sa réouverture, le club multiplie les initiatives pour renforcer la cohésion et la convivialité : des soirées le vendredi rassemblant régulièrement une trentaine de joueurs, des tournois internes festifs et sans enjeu, et des repas de fin d’année au restaurant, offerts par le club, pour prolonger la convivialité au-delà des terrains.
 						</BlocText>
 
 						<BlocText>
-							Régulièrement les vendredis soirs, des soirées de jeu et
-							d’échanges réunissent une trentaine de participants, dans une
-							ambiance détendue et chaleureuse. Des repas de fin d’année au
-							restaurant, financés par le club, prolongent cet esprit de partage
-							hors du terrain.
+							Afin de rendre la pratique plus abordable, le club revend aussi des boîtes de volants en plumes de qualité, environ 50% moins chères que sur le marché.
+						</BlocText>
+
+						<BlocText>
+							Loin de l’esprit de compétition qui avait autrefois créé des divisions internes, le club défend désormais un badminton ouvert à tous, basé sur le respect, la bienveillance et le plaisir partagé.
 						</BlocText>
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-Poppins font-semibold text-2xl text-redcolor leading-5">
+				<p className="p-5 font-Poppins font-semibold text-2xl text-redpale leading-5">
 					Aujourd’hui, le CACBO Badminton rassemble une centaine d’adhérents de
 					tous niveaux, et perpétue l’esprit de 2007 : un lieu où le sport rime
 					avec détente, entraide et passion.
@@ -541,66 +560,66 @@ const Histoire = () => {
 					<SingleTitle>Quelques chiffres clés</SingleTitle>
 
 					<Bloc className="items-center">
-						<h2 className={`${textVariants.h2} text-redpale`}>2007</h2>
+						<h2 className={textVariants.h2}>2007</h2>
 
 						<BlocText>
 							C’est l’année de création du club, fondé le 15 mars par trois
 							passionnés.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>7</h2>
+						<h2 className={textVariants.h2}>7</h2>
 
 						<BlocText>
 							Nombre de présidents qui se sont succédés depuis 2007.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>2022</h2>
+						<h2 className={textVariants.h2}>2022</h2>
 
 						<BlocText>
 							C’est l’année de renaissance du club (le 19 septembre), quatre ans
 							après sa mise en sommeil.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>71</h2>
+						<h2 className={textVariants.h2}>71</h2>
 
 						<BlocText>
 							Nombre d’adhérents inscrits dès la première saison du club, un
 							départ prometteur pour une nouvelle section.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>1056 m²</h2>
+						<h2 className={textVariants.h2}>1056 m²</h2>
 
 						<BlocText>Surface de la salle Philippe Madrelle.</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>98</h2>
+						<h2 className={textVariants.h2}>98</h2>
 
 						<BlocText>
 							Moyenne d’adhérents par saison avant la mise en sommeil du club en
 							2018.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>7</h2>
+						<h2 className={textVariants.h2}>7</h2>
 
 						<BlocText>
 							C’est le nombre de saisons consécutives durant lesquelles le club
 							a été labellisé EFB – 1 étoile.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>113</h2>
+						<h2 className={textVariants.h2}>113</h2>
 
 						<BlocText>
 							Nombre record d’adhérents atteint par le club lors de la saison
 							2016/17.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>6</h2>
+						<h2 className={textVariants.h2}>6</h2>
 
 						<BlocText>
 							C’est le nombre de saisons où le club a comptabilisé plus de 100
 							adhésions.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>86</h2>
+						<h2 className={textVariants.h2}>86</h2>
 
 						<BlocText>
 							Moyenne d’adhérents par saison depuis la réouverture en 2022 — une
@@ -608,7 +627,7 @@ const Histoire = () => {
 							Carbon-Blanc.
 						</BlocText>
 
-						<h2 className={`${textVariants.h2} text-redpale`}>7</h2>
+						<h2 className={textVariants.h2}>7</h2>
 
 						<BlocText>
 							C’est le nombre de terrains disponibles aujourd’hui, soit deux de
