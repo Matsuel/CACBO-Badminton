@@ -1,4 +1,3 @@
-import { SendHorizontal } from "lucide-react";
 import Image from "next/image";
 import ExternalLink from "@/assets/ExternalLink";
 import BlocText from "@/components/BlocText";
@@ -10,6 +9,7 @@ import ImageLegend from "@/components/ImageLegend";
 import List from "@/components/List";
 import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
+import Send from "@/components/UI/Send";
 import { textVariants } from "@/constantes/theme";
 import Bloc from "../components/Bloc";
 
@@ -29,7 +29,7 @@ export default function Home() {
 				}
 				cta={
 					<Button href="/adherer" variant="inverted">
-						<SendHorizontal size={14} />
+						<Send />
 						Nous rejoindre
 					</Button>
 				}
@@ -43,7 +43,6 @@ export default function Home() {
 			/>
 
 			<Content>
-
 				<Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
 					<BlocText>
 						Notre club réunit des passionnés de badminton de tous niveaux.
