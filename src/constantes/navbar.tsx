@@ -22,7 +22,7 @@ export const navbarLinks: NavbarLinkType[] = [
     },
     {
         title: "Boutique",
-        href: "https://www.helloasso.com/associations/cacbo-badminton/boutiques/boutique-officielle-du-club-2",
+        href: "/boutique",
         description: "",
         icon: <ShoppingBagIcon className="w-5" />
     },
