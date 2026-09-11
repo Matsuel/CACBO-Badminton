@@ -21,7 +21,7 @@ const Header = ({
 }: HeaderProps) => {
     return (
         <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-content p-5", className)}>
-            {h2 && <h2 className="font-Poppins text-[15px] text-redcolor leading-0">
+            {h2 && <h2 className="font-Poppins text-[15px] text-redpale leading-0">
                 {h2}
             </h2>}
 

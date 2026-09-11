@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { darkerGrotesque, poppins, spaceGrotesk } from "./fonts";
 import { BASE_URL } from "./sitemap";
 import ClientAnalytics from "@/components/ClientAnalytics";
 
@@ -39,7 +40,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html
+      lang="fr"
+      className={`${poppins.variable} ${spaceGrotesk.variable} ${darkerGrotesque.variable}`}
+    >
       <body className="antialiased">
         <ClientAnalytics />
         {children}
