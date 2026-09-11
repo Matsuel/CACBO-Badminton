@@ -59,7 +59,7 @@ const Contact = () => {
 
                         <div className="flex flex-row gap-30">
                             {SocialLinks.map(link => (
-                                <Link key={link.name} href={link.link} className="w-[30px] h-[30px] text-redcolor hover:text-redpale transition-colors duration-300">
+                                <Link key={link.name} href={link.link} className="w-7.5 h-7.5 text-redcolor hover:text-redpale transition-colors duration-300">
                                     {link.icon}
                                 </Link>
                             ))}
