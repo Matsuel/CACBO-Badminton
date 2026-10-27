@@ -23,7 +23,7 @@ const Adherer = () => {
                 cta={
                     <Register
                         saison="26/27"
-                        open={true}
+                        open={false}
                     />
                 }
             />
