@@ -23,7 +23,7 @@ const Header = ({
 	return (
 		<div
 			className={cn(
-				"w-full h-auto flex flex-col items-start justify-center gap-content p-5",
+				"w-full h-auto flex flex-col items-start justify-center gap-content px-5",
 				className,
 			)}
 		>

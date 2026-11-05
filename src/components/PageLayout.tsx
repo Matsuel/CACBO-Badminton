@@ -17,7 +17,7 @@ const PageLayout = ({ className, children, ...props }: PageLayoutProps) => {
 			)}
 			{...props}
 		>
-			<div className="w-full flex flex-col items-center justify-start gap-header mt-[110px]">
+			<div className="w-full flex flex-col items-center justify-start gap-header mt-[130px]">
 				<Navbar />
 				{children}
 			</div>
