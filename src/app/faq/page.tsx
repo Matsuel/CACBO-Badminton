@@ -21,7 +21,7 @@ const Faq = () => {
                 subtitle="Toutes les infos pratiques sur notre club !"
             />
 
-            <Banner src="/faq/1.png" alt="Photo d'un match" />
+            <Banner src="/contact/1.png" alt="Photo d'un match" />
 
             <Content>
 
@@ -116,7 +116,7 @@ const Faq = () => {
 
                 <Bloc title="Comment peut-on vous contacter pour plus d’informations ?">
                     <Text>
-                        Vous pouvez nous contacter par mail à <span className="font-medium">hello@cacbobad.fr</span>, par messages sur nos réseaux sociaux Instagram et Facebook ou venir directement nous voir lors des créneaux.
+                        Vous pouvez nous contacter par mail à <span className="font-semibold">hello@cacbobad.fr</span>, par messages sur nos réseaux sociaux Instagram et Facebook ou venir directement nous voir lors des créneaux.
                     </Text>
                 </Bloc>
             </Content>

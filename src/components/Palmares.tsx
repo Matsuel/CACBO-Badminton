@@ -16,8 +16,8 @@ const Palmares = ({
 }: PalmaresProps) => {
     return (
         <div className={cn("w-full flex flex-col items-center gap-content", className)} {...props}>
-            <h2 className="font-poppins font-semibold text-[24px] leading-4.5 text-rouge-pale">{title}</h2>
-            <h3 className="font-poppins font-light italic text-[24px] leading-4.5 text-rouge-pale -mt-4">{subtitle}</h3>
+            <p className="font-poppins font-semibold text-[24px] leading-4.5 text-rouge-pale">{title}</p>
+            <p className="font-poppins font-light italic text-[24px] leading-4.5 text-rouge-pale -mt-4">{subtitle}</p>
             <p className="w-4/5 font-poppins text-corps text-center">{legend}</p>
         </div>
     );

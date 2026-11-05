@@ -11,7 +11,7 @@ const Register = ({
 }: RegisterProps) => {
     return (
         <Text variant="secondaire" color="rouge-pale" className="w-full h-auto p-2 border border-rouge rounded-full text-center">
-            SAISON 20{saison} - <span className="font-semibold">INSCRIPTIONS {open ? "OUVERTES" : "FERMÉES"} ! ✔️</span>
+            SAISON 20{saison} - <span className="font-semibold">INSCRIPTIONS {open ? "OUVERTES ! ✔️" : "FERMÉES"}</span>
         </Text>
     )
 }

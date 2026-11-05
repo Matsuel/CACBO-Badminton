@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import type React from 'react';
-import Text from "@/components/Text";
+import Text from './Text';
 
-interface CarousselProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CarousselProps {
     title: string;
-    images: string[];
+    images: { src: string; alt: string }[];
 }
 
 const Caroussel = ({
@@ -16,15 +15,16 @@ const Caroussel = ({
             <Text variant="h2" color="rouge">
                 {title}
             </Text>
-            <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto whitespace-nowrap scrollbar-none'>
-                {images.map((image, index) => (
+            <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto snap-x snap-mandatory scrollbar-none'>
+                {images.map(({ src, alt }) => (
                     <Image
-                        key={index}
-                        src={image}
-                        alt={`Image ${index + 1}`}
+                        key={src}
+                        src={src}
+                        alt={alt}
                         width={280}
                         height={360}
-                        className='shrink-0 rounded-xl'
+                        sizes="280px"
+                        className='shrink-0 snap-start rounded-xl w-70 h-90 object-cover'
                     />
                 ))}
             </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { cn } from '@/utils/cn';
-import Text from "@/components/Text";
+import Text from './Text';
 
 interface ImageLegendProps {
     src: string;
@@ -8,25 +8,21 @@ interface ImageLegendProps {
     className?: string;
 }
 
+// Photo arrondie + légende (Figma : PHOTO 353×460)
 const ImageLegend = ({
     src,
     description,
     className
 }: ImageLegendProps) => {
     return (
-        // TODO: mettre les phtos en vertical avec le contenu au centre
-        <div className={cn('w-full h-115 flex flex-col items-center justify-center gap-content bg-transparent', className)}>
-            <Image
-                src={src}
-                alt={description}
-                className='rounded-xl h-full w-full object-cover'
-                width={2000}
-                height={2000}
-            />
-            <Text variant="secondaire" color="rouge-pale" className="text-center">
+        <figure className={cn('w-full flex flex-col items-center justify-center gap-content', className)}>
+            <div className='relative w-full aspect-[353/460] rounded-xl overflow-hidden'>
+                <Image src={src} alt={description} fill sizes="100vw" className='object-cover' />
+            </div>
+            <Text as="figcaption" variant="secondaire" color="rouge-pale" className="text-center">
                 {description}
             </Text>
-        </div>
+        </figure>
     )
 }
 

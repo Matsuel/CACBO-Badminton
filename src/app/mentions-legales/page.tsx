@@ -33,19 +33,19 @@ const MentionsLegales = () => {
 							(CACBO), association loi 1901.
 						</Text>
 						<Text>
-							<span className="font-medium">Siège social :</span> {lieu}, {rue}, {codePostal} {ville}
+							<span className="font-semibold">Siège social :</span> {lieu}, {rue}, {codePostal} {ville}
 						</Text>
 						<Text>
-							<span className="font-medium">SIREN/SIRET :</span> 781 865 142 00025
+							<span className="font-semibold">SIREN/SIRET :</span> 781 865 142 00025
 						</Text>
 						<Text>
-							<span className="font-medium">N° RNA :</span> W332 000 297
+							<span className="font-semibold">N° RNA :</span> W332 000 297
 						</Text>
 						<Text>
-							<span className="font-medium">Directeur de la publication :</span> Maël THOMAS
+							<span className="font-semibold">Directeur de la publication :</span> Maël THOMAS
 						</Text>
 						<Text>
-							<span className="font-medium">Contact :</span>{" "}
+							<span className="font-semibold">Contact :</span>{" "}
 							<Link href={`mailto:${club.mail}`} className="underline">
 								{club.mail}
 							</Link>
@@ -60,10 +60,10 @@ const MentionsLegales = () => {
 
 					<Bloc>
 						<Text>Le site est hébergé par :</Text>
-						<Text className="font-medium">Vercel Inc.</Text>
+						<Text className="font-semibold">Vercel Inc.</Text>
 						<Text>340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</Text>
 						<Text>
-							<span className="font-medium">Contact :</span> privacy@vercel.com
+							<span className="font-semibold">Contact :</span> privacy@vercel.com
 						</Text>
 					</Bloc>
 				</Parent>

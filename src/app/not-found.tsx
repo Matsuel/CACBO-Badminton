@@ -10,7 +10,7 @@ const NotFound = () => {
                 <div className='relative'>
                     <Text variant="h1" color="rouge">404</Text>
                     <Image
-                        src="/notfound/volant.svg"
+                        src="/notfound/volant.png"
                         alt='volant de badminton'
                         className='h-16 w-auto absolute z-10 -top-2 left-1/2 -translate-x-1/2'
                         width={100}

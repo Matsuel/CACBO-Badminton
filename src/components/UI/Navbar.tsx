@@ -36,7 +36,7 @@ const Navbar = () => {
 				</Link>
 
 				<div className="flex flex-row items-center gap-5">
-					<Button href="/contact" variant="ghost" className="font-medium">
+					<Button href="/contact" variant="ghost">
 						Nous contacter
 					</Button>
 					<button

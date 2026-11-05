@@ -16,10 +16,10 @@ const President = ({
 
     return (
         <div className={cn("w-full flex flex-row items-center px-5 py-3.5 bg-linear-to-tr from-rouge-pale to-rouge rounded-xl gap-3", className)} {...props}>
-            <Text as="h3" variant="h4" color="blanc" className="w-[30%]">
+            <Text as="span" variant="h4" color="blanc" className="w-[30%]">
                 {date}
             </Text>
-            <Text as="h2" color="blanc">
+            <Text as="span" color="blanc">
                 {name}
             </Text>
         </div>

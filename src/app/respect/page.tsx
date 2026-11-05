@@ -62,7 +62,7 @@ const Respect = () => {
                                 {colonne.map(({ emoji, titre, texte }) => (
                                     <Bloc key={titre} className="gap-[15px] text-center">
                                         <span aria-hidden className="w-full font-poppins text-[44px] leading-4">{emoji}</span>
-                                        <Text className="w-full font-medium">{titre}</Text>
+                                        <Text className="w-full font-semibold">{titre}</Text>
                                         <Text className="w-full">{texte}</Text>
                                     </Bloc>
                                 ))}
@@ -78,14 +78,14 @@ const Respect = () => {
 
                     <Bloc>
                         <Text>
-                            <span className="font-medium">Référent du club :</span> Laurent THOMAS
+                            <span className="font-semibold">Référent du club :</span> Laurent THOMAS
                         </Text>
 
                         <Text>
                             Pour toute question ou signalement, vous pouvez contacter directement le Bureau du club à :
                         </Text>
 
-                        <Text className="font-medium">
+                        <Text className="font-semibold">
                             <Link href={`mailto:${club.mail}`}>{club.mail}</Link> – <Link href={club.telephone.lien}>{club.telephone.affichage}</Link>
                         </Text>
                     </Bloc>

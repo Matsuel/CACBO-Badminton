@@ -28,7 +28,7 @@ const Contact = () => {
                 subtitle="Besoin d’infos ? Nous sommes à votre écoute !"
             />
 
-            <Banner src="/contact/1.png" alt="Photo devant une table avec des raquettes" />
+            <Banner src="/contact/1.png" alt="Match de double au gymnase du club" />
 
             <Content>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                         Vous pouvez nous joindre
                     </Text>
 
-                    <Bloc>
+                    <Bloc className="gap-2.5">
                         <Text variant="h4">
                             Par téléphone
                         </Text>
@@ -69,7 +69,7 @@ const Contact = () => {
 
                 <Parent>
                     <Text variant="h2" color="rouge">
-                        Où nous rejoindre 👇
+                        Où nous rejoindre
                     </Text>
 
                     <Bloc variant="outline">
@@ -77,10 +77,12 @@ const Contact = () => {
                     </Bloc>
 
                     <Image
-                        src="/contact/map.png"
+                        src="/adherer/map.png"
                         alt="Carte du complexe sportif Philippe Madrelle"
-                        width={5000}
-                        height={5000}
+                        width={2116}
+                        height={1000}
+                        sizes="100vw"
+                        className="w-full h-auto rounded-xl"
                     />
 
                     <Bloc subtitle="Nos créneaux">

@@ -46,7 +46,7 @@ const Histoire = () => {
 					<Bloc>
 						<Text>
 							Le club voit le jour le{" "}
-							<span className="font-medium">15 mars 2007</span>, à
+							<span className="font-semibold">15 mars 2007</span>, à
 							l’initiative de trois passionnés : Ahmed KASSIM (président),
 							Laurent THOMAS (secrétaire) et Julien LARCHER (trésorier). 🖋️
 						</Text>
@@ -58,18 +58,18 @@ const Histoire = () => {
 
 						<Text>
 							Les premiers créneaux se tiennent au gymnase Gaston Lacoste, sur{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								5 terrains tracés et 3 créneaux hebdomadaires
 							</span>{" "}
 							de deux heures, réunissant dès la première saison près de{" "}
-							<span className="font-medium">70 adhérents</span>.
+							<span className="font-semibold">70 adhérents</span>.
 						</Text>
 
 						<Text>
-							<span className="font-medium">Dès 2008</span>, la section
+							<span className="font-semibold">Dès 2008</span>, la section
 							consolide ses bases avec une fréquentation élevée, en maintenant 3
 							créneaux hebdomadaires et un{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								taux d’occupation moyen de 60% des terrains
 							</span>{" "}
 							à chaque séance.
@@ -84,9 +84,9 @@ const Histoire = () => {
 					<Bloc>
 
 						<Text>
-							<span className="font-medium">En 2009</span>, le club franchit une
+							<span className="font-semibold">En 2009</span>, le club franchit une
 							nouvelle étape : on compte{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								près de 87 licenciés
 							</span>
 							, et la section envisage de dépasser la barre symbolique des 100
@@ -118,8 +118,8 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							<span className="font-medium">En mars 2010,</span> après cinq années d’activité,{" "}
-							<span className="font-medium">
+							<span className="font-semibold">En mars 2010,</span> après cinq années d’activité,{" "}
+							<span className="font-semibold">
 								la section connaît ses premiers changements de direction
 							</span>{" "}
 							avec l’élection d’un nouveau bureau, mené par Pierre DANGAYS, qui
@@ -134,7 +134,7 @@ const Histoire = () => {
 						<Text>
 							L’organisation interne se consolide, le Bureau gagne en efficacité
 							et la communication du club franchit un cap décisif :{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								création du logo, nouveaux maillots, lancement d’un site
 								internet et développement d’une communication locale renforcée
 								dans la vie locale.
@@ -144,7 +144,7 @@ const Histoire = () => {
 						<Text>
 							Cette période est également celle d’une forte expansion. Durant la
 							saison 2011/12,{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								le club atteint 111 licenciés
 							</span>
 							, dont 28 jeunes inscrits à l’école de badminton.
@@ -161,9 +161,9 @@ const Histoire = () => {
 
 					<Caroussel
 						images={[
-							"/histoire/carousel1.png",
-							"/histoire/carousel2.png",
-							"/histoire/carousel3.png",
+							{ src: "/histoire/carousel1.png", alt: "Joueurs du club lors d’une séance (1/3)" },
+							{ src: "/histoire/carousel2.png", alt: "Joueurs du club lors d’une séance (2/3)" },
+							{ src: "/histoire/carousel3.png", alt: "Joueurs du club lors d’une séance (3/3)" },
 						]}
 						title="Retour en images"
 					/>
@@ -177,9 +177,9 @@ const Histoire = () => {
 
 						<Text>
 							La mixité est un atout : environ{" "}
-							<span className="font-medium">42% de femmes</span>{" "}
+							<span className="font-semibold">42% de femmes</span>{" "}
 							parmi les licenciés, et un public venant à{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								40% de Carbon-Blanc et 60% des communes voisines
 							</span>{" "}
 							(Ambès, Yvrac, Sainte-Eulalie, Bassens…).
@@ -193,14 +193,14 @@ const Histoire = () => {
 							Les équipes adultes participent aux interclubs du district
 							libournais, avec des résultats significatifs : en 2011, l’équipe
 							mixte termine{" "}
-							<span className="font-medium">4<sup>e</sup>/14</span> et frôle
+							<span className="font-semibold">4<sup>e</sup>/14</span> et frôle
 							la montée en interdistrict, l’équipe hommes se classe 6<sup>e</sup>/8 après
 							s’être extraite des poules de brassage.
 						</Text>
 
 						<Text>
 							L’école de badminton progresse également, avec des{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								jeunes classés 3<sup>e</sup> et 4<sup>e</sup> en catégorie minime
 							</span>
 							.
@@ -213,7 +213,7 @@ const Histoire = () => {
 						</Text>
 
 						<Text>
-							<span className="font-medium">Durant la saison 2012/13,</span> la section atteint son apogée : <span className="font-medium">près de 110 licenciés</span> et une structure bien établie.
+							<span className="font-semibold">Durant la saison 2012/13,</span> la section atteint son apogée : <span className="font-semibold">près de 110 licenciés</span> et une structure bien établie.
 						</Text>
 					</Bloc>
 				</Parent>
@@ -247,8 +247,8 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							<span className="font-medium">En juin 2013,</span>{" "}
-							<span className="font-medium">
+							<span className="font-semibold">En juin 2013,</span>{" "}
+							<span className="font-semibold">
 								le club connaît un nouveau tournant
 							</span>{" "}
 							avec l’élection de Wolfgang SCHRADER à la présidence.
@@ -256,7 +256,7 @@ const Histoire = () => {
 
 						<Text>
 							La section compte{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								105 à 110 adhérents
 							</span>
 							, dont près d’un quart de jeunes.
@@ -269,7 +269,7 @@ const Histoire = () => {
 						</Text>
 
 						<Text>
-							<span className="font-medium">
+							<span className="font-semibold">
 								Le club continue de participer activement à la vie locale
 							</span>{" "}
 							: tournois internes, rencontres interclubs (avec Yvrac,
@@ -298,7 +298,7 @@ const Histoire = () => {
 						<Text>
 							Cette évolution marque une transition dans l’esprit du club,
 							jusque-là centré sur le loisir et la convivialité.{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								La pratique devient plus compétitive, avec une forte dynamique
 								autour des classements et des résultats sportifs.
 							</span>
@@ -338,7 +338,7 @@ const Histoire = () => {
 
 						<Text>
 							La section reste très active avec{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								environ 100 licenciés
 							</span>
 							, une école de badminton structurée et des équipes vétérans
@@ -362,15 +362,15 @@ const Histoire = () => {
 						<Text>
 							Malgré cela, la section continue de défendre ses couleurs en
 							interclubs à travers une{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								structure compétitive solide
 							</span>
 							, avec{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								trois équipes engagées en interclubs
 							</span>{" "}
 							(mixte, hommes et vétérans) tout en conservant une{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								vie associative dynamique
 							</span>{" "}
 							: tournois internes, entraînements collectifs, et moments
@@ -389,7 +389,7 @@ const Histoire = () => {
 					<Bloc>
 						<Text>
 							Mais en 2018, la tendance s’inverse brutalement :{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								les effectifs chutent de près de 50%
 							</span>{" "}
 							avec une cinquantaine de licenciés, l’école de badminton s’arrête, et une partie des créneaux est
@@ -404,7 +404,7 @@ const Histoire = () => {
 
 						<Text>
 							Sa démolition en novembre 2019{" "}
-							<span className="font-medium">
+							<span className="font-semibold">
 								met la section en sommeil pour près de quatre ans
 							</span>
 							, le temps qu’un nouveau complexe voie le jour. 😴
@@ -423,7 +423,7 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							<span className="font-medium">En septembre 2022</span>, après
+							<span className="font-semibold">En septembre 2022</span>, après
 							quatre années de mise en sommeil forcée, la section badminton du
 							CACBO renaît avec l’ouverture du Complexe sportif Philippe
 							Madrelle, une salle moderne de 1 056 m² abritant désormais sept
@@ -633,7 +633,7 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							<span className="font-medium text-rouge-pale">
+							<span className="font-semibold text-rouge-pale">
 								Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25
 								mai 1972
 							</span>{" "}
@@ -643,16 +643,16 @@ const Histoire = () => {
 						</Text>
 
 						<Text>
-							<span className="font-medium text-rouge-pale">
+							<span className="font-semibold text-rouge-pale">
 								Il résulte de la fusion entre le Club Athlétique CarbonBlanais
 							</span>{" "}
 							(CACB), fondé le 1er octobre 1925 par Gaston Lacoste (le club de
 							football de la ville),{" "}
-							<span className="font-medium text-rouge-pale">
+							<span className="font-semibold text-rouge-pale">
 								le Club Léo Lagrange
 							</span>
 							, regroupant déjà plusieurs sections{" "}
-							<span className="font-medium text-rouge-pale">
+							<span className="font-semibold text-rouge-pale">
 								et la Pétanque carbonblanaise
 							</span>
 							. Simon Cypel (1er adjoint au maire) en devient le premier

@@ -23,7 +23,7 @@ const Adherer = () => {
         <PageLayout>
             <Header
                 title="ADHÉRER"
-                subtitle="Prêts à nous rejoindre ?"
+                subtitle="Prêt à nous rejoindre ?"
                 cta={
                     <Register
                         saison="26/27"
@@ -50,7 +50,7 @@ const Adherer = () => {
 
                     <Bloc>
                         <Text>
-                            En rejoignant notre club, vous intégrez une <span className="font-medium">communauté accueillante</span> et <span className="font-medium">dynamique</span>, <span className="font-medium">ouverte à tous les niveaux</span> de pratique.
+                            En rejoignant notre club, vous intégrez une <span className="font-semibold">communauté accueillante</span> et <span className="font-semibold">dynamique</span>, <span className="font-semibold">ouverte à tous les niveaux</span> de pratique.
                         </Text>
 
                         <Text>
@@ -58,11 +58,11 @@ const Adherer = () => {
                         </Text>
 
                         <Text>
-                            Que vous soyez compétiteur ou amateur, vous bénéficierez d&apos;<span className="font-medium">infrastructures modernes</span>, de <span className="font-medium">créneaux variés</span> adaptées à vos besoins, et d&apos;un esprit sans prise de tête. 😎
+                            Que vous soyez compétiteur ou amateur, vous bénéficierez d&apos;<span className="font-semibold">infrastructures modernes</span>, de <span className="font-semibold">créneaux variés</span> adaptées à vos besoins, et d&apos;un esprit sans prise de tête. 😎
                         </Text>
 
                         <Text>
-                            De plus, nos <span className="underline">soirées régulières</span> 🎉 sont l&apos;occasion idéale de renforcer les liens et de <span className="font-medium">partager des moments de détente</span> en dehors des terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
+                            De plus, nos <span className="underline">soirées régulières</span> 🎉 sont l&apos;occasion idéale de renforcer les liens et de <span className="font-semibold">partager des moments de détente</span> en dehors des terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
                         </Text>
                     </Bloc>
 
@@ -78,11 +78,11 @@ const Adherer = () => {
                         </Text>
 
                         <Text>
-                            En adhérant à la section badminton, <span className="font-medium">vous bénéficiez automatiquement de la Responsabilité Civile</span> (RC) souscrite par le CACBO auprès de Groupama.
+                            En adhérant à la section badminton, <span className="font-semibold">vous bénéficiez automatiquement de la Responsabilité Civile</span> (RC) souscrite par le CACBO auprès de Groupama.
                         </Text>
 
                         <Text>
-                            Elle couvre les <span className="font-medium">dommages corporels ou matériels que vous pourriez causer involontairement à un tiers</span> (autre joueur, matériel du gymnase) lors de nos créneaux (cette assurance ne couvre pas vos propres blessures en l&apos;absence de tiers responsable).
+                            Elle couvre les <span className="font-semibold">dommages corporels ou matériels que vous pourriez causer involontairement à un tiers</span> (autre joueur, matériel du gymnase) lors de nos créneaux (cette assurance ne couvre pas vos propres blessures en l&apos;absence de tiers responsable).
                         </Text>
                     </Bloc>
                 </Parent>
@@ -114,8 +114,8 @@ const Adherer = () => {
                         </Text>
 
                         <List>
-                            <ListElement><span className="font-medium">Formulaire d’inscription</span> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
-                            <ListElement><span className="font-medium">Questionnaire de santé</span> : à compléter pour évaluer votre condition physique. <span className="text-rouge">Si vous répondez positivement à une ou plusieurs questions</span>, un <span className="font-medium">certificat médical</span> daté de moins de 6 mois sera requis.</ListElement>
+                            <ListElement><span className="font-semibold">Formulaire d’inscription</span> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
+                            <ListElement><span className="font-semibold">Questionnaire de santé</span> : à compléter pour évaluer votre condition physique. <span className="text-rouge">Si vous répondez positivement à une ou plusieurs questions</span>, un <span className="font-semibold">certificat médical</span> daté de moins de 6 mois sera requis.</ListElement>
                         </List>
 
                         <Text>
@@ -175,8 +175,10 @@ const Adherer = () => {
                         <Image
                             src="/adherer/map.png"
                             alt="Carte d'accès au complexe sportif Philippe Madrelle"
-                            width={5000}
-                            height={5000}
+                            width={2116}
+                        height={1000}
+                        sizes="100vw"
+                        className="w-full h-auto rounded-xl"
                         />
                     </Bloc>
 
@@ -206,8 +208,8 @@ const Adherer = () => {
                         </Text>
 
                         <List>
-                            <ListElement><span className="font-medium">Formule adulte</span> : <span className="text-rouge-pale">50 €</span> par personne.</ListElement>
-                            <ListElement><span className="font-medium">Formule couple</span> : <span className="text-rouge-pale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</ListElement>
+                            <ListElement><span className="font-semibold">Formule adulte</span> : <span className="text-rouge-pale">50 €</span> par personne.</ListElement>
+                            <ListElement><span className="font-semibold">Formule couple</span> : <span className="text-rouge-pale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</ListElement>
                         </List>
                     </Bloc>
 
@@ -221,7 +223,7 @@ const Adherer = () => {
                         </Text>
 
                         <Text>
-                            Cela signifie que <span className="text-rouge-pale font-medium!">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
+                            Cela signifie que <span className="text-rouge-pale font-semibold!">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
                         </Text>
 
                         <Text>

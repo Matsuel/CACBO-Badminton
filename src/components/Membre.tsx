@@ -28,7 +28,7 @@ const Membre = ({
                     }}
                 >
                     <Image
-                        src="/bureau/volant.svg"
+                        src="/bureau/volant.png"
                         alt='volant de badminton'
                         className='w-16 h-auto flex justify-center items-center object-center pt-2'
                         width={100}
@@ -49,22 +49,21 @@ const Membre = ({
 
             </div>
 
-            <div className='w-full h-auto flex items-start justify-start gap-2.25'>
-                <Image
-                    src="/info.svg"
-                    alt="Icône d'information"
-                    className='mt-0.5'
-                    width={14}
-                    height={14}
-                />
+            {description && (
+                <div className='w-full h-auto flex items-start justify-start gap-2.25'>
+                    <Image
+                        src="/info.svg"
+                        alt=""
+                        className='mt-0.5'
+                        width={14}
+                        height={14}
+                    />
 
-                {description && (
                     <Text variant="secondaire" color="rouge-pale">
                         {description}
                     </Text>
-                )}
-
-            </div>
+                </div>
+            )}
 
 
         </div>

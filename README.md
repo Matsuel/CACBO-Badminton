@@ -50,50 +50,50 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 - [x] Texte secondaire : 14 px / 16 → 15 px / 15
 - [x] Ombre : ajouter le spread −1
 - [x] Supprimer les tokens absents du Figma (`--radius-ten`, `--text-paragraph`, `whitebroken`, …)
-- [ ] Patch : passer les `font-medium` des textes en `font-semibold`
+- [x] Patch : passer les `font-medium` des textes en `font-semibold`
 
 ### 3. Composants
 
 - [x] `Button.tsx` : variants `cva` (`plein` par défaut, `contour`, `ghost`), prop `icon` (`external`, `send`, `mail`), `target="_blank"` auto pour les liens externes, typé `AnchorHTMLAttributes`
 - [x] `Header.tsx` : « Bienvenue » et le sous-titre ne sont plus des titres `h2`/`h3`
 - [x] `Bloc.tsx` : prop `subtitle` (ex-`subtitile`), variant `outline`
-- [ ] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
-- [ ] `Document.tsx` : remplacer le `useState` de survol par `group-hover` (repasser en composant serveur), `alt` propre à chaque document, `h5` → `p`
-- [ ] `Membre.tsx` : n'afficher l'icône info que s'il y a une description
-- [ ] `Partenaire.tsx` : `alt` = nom du partenaire (au lieu de « volant de badminton »)
-- [ ] `Register.tsx` : retirer la coche ✔️ quand les inscriptions sont fermées
-- [ ] `Caroussel.tsx` : `alt` descriptifs au lieu de « Image 1 »
-- [ ] `ImageLegend.tsx` : `aspect-ratio` au lieu de `h-115`, traiter le TODO
-- [ ] `Palmares.tsx`, `President.tsx` : ne plus utiliser `h2`/`h3` pour le style
-- [ ] Footer : lien « Maël THOMAS » en `href="#"` à remplacer ou retirer
+- [x] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
+- [x] `Document.tsx` : remplacer le `useState` de survol par `group-hover` (repasser en composant serveur), `alt` propre à chaque document, `h5` → `p`
+- [x] `Membre.tsx` : n'afficher l'icône info que s'il y a une description
+- [x] `Partenaire.tsx` : `alt` = nom du partenaire (au lieu de « volant de badminton »)
+- [x] `Register.tsx` : retirer la coche ✔️ quand les inscriptions sont fermées
+- [x] `Caroussel.tsx` : `alt` descriptifs au lieu de « Image 1 »
+- [x] `ImageLegend.tsx` : `aspect-ratio` au lieu de `h-115`, traiter le TODO
+- [x] `Palmares.tsx`, `President.tsx` : ne plus utiliser `h2`/`h3` pour le style
+- [x] Footer : lien « Maël THOMAS » en `href="#"` à remplacer ou retirer
 
 ### 4. Pages
 
-- [ ] **Contact**
-  - [ ] retirer l'emoji 👇 du titre (Patch)
-  - [ ] réduire l'interlignage du bloc téléphone / mail (Patch)
+- [x] **Contact**
+  - [x] retirer l'emoji 👇 du titre (Patch)
+  - [x] réduire l'interlignage du bloc téléphone / mail (Patch)
   - [x] créneaux en pastilles rouges (`<Creneaux variant="pastilles" />`)
   - [x] téléphone en `tel:`, mail en `mailto:`
-  - [ ] `alt` de la photo (copié d'Adhérer)
+  - [x] `alt` de la photo (copié d'Adhérer)
   - [x] `aria-label` et `target="_blank"` sur les réseaux (`SocialLinks`)
 - [ ] **Accueil**
   - [x] jours avec majuscule (`Creneaux`, données dans `constantes/club.ts`)
-  - [ ] carrousel : `caroussel2.png` affiché deux fois
+  - [x] carrousel : `caroussel2.png` affiché deux fois
   - [ ] légendes différentes pour `ensemble.png` et `ensemble2.png`
-- [ ] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
-- [ ] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
-- [ ] **Boutique** : redirection demandée dans le Patch (URL à récupérer)
+- [x] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
+- [x] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
+- [x] **Boutique** : redirection (déjà corrigée)
 - [x] **Contenus alignés sur le Figma** : politique de confidentialité (réécrite), mentions légales (SIREN, RNA, données & cookies), Respect (« Nos engagements », liens `tel:`), Bureau, Règles (comptage en 15 points), Histoire, Volant, 404, logos rouges du footer
 - [ ] **Histoire** : dates à trancher, le Figma se contredit (section « 2011-2013 » mais élection en mars 2010 ; présidence d'Ahmed KASSIM « 2006-2011 » alors que le club est fondé en 2007). Les dates actuelles du code sont conservées
 - [ ] **Respect** : fichiers manquants pour « Fiche de signalement (CDOS) » et « Associations en Gironde » (liens `/manque`)
 - [ ] **Politique / mentions** : le Figma mentionne un « formulaire de contact » qui n'existe pas sur le site
-- [ ] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
+- [x] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
 
 ### 5. Assets et performance
 
-- [ ] `public/bureau/volant.svg` (3,8 Mo, PNG 4096×2734 embarqué) : réexporter en vrai SVG ou petit WebP
-- [ ] Supprimer les doublons : `public/contact/map.png` = `public/adherer/map.png`, `public/faq/1.png` = `public/contact/1.png`
-- [ ] Images : vrais `width`/`height` (16 images en `2000`/`5000` carrés) et prop `sizes`
+- [x] `public/bureau/volant.svg` (3,8 Mo, PNG 4096×2734 embarqué) : réexporter en vrai SVG ou petit WebP
+- [x] Supprimer les doublons : `public/contact/map.png` = `public/adherer/map.png`, `public/faq/1.png` = `public/contact/1.png`
+- [x] Images : vrais `width`/`height` (16 images en `2000`/`5000` carrés) et prop `sizes`
 
 ### 6. Version responsive
 

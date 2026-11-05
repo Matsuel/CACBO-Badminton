@@ -17,7 +17,7 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 			<div className="w-25 h-25 flex items-center justify-center rounded-xl bg-blanc-casse shrink-0">
 				<Image
 					src={image}
-					alt="volant de badminton"
+					alt={name}
 					width={100}
 					height={100}
 					className="rounded-xl w-auto h-auto"

@@ -37,7 +37,7 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Le badminton se joue en <span className="font-medium">3 sets maximum</span>. Chaque set est remporté par le joueur ou l’équipe qui marque <span className="font-medium">15 points</span>.
+                            Le badminton se joue en <span className="font-semibold">3 sets maximum</span>. Chaque set est remporté par le joueur ou l’équipe qui marque <span className="font-semibold">15 points</span>.
                         </Text>
 
                         <Text>
@@ -45,11 +45,11 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Si le score atteint 20-20, la règle change : le joueur ou l’équipe qui atteint <span className="font-medium">21 points en premier</span> remporte le set.
+                            Si le score atteint 20-20, la règle change : le joueur ou l’équipe qui atteint <span className="font-semibold">21 points en premier</span> remporte le set.
                         </Text>
 
                         <Text>
-                            Une fois le set gagné, <span className="font-medium">l&apos;équipe ou le joueur gagnant sert en premier</span> dans le set suivant.
+                            Une fois le set gagné, <span className="font-semibold">l&apos;équipe ou le joueur gagnant sert en premier</span> dans le set suivant.
                         </Text>
                     </Bloc>
 
@@ -59,15 +59,15 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 1</span> : 15-13 (2 pts d’écart)
+                            <span className="font-semibold">Set 1</span> : 15-13 (2 pts d’écart)
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 2</span> : 12-15 (2 pts d’écart)
+                            <span className="font-semibold">Set 2</span> : 12-15 (2 pts d’écart)
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 3</span> : 21-20 (point sec)
+                            <span className="font-semibold">Set 3</span> : 21-20 (point sec)
                         </Text>
                     </Bloc>
                 </Parent>
@@ -122,7 +122,7 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Les joueurs changent de côté <span className="font-medium">après chaque set</span>. Si un match atteint un troisième set, ils changent à 11 points.
+                            Les joueurs changent de côté <span className="font-semibold">après chaque set</span>. Si un match atteint un troisième set, ils changent à 11 points.
                         </Text>
                     </Bloc>
                 </Parent>
@@ -188,7 +188,7 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n&apos;était pas son tour, <span className="font-medium">le jeu continue</span>, mais <span className="underline">l&apos;erreur doit être corrigée</span> pour le prochain service et <span className="font-medium">le score reste maintenu</span>.
+                            Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n&apos;était pas son tour, <span className="font-semibold">le jeu continue</span>, mais <span className="underline">l&apos;erreur doit être corrigée</span> pour le prochain service et <span className="font-semibold">le score reste maintenu</span>.
                         </Text>
                     </Bloc>
 

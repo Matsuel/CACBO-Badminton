@@ -31,7 +31,7 @@ const Regles = () => {
 
                     <Bloc>
                         <Text>
-                            Il existe aujourd’hui 3 grandes catégories de volants : les <span className="font-medium">volants en plastique</span> (nylon), les <span className="font-medium">volants en plumes</span> et les <span className="font-medium">volants hybrides</span>.
+                            Il existe aujourd’hui 3 grandes catégories de volants : les <span className="font-semibold">volants en plastique</span> (nylon), les <span className="font-semibold">volants en plumes</span> et les <span className="font-semibold">volants hybrides</span>.
                         </Text>
                     </Bloc>
 
@@ -41,7 +41,7 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Ces volants reconnaissables à leur jupe en nylon, sont réputés pour leur <span className="font-medium">résistance</span> et leur <span className="font-medium">coût réduit</span>.
+                            Ces volants reconnaissables à leur jupe en nylon, sont réputés pour leur <span className="font-semibold">résistance</span> et leur <span className="font-semibold">coût réduit</span>.
                         </Text>
 
                         <Text>
@@ -57,8 +57,9 @@ const Regles = () => {
                         src="/volant/2.png"
                         alt="Photo d'un volant en plastique"
                         className="rounded-xl shadow-ombre"
-                        width={2000}
-                        height={2000}
+                        width={2010}
+                        height={1206}
+                        sizes="100vw"
                     />
 
                     <Bloc>
@@ -83,8 +84,9 @@ const Regles = () => {
                         src="/volant/3.png"
                         alt="Photo de 3 volants en plumes"
                         className="rounded-xl shadow-ombre"
-                        width={2000}
-                        height={2000}
+                        width={2010}
+                        height={1206}
+                        sizes="100vw"
                     />
 
                     <Bloc>
@@ -168,19 +170,19 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            <span className="font-medium">RSL</span> propose des volants très appréciés en club, offrant un bon compromis entre prix et performance.
+                            <span className="font-semibold">RSL</span> propose des volants très appréciés en club, offrant un bon compromis entre prix et performance.
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Victor</span> et <span className="font-medium">Forza</span> se sont également imposés comme des alternatives fiables, connues pour leur durabilité.
+                            <span className="font-semibold">Victor</span> et <span className="font-semibold">Forza</span> se sont également imposés comme des alternatives fiables, connues pour leur durabilité.
                         </Text>
 
                         <Text>
-                            Enfin, <span className="font-medium">Babolat</span>, marque française bien implantée, propose des gammes variées qui séduisent aussi bien les joueurs loisirs que compétitifs.
+                            Enfin, <span className="font-semibold">Babolat</span>, marque française bien implantée, propose des gammes variées qui séduisent aussi bien les joueurs loisirs que compétitifs.
                         </Text>
 
                         <Text>
-                            Enfin, <span className="font-medium">Li-Ning</span>, marque chinoise de renommée mondiale, est reconnue pour la qualité de ses volants haut de gamme et est utilisée dans plusieurs tournois internationaux, notamment en Asie.
+                            Enfin, <span className="font-semibold">Li-Ning</span>, marque chinoise de renommée mondiale, est reconnue pour la qualité de ses volants haut de gamme et est utilisée dans plusieurs tournois internationaux, notamment en Asie.
                         </Text>
                     </Bloc>
 
@@ -189,7 +191,8 @@ const Regles = () => {
                         alt="Photo de plusieurs marques de volants"
                         className="rounded-xl shadow-ombre"
                         width={2000}
-                        height={2000}
+                        height={1196}
+                        sizes="100vw"
                     />
                 </Parent>
 

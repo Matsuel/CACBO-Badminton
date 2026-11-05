@@ -50,12 +50,12 @@ const Politique = () => {
 							personne morale de droit privé (association loi 1901), agissant pour sa section Badminton, et dont
 							le siège social se situe {club.adresse.rue}, {club.adresse.codePostal} {club.adresse.ville}.
 						</Text>
-						<Text className="font-medium">
+						<Text className="font-semibold">
 							Le référent à la protection des données pour le club est : Maël THOMAS.
 						</Text>
 						<Text>
 							Toute demande relative au traitement de vos données personnelles doit être adressée à l&apos;adresse
-							e-mail suivante : <span className="font-medium"><Mail /></span>
+							e-mail suivante : <span className="font-semibold"><Mail /></span>
 						</Text>
 					</Bloc>
 				</Parent>
@@ -71,7 +71,7 @@ const Politique = () => {
 							détail des informations traitées selon leur canal de collecte :
 						</Text>
 
-						<Text className="font-medium">Formulaire de contact</Text>
+						<Text className="font-semibold">Formulaire de contact</Text>
 						<List>
 							<ListElement>Données collectées : nom, prénom, adresse e-mail, sujet et contenu du message.</ListElement>
 							<ListElement>
@@ -84,7 +84,7 @@ const Politique = () => {
 							</ListElement>
 						</List>
 
-						<Text className="font-medium">Inscriptions, adhésions et boutique en ligne (via HelloAsso) :</Text>
+						<Text className="font-semibold">Inscriptions, adhésions et boutique en ligne (via HelloAsso) :</Text>
 						<List>
 							<ListElement>
 								Données collectées : nom, prénom, date de naissance, coordonnées (adresse e-mail, téléphone,
@@ -128,12 +128,12 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-medium">Utilisation des cookies :</span> Google Analytics utilise des
+								<span className="font-semibold">Utilisation des cookies :</span> Google Analytics utilise des
 								cookies (fichiers textes placés sur votre terminal) pour analyser la façon dont les visiteurs
 								utilisent le site.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Anonymisation de l&apos;IP :</span> L&apos;adresse IP transmise par
+								<span className="font-semibold">Anonymisation de l&apos;IP :</span> L&apos;adresse IP transmise par
 								votre navigateur dans le cadre de Google Analytics est anonymisée dès la collecte et n&apos;est pas
 								combinée avec d&apos;autres données détenues par Google.
 							</ListElement>
@@ -158,12 +158,12 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-medium">Les membres du Bureau du club :</span> pour assurer la gestion
+								<span className="font-semibold">Les membres du Bureau du club :</span> pour assurer la gestion
 								courante des adhésions, la trésorerie, l&apos;organisation des créneaux et la communication avec
 								les joueurs.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Les membres du Bureau Exécutif du CACBO :</span> au titre de la
+								<span className="font-semibold">Les membres du Bureau Exécutif du CACBO :</span> au titre de la
 								tutelle administrative et juridique exercée par l&apos;association omnisports, notamment pour le
 								suivi centralisé des effectifs, la gestion des assurances du club et l&apos;application des statuts.
 							</ListElement>
@@ -198,29 +198,29 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-medium">Données de contact :</span> conservées pendant la durée nécessaire
+								<span className="font-semibold">Données de contact :</span> conservées pendant la durée nécessaire
 								au traitement de la demande, puis supprimées dans un délai maximum de 12 mois à compter du dernier
 								échange.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Données des adhérents :</span> conservées pendant toute la durée de
+								<span className="font-semibold">Données des adhérents :</span> conservées pendant toute la durée de
 								l&apos;adhésion, puis archivées pendant 3 ans à compter du terme de la dernière saison souscrite à
 								des fins de gestion administrative.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Documents comptables et justificatifs de paiement (HelloAsso) :</span>{" "}
+								<span className="font-semibold">Documents comptables et justificatifs de paiement (HelloAsso) :</span>{" "}
 								conservés pendant 10 ans, conformément aux obligations légales du Code de commerce.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Durée de vie des cookies sur le navigateur :</span> 13 mois maximum
+								<span className="font-semibold">Durée de vie des cookies sur le navigateur :</span> 13 mois maximum
 								conformément aux préconisations de la CNIL.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Données d&apos;événements et d&apos;actions sur le site :</span>{" "}
+								<span className="font-semibold">Données d&apos;événements et d&apos;actions sur le site :</span>{" "}
 								conservées pendant 2 mois sur les serveurs de Google Analytics avant suppression automatique.
 							</ListElement>
 							<ListElement>
-								<span className="font-medium">Données liées aux utilisateurs et identifiants d&apos;analyse :</span>{" "}
+								<span className="font-semibold">Données liées aux utilisateurs et identifiants d&apos;analyse :</span>{" "}
 								conservées pendant 14 mois sur Google Analytics (cette durée est réinitialisée à chaque nouvelle
 								visite ou activité sur le site).
 							</ListElement>
