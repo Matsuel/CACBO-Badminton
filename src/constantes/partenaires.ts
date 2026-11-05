@@ -8,7 +8,7 @@ export const partenaires = [
     },
     {
         name: "Club Athlétique CarbonBlanais Omnisports",
-        role: "Club omnisport",
+        role: "Club omnisports",
         image: "/partenaires/omnisport.svg"
     },
     {

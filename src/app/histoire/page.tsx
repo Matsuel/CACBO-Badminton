@@ -118,7 +118,7 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							En mars 2010, après quatre années d’activité,{" "}
+							<span className="font-medium">En mars 2010,</span> après cinq années d’activité,{" "}
 							<span className="font-medium">
 								la section connaît ses premiers changements de direction
 							</span>{" "}
@@ -154,9 +154,9 @@ const Histoire = () => {
 
 					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-5">
 						Le club obtient sa première labellisation École Française de
-						Badminton (EFB) 1 étoile ⭐ lors de la saison 2010/11, une
+						Badminton (EFB) 1 étoile lors de la saison 2010/11, une
 						distinction qu’il conservera sept saisons consécutives, témoignant
-						de la qualité et de la continuité de sa formation jeune.
+						de la qualité et de la continuité de sa formation jeune. 🌟
 					</p>
 
 					<Caroussel
@@ -193,16 +193,17 @@ const Histoire = () => {
 							Les équipes adultes participent aux interclubs du district
 							libournais, avec des résultats significatifs : en 2011, l’équipe
 							mixte termine{" "}
-							<span className="font-medium">4e/14</span> et frôle
-							la montée en interdistrict, l’équipe hommes se classe 6e/8 après
+							<span className="font-medium">4<sup>e</sup>/14</span> et frôle
+							la montée en interdistrict, l’équipe hommes se classe 6<sup>e</sup>/8 après
 							s’être extraite des poules de brassage.
 						</Text>
 
 						<Text>
 							L’école de badminton progresse également, avec des{" "}
 							<span className="font-medium">
-								jeunes classés 3e et 4e en catégorie minime.
+								jeunes classés 3<sup>e</sup> et 4<sup>e</sup> en catégorie minime
 							</span>
+							.
 						</Text>
 
 						<Text>
@@ -212,7 +213,7 @@ const Histoire = () => {
 						</Text>
 
 						<Text>
-							Durant la saison 2012/13, la section atteint son apogée : près de 110 licenciés et une structure bien établie.
+							<span className="font-medium">Durant la saison 2012/13,</span> la section atteint son apogée : <span className="font-medium">près de 110 licenciés</span> et une structure bien établie.
 						</Text>
 					</Bloc>
 				</Parent>
@@ -246,7 +247,7 @@ const Histoire = () => {
 
 					<Bloc>
 						<Text>
-							En juin 2013,{" "}
+							<span className="font-medium">En juin 2013,</span>{" "}
 							<span className="font-medium">
 								le club connaît un nouveau tournant
 							</span>{" "}
@@ -258,13 +259,7 @@ const Histoire = () => {
 							<span className="font-medium">
 								105 à 110 adhérents
 							</span>
-							, dont près d’un quart de jeunes, et conserve des{" "}
-							<span className="font-medium">
-								résultats solides dans les compétitions
-							</span>{" "}
-							interclubs : l’équipe mixte termine 1ère du district libournais,
-							les vétérans se classent 3e en division 2 et plusieurs jeunes sont
-							récompensés par le COGIBAD (comité départemental). 🏆
+							, dont près d’un quart de jeunes.
 						</Text>
 
 						<Text>
@@ -396,8 +391,8 @@ const Histoire = () => {
 							Mais en 2018, la tendance s’inverse brutalement :{" "}
 							<span className="font-medium">
 								les effectifs chutent de près de 50%
-							</span>
-							, l’école de badminton s’arrête, et une partie des créneaux est
+							</span>{" "}
+							avec une cinquantaine de licenciés, l’école de badminton s’arrête, et une partie des créneaux est
 							supprimée.
 						</Text>
 
@@ -465,7 +460,7 @@ const Histoire = () => {
 
 						<Text>
 							Ce positionnement séduit immédiatement : de nombreux joueurs,
-							parfois anciens compétiteurs lassés des contraintes fédérales,
+							parfois anciens compétiteurs,
 							rejoignent le club pour retrouver le plaisir simple du jeu et de
 							la camaraderie.
 						</Text>

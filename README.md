@@ -55,7 +55,6 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 ### 3. Composants
 
 - [x] `Button.tsx` : variants `cva` (`plein` par défaut, `contour`, `ghost`), prop `icon` (`external`, `send`, `mail`), `target="_blank"` auto pour les liens externes, typé `AnchorHTMLAttributes`
-- [ ] `Header.tsx` : afficher « Bienvenue » (prop `eyebrow`) sur toutes les pages comme dans le Figma
 - [x] `Header.tsx` : « Bienvenue » et le sous-titre ne sont plus des titres `h2`/`h3`
 - [x] `Bloc.tsx` : prop `subtitle` (ex-`subtitile`), variant `outline`
 - [ ] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
@@ -84,7 +83,10 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 - [ ] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
 - [ ] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
 - [ ] **Boutique** : redirection demandée dans le Patch (URL à récupérer)
-- [ ] **Histoire** : revoir texte et agencement d'après le Figma (Patch)
+- [x] **Contenus alignés sur le Figma** : politique de confidentialité (réécrite), mentions légales (SIREN, RNA, données & cookies), Respect (« Nos engagements », liens `tel:`), Bureau, Règles (comptage en 15 points), Histoire, Volant, 404, logos rouges du footer
+- [ ] **Histoire** : dates à trancher, le Figma se contredit (section « 2011-2013 » mais élection en mars 2010 ; présidence d'Ahmed KASSIM « 2006-2011 » alors que le club est fondé en 2007). Les dates actuelles du code sont conservées
+- [ ] **Respect** : fichiers manquants pour « Fiche de signalement (CDOS) » et « Associations en Gironde » (liens `/manque`)
+- [ ] **Politique / mentions** : le Figma mentionne un « formulaire de contact » qui n'existe pas sur le site
 - [ ] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
 
 ### 5. Assets et performance

@@ -22,11 +22,11 @@ const NotFound = () => {
                 </div>
 
                 <div className='flex flex-col'>
-                    <Text variant="secondaire" color="rouge" className="text-center">
+                    <Text variant="secondaire" color="rouge-pale" className="text-center">
                         Oops.. Service trop long !
                     </Text>
-                    <Text variant="secondaire" color="rouge" className="text-center">
-                        Vous êtes tombés sur une page qui n’existe pas.
+                    <Text variant="secondaire" color="rouge-pale" className="text-center">
+                        Cette page n’existe pas ou plus.
                     </Text>
                 </div>
             </Content>

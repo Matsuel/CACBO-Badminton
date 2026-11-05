@@ -136,7 +136,7 @@ const Regles = () => {
 
                     <Bloc>
                         <Text>
-                            Les volants en plastique coûtent en moyenne une quinzaine d’euros le tube de 6, et durent longtemps. Les volants en plumes sont vendus par tubes de 12, pour un tarif allant de 23 à 55 euros selon la marque et la gamme.
+                            Les volants en plastique coûtent en moyenne une quinzaine d’euros le tube de 6, et durent longtemps. Les volants en plumes sont vendus par tubes de 12, pour un tarif allant de 23 à 55€ selon la marque et la gamme.
                         </Text>
 
                         <Text variant="h4" color="rouge-pale">

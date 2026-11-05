@@ -34,7 +34,7 @@ const Bureau = () => {
 
                     <Bloc>
                         <Text>
-                            Le Bureau veille au bon fonctionnement du club et au respect des règlements en vigueur, il s&apos;occupe de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
+                            Le Bureau veille au bon fonctionnement de la section, à la gestion transparente des finances et au respect des règles fixées par le Club omnisports (CACBO).
                         </Text>
 
                         <Text>

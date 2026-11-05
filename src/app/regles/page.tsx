@@ -37,15 +37,15 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Le badminton se joue en <span className="font-medium">3 sets maximum</span>. Chaque set est remporté par le joueur ou l’équipe qui marque <span className="font-medium">21 points</span>.
+                            Le badminton se joue en <span className="font-medium">3 sets maximum</span>. Chaque set est remporté par le joueur ou l’équipe qui marque <span className="font-medium">15 points</span>.
                         </Text>
 
                         <Text>
-                            Toutefois, si les deux adversaires atteignent un score de 20-20, le jeu continue jusqu’à ce qu’un joueur ou une équipe ait 2 points d’écart (par exemple, 22-20, 23-21, etc).
+                            Toutefois, si les deux adversaires atteignent un score de 15-15, le jeu continue jusqu’à ce qu’un joueur ou une équipe ait 2 points d’écart (par exemple, 17-15, 16-14, etc).
                         </Text>
 
                         <Text>
-                            Si le score atteint 29-29, la règle change : le joueur ou l’équipe qui atteint <span className="font-medium">30 points en premier</span> remporte le set.
+                            Si le score atteint 20-20, la règle change : le joueur ou l’équipe qui atteint <span className="font-medium">21 points en premier</span> remporte le set.
                         </Text>
 
                         <Text>
@@ -59,15 +59,15 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 1</span> : 21-19 (2 pts d’écart)
+                            <span className="font-medium">Set 1</span> : 15-13 (2 pts d’écart)
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 2</span> : 18-21 (2 pts d’écart)
+                            <span className="font-medium">Set 2</span> : 12-15 (2 pts d’écart)
                         </Text>
 
                         <Text>
-                            <span className="font-medium">Set 3</span> : 30-29 (point sec)
+                            <span className="font-medium">Set 3</span> : 21-20 (point sec)
                         </Text>
                     </Bloc>
                 </Parent>

@@ -10,7 +10,7 @@ export const personnel = [
         firstName: "Maël",
         lastName: "THOMAS",
         role: "Trésorier",
-        description: "Gère les dépenses, cotisations et achats matériels, et assure le suivi administratif financier."
+        description: "Gère les dépenses, cotisations et achats matériels, et assure le suivi administratif et financier."
     },
     {
         firstName: "Stéphane",
@@ -22,6 +22,6 @@ export const personnel = [
         firstName: "Jimmy",
         lastName: "BERT",
         role: "Membre",
-        "description": "En charge des partenariats et compétitions du club."
+        description: "En charge des partenariats, achats matériels et tournois du club."
     },
 ]

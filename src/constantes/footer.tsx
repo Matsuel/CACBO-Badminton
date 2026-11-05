@@ -33,7 +33,7 @@ export const footerLegalLinks: FooterLink[] = [
 
 // Logos de la bande partenaires, hauteurs reprises du Figma
 export const footerPartners = [
-    { name: "Ville de Carbon-Blanc", src: "/partenaires/carbonblanc.svg", width: 60, height: 72, className: "h-[47px]" },
+    { name: "Ville de Carbon-Blanc", src: "/partenaires/carbonblanc-rouge.svg", width: 42, height: 47, className: "h-[47px]" },
     { name: "Omnisports Carbon-Blanc", src: "/partenaires/omnisport.svg", width: 80, height: 30, className: "h-[38px]" },
-    { name: "SportArticle", src: "/partenaires/sportarticle.svg", width: 83, height: 16, className: "h-[18px]" },
+    { name: "SportArticle", src: "/partenaires/sportarticle-rouge.svg", width: 91, height: 18, className: "h-[18px]" },
 ]
