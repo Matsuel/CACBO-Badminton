@@ -131,9 +131,9 @@ const Faq = () => {
 				<Bloc title="Comment peut-on vous contacter pour plus d’informations ?">
 					<Text>
 						Vous pouvez nous contacter par mail à{" "}
-						<span className="font-semibold">hello@cacbobad.fr</span>, par
-						messages sur nos réseaux sociaux Instagram et Facebook ou venir
-						directement nous voir lors des créneaux.
+						<strong>hello@cacbobad.fr</strong>, par messages sur nos réseaux
+						sociaux Instagram et Facebook ou venir directement nous voir lors
+						des créneaux.
 					</Text>
 				</Bloc>
 			</Content>

@@ -13,6 +13,16 @@ export const textStyles = cva("", {
 			corps: "font-poppins text-corps",
 			secondaire: "font-poppins text-secondaire",
 			cta: "font-poppins text-cta",
+			chapo: "font-poppins text-chapo",
+			citation: "font-poppins text-citation",
+			chiffre: "font-poppins text-chiffre",
+			"h2-histoire": "font-space-grotesk text-h2-histoire",
+			"h3-petit": "font-space-grotesk text-h3-petit",
+			etiquette: "font-poppins text-etiquette",
+			pastille: "font-poppins text-pastille",
+			pied: "font-poppins text-pied",
+			"pied-long": "font-poppins text-pied-long",
+			emoji: "font-poppins text-emoji",
 		},
 		color: {
 			inherit: "",
@@ -20,6 +30,7 @@ export const textStyles = cva("", {
 			rouge: "text-rouge",
 			"rouge-pale": "text-rouge-pale",
 			blanc: "text-blanc",
+			"blanc-casse": "text-blanc-casse",
 		},
 	},
 	defaultVariants: {
@@ -38,6 +49,16 @@ const defaultTags: Record<TextVariant, React.ElementType> = {
 	corps: "p",
 	secondaire: "p",
 	cta: "span",
+	chapo: "p",
+	citation: "p",
+	chiffre: "p",
+	"h2-histoire": "h2",
+	"h3-petit": "h3",
+	etiquette: "p",
+	pastille: "span",
+	pied: "p",
+	"pied-long": "p",
+	emoji: "span",
 };
 
 interface TextProps

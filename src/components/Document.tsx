@@ -17,7 +17,7 @@ export const Documents = ({ content, href }: DocumentsProps) => {
 			target="_blank"
 			className="group w-auto h-auto flex flex-row items-center justify-start gap-5"
 		>
-			<span className="relative w-12 h-12 shrink-0">
+			<span aria-hidden="true" className="relative w-12 h-12 shrink-0">
 				<Image
 					src={File}
 					alt=""

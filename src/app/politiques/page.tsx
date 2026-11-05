@@ -54,16 +54,16 @@ const Politique = () => {
 							dont le siège social se situe {club.adresse.rue},{" "}
 							{club.adresse.codePostal} {club.adresse.ville}.
 						</Text>
-						<Text className="font-semibold">
+						<Text as="p" variant="h4">
 							Le référent à la protection des données pour le club est : Maël
 							THOMAS.
 						</Text>
 						<Text>
 							Toute demande relative au traitement de vos données personnelles
 							doit être adressée à l&apos;adresse e-mail suivante :{" "}
-							<span className="font-semibold">
+							<strong>
 								<Mail />
-							</span>
+							</strong>
 						</Text>
 					</Bloc>
 				</Parent>
@@ -80,7 +80,9 @@ const Politique = () => {
 							informations traitées selon leur canal de collecte :
 						</Text>
 
-						<Text className="font-semibold">Formulaire de contact</Text>
+						<Text as="p" variant="h4">
+							Formulaire de contact
+						</Text>
 						<List>
 							<ListElement>
 								Données collectées : nom, prénom, adresse e-mail, sujet et
@@ -98,7 +100,7 @@ const Politique = () => {
 							</ListElement>
 						</List>
 
-						<Text className="font-semibold">
+						<Text as="p" variant="h4">
 							Inscriptions, adhésions et boutique en ligne (via HelloAsso) :
 						</Text>
 						<List>
@@ -148,18 +150,15 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-semibold">Utilisation des cookies :</span>{" "}
-								Google Analytics utilise des cookies (fichiers textes placés sur
-								votre terminal) pour analyser la façon dont les visiteurs
-								utilisent le site.
+								<strong>Utilisation des cookies :</strong> Google Analytics
+								utilise des cookies (fichiers textes placés sur votre terminal)
+								pour analyser la façon dont les visiteurs utilisent le site.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
-									Anonymisation de l&apos;IP :
-								</span>{" "}
-								L&apos;adresse IP transmise par votre navigateur dans le cadre
-								de Google Analytics est anonymisée dès la collecte et n&apos;est
-								pas combinée avec d&apos;autres données détenues par Google.
+								<strong>Anonymisation de l&apos;IP :</strong> L&apos;adresse IP
+								transmise par votre navigateur dans le cadre de Google Analytics
+								est anonymisée dès la collecte et n&apos;est pas combinée avec
+								d&apos;autres données détenues par Google.
 							</ListElement>
 						</List>
 						<Text>
@@ -184,24 +183,20 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-semibold">
-									Les membres du Bureau du club :
-								</span>{" "}
-								pour assurer la gestion courante des adhésions, la trésorerie,
+								<strong>Les membres du Bureau du club :</strong> pour assurer la
+								gestion courante des adhésions, la trésorerie,
 								l&apos;organisation des créneaux et la communication avec les
 								joueurs.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
-									Les membres du Bureau Exécutif du CACBO :
-								</span>{" "}
-								au titre de la tutelle administrative et juridique exercée par
+								<strong>Les membres du Bureau Exécutif du CACBO :</strong> au
+								titre de la tutelle administrative et juridique exercée par
 								l&apos;association omnisports, notamment pour le suivi
 								centralisé des effectifs, la gestion des assurances du club et
 								l&apos;application des statuts.
 							</ListElement>
 						</List>
-						<Text color="rouge-pale" className="font-semibold">
+						<Text as="p" variant="h4" color="rouge-pale">
 							Vos données ne sont jamais vendues, louées ou cédées à des tiers à
 							des fins commerciales ou publicitaires
 						</Text>
@@ -238,43 +233,40 @@ const Politique = () => {
 						</Text>
 						<List>
 							<ListElement>
-								<span className="font-semibold">Données de contact :</span>{" "}
-								conservées pendant la durée nécessaire au traitement de la
-								demande, puis supprimées dans un délai maximum de 12 mois à
-								compter du dernier échange.
+								<strong>Données de contact :</strong> conservées pendant la
+								durée nécessaire au traitement de la demande, puis supprimées
+								dans un délai maximum de 12 mois à compter du dernier échange.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">Données des adhérents :</span>{" "}
-								conservées pendant toute la durée de l&apos;adhésion, puis
-								archivées pendant 3 ans à compter du terme de la dernière saison
-								souscrite à des fins de gestion administrative.
+								<strong>Données des adhérents :</strong> conservées pendant
+								toute la durée de l&apos;adhésion, puis archivées pendant 3 ans
+								à compter du terme de la dernière saison souscrite à des fins de
+								gestion administrative.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
+								<strong>
 									Documents comptables et justificatifs de paiement (HelloAsso)
 									:
-								</span>{" "}
+								</strong>{" "}
 								conservés pendant 10 ans, conformément aux obligations légales
 								du Code de commerce.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
-									Durée de vie des cookies sur le navigateur :
-								</span>{" "}
-								13 mois maximum conformément aux préconisations de la CNIL.
+								<strong>Durée de vie des cookies sur le navigateur :</strong> 13
+								mois maximum conformément aux préconisations de la CNIL.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
+								<strong>
 									Données d&apos;événements et d&apos;actions sur le site :
-								</span>{" "}
+								</strong>{" "}
 								conservées pendant 2 mois sur les serveurs de Google Analytics
 								avant suppression automatique.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">
+								<strong>
 									Données liées aux utilisateurs et identifiants d&apos;analyse
 									:
-								</span>{" "}
+								</strong>{" "}
 								conservées pendant 14 mois sur Google Analytics (cette durée est
 								réinitialisée à chaque nouvelle visite ou activité sur le site).
 							</ListElement>
@@ -314,7 +306,7 @@ const Politique = () => {
 							Pour toute question ou demande d&apos;exercice de vos droits, vous
 							pouvez contacter le club :
 						</Text>
-						<Text color="rouge-pale" className="font-semibold">
+						<Text as="p" variant="h4" color="rouge-pale">
 							{club.nom}
 							<br />
 							{club.adresse.rue}, {club.adresse.codePostal} {club.adresse.ville}{" "}

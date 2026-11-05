@@ -78,8 +78,7 @@ export default function Home() {
 					<Creneaux strong jours="pluriel" />
 
 					<Text>
-						Notre complexe sportif se situe au{" "}
-						<span className="font-semibold">24 rue Pasteur</span> à
+						Notre complexe sportif se situe au <strong>24 rue Pasteur</strong> à
 						Carbon-Blanc. 📍
 					</Text>
 
@@ -104,10 +103,10 @@ export default function Home() {
 
 					<List>
 						<ListElement>
-							<span className="font-semibold">50 €</span> pour un adulte
+							<strong>50 €</strong> pour un adulte
 						</ListElement>
 						<ListElement>
-							<span className="font-semibold">90 €</span> pour un couple
+							<strong>90 €</strong> pour un couple
 						</ListElement>
 					</List>
 
@@ -167,11 +166,7 @@ export default function Home() {
 				/>
 
 				<Bloc variant="outline">
-					<Text
-						variant="h3"
-						color="rouge"
-						className="text-[20px] leading-5 font-bold"
-					>
+					<Text variant="h3-petit" color="rouge">
 						Eh, qu’est-ce t’attends ?{" "}
 						<span className="text-noir">Rejoins-nous !</span> 😉
 					</Text>

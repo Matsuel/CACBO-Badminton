@@ -33,8 +33,9 @@ const Creneaux = ({
 						{jour}
 						<Text
 							as="span"
+							variant="pastille"
 							color="blanc"
-							className="bg-rouge rounded px-1.5 py-0.5 text-[13px] leading-4 font-semibold"
+							className="bg-rouge rounded px-1.5 py-0.5"
 						>
 							{horaire.replaceAll(" ", "")}
 						</Text>

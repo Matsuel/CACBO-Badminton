@@ -47,11 +47,51 @@
 	--text-cta--line-height: 16px;
 	--text-cta--font-weight: 500;
 
+	/* Tailles Figma hors des styles MOBILE/* (chapôs, citations, chiffres, pied de page…) */
+	--text-chapo: 24px;
+	--text-chapo--line-height: 22px;
+	--text-chapo--font-weight: 400;
+
+	--text-citation: 20px;
+	--text-citation--line-height: 18px;
+	--text-citation--font-weight: 600;
+
+	--text-chiffre: 24px;
+	--text-chiffre--line-height: 18px;
+	--text-chiffre--font-weight: 600;
+
+	--text-h2-histoire: 25px;
+	--text-h2-histoire--line-height: 24px;
+	--text-h2-histoire--font-weight: 700;
+
+	--text-h3-petit: 20px;
+	--text-h3-petit--line-height: 20px;
+	--text-h3-petit--font-weight: 700;
+
+	--text-etiquette: 14px;
+	--text-etiquette--line-height: 16px;
+	--text-etiquette--font-weight: 400;
+
+	--text-pastille: 13px;
+	--text-pastille--line-height: 16px;
+	--text-pastille--font-weight: 600;
+
+	--text-pied: 15px;
+	--text-pied--line-height: 14px;
+	--text-pied--font-weight: 400;
+
+	--text-pied-long: 15px;
+	--text-pied-long--line-height: 20px;
+	--text-pied-long--font-weight: 400;
+
+	--text-emoji: 44px;
+	--text-emoji--line-height: 16px;
+	--text-emoji--font-weight: 400;
+
 	/* Effets */
 	--shadow-ombre: 0 0 6px -1px #100c081a;
 
 	/* Espacements de mise en page (hors Figma) */
-	--leading-0: 0;
 	--gap-30: 30px;
 	--gap-header: 50px;
 	--gap-body: 50px;
@@ -68,6 +108,11 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+	/* Le gras du Figma est du semi-bold : pas de Medium (Patch) ni de Bold dans le texte courant */
+	strong {
+		font-weight: 600;
+	}
+
 	*,
 	::after,
 	::before,

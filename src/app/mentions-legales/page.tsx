@@ -36,24 +36,20 @@ const MentionsLegales = () => {
 							Athlétique CarbonBlanais Omnisports (CACBO), association loi 1901.
 						</Text>
 						<Text>
-							<span className="font-semibold">Siège social :</span> {lieu},{" "}
-							{rue}, {codePostal} {ville}
+							<strong>Siège social :</strong> {lieu}, {rue}, {codePostal}{" "}
+							{ville}
 						</Text>
 						<Text>
-							<span className="font-semibold">SIREN/SIRET :</span> 781 865 142
-							00025
+							<strong>SIREN/SIRET :</strong> 781 865 142 00025
 						</Text>
 						<Text>
-							<span className="font-semibold">N° RNA :</span> W332 000 297
+							<strong>N° RNA :</strong> W332 000 297
 						</Text>
 						<Text>
-							<span className="font-semibold">
-								Directeur de la publication :
-							</span>{" "}
-							Maël THOMAS
+							<strong>Directeur de la publication :</strong> Maël THOMAS
 						</Text>
 						<Text>
-							<span className="font-semibold">Contact :</span>{" "}
+							<strong>Contact :</strong>{" "}
 							<Link href={`mailto:${club.mail}`} className="underline">
 								{club.mail}
 							</Link>
@@ -68,11 +64,12 @@ const MentionsLegales = () => {
 
 					<Bloc>
 						<Text>Le site est hébergé par :</Text>
-						<Text className="font-semibold">Vercel Inc.</Text>
+						<Text as="p" variant="h4">
+							Vercel Inc.
+						</Text>
 						<Text>340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</Text>
 						<Text>
-							<span className="font-semibold">Contact :</span>{" "}
-							privacy@vercel.com
+							<strong>Contact :</strong> privacy@vercel.com
 						</Text>
 					</Bloc>
 				</Parent>

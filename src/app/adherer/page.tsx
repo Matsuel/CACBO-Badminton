@@ -49,10 +49,9 @@ const Adherer = () => {
 					<Bloc>
 						<Text>
 							En rejoignant notre club, vous intégrez une{" "}
-							<span className="font-semibold">communauté accueillante</span> et{" "}
-							<span className="font-semibold">dynamique</span>,{" "}
-							<span className="font-semibold">ouverte à tous les niveaux</span>{" "}
-							de pratique.
+							<strong>communauté accueillante</strong> et{" "}
+							<strong>dynamique</strong>,{" "}
+							<strong>ouverte à tous les niveaux</strong> de pratique.
 						</Text>
 
 						<Text>
@@ -63,19 +62,17 @@ const Adherer = () => {
 
 						<Text>
 							Que vous soyez compétiteur ou amateur, vous bénéficierez d&apos;
-							<span className="font-semibold">infrastructures modernes</span>,
-							de <span className="font-semibold">créneaux variés</span> adaptées
-							à vos besoins, et d&apos;un esprit sans prise de tête. 😎
+							<strong>infrastructures modernes</strong>, de{" "}
+							<strong>créneaux variés</strong> adaptées à vos besoins, et
+							d&apos;un esprit sans prise de tête. 😎
 						</Text>
 
 						<Text>
 							De plus, nos <span className="underline">soirées régulières</span>{" "}
 							🎉 sont l&apos;occasion idéale de renforcer les liens et de{" "}
-							<span className="font-semibold">
-								partager des moments de détente
-							</span>{" "}
-							en dehors des terrains. Ici, c&apos;est avant tout le plaisir du
-							sport et du partage qui prime !
+							<strong>partager des moments de détente</strong> en dehors des
+							terrains. Ici, c&apos;est avant tout le plaisir du sport et du
+							partage qui prime !
 						</Text>
 					</Bloc>
 
@@ -91,18 +88,18 @@ const Adherer = () => {
 
 						<Text>
 							En adhérant à la section badminton,{" "}
-							<span className="font-semibold">
+							<strong>
 								vous bénéficiez automatiquement de la Responsabilité Civile
-							</span>{" "}
+							</strong>{" "}
 							(RC) souscrite par le CACBO auprès de Groupama.
 						</Text>
 
 						<Text>
 							Elle couvre les{" "}
-							<span className="font-semibold">
+							<strong>
 								dommages corporels ou matériels que vous pourriez causer
 								involontairement à un tiers
-							</span>{" "}
+							</strong>{" "}
 							(autre joueur, matériel du gymnase) lors de nos créneaux (cette
 							assurance ne couvre pas vos propres blessures en l&apos;absence de
 							tiers responsable).
@@ -143,17 +140,17 @@ const Adherer = () => {
 
 						<List>
 							<ListElement>
-								<span className="font-semibold">Formulaire d’inscription</span>{" "}
-								: à remplir pour nous transmettre vos informations essentielles.
+								<strong>Formulaire d’inscription</strong> : à remplir pour nous
+								transmettre vos informations essentielles.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">Questionnaire de santé</span> :
-								à compléter pour évaluer votre condition physique.{" "}
+								<strong>Questionnaire de santé</strong> : à compléter pour
+								évaluer votre condition physique.{" "}
 								<span className="text-rouge">
 									Si vous répondez positivement à une ou plusieurs questions
 								</span>
-								, un <span className="font-semibold">certificat médical</span>{" "}
-								daté de moins de 6 mois sera requis.
+								, un <strong>certificat médical</strong> daté de moins de 6 mois
+								sera requis.
 							</ListElement>
 						</List>
 
@@ -197,10 +194,7 @@ const Adherer = () => {
 						<Text variant="h4">Voies d’accès :</Text>
 
 						<Text>
-							🚗{" "}
-							<span className="font-semibold text-rouge-pale">
-								En voiture :
-							</span>
+							🚗 <strong className="text-rouge-pale">En voiture :</strong>
 						</Text>
 
 						<List>
@@ -214,7 +208,7 @@ const Adherer = () => {
 						</List>
 
 						<Text>
-							🚌 <span className="font-semibold text-rouge-pale">En bus :</span>
+							🚌 <strong className="text-rouge-pale">En bus :</strong>
 						</Text>
 
 						<List>
@@ -227,8 +221,7 @@ const Adherer = () => {
 						</List>
 
 						<Text>
-							🚋{" "}
-							<span className="font-semibold text-rouge-pale">En tram :</span>
+							🚋 <strong className="text-rouge-pale">En tram :</strong>
 						</Text>
 
 						<List>
@@ -273,11 +266,11 @@ const Adherer = () => {
 
 						<List>
 							<ListElement>
-								<span className="font-semibold">Formule adulte</span> :{" "}
+								<strong>Formule adulte</strong> :{" "}
 								<span className="text-rouge-pale">50 €</span> par personne.
 							</ListElement>
 							<ListElement>
-								<span className="font-semibold">Formule couple</span> :{" "}
+								<strong>Formule couple</strong> :{" "}
 								<span className="text-rouge-pale">90 €</span> pour 2 personnes,
 								idéale pour venir jouer à deux, que vous soyez en couple ou
 								simplement entre amis.
@@ -298,9 +291,9 @@ const Adherer = () => {
 
 						<Text>
 							Cela signifie que{" "}
-							<span className="text-rouge-pale font-semibold!">
+							<strong className="text-rouge-pale">
 								vous ne payez que la cotisation au club
-							</span>
+							</strong>
 							, sans les coûts additionnels pour la licence fédérale, ni les
 							contributions à la Ligue et au Comité départemental.
 						</Text>

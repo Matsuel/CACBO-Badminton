@@ -28,10 +28,9 @@ const Regles = () => {
 					<Bloc>
 						<Text>
 							Il existe aujourd’hui 3 grandes catégories de volants : les{" "}
-							<span className="font-semibold">volants en plastique</span>{" "}
-							(nylon), les{" "}
-							<span className="font-semibold">volants en plumes</span> et les{" "}
-							<span className="font-semibold">volants hybrides</span>.
+							<strong>volants en plastique</strong> (nylon), les{" "}
+							<strong>volants en plumes</strong> et les{" "}
+							<strong>volants hybrides</strong>.
 						</Text>
 					</Bloc>
 
@@ -40,8 +39,8 @@ const Regles = () => {
 
 						<Text>
 							Ces volants reconnaissables à leur jupe en nylon, sont réputés
-							pour leur <span className="font-semibold">résistance</span> et
-							leur <span className="font-semibold">coût réduit</span>.
+							pour leur <strong>résistance</strong> et leur{" "}
+							<strong>coût réduit</strong>.
 						</Text>
 
 						<Text>
@@ -194,29 +193,27 @@ const Regles = () => {
 						</Text>
 
 						<Text>
-							<span className="font-semibold">RSL</span> propose des volants
-							très appréciés en club, offrant un bon compromis entre prix et
-							performance.
+							<strong>RSL</strong> propose des volants très appréciés en club,
+							offrant un bon compromis entre prix et performance.
 						</Text>
 
 						<Text>
-							<span className="font-semibold">Victor</span> et{" "}
-							<span className="font-semibold">Forza</span> se sont également
-							imposés comme des alternatives fiables, connues pour leur
-							durabilité.
+							<strong>Victor</strong> et <strong>Forza</strong> se sont
+							également imposés comme des alternatives fiables, connues pour
+							leur durabilité.
 						</Text>
 
 						<Text>
-							<span className="font-semibold">Babolat</span>, marque française
-							bien implantée, propose des gammes variées qui séduisent aussi
-							bien les joueurs loisirs que compétitifs.
+							<strong>Babolat</strong>, marque française bien implantée, propose
+							des gammes variées qui séduisent aussi bien les joueurs loisirs
+							que compétitifs.
 						</Text>
 
 						<Text>
-							Enfin, <span className="font-semibold">Li-Ning</span>, marque
-							chinoise de renommée mondiale, est reconnue pour la qualité de ses
-							volants haut de gamme et est utilisée dans plusieurs tournois
-							internationaux, notamment en Asie.
+							Enfin, <strong>Li-Ning</strong>, marque chinoise de renommée
+							mondiale, est reconnue pour la qualité de ses volants haut de
+							gamme et est utilisée dans plusieurs tournois internationaux,
+							notamment en Asie.
 						</Text>
 					</Bloc>
 

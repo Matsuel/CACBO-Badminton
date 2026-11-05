@@ -6,11 +6,9 @@ import {
 	footerPartners,
 	footerSections,
 } from "@/constantes/footer";
+import { cn } from "@/utils/cn";
 import SocialLinks from "./SocialLinks";
-import Text from "./Text";
-
-// Texte du footer Figma : Poppins 15 px, interligne 14 px (pas de style MOBILE/* équivalent)
-const footerText = "font-poppins text-[15px] leading-[14px]";
+import Text, { textStyles } from "./Text";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -30,11 +28,16 @@ const Footer = () => {
 
 			<nav aria-label="Pied de page" className="flex flex-col gap-[50px] px-5">
 				{footerSections.map((section) => (
-					<div
+					<Text
 						key={section.title}
-						className={`flex flex-col gap-3 text-rouge ${footerText}`}
+						as="div"
+						variant="pied"
+						color="rouge"
+						className="flex flex-col gap-3"
 					>
-						<p className="font-semibold uppercase">{section.title}</p>
+						<Text as="h2" variant="pied" className="font-semibold uppercase">
+							{section.title}
+						</Text>
 						{section.links.map((link) => (
 							<Link
 								key={link.link}
@@ -44,7 +47,7 @@ const Footer = () => {
 								{link.title}
 							</Link>
 						))}
-					</div>
+					</Text>
 				))}
 			</nav>
 
@@ -61,28 +64,49 @@ const Footer = () => {
 				))}
 			</div>
 
-			<div className={`flex flex-col gap-[15px] px-5 text-rouge ${footerText}`}>
-				<p className="font-semibold">{club.nom}</p>
-				<Link href="/contact" className="leading-5 w-fit hover:underline">
+			<Text
+				as="div"
+				variant="pied"
+				color="rouge"
+				className="flex flex-col gap-[15px] px-5"
+			>
+				<Text as="p" variant="pied" className="font-semibold">
+					{club.nom}
+				</Text>
+				<Link
+					href="/contact"
+					className={cn(
+						textStyles({ variant: "pied-long" }),
+						"w-fit hover:underline",
+					)}
+				>
 					<span aria-hidden>📍 </span>
 					{club.adresse.lieu}
 					<br />
 					{club.adresse.codePostal} {club.adresse.ville}
 				</Link>
-			</div>
+			</Text>
 
-			<nav
+			<Text
+				as="nav"
+				variant="pied"
+				color="blanc-casse"
 				aria-label="Informations légales"
-				className={`w-full flex flex-row flex-wrap gap-x-5 gap-y-[9px] px-5 py-[25px] bg-rouge text-blanc-casse font-semibold ${footerText}`}
+				className="w-full flex flex-row flex-wrap gap-x-5 gap-y-[9px] px-5 py-[25px] bg-rouge font-semibold"
 			>
 				{footerLegalLinks.map((link) => (
 					<Link key={link.link} href={link.link} className="hover:underline">
 						{link.title}
 					</Link>
 				))}
-			</nav>
+			</Text>
 
-			<div className="flex flex-col gap-5 px-5 font-poppins text-[15px] leading-5 text-rouge-pale">
+			<Text
+				as="div"
+				variant="pied-long"
+				color="rouge-pale"
+				className="flex flex-col gap-5 px-5"
+			>
 				<p>
 					© {currentYear} {club.nom}. Tous droits réservés. Site conçu par Maël
 					Thomas et développé par{" "}
@@ -100,7 +124,7 @@ const Footer = () => {
 					Section du Club Athlétique CarbonBlanais Omnisports (CACBO) depuis
 					2007.
 				</p>
-			</div>
+			</Text>
 		</footer>
 	);
 };

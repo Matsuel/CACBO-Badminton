@@ -28,7 +28,7 @@ const Header = ({
 			)}
 		>
 			{eyebrow && (
-				<Text variant="secondaire" color="rouge-pale" className="leading-0">
+				<Text variant="secondaire" color="rouge-pale">
 					{eyebrow}
 				</Text>
 			)}

@@ -65,7 +65,7 @@ const Respect = () => {
 
 			<Content>
 				<Bloc>
-					<Text className="font-semibold">
+					<Text as="p" variant="h4">
 						Le CACBO Badminton s&apos;engage à promouvoir une pratique du
 						badminton fondée sur le respect, l&apos;inclusion et la
 						convivialité.
@@ -88,13 +88,17 @@ const Respect = () => {
 							<div key={colonne[0].titre} className="flex flex-col gap-5">
 								{colonne.map(({ emoji, titre, texte }) => (
 									<Bloc key={titre} className="gap-[15px] text-center">
-										<span
+										<Text
+											as="span"
+											variant="emoji"
 											aria-hidden
-											className="w-full font-poppins text-[44px] leading-4"
+											className="w-full"
 										>
 											{emoji}
-										</span>
-										<Text className="w-full font-semibold">{titre}</Text>
+										</Text>
+										<Text as="p" variant="h4" className="w-full">
+											{titre}
+										</Text>
 										<Text className="w-full">{texte}</Text>
 									</Bloc>
 								))}
@@ -110,8 +114,7 @@ const Respect = () => {
 
 					<Bloc>
 						<Text>
-							<span className="font-semibold">Référent du club :</span> Laurent
-							THOMAS
+							<strong>Référent du club :</strong> Laurent THOMAS
 						</Text>
 
 						<Text>
@@ -119,7 +122,7 @@ const Respect = () => {
 							directement le Bureau du club à :
 						</Text>
 
-						<Text className="font-semibold">
+						<Text as="p" variant="h4">
 							<Link href={`mailto:${club.mail}`}>{club.mail}</Link> –{" "}
 							<Link href={club.telephone.lien}>{club.telephone.affichage}</Link>
 						</Text>
@@ -132,7 +135,9 @@ const Respect = () => {
 					</Text>
 
 					<Bloc>
-						<Text className="font-semibold">Sous forme d’étapes</Text>
+						<Text as="p" variant="h4">
+							Sous forme d’étapes
+						</Text>
 
 						<List>
 							<ListElement>
@@ -147,7 +152,9 @@ const Respect = () => {
 					</Bloc>
 
 					<Bloc>
-						<Text className="font-semibold">Avec la fiche officielle</Text>
+						<Text as="p" variant="h4">
+							Avec la fiche officielle
+						</Text>
 
 						<Documents href="/manque" content="Fiche de signalement (CDOS)" />
 					</Bloc>
@@ -165,12 +172,11 @@ const Respect = () => {
 									{numeros.map((numero, index) => (
 										<span key={numero}>
 											{index > 0 && " / "}
-											<Link
-												href={`tel:${numero.replaceAll(" ", "")}`}
-												className="font-semibold"
-											>
-												{numero}
-											</Link>
+											<strong>
+												<Link href={`tel:${numero.replaceAll(" ", "")}`}>
+													{numero}
+												</Link>
+											</strong>
 										</span>
 									))}{" "}
 									– {nom}
@@ -180,7 +186,7 @@ const Respect = () => {
 					</Bloc>
 
 					<Bloc>
-						<Text className="font-semibold">
+						<Text as="p" variant="h4">
 							Accompagnement, aide et écoute sur les violences
 							sexistes/sexuelles
 						</Text>

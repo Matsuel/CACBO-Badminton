@@ -8,14 +8,12 @@ interface RegisterProps {
 const Register = ({ saison, open }: RegisterProps) => {
 	return (
 		<Text
-			variant="secondaire"
+			variant="etiquette"
 			color="rouge-pale"
-			className="w-full h-auto p-2 border border-rouge rounded-full text-center text-[14px] leading-4"
+			className="w-full h-auto p-2 border border-rouge rounded-full text-center"
 		>
 			SAISON 20{saison} -{" "}
-			<span className="font-semibold">
-				INSCRIPTIONS {open ? "OUVERTES ! ✔️" : "FERMÉES"}
-			</span>
+			<strong>INSCRIPTIONS {open ? "OUVERTES ! ✔️" : "FERMÉES"}</strong>
 		</Text>
 	);
 };
