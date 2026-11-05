@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /*
   Tokens repris des variables Figma (CACBO BAD | Website).
@@ -6,57 +6,57 @@
   Les radius et interlignes Figma (rounded-xl, leading-4…) sont ceux de Tailwind par défaut.
 */
 @theme {
-  /* Couleurs */
-  --color-rouge: #FF1C1C;
-  --color-rouge-pale: #FF6464; /* variable vide dans Figma : valeur historique conservée */
-  --color-noir: #100C08;
-  --color-blanc: #FFFFFF;
-  --color-blanc-casse: #FAFAFA;
+	/* Couleurs */
+	--color-rouge: #ff1c1c;
+	--color-rouge-pale: #ff6464; /* variable vide dans Figma : valeur historique conservée */
+	--color-noir: #100c08;
+	--color-blanc: #ffffff;
+	--color-blanc-casse: #fafafa;
 
-  /* Familles */
-  --font-poppins: var(--ff-poppins), sans-serif;
-  --font-space-grotesk: var(--ff-space-grotesk), sans-serif;
-  --font-darker-grotesque: var(--ff-darker-grotesque), sans-serif;
+	/* Familles */
+	--font-poppins: var(--ff-poppins), sans-serif;
+	--font-space-grotesk: var(--ff-space-grotesk), sans-serif;
+	--font-darker-grotesque: var(--ff-darker-grotesque), sans-serif;
 
-  /* Styles de texte MOBILE/* : taille, interligne, graisse */
-  --text-h1: 58px;
-  --text-h1--line-height: 40px;
-  --text-h1--font-weight: 700;
+	/* Styles de texte MOBILE/* : taille, interligne, graisse */
+	--text-h1: 58px;
+	--text-h1--line-height: 40px;
+	--text-h1--font-weight: 700;
 
-  --text-h2: 25px;
-  --text-h2--line-height: 20px;
-  --text-h2--font-weight: 700;
+	--text-h2: 25px;
+	--text-h2--line-height: 20px;
+	--text-h2--font-weight: 700;
 
-  --text-h3: 21px;
-  --text-h3--line-height: 20px;
-  --text-h3--font-weight: 700;
+	--text-h3: 21px;
+	--text-h3--line-height: 20px;
+	--text-h3--font-weight: 700;
 
-  --text-h4: 17px;
-  --text-h4--line-height: 16px;
-  --text-h4--font-weight: 600;
+	--text-h4: 17px;
+	--text-h4--line-height: 16px;
+	--text-h4--font-weight: 600;
 
-  --text-corps: 17px;
-  --text-corps--line-height: 16px;
-  --text-corps--font-weight: 400;
+	--text-corps: 17px;
+	--text-corps--line-height: 16px;
+	--text-corps--font-weight: 400;
 
-  --text-secondaire: 15px;
-  --text-secondaire--line-height: 15px;
-  --text-secondaire--font-weight: 400;
+	--text-secondaire: 15px;
+	--text-secondaire--line-height: 15px;
+	--text-secondaire--font-weight: 400;
 
-  --text-cta: 15px;
-  --text-cta--line-height: 16px;
-  --text-cta--font-weight: 500;
+	--text-cta: 15px;
+	--text-cta--line-height: 16px;
+	--text-cta--font-weight: 500;
 
-  /* Effets */
-  --shadow-ombre: 0 0 6px -1px #100C081A;
+	/* Effets */
+	--shadow-ombre: 0 0 6px -1px #100c081a;
 
-  /* Espacements de mise en page (hors Figma) */
-  --leading-0: 0;
-  --gap-30: 30px;
-  --gap-header: 50px;
-  --gap-body: 50px;
-  --gap-content: 15px;
-  --gap-list: 10px;
+	/* Espacements de mise en page (hors Figma) */
+	--leading-0: 0;
+	--gap-30: 30px;
+	--gap-header: 50px;
+	--gap-body: 50px;
+	--gap-content: 15px;
+	--gap-list: 10px;
 }
 
 /*
@@ -68,11 +68,11 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
 }

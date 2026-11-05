@@ -1,6 +1,6 @@
-import { cn } from "@/utils/cn";
 import type React from "react";
 import Text from "@/components/Text";
+import { cn } from "@/utils/cn";
 
 interface PresidentProps extends React.HTMLAttributes<HTMLDivElement> {
 	date: string;

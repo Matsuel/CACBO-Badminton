@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
+import Banner from "@/components/Banner";
 import Bloc from "@/components/Bloc";
 import Content from "@/components/Content";
+import Documents from "@/components/Document";
 import Header from "@/components/Header";
 import Membre from "@/components/Membre";
 import PageLayout from "@/components/PageLayout";
 import Parent from "@/components/Parent";
-import { personnel } from "@/constantes/bureau";
-import Documents from "@/components/Document";
-import Banner from "@/components/Banner";
 import Text from "@/components/Text";
+import { personnel } from "@/constantes/bureau";
 
 export const metadata: Metadata = {
 	title: "Le Bureau",

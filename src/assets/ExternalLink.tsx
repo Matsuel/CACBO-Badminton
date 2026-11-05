@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
 	size?: number | string;
@@ -12,6 +12,7 @@ const ExternalLink = ({
 }: IconProps) => {
 	return (
 		<svg
+			aria-hidden="true"
 			width={size}
 			height={size}
 			viewBox="0 0 12 12"

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Banner from "@/components/Banner";
 import Bloc from "@/components/Bloc";
 import Button from "@/components/Button";
 import Content from "@/components/Content";
+import Creneaux from "@/components/Creneaux";
 import Documents from "@/components/Document";
 import Header from "@/components/Header";
 import List from "@/components/List";
@@ -10,9 +12,7 @@ import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
 import Parent from "@/components/Parent";
 import Register from "@/components/Register";
-import Banner from "@/components/Banner";
 import Text from "@/components/Text";
-import Creneaux from "@/components/Creneaux";
 
 export const metadata: Metadata = {
 	title: "Adhérer",

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Banner from "@/components/Banner";
 import Bloc from "@/components/Bloc";
 import Content from "@/components/Content";
 import Header from "@/components/Header";
 import PageLayout from "@/components/PageLayout";
 import Partenaire from "@/components/Partenaire";
-import { partenaires } from "@/constantes/partenaires";
-import Banner from "@/components/Banner";
 import Text from "@/components/Text";
+import { partenaires } from "@/constantes/partenaires";
 
 export const metadata: Metadata = {
 	title: "Nos partenaires",

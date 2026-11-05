@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 interface InstagramProps extends React.SVGProps<SVGSVGElement> {
 	size?: number;
@@ -7,6 +7,7 @@ interface InstagramProps extends React.SVGProps<SVGSVGElement> {
 const Instagram = ({ className, size = 36, ...props }: InstagramProps) => {
 	return (
 		<svg
+			aria-hidden="true"
 			width={size}
 			height={size}
 			viewBox="0 0 16 16"

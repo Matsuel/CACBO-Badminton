@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Banner from "@/components/Banner";
 import Bloc from "@/components/Bloc";
 import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
@@ -8,7 +9,6 @@ import PageLayout from "@/components/PageLayout";
 import Palmares from "@/components/Palmares";
 import Parent from "@/components/Parent";
 import President from "@/components/President";
-import Banner from "@/components/Banner";
 import Text from "@/components/Text";
 
 export const metadata: Metadata = {

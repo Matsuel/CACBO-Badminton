@@ -1,15 +1,15 @@
+import Banner from "@/components/Banner";
 import Button from "@/components/Button";
 import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
+import Creneaux from "@/components/Creneaux";
 import Header from "@/components/Header";
 import ImageLegend from "@/components/ImageLegend";
 import List from "@/components/List";
 import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
-import Bloc from "../components/Bloc";
-import Banner from "@/components/Banner";
 import Text from "@/components/Text";
-import Creneaux from "@/components/Creneaux";
+import Bloc from "../components/Bloc";
 
 export default function Home() {
 	return (

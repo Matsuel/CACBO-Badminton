@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 interface HelloAssoProps extends React.SVGProps<SVGSVGElement> {
 	size?: number;
@@ -7,6 +7,7 @@ interface HelloAssoProps extends React.SVGProps<SVGSVGElement> {
 const HelloAsso = ({ className, size = 36, ...props }: HelloAssoProps) => {
 	return (
 		<svg
+			aria-hidden="true"
 			width={size}
 			height={size}
 			viewBox="0 0 17 16"

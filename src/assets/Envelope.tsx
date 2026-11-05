@@ -1,7 +1,6 @@
-import React from "react";
-
 export const Envelope = (
 	<svg
+		aria-hidden="true"
 		width="20"
 		height="16"
 		viewBox="0 0 20 16"

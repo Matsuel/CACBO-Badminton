@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Adresse from "@/components/Adresse";
+import Banner from "@/components/Banner";
 import Bloc from "@/components/Bloc";
 import Content from "@/components/Content";
+import Creneaux from "@/components/Creneaux";
 import Header from "@/components/Header";
 import PageLayout from "@/components/PageLayout";
 import Parent from "@/components/Parent";
-import Banner from "@/components/Banner";
-import Text, { textStyles } from "@/components/Text";
-import Adresse from "@/components/Adresse";
-import Creneaux from "@/components/Creneaux";
 import SocialLinks from "@/components/SocialLinks";
+import Text, { textStyles } from "@/components/Text";
 import { club } from "@/constantes/club";
 import { cn } from "@/utils/cn";
 

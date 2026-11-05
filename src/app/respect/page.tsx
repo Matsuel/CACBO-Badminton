@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Bloc from "@/components/Bloc";
 import Content from "@/components/Content";
 import Documents from "@/components/Document";
@@ -9,7 +10,6 @@ import PageLayout from "@/components/PageLayout";
 import Parent from "@/components/Parent";
 import Text from "@/components/Text";
 import { club } from "@/constantes/club";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Respect & prévention",

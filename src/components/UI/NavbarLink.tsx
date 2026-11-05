@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import type { NavbarLinkType } from "@/index";
 import Text from "@/components/Text";
+import type { NavbarLinkType } from "@/index";
 
 const NavbarLink = ({
 	title,
