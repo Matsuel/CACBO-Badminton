@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { textVariants } from "@/constantes/theme";
+import Text from "@/components/Text";
 
 interface PartenaireProps {
 	name: string;
@@ -11,13 +11,13 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 	return (
 		<div
 			className={
-				"w-full h-auto flex flex-row items-center justify-start p-5 gap-6.25 bg-white rounded-xl shadow-default"
+				"w-full h-auto flex flex-row items-center justify-start p-5 gap-6.25 bg-blanc rounded-xl shadow-ombre"
 			}
 		>
-			<div className="w-25 h-25 flex items-center justify-center rounded-xl bg-whitebroken shrink-0">
+			<div className="w-25 h-25 flex items-center justify-center rounded-xl bg-blanc-casse shrink-0">
 				<Image
 					src={image}
-					alt="volant de badminton"
+					alt={name}
 					width={100}
 					height={100}
 					className="rounded-xl w-auto h-auto"
@@ -26,10 +26,12 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 
 			<div className="flex flex-col gap-2">
 				<div className="flex flex-col">
-					<span className={`${textVariants.h3} text-redcolor`}>{name}</span>
+					<Text as="span" variant="h3" color="rouge">
+						{name}
+					</Text>
 				</div>
 
-				<p className={textVariants.text}>{role}</p>
+				<Text>{role}</Text>
 			</div>
 		</div>
 	);

@@ -1,36 +1,40 @@
-import type React from 'react'
-import { textVariants } from '@/constantes/theme';
-import { cn } from '@/utils/cn'
+import { cva, type VariantProps } from "class-variance-authority";
+import type React from "react";
+import { cn } from "@/utils/cn";
+import Text from "./Text";
 
-interface BlocProps extends React.HTMLAttributes<HTMLDivElement> {
-    title?: string;
-    subtitile?: string;
+const blocStyles = cva(
+	"w-full h-auto flex flex-col items-start justify-start p-5 gap-content bg-blanc rounded-xl shadow-ombre",
+	{
+		variants: {
+			variant: {
+				default: "",
+				outline: "border border-rouge",
+			},
+		},
+		defaultVariants: {
+			variant: "default",
+		},
+	},
+);
+
+interface BlocProps
+	extends React.HTMLAttributes<HTMLDivElement>,
+		VariantProps<typeof blocStyles> {
+	title?: string;
 }
 
-const Bloc = ({
-    className,
-    children,
-    title,
-    subtitile,
-    ...props
-}: BlocProps) => {
-    return (
-        <div className={cn("w-full h-auto flex flex-col items-start justify-start p-5 gap-content bg-white rounded-xl shadow-default", className)} {...props}>
-            <div className={`${title || subtitile ? "flex" : "hidden"} flex-col`}>
-                {title && (
-                    <h3 className={`${textVariants.h3} text-redcolor`}>
-                        {title}
-                    </h3>
-                )}
-                {subtitile && (
-                    <span className="text-black font-Space-Grotesk text-xl leading-4 font-semibold">
-                        {subtitile}
-                    </span>
-                )}
-            </div>
-            {children}
-        </div>
-    )
-}
+const Bloc = ({ className, children, title, variant, ...props }: BlocProps) => {
+	return (
+		<div className={cn(blocStyles({ variant }), className)} {...props}>
+			{title && (
+				<Text variant="h3" color="rouge">
+					{title}
+				</Text>
+			)}
+			{children}
+		</div>
+	);
+};
 
-export default Bloc
+export default Bloc;

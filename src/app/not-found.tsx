@@ -1,37 +1,44 @@
-import Image from 'next/image'
-import Content from '@/components/Content'
-import PageLayout from '@/components/PageLayout'
-import { textVariants } from '@/constantes/theme'
+import Image from "next/image";
+import Content from "@/components/Content";
+import PageLayout from "@/components/PageLayout";
+import Text from "@/components/Text";
 
 const NotFound = () => {
-    return (
-        <PageLayout>
-            <Content className='items-center gap-content'>
-                <div className='relative'>
-                    <h1 className={`${textVariants.h1} text-redcolor`}>404</h1>
-                    <Image
-                        src="/notfound/volant.svg"
-                        alt='volant de badminton'
-                        className='h-16 w-auto absolute z-10 -top-2 left-1/2 -translate-x-1/2'
-                        width={100}
-                        height={100}
-                    />
-                    <p className={`absolute z-20 top-0 left-1/2 -translate-x-1/2 ${textVariants.h1} text-redcolor`}>
-                        0
-                    </p>
-                </div>
+	return (
+		<PageLayout>
+			<Content className="items-center gap-content">
+				<div className="relative">
+					<Text variant="h1" color="rouge">
+						404
+					</Text>
+					<Image
+						src="/notfound/volant.png"
+						alt="volant de badminton"
+						className="h-16 w-auto absolute z-10 -top-2 left-1/2 -translate-x-1/2"
+						width={100}
+						height={100}
+					/>
+					<Text
+						as="p"
+						variant="h1"
+						color="rouge"
+						className="absolute z-20 top-0 left-1/2 -translate-x-1/2"
+					>
+						0
+					</Text>
+				</div>
 
-                <div className='flex flex-col'>
-                    <p className={`${textVariants.secondary} text-center text-redcolor`}>
-                        Oops.. Service trop long !
-                    </p>
-                    <p className={`${textVariants.secondary} text-center text-redcolor`}>
-                        Vous êtes tombés sur une page qui n’existe pas.
-                    </p>
-                </div>
-            </Content>
-        </PageLayout>
-    )
-}
+				<div className="flex flex-col">
+					<Text variant="secondaire" color="rouge-pale" className="text-center">
+						Oops.. Service trop long !
+					</Text>
+					<Text variant="secondaire" color="rouge-pale" className="text-center">
+						Cette page n’existe pas ou plus.
+					</Text>
+				</div>
+			</Content>
+		</PageLayout>
+	);
+};
 
-export default NotFound
+export default NotFound;

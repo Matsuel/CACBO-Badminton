@@ -20,8 +20,8 @@ npm run lint
 | Dossier | Contenu |
 |---|---|
 | `src/app/` | Une route par page (`adherer`, `bureau`, `contact`, …), `layout.tsx` pour les metadata, `globals.css` pour les tokens |
-| `src/components/` | Composants partagés (`Bloc`, `Button`, `Header`, `Footer`, `PageLayout`, …) et `UI/` (navbar, menu) |
-| `src/constantes/` | Données et styles partagés : liens navbar/footer, réseaux, `theme.tsx` (`textVariants`) |
+| `src/components/` | Composants partagés et `UI/` (navbar, menu). Textes : `Text` (`variant` h1–h4, corps, secondaire, cta · `color` · `as`), `textStyles()` pour les classes seules. Variants via `class-variance-authority` |
+| `src/constantes/` | Données partagées : `club.ts` (coordonnées, créneaux), `socials.tsx` (réseaux), liens navbar/footer |
 | `public/` | Images et PDF, rangés par page |
 
 ---
@@ -32,64 +32,68 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 
 ### 1. Bloquants
 
-- [ ] **Footer** : refaire `src/components/Footer.tsx` et `src/constantes/footer.tsx` selon le Figma
+- [x] **Footer** : refaire `src/components/Footer.tsx` et `src/constantes/footer.tsx` selon le Figma
   - fond blanc, bandeau rouge « Suivez-nous sur nos réseaux »
   - colonnes CLUB et RESSOURCES (supprimer « INFOS PRATIQUES »)
   - ligne de logos partenaires (Ville de Carbon-Blanc, Omnisports, SportArticle)
   - adresse avec 📍, bandeau rouge Mentions légales · Nous contacter · Politique de confidentialité · FAQ
   - copyright et « Section du Club Athlétique CarbonBlanais Omnisports (CACBO) depuis 2007 »
-- [ ] **Page `/respect`** : l'ajouter dans `src/constantes/navbar.tsx`, dans le footer (RESSOURCES) et dans `src/app/sitemap.ts`
-- [ ] **Metadata** : créer `src/app/respect/layout.tsx` et `src/app/boutique/layout.tsx` (la page boutique est en `"use client"`, elle ne peut pas exporter ses metadata)
-- [ ] **Adhérer** : ajouter le bloc « Assurance & couverture » (RC Groupama) entre « 3 séances d'essai » et « Comment ? »
+- [x] **Page `/respect`** : l'ajouter dans `src/constantes/navbar.tsx`, dans le footer (RESSOURCES) et dans `src/app/sitemap.ts`
+- [x] **Metadata** : `title.template` dans le layout racine, `metadata` exporté par chaque page (layouts de routes supprimés, iframe boutique sortie dans `HelloAssoWidget`)
+- [x] **Adhérer** : ajouter le bloc « Assurance & couverture » (RC Groupama) entre « 3 séances d'essai » et « Comment ? »
 
 ### 2. Tokens (`src/app/globals.css`, `src/constantes/theme.tsx`)
 
-- [ ] NOIR : `#000000` → `#100C08`
-- [ ] CTA : `font-normal` → Poppins Medium (500)
-- [ ] Texte secondaire : 14 px / 16 → 15 px / 15
-- [ ] Ombre : ajouter le spread −1 (`0 0 6px -1px rgba(16,12,8,.1)`)
-- [ ] Supprimer `--radius-ten` (inutilisé, le Figma utilise `rounded-xl` = 12 px)
-- [ ] Patch : passer les `font-medium` des textes en `font-semibold`
+- [x] Variables Figma importées dans `@theme` avec les noms du Figma (`rouge`, `rouge-pale`, `noir`, `blanc`, `blanc-casse`, `text-h1` … `text-cta`, `shadow-ombre`) et classes renommées dans `src/`
+- [x] NOIR : `#000000` → `#100C08` (couleur de texte par défaut sur `body`)
+- [x] CTA : `font-normal` → Poppins Medium (500)
+- [x] Texte secondaire : 14 px / 16 → 15 px / 15
+- [x] Ombre : ajouter le spread −1
+- [x] Supprimer les tokens absents du Figma (`--radius-ten`, `--text-paragraph`, `whitebroken`, …)
+- [x] Patch : passer les `font-medium` des textes en `font-semibold`
 
 ### 3. Composants
 
-- [ ] `Button.tsx` : renommer les variantes (le rouge plein devient la variante par défaut) et typer avec `AnchorHTMLAttributes<HTMLAnchorElement>`
-- [ ] `Header.tsx` : afficher « Bienvenue » sur toutes les pages comme dans le Figma ; « Bienvenue » ne doit pas être un `h2` avant le `h1`, ni le sous-titre un `h3`
-- [ ] `Bloc.tsx` : renommer la prop `subtitile` → `subtitle`
-- [ ] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
-- [ ] `Document.tsx` : remplacer le `useState` de survol par `group-hover` (repasser en composant serveur), `alt` propre à chaque document, `h5` → `p`
-- [ ] `Membre.tsx` : n'afficher l'icône info que s'il y a une description
-- [ ] `Partenaire.tsx` : `alt` = nom du partenaire (au lieu de « volant de badminton »)
-- [ ] `Register.tsx` : retirer la coche ✔️ quand les inscriptions sont fermées
-- [ ] `Caroussel.tsx` : `alt` descriptifs au lieu de « Image 1 »
-- [ ] `ImageLegend.tsx` : `aspect-ratio` au lieu de `h-115`, traiter le TODO
-- [ ] `Palmares.tsx`, `President.tsx` : ne plus utiliser `h2`/`h3` pour le style
-- [ ] Footer : lien « Maël THOMAS » en `href="#"` à remplacer ou retirer
+- [x] `Button.tsx` : variants `cva` (`plein` par défaut, `contour`, `ghost`), prop `icon` (`external`, `send`, `mail`), `target="_blank"` auto pour les liens externes, typé `AnchorHTMLAttributes`
+- [x] `Header.tsx` : « Bienvenue » et le sous-titre ne sont plus des titres `h2`/`h3`
+- [x] `Bloc.tsx` : prop `subtitle` (ex-`subtitile`), variant `outline`
+- [x] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
+- [x] `Document.tsx` : remplacer le `useState` de survol par `group-hover` (repasser en composant serveur), `alt` propre à chaque document, `h5` → `p`
+- [x] `Membre.tsx` : n'afficher l'icône info que s'il y a une description
+- [x] `Partenaire.tsx` : `alt` = nom du partenaire (au lieu de « volant de badminton »)
+- [x] `Register.tsx` : retirer la coche ✔️ quand les inscriptions sont fermées
+- [x] `Caroussel.tsx` : `alt` descriptifs au lieu de « Image 1 »
+- [x] `ImageLegend.tsx` : `aspect-ratio` au lieu de `h-115`, traiter le TODO
+- [x] `Palmares.tsx`, `President.tsx` : ne plus utiliser `h2`/`h3` pour le style
+- [x] Footer : lien « Maël THOMAS » en `href="#"` à remplacer ou retirer
 
 ### 4. Pages
 
-- [ ] **Contact**
-  - [ ] retirer l'emoji 👇 du titre (Patch)
-  - [ ] réduire l'interlignage du bloc téléphone / mail (Patch)
-  - [ ] créneaux en pastilles rouges (TODO `contact/page.tsx`)
-  - [ ] téléphone en `tel:`, mail en `mailto:`
-  - [ ] `alt` de la photo (copié d'Adhérer)
-  - [ ] `aria-label` et `target="_blank"` sur les réseaux
-- [ ] **Accueil**
-  - [ ] « Lundis, Mardis, Vendredis » avec majuscule
-  - [ ] carrousel : `caroussel2.png` affiché deux fois
-  - [ ] légendes différentes pour `ensemble.png` et `ensemble2.png`
-- [ ] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
-- [ ] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
-- [ ] **Boutique** : redirection demandée dans le Patch (URL à récupérer)
-- [ ] **Histoire** : revoir texte et agencement d'après le Figma (Patch)
-- [ ] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
+- [x] **Contact**
+  - [x] retirer l'emoji 👇 du titre (Patch)
+  - [x] réduire l'interlignage du bloc téléphone / mail (Patch)
+  - [x] créneaux en pastilles rouges (`<Creneaux variant="pastilles" />`)
+  - [x] téléphone en `tel:`, mail en `mailto:`
+  - [x] `alt` de la photo (copié d'Adhérer)
+  - [x] `aria-label` et `target="_blank"` sur les réseaux (`SocialLinks`)
+- [x] **Accueil**
+  - [x] jours avec majuscule (`Creneaux`, données dans `constantes/club.ts`)
+  - [x] carrousel : `caroussel2.png` affiché deux fois
+  - [x] légendes : `ensemble.png` sans légende, comme dans le Figma
+- [x] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
+- [x] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
+- [x] **Boutique** : redirection (déjà corrigée)
+- [x] **Contenus alignés sur le Figma** : politique de confidentialité (réécrite), mentions légales (SIREN, RNA, données & cookies), Respect (« Nos engagements », liens `tel:`), Bureau, Règles (comptage en 15 points), Histoire, Volant, 404, logos rouges du footer
+- [x] **Histoire** : dates reprises du Figma (section « 2011-2013 », présidents « 2006-2011 » et « 2011-2013 »)
+- [ ] **Respect** : fichiers manquants pour « Fiche de signalement (CDOS) » et « Associations en Gironde » (liens `/manque`)
+- [x] **Politique / mentions** : texte du Figma conservé, y compris le « formulaire de contact » (absent du site : à ajouter ou à retirer du texte)
+- [x] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
 
 ### 5. Assets et performance
 
-- [ ] `public/bureau/volant.svg` (3,8 Mo, PNG 4096×2734 embarqué) : réexporter en vrai SVG ou petit WebP
-- [ ] Supprimer les doublons : `public/contact/map.png` = `public/adherer/map.png`, `public/faq/1.png` = `public/contact/1.png`
-- [ ] Images : vrais `width`/`height` (16 images en `2000`/`5000` carrés) et prop `sizes`
+- [x] `public/bureau/volant.svg` (3,8 Mo, PNG 4096×2734 embarqué) : réexporter en vrai SVG ou petit WebP
+- [x] Supprimer les doublons : `public/contact/map.png` = `public/adherer/map.png`, `public/faq/1.png` = `public/contact/1.png`
+- [x] Images : vrais `width`/`height` (16 images en `2000`/`5000` carrés) et prop `sizes`
 
 ### 6. Version responsive
 

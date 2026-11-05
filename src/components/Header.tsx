@@ -1,42 +1,49 @@
-import type React from 'react';
-import { textVariants } from '@/constantes/theme';
-import { cn } from '@/utils/cn';
+import type React from "react";
+import { cn } from "@/utils/cn";
+import Text from "./Text";
 
 interface HeaderProps {
-    h2?: string;
-    title: string;
-    subtitle: React.ReactNode;
-    cta?: React.ReactNode;
-    h1ClassName?: string;
-    className?: string;
+	/** Petit texte au-dessus du titre (« Bienvenue »). */
+	eyebrow?: string;
+	title: string;
+	subtitle: React.ReactNode;
+	cta?: React.ReactNode;
+	h1ClassName?: string;
+	className?: string;
 }
 
 const Header = ({
-    h2,
-    title,
-    subtitle,
-    h1ClassName,
-    className,
-    cta
+	eyebrow,
+	title,
+	subtitle,
+	h1ClassName,
+	className,
+	cta,
 }: HeaderProps) => {
-    return (
-        <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-content p-5", className)}>
-            {h2 && <h2 className="font-Poppins text-[15px] text-redpale leading-0">
-                {h2}
-            </h2>}
+	return (
+		<div
+			className={cn(
+				"w-full h-auto flex flex-col items-start justify-center gap-content px-5",
+				className,
+			)}
+		>
+			{eyebrow && (
+				<Text variant="secondaire" color="rouge-pale">
+					{eyebrow}
+				</Text>
+			)}
 
-            <h1 className={`${textVariants.h1} text-redcolor uppercase ${h1ClassName}`}
-            >
-                {title}
-            </h1>
+			<Text variant="h1" color="rouge" className={cn("uppercase", h1ClassName)}>
+				{title}
+			</Text>
 
-            <h3 className={`${textVariants.secondary} text-redpale`}>
-                {subtitle}
-            </h3>
+			<Text as="div" variant="secondaire" color="rouge-pale">
+				{subtitle}
+			</Text>
 
-            {cta}
-        </div>
-    )
-}
+			{cta}
+		</div>
+	);
+};
 
-export default Header
+export default Header;

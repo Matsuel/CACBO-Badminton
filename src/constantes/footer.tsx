@@ -1,94 +1,57 @@
-import Facebook from "@/assets/footer/Facebook";
-import HelloAsso from "@/assets/footer/HelloAsso";
-import Instagram from "@/assets/footer/Instagram";
-import Messenger from "@/assets/footer/Messenger";
+export type FooterLink = { title: string; link: string };
 
-export const socials = [
-    {
-        link: "https://facebook.com/cacbo.bad",
-        icon: <Facebook size={16} />
-    },
-    {
-        link: "https://www.instagram.com/cacbo.bad",
-        icon: <Instagram size={16} />
-    },
-    {
-        link: "https://www.messenger.com/cacbo.bad",
-        icon: <Messenger size={16} />
-    },
-    {
-        link: "https://www.helloasso.com/associations/cacbo-badminton",
-        icon: <HelloAsso size={16} />
-    }
-]
+// Colonnes du footer (Figma : CLUB, RESSOURCES)
+export const footerSections: { title: string; links: FooterLink[] }[] = [
+	{
+		title: "Club",
+		links: [
+			{ title: "Adhérer", link: "/adherer" },
+			{ title: "Bureau", link: "/bureau" },
+			{ title: "Histoire", link: "/histoire" },
+			{ title: "Boutique", link: "/boutique" },
+			{ title: "Partenaires", link: "/partenaires" },
+		],
+	},
+	{
+		title: "Ressources",
+		links: [
+			{ title: "Règles du jeu", link: "/regles" },
+			{ title: "Guide du volant", link: "/volant" },
+			{ title: "Guide de la raquette", link: "/raquette" },
+			{ title: "Respect & prévention", link: "/respect" },
+		],
+	},
+];
 
-export const footerLinks = [
-    {
-        title: "CLUB",
-        links: [
-            {
-                title: "Bureau",
-                link: "/bureau"
-            },
-            {
-                title: "Histoire",
-                link: "/histoire"
-            },
-            {
-                title: "Boutique",
-                link: "/boutique"
-            },
-            {
-                title: "Partenaires",
-                link: "/partenaires"
-            }
-        ]
-    },
-    {
-        title: "INFOS PRATIQUES",
-        links: [
-            {
-                title: "FAQ",
-                link: "/faq"
-            },
-            {
-                title: "Adhérer",
-                link: "/adherer"
-            },
-            {
-                title: "Nous contacter",
-                link: "/contact"
-            }
-        ]
-    },
-    {
-        title: "RESSOURCES",
-        links: [
-            {
-                title: "Règles du jeu",
-                link: "/regles"
-            },
-            {
-                title: "Guide du volant",
-                link: "/volant"
-            },
-            {
-                title: "Guide de la raquette",
-                link: "/raquette"
-            }
-        ]
-    },
-    {
-        title: "",
-        links: [
-            {
-                title: "Mentions légales",
-                link: "/mentions-legales"
-            },
-            {
-                title: "Politique de confidentialité",
-                link: "/politiques"
-            }
-        ]
-    }
-]
+// Bandeau rouge du bas (Figma : ENCART)
+export const footerLegalLinks: FooterLink[] = [
+	{ title: "Mentions légales", link: "/mentions-legales" },
+	{ title: "Nous contacter", link: "/contact" },
+	{ title: "Politique de confidentialité", link: "/politiques" },
+	{ title: "FAQ", link: "/faq" },
+];
+
+// Logos de la bande partenaires, hauteurs reprises du Figma
+export const footerPartners = [
+	{
+		name: "Ville de Carbon-Blanc",
+		src: "/partenaires/carbonblanc-rouge.svg",
+		width: 42,
+		height: 47,
+		className: "h-[47px]",
+	},
+	{
+		name: "Omnisports Carbon-Blanc",
+		src: "/partenaires/omnisport.svg",
+		width: 80,
+		height: 30,
+		className: "h-[38px]",
+	},
+	{
+		name: "SportArticle",
+		src: "/partenaires/sportarticle-rouge.svg",
+		width: 91,
+		height: 18,
+		className: "h-[18px]",
+	},
+];

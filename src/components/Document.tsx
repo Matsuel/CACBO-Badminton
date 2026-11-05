@@ -1,53 +1,38 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import File from "@/assets/file.svg";
 import FileRed from "@/assets/fileRed.svg";
-import { textVariants } from "@/constantes/theme";
+import Text from "./Text";
 
 interface DocumentsProps {
-    content: string;
-    href: string;
+	content: string;
+	href: string;
 }
 
-export const Documents = ({
-    content,
-    href,
-}: DocumentsProps) => {
+// Lien de téléchargement (Figma « Bouton download ») : icône contour, pleine au survol.
+export const Documents = ({ content, href }: DocumentsProps) => {
+	return (
+		<Link
+			href={href}
+			target="_blank"
+			className="group w-auto h-auto flex flex-row items-center justify-start gap-5"
+		>
+			<span aria-hidden="true" className="relative w-12 h-12 shrink-0">
+				<Image
+					src={File}
+					alt=""
+					className="absolute transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0"
+				/>
+				<Image
+					src={FileRed}
+					alt=""
+					className="absolute transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+				/>
+			</span>
 
-    const [isHovered, setIsHovered] = useState<boolean>(false);
+			<Text as="span">{content}</Text>
+		</Link>
+	);
+};
 
-    return (
-        <div className="w-auto h-auto flex flex-row items-center justify-start gap-5">
-
-            <Link
-                href={href}
-                passHref
-                target={"_blank"}
-                className="text-redcolor hover:text"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                <div className="relative w-12 h-12">
-                    <Image
-                        src={File}
-                        alt={"Formulaire d’inscription"}
-                        className={`absolute transition-all duration-300 ease-in-out ${isHovered ? 'opacity-0' : 'opacity-100'}`}
-                    />
-                    <Image
-                        src={FileRed}
-                        alt={"Formulaire d’inscription"}
-                        className={`absolute transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-                    />
-                </div>
-            </Link>
-
-            <h5 className={textVariants.text}>
-                {content}
-            </h5>
-        </div>
-    )
-}
-
-export default Documents
+export default Documents;

@@ -6,7 +6,8 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": ["**", "!package.json", "!tsconfig.json"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -16,6 +17,11 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
 		}
 	},
 	"javascript": {

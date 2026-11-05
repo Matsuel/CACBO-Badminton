@@ -1,101 +1,132 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { footerLinks, socials } from '@/constantes/footer'
-import { textVariants } from '@/constantes/theme'
+import Image from "next/image";
+import Link from "next/link";
+import { club } from "@/constantes/club";
+import {
+	footerLegalLinks,
+	footerPartners,
+	footerSections,
+} from "@/constantes/footer";
+import { cn } from "@/utils/cn";
+import SocialLinks from "./SocialLinks";
+import Text, { textStyles } from "./Text";
 
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
 
-    const currentYear = new Date().getFullYear();
+	return (
+		<footer className="w-full flex flex-col gap-[50px] pb-[50px] bg-blanc-casse">
+			<div className="w-full flex flex-col gap-5 px-5 py-[25px] bg-rouge">
+				<Text as="p" variant="h3" color="blanc">
+					Suivez-nous sur nos réseaux
+				</Text>
+				<SocialLinks
+					size={23}
+					className="w-full justify-center gap-[50px]"
+					linkClassName="text-blanc hover:text-blanc/80"
+				/>
+			</div>
 
-    return (
-        <footer className='w-full h-auto flex flex-col gap-10 p-5 pt-10 bg-redcolor'>
+			<nav aria-label="Pied de page" className="flex flex-col gap-[50px] px-5">
+				{footerSections.map((section) => (
+					<Text
+						key={section.title}
+						as="div"
+						variant="pied"
+						color="rouge"
+						className="flex flex-col gap-3"
+					>
+						<Text as="h2" variant="pied" className="font-semibold uppercase">
+							{section.title}
+						</Text>
+						{section.links.map((link) => (
+							<Link
+								key={link.link}
+								href={link.link}
+								className="w-fit hover:underline"
+							>
+								{link.title}
+							</Link>
+						))}
+					</Text>
+				))}
+			</nav>
 
-            {footerLinks.map(section => (
-                <div className='w-auto h-auto flex flex-col gap-4' key={section.title}>
-                    {section.title && <h4 className={`${textVariants.footer} font-semibold`}>
-                        {section.title}
-                    </h4>}
-                    {section.links.map(link => (
-                        <Link href={link.link} className={`${textVariants.footer}`} key={link.title}>
-                            {link.title}
-                        </Link>
-                    ))}
-                </div>
-            ))}
+			<div className="w-full h-[84px] flex flex-row items-center justify-center gap-8 border-y border-rouge">
+				{footerPartners.map((partner) => (
+					<Image
+						key={partner.name}
+						src={partner.src}
+						alt={partner.name}
+						width={partner.width}
+						height={partner.height}
+						className={`${partner.className} w-auto`}
+					/>
+				))}
+			</div>
 
-            <div className='w-full h-px bg-redpale/60' />
+			<Text
+				as="div"
+				variant="pied"
+				color="rouge"
+				className="flex flex-col gap-[15px] px-5"
+			>
+				<Text as="p" variant="pied" className="font-semibold">
+					{club.nom}
+				</Text>
+				<Link
+					href="/contact"
+					className={cn(
+						textStyles({ variant: "pied-long" }),
+						"w-fit hover:underline",
+					)}
+				>
+					<span aria-hidden>📍 </span>
+					{club.adresse.lieu}
+					<br />
+					{club.adresse.codePostal} {club.adresse.ville}
+				</Link>
+			</Text>
 
-            <div className='w-full h-auto flex flex-col items-center gap-5'>
-                <Image
-                    src="/logowhite.svg"
-                    alt="Logo"
-                    className='w-12'
-                    width={100}
-                    height={100}
-                />
+			<Text
+				as="nav"
+				variant="pied"
+				color="blanc-casse"
+				aria-label="Informations légales"
+				className="w-full flex flex-row flex-wrap gap-x-5 gap-y-[9px] px-5 py-[25px] bg-rouge font-semibold"
+			>
+				{footerLegalLinks.map((link) => (
+					<Link key={link.link} href={link.link} className="hover:underline">
+						{link.title}
+					</Link>
+				))}
+			</Text>
 
-                <p className={`${textVariants.footer} font-semibold`}>
-                    CACBO Badminton
-                </p>
+			<Text
+				as="div"
+				variant="pied-long"
+				color="rouge-pale"
+				className="flex flex-col gap-5 px-5"
+			>
+				<p>
+					© {currentYear} {club.nom}. Tous droits réservés. Site conçu par Maël
+					Thomas et développé par{" "}
+					<Link
+						href="https://matheolang.fr"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="underline"
+					>
+						Mathéo Lang
+					</Link>
+					.
+				</p>
+				<p className="italic">
+					Section du Club Athlétique CarbonBlanais Omnisports (CACBO) depuis
+					2007.
+				</p>
+			</Text>
+		</footer>
+	);
+};
 
-                <div className='w-auto h-auto flex flex-col'>
-                    <p className={`${textVariants.footer} leading-5!`}>
-                        Complexe sportif Philippe Madrelle
-                    </p>
-                    <p className={`${textVariants.footer} leading-5!`}>
-                        24 rue Pasteur, 33560 Carbon-Blanc
-                    </p>
-                </div>
-
-                <Link href={`tel:+33618952330`} className={`${textVariants.footer} leading-5`}>
-                    Tél. 06 18 95 23 30
-                </Link>
-
-                <p className={`${textVariants.footer} text-center leading-5! px-5`}>
-                    Ouvert le <span className='font-semibold'>lundi</span> (21h-23h), <span className='font-semibold'>mardi</span> (18h-21h)
-                    et <span className='font-semibold'>vendredi</span> (18h30-21h)
-                </p>
-
-                <div className='w-full h-px bg-redpale/60' />
-
-                <div className='w-full h-auto flex flex-col items-center gap-content'>
-
-                    <div className='w-full h-auto flex flex-col items-center'>
-                        <p className={`font-Poppins text-[11px] leading-4 text-white text-center`}>
-                            © {currentYear} CACBO Badminton. Tous droits réservés.
-                        </p>
-                        <p className={`font-Poppins text-[11px] leading-4 text-white text-center`}>
-                            Site pensé par <Link href="#" target='_blank' className='underline'>Maël THOMAS</Link> et développé par <Link href="https://matheolang.fr" target='_blank' className='underline'>Mathéo LANG.</Link>
-                        </p>
-                    </div>
-
-                    <div className='w-auto h-auto flex flex-row gap-content'>
-                        {socials.map((social) => (
-                            <Link key={social.icon.type} href={social.link} target='_blank' className='flex items-center justify-center text-white transition-colors hover:text-white/80 duration-300'>
-                                {social.icon}
-                            </Link>
-                        ))}
-                    </div>
-
-                    <div className='w-full h-auto flex items-center justify-center flex-row gap-1'>
-                        <p className='font-Poppins text-[11px] leading-4 text-white'>
-                            Section membre de
-                        </p>
-
-                        <Image
-                            src="/cacbo.svg"
-                            alt="CACBO Logo"
-                            className='w-13'
-                            width={100}
-                            height={100}
-                        />
-
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-    )
-}
-
-export default Footer
+export default Footer;

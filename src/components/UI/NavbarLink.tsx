@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { textVariants } from "@/constantes/theme";
+import Text from "@/components/Text";
 import type { NavbarLinkType } from "@/index";
 
 const NavbarLink = ({
@@ -14,15 +14,17 @@ const NavbarLink = ({
 		<Link
 			href={href}
 			onClick={onClick}
-			className="w-full h-auto p-5 text-redcolor flex flex-row justify-start gap-6 items-center bg-white"
+			className="w-full h-auto p-5 text-rouge flex flex-row justify-start gap-6 items-center bg-blanc"
 		>
-			<div className="w-12 h-12 flex items-center justify-center bg-redcolor text-white rounded-xl">
+			<div className="w-12 h-12 flex items-center justify-center bg-rouge text-blanc rounded-xl">
 				{icon}
 			</div>
 			<div className="w-[65%] h-auto flex flex-col gap-2 items-start">
-				<h3 className={textVariants.h3}>{title}</h3>
+				<Text variant="h3">{title}</Text>
 				{description && (
-					<p className={`${textVariants.secondary} w-3/4 text-redpale`}>{description}</p>
+					<Text variant="secondaire" color="rouge-pale" className="w-3/4">
+						{description}
+					</Text>
 				)}
 			</div>
 			<ChevronRight className="w-4" />
