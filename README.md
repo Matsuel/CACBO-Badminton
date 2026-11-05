@@ -20,8 +20,8 @@ npm run lint
 | Dossier | Contenu |
 |---|---|
 | `src/app/` | Une route par page (`adherer`, `bureau`, `contact`, …), `layout.tsx` pour les metadata, `globals.css` pour les tokens |
-| `src/components/` | Composants partagés (`Bloc`, `Button`, `Header`, `Footer`, `PageLayout`, …) et `UI/` (navbar, menu) |
-| `src/constantes/` | Données et styles partagés : liens navbar/footer, réseaux, `theme.tsx` (`textVariants`) |
+| `src/components/` | Composants partagés et `UI/` (navbar, menu). Textes : `Text` (`variant` h1–h4, corps, secondaire, cta · `color` · `as`), `textStyles()` pour les classes seules. Variants via `class-variance-authority` |
+| `src/constantes/` | Données partagées : `club.ts` (coordonnées, créneaux), `socials.tsx` (réseaux), liens navbar/footer |
 | `public/` | Images et PDF, rangés par page |
 
 ---
@@ -32,30 +32,32 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 
 ### 1. Bloquants
 
-- [ ] **Footer** : refaire `src/components/Footer.tsx` et `src/constantes/footer.tsx` selon le Figma
+- [x] **Footer** : refaire `src/components/Footer.tsx` et `src/constantes/footer.tsx` selon le Figma
   - fond blanc, bandeau rouge « Suivez-nous sur nos réseaux »
   - colonnes CLUB et RESSOURCES (supprimer « INFOS PRATIQUES »)
   - ligne de logos partenaires (Ville de Carbon-Blanc, Omnisports, SportArticle)
   - adresse avec 📍, bandeau rouge Mentions légales · Nous contacter · Politique de confidentialité · FAQ
   - copyright et « Section du Club Athlétique CarbonBlanais Omnisports (CACBO) depuis 2007 »
-- [ ] **Page `/respect`** : l'ajouter dans `src/constantes/navbar.tsx`, dans le footer (RESSOURCES) et dans `src/app/sitemap.ts`
-- [ ] **Metadata** : créer `src/app/respect/layout.tsx` et `src/app/boutique/layout.tsx` (la page boutique est en `"use client"`, elle ne peut pas exporter ses metadata)
-- [ ] **Adhérer** : ajouter le bloc « Assurance & couverture » (RC Groupama) entre « 3 séances d'essai » et « Comment ? »
+- [x] **Page `/respect`** : l'ajouter dans `src/constantes/navbar.tsx`, dans le footer (RESSOURCES) et dans `src/app/sitemap.ts`
+- [x] **Metadata** : `title.template` dans le layout racine, `metadata` exporté par chaque page (layouts de routes supprimés, iframe boutique sortie dans `HelloAssoWidget`)
+- [x] **Adhérer** : ajouter le bloc « Assurance & couverture » (RC Groupama) entre « 3 séances d'essai » et « Comment ? »
 
 ### 2. Tokens (`src/app/globals.css`, `src/constantes/theme.tsx`)
 
-- [ ] NOIR : `#000000` → `#100C08`
-- [ ] CTA : `font-normal` → Poppins Medium (500)
-- [ ] Texte secondaire : 14 px / 16 → 15 px / 15
-- [ ] Ombre : ajouter le spread −1 (`0 0 6px -1px rgba(16,12,8,.1)`)
-- [ ] Supprimer `--radius-ten` (inutilisé, le Figma utilise `rounded-xl` = 12 px)
+- [x] Variables Figma importées dans `@theme` avec les noms du Figma (`rouge`, `rouge-pale`, `noir`, `blanc`, `blanc-casse`, `text-h1` … `text-cta`, `shadow-ombre`) et classes renommées dans `src/`
+- [x] NOIR : `#000000` → `#100C08` (couleur de texte par défaut sur `body`)
+- [x] CTA : `font-normal` → Poppins Medium (500)
+- [x] Texte secondaire : 14 px / 16 → 15 px / 15
+- [x] Ombre : ajouter le spread −1
+- [x] Supprimer les tokens absents du Figma (`--radius-ten`, `--text-paragraph`, `whitebroken`, …)
 - [ ] Patch : passer les `font-medium` des textes en `font-semibold`
 
 ### 3. Composants
 
-- [ ] `Button.tsx` : renommer les variantes (le rouge plein devient la variante par défaut) et typer avec `AnchorHTMLAttributes<HTMLAnchorElement>`
-- [ ] `Header.tsx` : afficher « Bienvenue » sur toutes les pages comme dans le Figma ; « Bienvenue » ne doit pas être un `h2` avant le `h1`, ni le sous-titre un `h3`
-- [ ] `Bloc.tsx` : renommer la prop `subtitile` → `subtitle`
+- [x] `Button.tsx` : variants `cva` (`plein` par défaut, `contour`, `ghost`), prop `icon` (`external`, `send`, `mail`), `target="_blank"` auto pour les liens externes, typé `AnchorHTMLAttributes`
+- [ ] `Header.tsx` : afficher « Bienvenue » (prop `eyebrow`) sur toutes les pages comme dans le Figma
+- [x] `Header.tsx` : « Bienvenue » et le sous-titre ne sont plus des titres `h2`/`h3`
+- [x] `Bloc.tsx` : prop `subtitle` (ex-`subtitile`), variant `outline`
 - [ ] `List.tsx` : remplacer `gap-0` par l'espacement entre puces du Figma (Patch)
 - [ ] `Document.tsx` : remplacer le `useState` de survol par `group-hover` (repasser en composant serveur), `alt` propre à chaque document, `h5` → `p`
 - [ ] `Membre.tsx` : n'afficher l'icône info que s'il y a une description
@@ -71,12 +73,12 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
 - [ ] **Contact**
   - [ ] retirer l'emoji 👇 du titre (Patch)
   - [ ] réduire l'interlignage du bloc téléphone / mail (Patch)
-  - [ ] créneaux en pastilles rouges (TODO `contact/page.tsx`)
-  - [ ] téléphone en `tel:`, mail en `mailto:`
+  - [x] créneaux en pastilles rouges (`<Creneaux variant="pastilles" />`)
+  - [x] téléphone en `tel:`, mail en `mailto:`
   - [ ] `alt` de la photo (copié d'Adhérer)
-  - [ ] `aria-label` et `target="_blank"` sur les réseaux
+  - [x] `aria-label` et `target="_blank"` sur les réseaux (`SocialLinks`)
 - [ ] **Accueil**
-  - [ ] « Lundis, Mardis, Vendredis » avec majuscule
+  - [x] jours avec majuscule (`Creneaux`, données dans `constantes/club.ts`)
   - [ ] carrousel : `caroussel2.png` affiché deux fois
   - [ ] légendes différentes pour `ensemble.png` et `ensemble2.png`
 - [ ] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
