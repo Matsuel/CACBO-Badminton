@@ -85,7 +85,9 @@
 	--text-pied-long--font-weight: 400;
 
 	--text-emoji: 44px;
-	--text-emoji--line-height: 16px;
+	/* Figma rogne la boîte à la cap-height (≈ 0,7 × 44px) ; une line-height
+	   fixe donne la même hauteur dans tous les navigateurs. */
+	--text-emoji--line-height: 31px;
 	--text-emoji--font-weight: 400;
 
 	/* Effets */

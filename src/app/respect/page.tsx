@@ -96,7 +96,7 @@ const Respect = () => {
 										>
 											{emoji}
 										</Text>
-										<Text as="p" variant="h4" className="w-full">
+										<Text as="p" variant="h4" className="w-full font-medium">
 											{titre}
 										</Text>
 										<Text className="w-full">{texte}</Text>
