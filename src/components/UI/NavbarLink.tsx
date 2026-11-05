@@ -22,7 +22,9 @@ const NavbarLink = ({
 			<div className="w-[65%] h-auto flex flex-col gap-2 items-start">
 				<Text variant="h3">{title}</Text>
 				{description && (
-					<Text variant="secondaire" color="rouge-pale" className="w-3/4">{description}</Text>
+					<Text variant="secondaire" color="rouge-pale" className="w-3/4">
+						{description}
+					</Text>
 				)}
 			</div>
 			<ChevronRight className="w-4" />

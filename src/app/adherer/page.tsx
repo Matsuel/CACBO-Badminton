@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image"
-import Bloc from "@/components/Bloc"
-import Button from "@/components/Button"
-import Content from "@/components/Content"
-import Documents from "@/components/Document"
-import Header from "@/components/Header"
-import List from "@/components/List"
-import ListElement from "@/components/ListElement"
-import PageLayout from "@/components/PageLayout"
-import Parent from "@/components/Parent"
-import Register from "@/components/Register"
+import Image from "next/image";
+import Bloc from "@/components/Bloc";
+import Button from "@/components/Button";
+import Content from "@/components/Content";
+import Documents from "@/components/Document";
+import Header from "@/components/Header";
+import List from "@/components/List";
+import ListElement from "@/components/ListElement";
+import PageLayout from "@/components/PageLayout";
+import Parent from "@/components/Parent";
+import Register from "@/components/Register";
 import Banner from "@/components/Banner";
 import Text from "@/components/Text";
 import Creneaux from "@/components/Creneaux";
@@ -19,229 +19,301 @@ export const metadata: Metadata = {
 };
 
 const Adherer = () => {
-    return (
-        <PageLayout>
-            <Header
-                title="ADHÉRER"
-                subtitle="Prêt à nous rejoindre ?"
-                cta={
-                    <Register
-                        saison="26/27"
-                        open={false}
-                    />
-                }
-            />
+	return (
+		<PageLayout>
+			<Header
+				title="ADHÉRER"
+				subtitle="Prêt à nous rejoindre ?"
+				cta={<Register saison="26/27" open={false} />}
+			/>
 
-            <Banner src="/adherer/1.png" alt="Photo devant une table avec des raquettes" />
+			<Banner
+				src="/adherer/1.png"
+				alt="Photo devant une table avec des raquettes"
+			/>
 
-            <Content>
+			<Content>
+				<Parent>
+					<Text variant="h2" color="rouge">
+						Pourquoi nous rejoindre ?
+					</Text>
 
-                <Parent>
+					<Bloc variant="outline">
+						<Text variant="h4">
+							Profitez de{" "}
+							<span className="text-rouge">-25% chez Sport Article</span> (hors
+							cordages/volants) grâce à notre partenariat !
+						</Text>
+					</Bloc>
 
-                    <Text variant="h2" color="rouge">
-                        Pourquoi nous rejoindre ?
-                    </Text>
+					<Bloc>
+						<Text>
+							En rejoignant notre club, vous intégrez une{" "}
+							<span className="font-semibold">communauté accueillante</span> et{" "}
+							<span className="font-semibold">dynamique</span>,{" "}
+							<span className="font-semibold">ouverte à tous les niveaux</span>{" "}
+							de pratique.
+						</Text>
 
-                    <Bloc variant="outline">
-                        <Text variant="h4">
-                            Profitez de <span className="text-rouge">-25% chez Sport Article</span> (hors cordages/volants) grâce à notre partenariat ! 
-                        </Text>
-                    </Bloc>
+						<Text>
+							Nous offrons un cadre chaleureux où l’ambiance familiale et
+							conviviale favorise à la fois le plaisir de jouer et la
+							progression.
+						</Text>
 
-                    <Bloc>
-                        <Text>
-                            En rejoignant notre club, vous intégrez une <span className="font-semibold">communauté accueillante</span> et <span className="font-semibold">dynamique</span>, <span className="font-semibold">ouverte à tous les niveaux</span> de pratique.
-                        </Text>
+						<Text>
+							Que vous soyez compétiteur ou amateur, vous bénéficierez d&apos;
+							<span className="font-semibold">infrastructures modernes</span>,
+							de <span className="font-semibold">créneaux variés</span> adaptées
+							à vos besoins, et d&apos;un esprit sans prise de tête. 😎
+						</Text>
 
-                        <Text>
-                            Nous offrons un cadre chaleureux où l’ambiance familiale et conviviale favorise à la fois le plaisir de jouer et la progression.
-                        </Text>
+						<Text>
+							De plus, nos <span className="underline">soirées régulières</span>{" "}
+							🎉 sont l&apos;occasion idéale de renforcer les liens et de{" "}
+							<span className="font-semibold">
+								partager des moments de détente
+							</span>{" "}
+							en dehors des terrains. Ici, c&apos;est avant tout le plaisir du
+							sport et du partage qui prime !
+						</Text>
+					</Bloc>
 
-                        <Text>
-                            Que vous soyez compétiteur ou amateur, vous bénéficierez d&apos;<span className="font-semibold">infrastructures modernes</span>, de <span className="font-semibold">créneaux variés</span> adaptées à vos besoins, et d&apos;un esprit sans prise de tête. 😎
-                        </Text>
+					<Bloc variant="outline">
+						<Text variant="h4">
+							Profitez de <span className="text-rouge">3</span> séances d’essai
+							sans engagement avant de vous inscrire !
+						</Text>
+					</Bloc>
 
-                        <Text>
-                            De plus, nos <span className="underline">soirées régulières</span> 🎉 sont l&apos;occasion idéale de renforcer les liens et de <span className="font-semibold">partager des moments de détente</span> en dehors des terrains. Ici, c&apos;est avant tout le plaisir du sport et du partage qui prime !
-                        </Text>
-                    </Bloc>
+					<Bloc className="gap-[15px]">
+						<Text variant="h4">Assurance &amp; couverture</Text>
 
-                    <Bloc variant="outline">
-                        <Text variant="h4">
-                            Profitez de <span className="text-rouge">3</span> séances d’essai sans engagement avant de vous inscrire !
-                        </Text>
-                    </Bloc>
+						<Text>
+							En adhérant à la section badminton,{" "}
+							<span className="font-semibold">
+								vous bénéficiez automatiquement de la Responsabilité Civile
+							</span>{" "}
+							(RC) souscrite par le CACBO auprès de Groupama.
+						</Text>
 
-                    <Bloc className="gap-[15px]">
-                        <Text variant="h4">
-                            Assurance &amp; couverture
-                        </Text>
+						<Text>
+							Elle couvre les{" "}
+							<span className="font-semibold">
+								dommages corporels ou matériels que vous pourriez causer
+								involontairement à un tiers
+							</span>{" "}
+							(autre joueur, matériel du gymnase) lors de nos créneaux (cette
+							assurance ne couvre pas vos propres blessures en l&apos;absence de
+							tiers responsable).
+						</Text>
+					</Bloc>
+				</Parent>
 
-                        <Text>
-                            En adhérant à la section badminton, <span className="font-semibold">vous bénéficiez automatiquement de la Responsabilité Civile</span> (RC) souscrite par le CACBO auprès de Groupama.
-                        </Text>
+				<Parent>
+					<Text variant="h2" color="rouge">
+						Comment ?
+					</Text>
 
-                        <Text>
-                            Elle couvre les <span className="font-semibold">dommages corporels ou matériels que vous pourriez causer involontairement à un tiers</span> (autre joueur, matériel du gymnase) lors de nos créneaux (cette assurance ne couvre pas vos propres blessures en l&apos;absence de tiers responsable).
-                        </Text>
-                    </Bloc>
-                </Parent>
+					<Bloc variant="outline">
+						<Text variant="h4">
+							Adhésion simplifiée : inscrivez-vous en ligne ! 🌐
+						</Text>
+						<Text>Inscrivez-vous facilement en ligne grâce à HelloAsso !</Text>
 
-                <Parent>
+						<Text>
+							Évitez l’impression des documents : remplissez le formulaire et
+							réglez votre cotisation directement sur la plateforme, en toute
+							simplicité.
+						</Text>
 
-                    <Text variant="h2" color="rouge">
-                        Comment ?
-                    </Text>
+						<Button
+							href="https://www.helloasso.com/associations/cacbo-badminton"
+							icon="external"
+						>
+							S’inscrire en ligne
+						</Button>
+					</Bloc>
 
-                    <Bloc variant="outline">
-                        <Text variant="h4">
-                            Adhésion simplifiée : inscrivez-vous en ligne ! 🌐
-                        </Text>
-                        <Text>
-                            Inscrivez-vous facilement en ligne grâce à HelloAsso !
-                        </Text>
+					<Bloc title="Documents nécessaires : préparez votre dossier 📋">
+						<Text>
+							Pour valider votre inscription, nous aurons besoin de quelques
+							documents indispensables :
+						</Text>
 
-                        <Text>
-                            Évitez l’impression des documents : remplissez le formulaire et réglez votre cotisation directement sur la plateforme, en toute simplicité.
-                        </Text>
+						<List>
+							<ListElement>
+								<span className="font-semibold">Formulaire d’inscription</span>{" "}
+								: à remplir pour nous transmettre vos informations essentielles.
+							</ListElement>
+							<ListElement>
+								<span className="font-semibold">Questionnaire de santé</span> :
+								à compléter pour évaluer votre condition physique.{" "}
+								<span className="text-rouge">
+									Si vous répondez positivement à une ou plusieurs questions
+								</span>
+								, un <span className="font-semibold">certificat médical</span>{" "}
+								daté de moins de 6 mois sera requis.
+							</ListElement>
+						</List>
 
-                        <Button href="https://www.helloasso.com/associations/cacbo-badminton" icon="external">
-                            S’inscrire en ligne
-                        </Button>
-                    </Bloc>
+						<Text>
+							Ces documents sont essentiels pour garantir la sécurité de tous
+							nos adhérents et assurer une pratique du badminton en toute
+							sérénité. Pensez à les préparer pour faciliter votre inscription !
+						</Text>
+					</Bloc>
 
-                    <Bloc title="Documents nécessaires : préparez votre dossier 📋">
+					<Bloc>
+						<Text variant="h3">
+							Fichiers à télécharger (si inscription papier)
+						</Text>
+						<Documents
+							href="/adherer/Questionnaire santé FFBaD (page 1).pdf"
+							content="Questionnaire de santé (obligatoire)"
+						/>
+						<Documents
+							href="/adherer/Fiche d'inscription 26-27 (club).pdf"
+							content="Formulaire d’inscription"
+						/>
+						<Documents
+							href="/adherer/Certificat médical (club).pdf"
+							content="Certificat médical (à fournir si le questionnaire est positif)"
+						/>
+					</Bloc>
+				</Parent>
 
-                        <Text>
-                            Pour valider votre inscription, nous aurons besoin de quelques documents indispensables :
-                        </Text>
+				<Parent>
+					<Text variant="h2" color="rouge">
+						Où et à quelle heure ?
+					</Text>
 
-                        <List>
-                            <ListElement><span className="font-semibold">Formulaire d’inscription</span> : à remplir pour nous transmettre vos informations essentielles.</ListElement>
-                            <ListElement><span className="font-semibold">Questionnaire de santé</span> : à compléter pour évaluer votre condition physique. <span className="text-rouge">Si vous répondez positivement à une ou plusieurs questions</span>, un <span className="font-semibold">certificat médical</span> daté de moins de 6 mois sera requis.</ListElement>
-                        </List>
+					<Bloc>
+						<Text>
+							Nous nous situons au Complexe sportif Philippe Madrelle, à
+							Carbon-Blanc (24 rue Pasteur). 📍
+						</Text>
 
-                        <Text>
-                            Ces documents sont essentiels pour garantir la sécurité de tous nos adhérents et assurer une pratique du badminton en toute sérénité. Pensez à les préparer pour faciliter votre inscription !
-                        </Text>
+						<Text variant="h4">Voies d’accès :</Text>
 
-                    </Bloc>
+						<Text>
+							🚗{" "}
+							<span className="font-semibold text-rouge-pale">
+								En voiture :
+							</span>
+						</Text>
 
-                    <Bloc>
-                        <Text variant="h3">
-                            Fichiers à télécharger (si inscription papier)
-                        </Text>
-                        <Documents href="/adherer/Questionnaire santé FFBaD (page 1).pdf" content="Questionnaire de santé (obligatoire)" />
-                        <Documents href="/adherer/Fiche d'inscription 26-27 (club).pdf" content="Formulaire d’inscription" />
-                        <Documents href="/adherer/Certificat médical (club).pdf" content="Certificat médical (à fournir si le questionnaire est positif)" />
-                    </Bloc>
-                </Parent>
+						<List>
+							<ListElement>
+								Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26
+								vers Carbon-Blanc
+							</ListElement>
+							<ListElement>
+								Suivez la D10 jusqu&apos;à la Rue Pasteur
+							</ListElement>
+						</List>
 
+						<Text>
+							🚌 <span className="font-semibold text-rouge-pale">En bus :</span>
+						</Text>
 
-                <Parent>
-                    <Text variant="h2" color="rouge">
-                        Où et à quelle heure ?
-                    </Text>
+						<List>
+							<ListElement>
+								Ligne 93 (TBM) : Arrêt Pasteur à proximité du complexe
+							</ListElement>
+							<ListElement>
+								Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)
+							</ListElement>
+						</List>
 
-                    <Bloc>
-                        <Text>
-                            Nous nous situons au Complexe sportif Philippe Madrelle, à Carbon-Blanc (24 rue Pasteur). 📍
-                        </Text>
+						<Text>
+							🚋{" "}
+							<span className="font-semibold text-rouge-pale">En tram :</span>
+						</Text>
 
-                        <Text variant="h4">
-                            Voies d’accès :
-                        </Text>
+						<List>
+							<ListElement>
+								Ligne A du tram à direction de La Gardette (puis 10-15 min de
+								marche)
+							</ListElement>
+						</List>
 
-                        <Text>
-                            🚗 <span className="font-semibold text-rouge-pale">En voiture :</span>
-                        </Text>
+						<Image
+							src="/adherer/map.png"
+							alt="Carte d'accès au complexe sportif Philippe Madrelle"
+							width={2116}
+							height={1000}
+							sizes="100vw"
+							className="w-full h-auto rounded-xl"
+						/>
+					</Bloc>
 
-                        <List>
-                            <ListElement>Depuis le centre de Bordeaux, prenez la N230, puis la sortie 26 vers Carbon-Blanc</ListElement>
-                            <ListElement>Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
-                        </List>
+					<Bloc variant="outline">
+						<Text variant="h4">
+							Créneaux flexibles : jouez quand vous voulez ! ⏰
+						</Text>
 
-                        <Text>
-                            🚌 <span className="font-semibold text-rouge-pale">En bus :</span>
-                        </Text>
+						<Creneaux jours="minuscule" />
+					</Bloc>
+				</Parent>
 
-                        <List>
-                            <ListElement>Ligne 93 (TBM) : Arrêt Pasteur à proximité du complexe</ListElement>
-                            <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
-                        </List>
+				<Parent>
+					<Text variant="h2" color="rouge">
+						À quel prix ?
+					</Text>
 
-                        <Text>
-                            🚋 <span className="font-semibold text-rouge-pale">En tram :</span>
-                        </Text>
+					<Bloc variant="outline">
+						<Text variant="h3">
+							Tarifs avantageux : adhérez à prix réduits ! 💶
+						</Text>
 
-                        <List>
-                            <ListElement>Ligne A du tram à direction de La Gardette (puis 10-15 min de marche)</ListElement>
-                        </List>
+						<Text>
+							Nous vous proposons deux formules adaptées à vos besoins :
+						</Text>
 
-                        <Image
-                            src="/adherer/map.png"
-                            alt="Carte d'accès au complexe sportif Philippe Madrelle"
-                            width={2116}
-                        height={1000}
-                        sizes="100vw"
-                        className="w-full h-auto rounded-xl"
-                        />
-                    </Bloc>
+						<List>
+							<ListElement>
+								<span className="font-semibold">Formule adulte</span> :{" "}
+								<span className="text-rouge-pale">50 €</span> par personne.
+							</ListElement>
+							<ListElement>
+								<span className="font-semibold">Formule couple</span> :{" "}
+								<span className="text-rouge-pale">90 €</span> pour 2 personnes,
+								idéale pour venir jouer à deux, que vous soyez en couple ou
+								simplement entre amis.
+							</ListElement>
+						</List>
+					</Bloc>
 
-                    <Bloc variant="outline">
+					<Bloc>
+						<Text variant="h4">
+							Comment offrons-nous des prix aussi bas ? 🤑
+						</Text>
 
-                        <Text variant="h4">
-                            Créneaux flexibles : jouez quand vous voulez ! ⏰
-                        </Text>
+						<Text>
+							Nos tarifs sont particulièrement attractifs car notre club
+							n&apos;est pas affilié à la Fédération Française de Badminton
+							(FFBaD).
+						</Text>
 
-                        <Creneaux jours="minuscule" />
-                    </Bloc>
-                </Parent>
+						<Text>
+							Cela signifie que{" "}
+							<span className="text-rouge-pale font-semibold!">
+								vous ne payez que la cotisation au club
+							</span>
+							, sans les coûts additionnels pour la licence fédérale, ni les
+							contributions à la Ligue et au Comité départemental.
+						</Text>
 
+						<Text>
+							Profitez d&apos;une adhésion simple et accessible, pour jouer en
+							toute liberté, à un prix imbattable ! 💸
+						</Text>
+					</Bloc>
+				</Parent>
+			</Content>
+		</PageLayout>
+	);
+};
 
-                <Parent>
-                    <Text variant="h2" color="rouge">
-                        À quel prix ?
-                    </Text>
-
-                    <Bloc variant="outline">
-                        <Text variant="h3">
-                            Tarifs avantageux : adhérez à prix réduits ! 💶
-                        </Text>
-
-                        <Text>
-                            Nous vous proposons deux formules adaptées à vos besoins :
-                        </Text>
-
-                        <List>
-                            <ListElement><span className="font-semibold">Formule adulte</span> : <span className="text-rouge-pale">50 €</span> par personne.</ListElement>
-                            <ListElement><span className="font-semibold">Formule couple</span> : <span className="text-rouge-pale">90 €</span> pour 2 personnes, idéale pour venir jouer à deux, que vous soyez en couple ou simplement entre amis.</ListElement>
-                        </List>
-                    </Bloc>
-
-                    <Bloc>
-                        <Text variant="h4">
-                            Comment offrons-nous des prix aussi bas ? 🤑
-                        </Text>
-
-                        <Text>
-                            Nos tarifs sont particulièrement attractifs car notre club n&apos;est pas affilié à la Fédération Française de Badminton (FFBaD).
-                        </Text>
-
-                        <Text>
-                            Cela signifie que <span className="text-rouge-pale font-semibold!">vous ne payez que la cotisation au club</span>, sans les coûts additionnels pour la licence fédérale, ni les contributions à la Ligue et au Comité départemental.
-                        </Text>
-
-                        <Text>
-                            Profitez d&apos;une adhésion simple et accessible, pour jouer en toute liberté, à un prix imbattable ! 💸
-                        </Text>
-                    </Bloc>
-                </Parent>
-
-
-            </Content>
-        </PageLayout>
-    )
-}
-
-export default Adherer
+export default Adherer;

@@ -26,7 +26,9 @@ const Partenaire = ({ image, name, role }: PartenaireProps) => {
 
 			<div className="flex flex-col gap-2">
 				<div className="flex flex-col">
-					<Text as="span" variant="h3" color="rouge">{name}</Text>
+					<Text as="span" variant="h3" color="rouge">
+						{name}
+					</Text>
 				</div>
 
 				<Text>{role}</Text>

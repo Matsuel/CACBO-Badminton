@@ -13,41 +13,41 @@ export const metadata: Metadata = {
 };
 
 const Partenaires = () => {
+	return (
+		<PageLayout>
+			<Header
+				title="PARTENAIRES"
+				subtitle="Ils nous soutiennent pour faire grandir notre club !"
+			/>
 
-    return (
-        <PageLayout>
+			<Banner
+				src="/partenaires/1.png"
+				alt="Photo devant une table remplit de volants"
+			/>
 
-            <Header
-                title="PARTENAIRES"
-                subtitle="Ils nous soutiennent pour faire grandir notre club !"
-            />
+			<Content>
+				<Bloc>
+					<Text>
+						Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce
+						à leur soutien, nous pouvons offrir à nos membres les meilleures
+						conditions pour pratiquer le badminton. Découvrez ceux qui nous
+						accompagnent dans cette belle aventure !
+					</Text>
+				</Bloc>
 
-            <Banner src="/partenaires/1.png" alt="Photo devant une table remplit de volants" />
-
-            <Content>
-
-                <Bloc>
-                    <Text>
-                        Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous accompagnent dans cette belle aventure !
-                    </Text>
-                </Bloc>
-
-                <div className='w-full h-auto flex flex-col md:flex-row flex-wrap items-start justify-start gap-5'>
-
-                    {partenaires.map(partenaire => (
-                        <Partenaire
-                            key={partenaire.name}
-                            name={partenaire.name}
-                            role={partenaire.role}
-                            image={partenaire.image}
-                        />
-                    ))}
-
-                </div>
-            </Content>
-
-        </PageLayout>
-    );
+				<div className="w-full h-auto flex flex-col md:flex-row flex-wrap items-start justify-start gap-5">
+					{partenaires.map((partenaire) => (
+						<Partenaire
+							key={partenaire.name}
+							name={partenaire.name}
+							role={partenaire.role}
+							image={partenaire.image}
+						/>
+					))}
+				</div>
+			</Content>
+		</PageLayout>
+	);
 };
 
 export default Partenaires;

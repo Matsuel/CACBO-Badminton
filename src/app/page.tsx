@@ -57,8 +57,14 @@ export default function Home() {
 
 				<Caroussel
 					images={[
-						{ src: "/acceuil/caroussel1.png", alt: "Match de double au gymnase du club" },
-						{ src: "/acceuil/caroussel2.png", alt: "Joueur en plein échange au gymnase" },
+						{
+							src: "/acceuil/caroussel1.png",
+							alt: "Match de double au gymnase du club",
+						},
+						{
+							src: "/acceuil/caroussel2.png",
+							alt: "Joueur en plein échange au gymnase",
+						},
 					]}
 					title="Notre club en photos"
 				/>
@@ -73,8 +79,8 @@ export default function Home() {
 
 					<Text>
 						Notre complexe sportif se situe au{" "}
-						<span className="font-semibold">24 rue Pasteur</span> à Carbon-Blanc.
-						📍
+						<span className="font-semibold">24 rue Pasteur</span> à
+						Carbon-Blanc. 📍
 					</Text>
 
 					<Button href="/contact" icon="external">
@@ -161,8 +167,13 @@ export default function Home() {
 				/>
 
 				<Bloc variant="outline">
-					<Text variant="h3" color="rouge" className="text-[20px] leading-5 font-bold">
-						Eh, qu’est-ce t’attends ? <span className="text-noir">Rejoins-nous !</span> 😉
+					<Text
+						variant="h3"
+						color="rouge"
+						className="text-[20px] leading-5 font-bold"
+					>
+						Eh, qu’est-ce t’attends ?{" "}
+						<span className="text-noir">Rejoins-nous !</span> 😉
 					</Text>
 
 					<Text>

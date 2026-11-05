@@ -1,20 +1,19 @@
-import type React from 'react';
-import { cn } from '@/utils/cn';
+import type React from "react";
+import { cn } from "@/utils/cn";
 
 interface ListProps extends React.HTMLAttributes<HTMLUListElement> {
-    children: React.ReactNode;
+	children: React.ReactNode;
 }
 
-const List = ({
-    className,
-    children,
-    ...props
-}: ListProps) => {
-    return (
-        <ul className={cn("list-disc pl-7 flex flex-col gap-list",className)} {...props}>
-            {children}
-        </ul>
-    )
-}
+const List = ({ className, children, ...props }: ListProps) => {
+	return (
+		<ul
+			className={cn("list-disc pl-7 flex flex-col gap-list", className)}
+			{...props}
+		>
+			{children}
+		</ul>
+	);
+};
 
-export default List
+export default List;
