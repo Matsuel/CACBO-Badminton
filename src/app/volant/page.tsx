@@ -178,7 +178,7 @@ const Regles = () => {
                         </Text>
 
                         <Text>
-                            Enfin, <span className="font-semibold">Babolat</span>, marque française bien implantée, propose des gammes variées qui séduisent aussi bien les joueurs loisirs que compétitifs.
+                            <span className="font-semibold">Babolat</span>, marque française bien implantée, propose des gammes variées qui séduisent aussi bien les joueurs loisirs que compétitifs.
                         </Text>
 
                         <Text>

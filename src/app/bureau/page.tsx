@@ -84,7 +84,10 @@ const Bureau = () => {
                         </Text>
                     </Bloc>
 
-                    <Bloc subtitle="Les documents officiels">
+                    <Bloc>
+                        <Text variant="h3">
+                            Les documents officiels
+                        </Text>
                         <Documents href="/bureau/Statuts + RI (CACBO).pdf" content="Statuts & règlement intérieur du Club omnisports (CACBO)" />
                         <Documents href="/bureau/Règlement intérieur (club - 2026).pdf" content="Règlement intérieur de la section badminton" />
                     </Bloc>

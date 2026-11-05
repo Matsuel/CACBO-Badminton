@@ -54,8 +54,9 @@
   --leading-0: 0;
   --gap-30: 30px;
   --gap-header: 50px;
-  --gap-body: 40px;
-  --gap-content: 12px;
+  --gap-body: 50px;
+  --gap-content: 15px;
+  --gap-list: 10px;
 }
 
 /*

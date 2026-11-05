@@ -20,25 +20,15 @@ const blocStyles = cva(
 
 interface BlocProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof blocStyles> {
     title?: string;
-    subtitle?: string;
 }
 
-const Bloc = ({ className, children, title, subtitle, variant, ...props }: BlocProps) => {
+const Bloc = ({ className, children, title, variant, ...props }: BlocProps) => {
     return (
         <div className={cn(blocStyles({ variant }), className)} {...props}>
-            {(title || subtitle) && (
-                <div className="flex flex-col">
-                    {title && (
-                        <Text variant="h3" color="rouge">
-                            {title}
-                        </Text>
-                    )}
-                    {subtitle && (
-                        <span className="text-noir font-space-grotesk text-xl leading-4 font-semibold">
-                            {subtitle}
-                        </span>
-                    )}
-                </div>
+            {title && (
+                <Text variant="h3" color="rouge">
+                    {title}
+                </Text>
             )}
             {children}
         </div>

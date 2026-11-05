@@ -5,6 +5,7 @@ import Header from "@/components/Header"
 import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
+import Terrain from "@/components/Terrain";
 import Parent from "@/components/Parent"
 import Banner from "@/components/Banner";
 import Text from "@/components/Text";
@@ -54,7 +55,7 @@ const Regles = () => {
                     </Bloc>
 
                     <Bloc>
-                        <Text variant="h3">
+                        <Text variant="h4">
                             ℹ️ Exemple :
                         </Text>
 
@@ -100,6 +101,11 @@ const Regles = () => {
                             <ListElement>En jeu, l’intégralité du terrain, y compris les couloirs latéraux, est utilisée.</ListElement>
                         </List>
                     </Bloc>
+
+                    <Terrain type="simple" />
+
+                    <Terrain type="double" />
+
                 </Parent>
 
                 <Parent>

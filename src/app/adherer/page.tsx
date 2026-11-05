@@ -93,7 +93,10 @@ const Adherer = () => {
                         Comment ?
                     </Text>
 
-                    <Bloc subtitle="Adhésion simplifiée : inscrivez-vous en ligne ! 🌐" variant="outline">
+                    <Bloc variant="outline">
+                        <Text variant="h4">
+                            Adhésion simplifiée : inscrivez-vous en ligne ! 🌐
+                        </Text>
                         <Text>
                             Inscrivez-vous facilement en ligne grâce à HelloAsso !
                         </Text>
@@ -124,7 +127,10 @@ const Adherer = () => {
 
                     </Bloc>
 
-                    <Bloc subtitle="Fichiers à télécharger (si inscription papier)">
+                    <Bloc>
+                        <Text variant="h3">
+                            Fichiers à télécharger (si inscription papier)
+                        </Text>
                         <Documents href="/adherer/Questionnaire santé FFBaD (page 1).pdf" content="Questionnaire de santé (obligatoire)" />
                         <Documents href="/adherer/Fiche d'inscription 26-27 (club).pdf" content="Formulaire d’inscription" />
                         <Documents href="/adherer/Certificat médical (club).pdf" content="Certificat médical (à fournir si le questionnaire est positif)" />
@@ -146,8 +152,8 @@ const Adherer = () => {
                             Voies d’accès :
                         </Text>
 
-                        <Text className="text-rouge">
-                            🚗  En voiture :
+                        <Text>
+                            🚗 <span className="font-semibold text-rouge-pale">En voiture :</span>
                         </Text>
 
                         <List>
@@ -155,8 +161,8 @@ const Adherer = () => {
                             <ListElement>Suivez la D10 jusqu&apos;à la Rue Pasteur</ListElement>
                         </List>
 
-                        <Text className="text-rouge">
-                            🚌  En bus :
+                        <Text>
+                            🚌 <span className="font-semibold text-rouge-pale">En bus :</span>
                         </Text>
 
                         <List>
@@ -164,8 +170,8 @@ const Adherer = () => {
                             <ListElement>Ligne 7 (TBM) : Arrêt La Gardette (10-15 minutes à pied)</ListElement>
                         </List>
 
-                        <Text className="text-rouge">
-                            🚋  En tram :
+                        <Text>
+                            🚋 <span className="font-semibold text-rouge-pale">En tram :</span>
                         </Text>
 
                         <List>
@@ -188,7 +194,7 @@ const Adherer = () => {
                             Créneaux flexibles : jouez quand vous voulez ! ⏰
                         </Text>
 
-                        <Creneaux />
+                        <Creneaux jours="minuscule" />
                     </Bloc>
                 </Parent>
 

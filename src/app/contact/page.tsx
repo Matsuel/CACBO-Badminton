@@ -85,7 +85,10 @@ const Contact = () => {
                         className="w-full h-auto rounded-xl"
                     />
 
-                    <Bloc subtitle="Nos créneaux">
+                    <Bloc>
+                        <Text variant="h4">
+                            Nos créneaux
+                        </Text>
                         <Creneaux variant="pastilles" />
                     </Bloc>
                 </Parent>

@@ -42,7 +42,7 @@ export default function Home() {
 						partage.
 					</Text>
 
-					<Text variant="h4" color="rouge">
+					<Text variant="h4" color="rouge-pale">
 						Que vous soyez compétiteur ou simplement en quête de loisirs, vous
 						trouverez chez nous un cadre chaleureux pour pratiquer sans
 						pression.
@@ -69,7 +69,7 @@ export default function Home() {
 				>
 					<Text variant="h4">Nos créneaux sont les :</Text>
 
-					<Creneaux strong />
+					<Creneaux strong jours="pluriel" />
 
 					<Text>
 						Notre complexe sportif se situe au{" "}
@@ -98,10 +98,10 @@ export default function Home() {
 
 					<List>
 						<ListElement>
-							<span className="font-bold">50 €</span> pour un adulte
+							<span className="font-semibold">50 €</span> pour un adulte
 						</ListElement>
 						<ListElement>
-							<span className="font-bold">90 €</span> pour un couple
+							<span className="font-semibold">90 €</span> pour un couple
 						</ListElement>
 					</List>
 
@@ -160,11 +160,11 @@ export default function Home() {
 					description="Ici, on joue, on rigole et on progresse ensemble !"
 				/>
 
-				<Bloc
-					title="Eh, qu’est-ce t’attends ?"
-					subtitle="Rejoins-nous ! 😉"
-					variant="outline"
-				>
+				<Bloc variant="outline">
+					<Text variant="h3" color="rouge" className="text-[20px] leading-5 font-bold">
+						Eh, qu’est-ce t’attends ? <span className="text-noir">Rejoins-nous !</span> 😉
+					</Text>
+
 					<Text>
 						Fais partie de l&apos;aventure : rejoins une équipe où convivialité
 						rime avec passion.

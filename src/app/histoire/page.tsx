@@ -25,7 +25,7 @@ const Histoire = () => {
 			<Content>
 
 				<Parent>
-					<Text className="text-[24px] leading-5 px-5">
+					<Text className="text-[24px] leading-[22px] px-5">
 						Fondé en 2007, la section badminton du CACBO a grandi au rythme de
 						ses bénévoles, de ses joueurs et des nombreuses générations qui ont
 						fait vivre la section. Année après année, le club s’est construit
@@ -33,7 +33,7 @@ const Histoire = () => {
 						un engagement associatif fort.
 					</Text>
 
-					<Text className="text-[24px] leading-5 px-5">
+					<Text className="text-[24px] leading-[22px] px-5">
 						À travers cette page, nous revenons sur les grandes étapes qui ont
 						marqué notre histoire, des débuts modestes jusqu’à la réouverture du
 						club en 2022, symbole d’un véritable renouveau.
@@ -41,7 +41,7 @@ const Histoire = () => {
 				</Parent>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Les prémices du club (2007-2010)</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Les prémices du club (2007-2010)</Text>
 
 					<Bloc>
 						<Text>
@@ -51,7 +51,7 @@ const Histoire = () => {
 							Laurent THOMAS (secrétaire) et Julien LARCHER (trésorier). 🖋️
 						</Text>
 
-						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-4">
+						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-[18px]">
 							L’objectif : développer une pratique loisir accessible à tous,
 							dans une ambiance conviviale et respectueuse.
 						</p>
@@ -77,7 +77,7 @@ const Histoire = () => {
 
 					</Bloc>
 
-					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-5">
+					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 						Les responsables notent déjà un fort engouement et la nécessité d’un encadrement de qualité pour les jeunes, amorçant la création de l’école de badminton dès la saison suivante pour les plus jeunes. 🧒
 					</p>
 
@@ -101,7 +101,7 @@ const Histoire = () => {
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-poppins font-semibold text-2xl text-rouge-pale leading-5">
+				<p className="p-5 font-poppins font-semibold text-2xl text-rouge-pale leading-[22px]">
 					Les premières années sont marquées par un fort engouement, une gestion
 					saine et une belle cohésion autour des valeurs de partage et
 					d’apprentissage.
@@ -114,7 +114,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Une nouvelle dynamique (2011-2013)</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Une nouvelle dynamique (2011-2013)</Text>
 
 					<Bloc>
 						<Text>
@@ -126,7 +126,7 @@ const Histoire = () => {
 							prend la suite d’Ahmed KASSIM.
 						</Text>
 
-						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-4">
+						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-[18px]">
 							Sous sa présidence, le club entre dans une véritable phase de
 							structuration et de modernisation. 🔝
 						</p>
@@ -152,7 +152,7 @@ const Histoire = () => {
 
 					</Bloc>
 
-					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-5">
+					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 						Le club obtient sa première labellisation École Française de
 						Badminton (EFB) 1 étoile lors de la saison 2010/11, une
 						distinction qu’il conservera sept saisons consécutives, témoignant
@@ -185,7 +185,7 @@ const Histoire = () => {
 							(Ambès, Yvrac, Sainte-Eulalie, Bassens…).
 						</Text>
 
-						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-4">
+						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-[18px]">
 							Sur le plan sportif, la dynamique est remarquable.
 						</p>
 
@@ -218,7 +218,7 @@ const Histoire = () => {
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-5">
+				<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 					Lors de cette même saison, l’équipe senior mixte du club réalise une performance majeure en remportant le titre de Champion du District libournais. 🏆
 				</p>
 
@@ -232,7 +232,7 @@ const Histoire = () => {
 					</Text>
 				</Bloc>
 
-				<p className="p-5 font-poppins font-bold text-2xl text-rouge-pale leading-5">
+				<p className="p-5 font-poppins font-semibold text-2xl text-rouge-pale leading-[22px]">
 					Une ère de renouveau et de cohésion, où la rigueur et la convivialité ont permis de poser des bases solides pour l’avenir du club.
 				</p>
 
@@ -243,7 +243,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Une période de stabilité (2013-2015)</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Une période de stabilité (2013-2015)</Text>
 
 					<Bloc>
 						<Text>
@@ -278,7 +278,7 @@ const Histoire = () => {
 						</Text>
 					</Bloc>
 
-					<p className="p-5 font-poppins font-bold text-2xl text-rouge-pale leading-5">
+					<p className="p-5 font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 						L’équipe senior mixte remporte pour la deuxième fois consécutive le titre de Champion du District libournais et finit 5e en poule interdistrict (sur 38 équipes engagées). 🏆
 					</p>
 
@@ -290,7 +290,7 @@ const Histoire = () => {
 							à cause du développement d’autres sections du CACBO.
 						</Text>
 
-						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-4">
+						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-[18px]">
 							Sous son impulsion, le club oriente davantage son activité vers la
 							compétition et les interclubs. ⚔️
 						</p>
@@ -326,7 +326,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">
+					<Text variant="h2" color="rouge" className="leading-6">
 						Une transition marquée par les changements (2015-2018)
 					</Text>
 
@@ -346,7 +346,7 @@ const Histoire = () => {
 						</Text>
 					</Bloc>
 
-					<p className="font-poppins font-normal text-xl text-rouge-pale leading-4">
+					<p className="font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 						Les vétérans se classent 2e en division 2 (district libournais) durant la saison 2014/15 et sont récompensés par le COGIBAD (comité départemental). 🥈
 					</p>
 
@@ -396,7 +396,7 @@ const Histoire = () => {
 							supprimée.
 						</Text>
 
-						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-4">
+						<p className="font-poppins font-semibold text-xl text-rouge-pale leading-[18px]">
 							La situation est aggravée par la fermeture définitive du gymnase
 							Gaston Lacoste, berceau historique du club, en juillet 2018 pour
 							raisons de sécurité.
@@ -419,7 +419,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">La renaissance de la section (depuis 2022)</Text>
+					<Text variant="h2" color="rouge" className="leading-6">La renaissance de la section (depuis 2022)</Text>
 
 					<Bloc>
 						<Text>
@@ -452,7 +452,7 @@ const Histoire = () => {
 						</Text>
 					</Bloc>
 
-					<p className="font-poppins font-normal text-xl text-rouge-pale leading-4">
+					<p className="font-poppins font-normal text-2xl text-rouge-pale leading-[22px]">
 						Ce retour marque une volonté claire de renouer avec les valeurs qui ont façonné le club à ses débuts, loin des tensions et de la recherche de performance qui avaient progressivement éloigné les adhérents du loisir pur.
 					</p>
 
@@ -479,7 +479,7 @@ const Histoire = () => {
 					</Bloc>
 				</Parent>
 
-				<p className="p-5 font-poppins font-semibold text-2xl text-rouge-pale leading-5">
+				<p className="p-5 font-poppins font-semibold text-2xl text-rouge-pale leading-[22px]">
 					Aujourd’hui, le CACBO Badminton rassemble une centaine d’adhérents de
 					tous niveaux, et perpétue l’esprit de 2007 : un lieu où le sport rime
 					avec détente, entraide et passion.
@@ -492,7 +492,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Notre palmarès</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Notre palmarès</Text>
 
 					<Bloc>
 						<Text variant="h4" color="rouge-pale">
@@ -529,7 +529,7 @@ const Histoire = () => {
 				</Parent>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Nos présidents depuis 2007</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Nos présidents depuis 2007</Text>
 
 					<Bloc>
 						<President date="2006-2011" name="Ahmed KASSIM" />
@@ -549,69 +549,69 @@ const Histoire = () => {
 				</Parent>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Quelques chiffres clés</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Quelques chiffres clés</Text>
 
 					<Bloc className="items-center">
-						<Text variant="h2">2007</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">2007</Text>
 
 						<Text>
 							C’est l’année de création du club, fondé le 15 mars par trois
 							passionnés.
 						</Text>
 
-						<Text variant="h2">7</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">7</Text>
 
 						<Text>
 							Nombre de présidents qui se sont succédés depuis 2007.
 						</Text>
 
-						<Text variant="h2">2022</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">2022</Text>
 
 						<Text>
 							C’est l’année de renaissance du club (le 19 septembre), quatre ans
 							après sa mise en sommeil.
 						</Text>
 
-						<Text variant="h2">71</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">71</Text>
 
 						<Text>
 							Nombre d’adhérents inscrits dès la première saison du club, un
 							départ prometteur pour une nouvelle section.
 						</Text>
 
-						<Text variant="h2">1056 m²</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">1056 m²</Text>
 
 						<Text>Surface de la salle Philippe Madrelle.</Text>
 
-						<Text variant="h2">98</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">98</Text>
 
 						<Text>
 							Moyenne d’adhérents par saison avant la mise en sommeil du club en
 							2018.
 						</Text>
 
-						<Text variant="h2">7</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">7</Text>
 
 						<Text>
 							C’est le nombre de saisons consécutives durant lesquelles le club
 							a été labellisé EFB – 1 étoile.
 						</Text>
 
-						<Text variant="h2">113</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">113</Text>
 
 						<Text>
 							Nombre record d’adhérents atteint par le club lors de la saison
 							2016/17.
 						</Text>
 
-						<Text variant="h2">6</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">6</Text>
 
 						<Text>
 							C’est le nombre de saisons où le club a comptabilisé plus de 100
 							adhésions.
 						</Text>
 
-						<Text variant="h2">86</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">86</Text>
 
 						<Text>
 							Moyenne d’adhérents par saison depuis la réouverture en 2022 — une
@@ -619,7 +619,7 @@ const Histoire = () => {
 							Carbon-Blanc.
 						</Text>
 
-						<Text variant="h2">7</Text>
+						<Text as="p" color="rouge-pale" className="font-semibold text-[24px] leading-[18px]">7</Text>
 
 						<Text>
 							C’est le nombre de terrains disponibles aujourd’hui, soit deux de
@@ -629,11 +629,11 @@ const Histoire = () => {
 				</Parent>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Et le CACBO dans tout ça ?</Text>
+					<Text variant="h2" color="rouge" className="leading-6">Et le CACBO dans tout ça ?</Text>
 
 					<Bloc>
 						<Text>
-							<span className="font-semibold text-rouge-pale">
+							<span className="font-semibold">
 								Le Club Athlétique CarbonBlanais Omnisports (CACBO) est né le 25
 								mai 1972
 							</span>{" "}
@@ -643,16 +643,16 @@ const Histoire = () => {
 						</Text>
 
 						<Text>
-							<span className="font-semibold text-rouge-pale">
+							<span className="font-semibold">
 								Il résulte de la fusion entre le Club Athlétique CarbonBlanais
 							</span>{" "}
 							(CACB), fondé le 1er octobre 1925 par Gaston Lacoste (le club de
 							football de la ville),{" "}
-							<span className="font-semibold text-rouge-pale">
+							<span className="font-semibold">
 								le Club Léo Lagrange
 							</span>
 							, regroupant déjà plusieurs sections{" "}
-							<span className="font-semibold text-rouge-pale">
+							<span className="font-semibold">
 								et la Pétanque carbonblanaise
 							</span>
 							. Simon Cypel (1er adjoint au maire) en devient le premier

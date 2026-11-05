@@ -12,7 +12,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="w-full flex flex-col gap-[50px] pb-25 bg-blanc-casse">
+        <footer className="w-full flex flex-col gap-[50px] pb-[50px] bg-blanc-casse">
             <div className="w-full flex flex-col gap-5 px-5 py-[25px] bg-rouge">
                 <Text as="p" variant="h3" color="blanc">
                     Suivez-nous sur nos réseaux
