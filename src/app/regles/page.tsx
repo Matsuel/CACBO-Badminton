@@ -1,14 +1,17 @@
-import Image from "next/image"
+import type { Metadata } from "next";
 import Bloc from "@/components/Bloc"
-import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
-import SingleTitle from "@/components/SingleTitle"
-import { textVariants } from "@/constantes/theme"
+import Banner from "@/components/Banner";
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Règles du jeu",
+};
 
 const Regles = () => {
     return (
@@ -19,83 +22,78 @@ const Regles = () => {
                 subtitle="Tout ce qu'il faut savoir avant de jouer !"
             />
 
-            <Image
-                src="/regles/1.png"
-                alt="Photo devant une table avec des raquettes"
-                width={2000}
-                height={2000}
-            />
+            <Banner src="/regles/1.png" alt="Photo devant une table avec des raquettes" />
 
             <Content>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         1. Déroulement du match
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <h4 className={textVariants.h4}>
+                        <Text variant="h4">
                             Comment se déroule un match ? 🎯
-                        </h4>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Le badminton se joue en <span className="font-medium">3 sets maximum</span>. Chaque set est remporté par le joueur ou l’équipe qui marque <span className="font-medium">21 points</span>.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Toutefois, si les deux adversaires atteignent un score de 20-20, le jeu continue jusqu’à ce qu’un joueur ou une équipe ait 2 points d’écart (par exemple, 22-20, 23-21, etc).
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Si le score atteint 29-29, la règle change : le joueur ou l’équipe qui atteint <span className="font-medium">30 points en premier</span> remporte le set.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Une fois le set gagné, <span className="font-medium">l&apos;équipe ou le joueur gagnant sert en premier</span> dans le set suivant.
-                        </BlocText>
+                        </Text>
                     </Bloc>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             ℹ️ Exemple :
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Set 1</span> : 21-19 (2 pts d’écart)
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Set 2</span> : 18-21 (2 pts d’écart)
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Set 3</span> : 30-29 (point sec)
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         2. Les limites du terrain
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Simple et double : quelles différences ? 🤔
-                        </h3>
+                        </Text>
 
-                        <h4 className={`${textVariants.h4} text-redpale`}>
+                        <Text variant="h4" color="rouge-pale">
                             En simple, les joueurs utilisent le terrain restreint (les lignes intérieures sur les côtés et les lignes de fond).
-                        </h4>
+                        </Text>
 
                         <List>
                             <ListElement>Au service, le volant doit atterrir dans le carré de service diagonalement opposé au serveur. Si le service est court ou hors de cette zone, il est considéré comme faute.</ListElement>
                             <ListElement>En jeu, toute la partie du terrain située entre les lignes intérieures est valable.</ListElement>
                         </List>
 
-                        <h4 className={`${textVariants.h4} text-redpale`}>
+                        <Text variant="h4" color="rouge-pale">
                             En double, le terrain s’élargit pour inclure les couloirs latéraux extérieurs.
-                        </h4>
+                        </Text>
 
                         <List>
                             <ListElement>Au service, il doit atterrir dans le carré de service diagonalement opposé ou dans les couloirs de service latéraux.</ListElement>
@@ -105,47 +103,47 @@ const Regles = () => {
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         3. Le service et le placement des joueurs
-                    </SingleTitle>
+                    </Text>
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Comment servir et où se mettre ?
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Le joueur ou l&apos;équipe qui gagne un point prend le service. Le service se fait toujours en diagonale. En simple, le serveur se place à droite si son score est pair et à gauche si impair. En double, c&apos;est pareil, mais les joueurs ne changent de côté qu&apos;en cas de point marqué sur leur service.
-                        </BlocText>
+                        </Text>
                     </Bloc>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Quand changer de demi-terrain ? 🔄
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Les joueurs changent de côté <span className="font-medium">après chaque set</span>. Si un match atteint un troisième set, ils changent à 11 points.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         4. Les fautes en match
-                    </SingleTitle>
+                    </Text>
                     <Bloc>
-                        <h4 className={textVariants.h4}>
+                        <Text variant="h4">
                             Au service
-                        </h4>
+                        </Text>
 
                         <List>
                             <ListElement>Frapper le volant au-dessus de la taille, ne pas respecter la diagonale, mordre les lignes avec son pied lors du service, ou arrêter le mouvement de la raquette.</ListElement>
                         </List>
 
 
-                        <h4 className={textVariants.h4}>
+                        <Text variant="h4">
                             Au cours du jeu
-                        </h4>
+                        </Text>
 
                         <List>
                             <ListElement>Concernant le volant : lorsqu&apos;il est envoyé hors des limites du terrain, qu&apos;il ne passe pas au-dessus du filet ou passe en dessous, qu&apos;il touche le plafond, qu&apos;il est frappé successivement par un joueur et son partenaire ou qu&apos;il est frappé 2 fois par le même joueur.</ListElement>
@@ -156,52 +154,52 @@ const Regles = () => {
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         5. Le positionnement en Doubles et le tirage au sort
-                    </SingleTitle>
+                    </Text>
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             La stratégie est primordiale ! 🤝
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             En double, après le service, les partenaires sont libres de leurs mouvements et doivent se coordonner pour couvrir le terrain efficacement. Au service, un joueur se place à l&apos;avant tandis que l&apos;autre reste en fond de court. Puis par la suite au cours du jeu, les joueurs se placent en côté-côté lorsqu&apos;ils doivent défendre.
-                        </BlocText>
+                        </Text>
                     </Bloc>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Le tirage au sort
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Avant le début du match, un tirage au sort détermine qui servira en premier ou choisira le côté du terrain.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         6. Les erreurs de zone de service et les &quot;lets&quot;
-                    </SingleTitle>
+                    </Text>
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Que se passe-t-il en cas d&apos;erreur ?
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Si un joueur sert ou reçoit dans la mauvaise zone ou que ce n&apos;était pas son tour, <span className="font-medium">le jeu continue</span>, mais <span className="underline">l&apos;erreur doit être corrigée</span> pour le prochain service et <span className="font-medium">le score reste maintenu</span>.
-                        </BlocText>
+                        </Text>
                     </Bloc>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Quand arrêter un échange ? ⏸️
-                        </h3>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Un &quot;let&quot; est déclaré si le serveur sert avant que le receveur ne soit prêt, ou si un incident imprévu se produit (comme un volant cassé).
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
             </Content>

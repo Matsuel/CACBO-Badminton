@@ -1,38 +1,61 @@
 @import 'tailwindcss';
 
+/*
+  Tokens repris des variables Figma (CACBO BAD | Website).
+  Noms alignés sur le Figma : ROUGE → rouge, MOBILE/H1 → text-h1, etc.
+  Les radius et interlignes Figma (rounded-xl, leading-4…) sont ceux de Tailwind par défaut.
+*/
 @theme {
+  /* Couleurs */
+  --color-rouge: #FF1C1C;
+  --color-rouge-pale: #FF6464; /* variable vide dans Figma : valeur historique conservée */
+  --color-noir: #100C08;
+  --color-blanc: #FFFFFF;
+  --color-blanc-casse: #FAFAFA;
+
+  /* Familles */
+  --font-poppins: var(--ff-poppins), sans-serif;
+  --font-space-grotesk: var(--ff-space-grotesk), sans-serif;
+  --font-darker-grotesque: var(--ff-darker-grotesque), sans-serif;
+
+  /* Styles de texte MOBILE/* : taille, interligne, graisse */
+  --text-h1: 58px;
+  --text-h1--line-height: 40px;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 25px;
+  --text-h2--line-height: 20px;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 21px;
+  --text-h3--line-height: 20px;
+  --text-h3--font-weight: 700;
+
+  --text-h4: 17px;
+  --text-h4--line-height: 16px;
+  --text-h4--font-weight: 600;
+
+  --text-corps: 17px;
+  --text-corps--line-height: 16px;
+  --text-corps--font-weight: 400;
+
+  --text-secondaire: 15px;
+  --text-secondaire--line-height: 15px;
+  --text-secondaire--font-weight: 400;
+
+  --text-cta: 15px;
+  --text-cta--line-height: 16px;
+  --text-cta--font-weight: 500;
+
+  /* Effets */
+  --shadow-ombre: 0 0 6px -1px #100C081A;
+
+  /* Espacements de mise en page (hors Figma) */
   --leading-0: 0;
-  --leading-auto: auto;
-
   --gap-30: 30px;
-
-  --text-20: 20px;
-  --text-paragraph: 17px;
-  --text-paragraph-mobile: 14px;
-
-  --padding-horizontal: 20px;
-  --padding-vertical: 6px;
-
-  --radius-ten: 10px;
-
-  --border-width-1: 1.5px;
-
-  --font-Poppins: var(--ff-poppins), sans-serif;
-  --font-Space-Grotesk: var(--ff-space-grotesk), sans-serif;
-  --font-Darker-Grotesque: var(--ff-darker-grotesque), sans-serif;
-
-  --color-background: var(--background);
-  --color-redcolor: var(--redcolor);
-  --color-blackcolor: var(--blackcolor);
-  --color-whitebroken: var(--white-broken);
-  --color-redcolorhover: var(--redcolor-hover);
-  --color-redpale: var(--redpale);
-
-  --gap-header: var(--header-gap);
-  --gap-body: var(--body-gap);
-  --gap-content: var(--content-gap);
-
-  --shadow-default: 0 0 6px rgba(16, 12, 8, 0.1);
+  --gap-header: 50px;
+  --gap-body: 40px;
+  --gap-content: 12px;
 }
 
 /*
@@ -51,16 +74,4 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
-}
-
-:root {
-  --background: #FAFAFA;
-  --redcolor: #FF1C1C;
-  --redpale: #FF6464;
-  --redcolor-hover: rgba(255, 0, 0, 0.3);
-  --blackcolor: #000000;
-  --white-broken: #f8f8f8;
-  --header-gap: 50px;
-  --body-gap: 40px;
-  --content-gap: 12px;
 }

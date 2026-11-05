@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn';
+import Text from "@/components/Text";
 
 interface ImageLegendProps {
     src: string;
@@ -23,9 +23,9 @@ const ImageLegend = ({
                 width={2000}
                 height={2000}
             />
-            <p className={`text-center text-redpale ${textVariants.secondary}`}>
+            <Text variant="secondaire" color="rouge-pale" className="text-center">
                 {description}
-            </p>
+            </Text>
         </div>
     )
 }

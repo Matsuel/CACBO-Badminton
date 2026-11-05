@@ -17,6 +17,7 @@ export default async function sitemap() {
         '/favicon.ico',
         '/volant',
         '/raquette',
+        '/respect',
     ];
 
     return paths.map((path) => ({
@@ -46,6 +47,7 @@ function getPriority(path: string): number {
         case '/regles':
         case '/volant':
         case '/raquette':
+        case '/respect':
             return 0.3;
         case '/politiques':
             return 0.2;

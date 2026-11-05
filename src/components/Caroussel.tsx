@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type React from 'react';
-import { textVariants } from '@/constantes/theme';
+import Text from "@/components/Text";
 
 interface CarousselProps extends React.HTMLAttributes<HTMLDivElement> {
     title: string;
@@ -13,9 +13,9 @@ const Caroussel = ({
 }: CarousselProps) => {
     return (
         <div className='w-full h-auto flex flex-col items-start justify-center gap-content'>
-            <h2 className={`${textVariants.h2} text-redcolor`}>
+            <Text variant="h2" color="rouge">
                 {title}
-            </h2>
+            </Text>
             <div className='w-full flex flex-row items-center justify-start gap-content overflow-x-auto whitespace-nowrap scrollbar-none'>
                 {images.map((image, index) => (
                     <Image

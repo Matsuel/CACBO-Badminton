@@ -1,9 +1,10 @@
 import type React from 'react';
-import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn';
+import Text from './Text';
 
 interface HeaderProps {
-    h2?: string;
+    /** Petit texte au-dessus du titre (« Bienvenue »). */
+    eyebrow?: string;
     title: string;
     subtitle: React.ReactNode;
     cta?: React.ReactNode;
@@ -12,7 +13,7 @@ interface HeaderProps {
 }
 
 const Header = ({
-    h2,
+    eyebrow,
     title,
     subtitle,
     h1ClassName,
@@ -21,18 +22,19 @@ const Header = ({
 }: HeaderProps) => {
     return (
         <div className={cn("w-full h-auto flex flex-col items-start justify-center gap-content p-5", className)}>
-            {h2 && <h2 className="font-Poppins text-[15px] text-redpale leading-0">
-                {h2}
-            </h2>}
+            {eyebrow && (
+                <Text variant="secondaire" color="rouge-pale" className="leading-0">
+                    {eyebrow}
+                </Text>
+            )}
 
-            <h1 className={`${textVariants.h1} text-redcolor uppercase ${h1ClassName}`}
-            >
+            <Text variant="h1" color="rouge" className={cn("uppercase", h1ClassName)}>
                 {title}
-            </h1>
+            </Text>
 
-            <h3 className={`${textVariants.secondary} text-redpale`}>
+            <Text as="div" variant="secondaire" color="rouge-pale">
                 {subtitle}
-            </h3>
+            </Text>
 
             {cta}
         </div>

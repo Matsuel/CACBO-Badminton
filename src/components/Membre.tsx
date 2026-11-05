@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { textVariants } from '@/constantes/theme';
+import Text from "@/components/Text";
 
 interface MembreProps {
     firstName: string;
@@ -17,12 +17,12 @@ const Membre = ({
     description
 }: MembreProps) => {
     return (
-        <div className={"w-full h-auto flex flex-col items-start justify-center p-5 gap-5 bg-white rounded-xl shadow-default"}>
+        <div className={"w-full h-auto flex flex-col items-start justify-center p-5 gap-5 bg-blanc rounded-xl shadow-ombre"}>
 
             <div className='flex flex-row items-center justify-start gap-6.25'>
 
                 <div
-                    className='w-24.5 h-24.5 flex items-center justify-center rounded-xl bg-redcolor'
+                    className='w-24.5 h-24.5 flex items-center justify-center rounded-xl bg-rouge'
                     style={{
                         backgroundColor: `rgba(255, 28, 28, ${1 - index * 0.2})`
                     }}
@@ -38,13 +38,13 @@ const Membre = ({
 
                 <div className='flex flex-col gap-2'>
                     <div className='flex flex-col'>
-                        <span className={`${textVariants.h3} text-redcolor`}>{firstName}</span>
-                        <span className={`${textVariants.h3} text-redcolor`}>{lastName}</span>
+                        <Text as="span" variant="h3" color="rouge">{firstName}</Text>
+                        <Text as="span" variant="h3" color="rouge">{lastName}</Text>
                     </div>
 
-                    <p className={textVariants.text}>
+                    <Text>
                         {role}
-                    </p>
+                    </Text>
                 </div>
 
             </div>
@@ -59,9 +59,9 @@ const Membre = ({
                 />
 
                 {description && (
-                    <p className={`${textVariants.secondary} text-redpale`}>
+                    <Text variant="secondaire" color="rouge-pale">
                         {description}
-                    </p>
+                    </Text>
                 )}
 
             </div>

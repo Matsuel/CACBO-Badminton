@@ -5,7 +5,10 @@ import { BASE_URL } from "./sitemap";
 import ClientAnalytics from "@/components/ClientAnalytics";
 
 export const metadata: Metadata = {
-  title: "CACBO Badminton",
+  title: {
+    default: "CACBO Badminton",
+    template: "%s - CACBO Badminton",
+  },
   description: "CACBO Badminton Club",
   keywords: [
     "badminton",
@@ -44,7 +47,7 @@ export default function RootLayout({
       lang="fr"
       className={`${poppins.variable} ${spaceGrotesk.variable} ${darkerGrotesque.variable}`}
     >
-      <body className="antialiased">
+      <body className="antialiased text-noir">
         <ClientAnalytics />
         {children}
       </body>

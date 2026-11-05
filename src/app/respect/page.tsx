@@ -1,5 +1,5 @@
+import type { Metadata } from "next";
 import Bloc from "@/components/Bloc"
-import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Documents from "@/components/Document"
 import Header from "@/components/Header"
@@ -7,7 +7,11 @@ import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
-import SingleTitle from "@/components/SingleTitle"
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Respect & prévention",
+};
 
 const Respect = () => {
     return (
@@ -20,50 +24,50 @@ const Respect = () => {
 
             <Content>
                 <Bloc>
-                    <BlocText className="font-semibold">
+                    <Text className="font-semibold">
                         Le CACBO Badminton s&apos;engage à promouvoir une pratique du badminton fondée sur le respect, l&apos;inclusion et la convivialité.
-                    </BlocText>
+                    </Text>
 
-                    <BlocText>
+                    <Text>
                         Chaque adhérent doit pouvoir évoluer dans un environnement serein où chacun trouve sa place, quel que soit son niveau, son parcours ou son expérience.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Nos engagement
-                    </SingleTitle>
+                    </Text>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Prévention & intégrité
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Référent du club</span> : Laurent THOMAS
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Pour toute question ou signalement, vous pouvez contacter directement le Bureau du club à :
-                        </BlocText>
+                        </Text>
 
-                        <BlocText className="font-medium">
+                        <Text className="font-medium">
                             hello@cacbobad.fr – 06 18 95 23 30
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Comment signaler une situation ?
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText className="font-medium">
+                        <Text className="font-medium">
                             Sous forme d’étapes
-                        </BlocText>
+                        </Text>
 
                         <List>
                             <ListElement>
@@ -76,9 +80,9 @@ const Respect = () => {
                     </Bloc>
 
                     <Bloc>
-                        <BlocText className="font-medium">
+                        <Text className="font-medium">
                             Avec la fiche officielle
-                        </BlocText>
+                        </Text>
 
                         <Documents href="/manque" content="Fiche de signalement (CDOS)" />
                     </Bloc>
@@ -86,9 +90,9 @@ const Respect = () => {
 
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Contacts utiles
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
                         {/* TODO: Passer en constante + ajouter telto */}
@@ -115,22 +119,22 @@ const Respect = () => {
                     </Bloc>
 
                     <Bloc>
-                        <BlocText className="font-semibold">
+                        <Text className="font-semibold">
                             Accompagnement, aide et écoute sur les violences sexistes/sexuelles
-                        </BlocText>
+                        </Text>
 
                         <Documents href="/manque" content="Associations en Gironde" />
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Notre règlement intérieur
-                    </SingleTitle>
+                    </Text>
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Les règles relatives au respect, à l&apos;éthique, aux violences sexistes et sexuelles ainsi qu&apos;aux procédures de signalement sont détaillées dans le règlement intérieur, téléchargeable ci-dessous :
-                        </BlocText>
+                        </Text>
 
                         <Documents href="/manque" content="Télécharger le règlement intérieur du club" />
                     </Bloc>

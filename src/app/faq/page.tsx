@@ -1,11 +1,16 @@
-import Image from "next/image"
+import type { Metadata } from "next";
 import Bloc from "@/components/Bloc"
-import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
+import Banner from "@/components/Banner";
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "FAQ",
+};
 
 const Faq = () => {
     return (
@@ -16,43 +21,38 @@ const Faq = () => {
                 subtitle="Toutes les infos pratiques sur notre club !"
             />
 
-            <Image
-                src="/faq/1.png"
-                alt="Photo d'un match"
-                width={2000}
-                height={2000}
-            />
+            <Banner src="/faq/1.png" alt="Photo d'un match" />
 
             <Content>
 
                 <Bloc title="Quels sont les créneaux horaires pour pratiquer ?">
-                    <BlocText>
+                    <Text>
                         Nos créneaux sont les lundis (21h-23h), mardis (18h-21h) et vendredis (18h30-21h).
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Où se situe la salle ?">
-                    <BlocText>
+                    <Text>
                         Notre salle se situe au complexe sportif Philippe Madrelle, au 24 rue Pasteur à Carbon-Blanc.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Le club est-il ouvert à tous les niveaux ?">
-                    <BlocText>
+                    <Text>
                         Oui, notre club accueille aussi bien les débutants que les joueurs confirmés. Nous mettons un point d&apos;honneur à offrir une ambiance conviviale pour tous.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Peut-on venir essayer avant de s’inscrire ?">
-                    <BlocText>
+                    <Text>
                         Oui, nous proposons 3 séances d&apos;essai gratuites pour découvrir le club et voir si l&apos;ambiance vous convient.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Quel est le tarif pour adhérer au club ?">
-                    <BlocText>
+                    <Text>
                         Nous proposons deux formules d’adhésion :
-                    </BlocText>
+                    </Text>
 
                     <List>
                         <ListElement>la formule adulte à 50€</ListElement>
@@ -61,63 +61,63 @@ const Faq = () => {
                 </Bloc>
 
                 <Bloc title="Utilisez-vous des volants en plumes ou en nylon ?">
-                    <BlocText>
+                    <Text>
                         Nous utilisons en très grande majorité des volants en plumes pour leur qualité de jeu, mais chacun est libre d’apporter des volants en nylon s’il le souhaite.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Faut-il amener son propre matériel ?">
-                    <BlocText>
+                    <Text>
                         Oui, vous devez apporter votre raquette, des chaussures de sport propres (pour ne pas salir la salle) et vos propres volants. Cependant, si vous n’avez pas de raquette, nous pouvons en prêter pour dépanner.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Peut-on acheter des volants directement au club ?">
-                    <BlocText>
+                    <Text>
                         Oui, nous avons une boutique interne où vous pouvez acheter des volants en plumes à prix réduit, exclusivement réservée à nos adhérents.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Il y a-t-il une limite d’âge pour s’inscrire ?">
-                    <BlocText>
+                    <Text>
                         Oui, notre club est exclusivement ouvert aux adultes.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Proposez vous des cours encadrés ?">
-                    <BlocText>
+                    <Text>
                         Nous ne proposons pas de cours encadrés actuellement. Cependant, les joueurs expérimentés du club seront ravis de partager leurs conseils.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Organisez-vous des événements en dehors des créneaux ?">
-                    <BlocText>
+                    <Text>
                         Oui, nous organisons des événements réguliers tels que des soirées apéritives les vendredis et des sorties conviviales, comme des repas de fin d’année.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="De combien disposez-vous de terrains pour jouer ?">
-                    <BlocText>
+                    <Text>
                         Nous disposons de 7 terrains dans la salle, ce qui permet de jouer en double ou en simple selon le nombre de participants.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Comment m’inscrire au club ?">
-                    <BlocText>
+                    <Text>
                         L’inscription se fait via notre plateforme partenaire HelloAsso. Vous pouvez également vous inscrire sur papier (page “adhérer” de notre site).
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Peut-on venir jouer en dehors des créneaux horaires ? ">
-                    <BlocText>
+                    <Text>
                         Malheureusement, l’accès à la salle est limité aux créneaux horaires définis.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Bloc title="Comment peut-on vous contacter pour plus d’informations ?">
-                    <BlocText>
+                    <Text>
                         Vous pouvez nous contacter par mail à <span className="font-medium">hello@cacbobad.fr</span>, par messages sur nos réseaux sociaux Instagram et Facebook ou venir directement nous voir lors des créneaux.
-                    </BlocText>
+                    </Text>
                 </Bloc>
             </Content>
 

@@ -1,13 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link"
 import Bloc from "@/components/Bloc"
-import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import List from "@/components/List"
 import ListElement from "@/components/ListElement"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
-import SingleTitle from "@/components/SingleTitle"
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Mentions légales",
+};
 
 const MentionsLegales = () => {
     return (
@@ -20,105 +24,105 @@ const MentionsLegales = () => {
 
             <Content>
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Éditeur du site
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le présent site est édité par le CACBO Badminton, section du Club Athlétique CarbonBlanais Omnisports (CACBO), association loi 1901.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Adresse :</span> 24 rue Pasteur, 33560 Carbon-Blanc
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Directeur de la publication</span> : Maël THOMAS
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             <span className="font-medium">Contact</span> : hello@cacbobad.fr
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Hébergement
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le site est hébergé par :
-                        </BlocText>
+                        </Text>
 
-                        <BlocText className="font-medium">
+                        <Text className="font-medium">
                             Vercel Inc.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Propriété intellectuelle
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             L&apos;ensemble des contenus présents sur ce site (textes, images, graphismes, logo, documents téléchargeables) sont la propriété exclusive du CACBO Badminton ou est utilisé avec autorisation.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Toute reproduction, représentation, modification, diffusion ou exploitation, totale ou partielle, sans accord préalable écrit, est interdite conformément au Code de la Propriété Intellectuelle.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Données personnelles (RGPD)
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Les informations personnelles liées aux adhésions sont collectées et traitées via notre partenaire HelloAsso (gestion des inscriptions et paiements).
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Pour plus de détails sur la manière dont nous utilisons et protégeons vos données, veuillez consulter notre <Link href="/politiques" className="underline">Politique de confidentialité.</Link>
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Cookies
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le site utilise uniquement des cookies techniques indispensables à son fonctionnement (préférences de navigation, affichage).
-                        </BlocText>
-                        <BlocText>
+                        </Text>
+                        <Text>
                             Aucun cookie publicitaire ou de suivi tiers n&apos;est déposé sans votre consentement.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Responsabilité
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le CACBO Badminton s&apos;efforce d&apos;assurer l&apos;exactitude des informations diffusées sur le site. Toutefois, il ne saurait être tenu responsable :
-                        </BlocText>
+                        </Text>
 
                         <List>
                             <ListElement>d’éventuelles erreurs ou omissions,</ListElement>
@@ -129,26 +133,26 @@ const MentionsLegales = () => {
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Droit applicable
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             L&apos;utilisation du site est régie par le droit français. En cas de litige, compétence exclusive est attribuée aux tribunaux de Bordeaux.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Modification des mentions légales
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le CACBO Badminton se réserve le droit de modifier et mettre à jour les présentes mentions légales à tout moment afin de rester conforme aux évolutions réglementaires et techniques.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
             </Content>

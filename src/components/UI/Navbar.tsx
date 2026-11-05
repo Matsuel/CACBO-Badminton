@@ -20,11 +20,11 @@ const Navbar = () => {
 			className={cn(
 				"w-full flex flex-col gap-12.5 p-5",
 				isOpen
-					? "fixed inset-0 z-50 h-dvh overflow-hidden bg-white"
+					? "fixed inset-0 z-50 h-dvh overflow-hidden bg-blanc"
 					: "absolute top-0 h-auto",
 			)}
 		>
-			<div className="w-full h-auto flex flex-row items-center justify-between bg-white px-5 py-3 rounded-xl shadow-default shrink-0">
+			<div className="w-full h-auto flex flex-row items-center justify-between bg-blanc px-5 py-3 rounded-xl shadow-ombre shrink-0">
 				<Link href="/">
 					<Image
 						src="/logo.svg"
@@ -40,7 +40,7 @@ const Navbar = () => {
 						Nous contacter
 					</Button>
 					<button
-						className="text-redcolor cursor-pointer w-5"
+						className="text-rouge cursor-pointer w-5"
 						onClick={() => setIsOpen(!isOpen)}
 						type="button"
 						aria-expanded={isOpen}
@@ -52,7 +52,7 @@ const Navbar = () => {
 			</div>
 
 			<div
-				className="w-full flex-1 min-h-0 flex-col gap-content bg-white rounded-xl overflow-y-auto overscroll-contain scrollbar-none"
+				className="w-full flex-1 min-h-0 flex-col gap-content bg-blanc rounded-xl overflow-y-auto overscroll-contain scrollbar-none"
 				style={{
 					display: isOpen ? "flex" : "none",
 				}}

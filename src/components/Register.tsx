@@ -1,4 +1,4 @@
-import { textVariants } from '@/constantes/theme';
+import Text from "@/components/Text";
 
 interface RegisterProps {
     saison: string;
@@ -10,9 +10,9 @@ const Register = ({
     open
 }: RegisterProps) => {
     return (
-        <p className={`w-full h-auto p-2 border border-redcolor rounded-full ${textVariants.secondary} text-redpale text-center`}>
+        <Text variant="secondaire" color="rouge-pale" className="w-full h-auto p-2 border border-rouge rounded-full text-center">
             SAISON 20{saison} - <span className="font-semibold">INSCRIPTIONS {open ? "OUVERTES" : "FERMÉES"} ! ✔️</span>
-        </p>
+        </Text>
     )
 }
 

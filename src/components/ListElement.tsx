@@ -1,6 +1,6 @@
 import type React from 'react';
-import { textVariants } from '@/constantes/theme';
 import { cn } from '@/utils/cn';
+import { textStyles } from './Text';
 
 interface ListElementProps extends React.LiHTMLAttributes<HTMLLIElement> {
     children?: React.ReactNode;
@@ -12,7 +12,7 @@ const ListElement = ({
     ...props
 }: ListElementProps) => {
     return (
-        <li className={cn(textVariants.text, className)} {...props}>
+        <li className={cn(textStyles(), className)} {...props}>
             {children}
         </li>
     )

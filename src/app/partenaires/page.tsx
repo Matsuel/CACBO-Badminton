@@ -1,11 +1,16 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 import Bloc from "@/components/Bloc";
-import BlocText from "@/components/BlocText";
 import Content from "@/components/Content";
 import Header from "@/components/Header";
 import PageLayout from "@/components/PageLayout";
 import Partenaire from "@/components/Partenaire";
 import { partenaires } from "@/constantes/partenaires";
+import Banner from "@/components/Banner";
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Nos partenaires",
+};
 
 const Partenaires = () => {
 
@@ -17,19 +22,14 @@ const Partenaires = () => {
                 subtitle="Ils nous soutiennent pour faire grandir notre club !"
             />
 
-            <Image
-                src="/partenaires/1.png"
-                alt="Photo devant une table remplit de volants"
-                width={2000}
-                height={2000}
-            />
+            <Banner src="/partenaires/1.png" alt="Photo devant une table remplit de volants" />
 
             <Content>
 
                 <Bloc>
-                    <BlocText>
+                    <Text>
                         Nos partenaires jouent un rôle clé dans la vie de notre club. Grâce à leur soutien, nous pouvons offrir à nos membres les meilleures conditions pour pratiquer le badminton. Découvrez ceux qui nous accompagnent dans cette belle aventure !
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <div className='w-full h-auto flex flex-col md:flex-row flex-wrap items-start justify-start gap-5'>

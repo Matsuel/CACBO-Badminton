@@ -1,14 +1,22 @@
+import type { Metadata } from "next";
 import Image from "next/image"
 import Link from "next/link"
 import Bloc from "@/components/Bloc"
-import BlocText from "@/components/BlocText"
 import Content from "@/components/Content"
 import Header from "@/components/Header"
 import PageLayout from "@/components/PageLayout"
 import Parent from "@/components/Parent"
-import SingleTitle from "@/components/SingleTitle"
-import { SocialLinks } from "@/constantes/contact"
-import { textVariants } from "@/constantes/theme"
+import Banner from "@/components/Banner";
+import Text, { textStyles } from "@/components/Text";
+import Adresse from "@/components/Adresse";
+import Creneaux from "@/components/Creneaux";
+import SocialLinks from "@/components/SocialLinks";
+import { club } from "@/constantes/club";
+import { cn } from "@/utils/cn";
+
+export const metadata: Metadata = {
+	title: "Nous contacter",
+};
 
 const Contact = () => {
 
@@ -20,65 +28,52 @@ const Contact = () => {
                 subtitle="Besoin d’infos ? Nous sommes à votre écoute !"
             />
 
-            <Image
-                src="/contact/1.png"
-                alt="Photo devant une table avec des raquettes"
-                width={2000}
-                height={2000}
-            />
+            <Banner src="/contact/1.png" alt="Photo devant une table avec des raquettes" />
 
             <Content>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Vous pouvez nous joindre
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <h4 className={textVariants.h4}>
+                        <Text variant="h4">
                             Par téléphone
-                        </h4>
+                        </Text>
 
-                        <BlocText>
-                            06 18 95 23 30
-                        </BlocText>
+                        <Link href={club.telephone.lien} className={textStyles()}>
+                            {club.telephone.affichage}
+                        </Link>
 
-                        <h4 className={textVariants.h4}>
+                        <Text variant="h4">
                             Par mail
-                        </h4>
+                        </Text>
 
-                        <BlocText>
-                            hello@cacbobad.fr
-                        </BlocText>
+                        <Link href={`mailto:${club.mail}`} className={textStyles()}>
+                            {club.mail}
+                        </Link>
                     </Bloc>
 
                     <Bloc>
-                        <h3 className={textVariants.h3}>
+                        <Text variant="h3">
                             Nos réseaux sociaux
-                        </h3>
+                        </Text>
 
-                        <div className="flex flex-row gap-30">
-                            {SocialLinks.map(link => (
-                                <Link key={link.name} href={link.link} className="w-7.5 h-7.5 text-redcolor hover:text-redpale transition-colors duration-300">
-                                    {link.icon}
-                                </Link>
-                            ))}
-                        </div>
+                        <SocialLinks
+                            only={["Facebook", "Instagram", "Messenger"]}
+                            linkClassName="w-7.5 h-7.5 text-rouge hover:text-rouge-pale"
+                        />
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Où nous rejoindre 👇
-                    </SingleTitle>
+                    </Text>
 
-                    <Bloc className="border border-redcolor">
-                        <h4 className={textVariants.h4}>
-                            Complexe sportif Philippe Madrelle
-                        </h4>
-                        <BlocText>
-                            24 rue Pasteur, 33560 Carbon-Blanc
-                        </BlocText>
+                    <Bloc variant="outline">
+                        <Adresse className={cn(textStyles(), "gap-2")}lieuClassName={textStyles({ variant: "h4" })} />
                     </Bloc>
 
                     <Image
@@ -88,12 +83,8 @@ const Contact = () => {
                         height={5000}
                     />
 
-                    <Bloc subtitile="Nos créneaux">
-                        <BlocText>
-                            {/* TODO: Mettre les couleurs comme sur Figma */}
-                            Lundi 21h-23h Mardi 18h-21h
-                            Vendredi 18h30-21h
-                        </BlocText>
+                    <Bloc subtitle="Nos créneaux">
+                        <Creneaux variant="pastilles" />
                     </Bloc>
                 </Parent>
 

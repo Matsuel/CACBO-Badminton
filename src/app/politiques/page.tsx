@@ -1,14 +1,17 @@
+import type { Metadata } from "next";
 import Link from 'next/link'
 import Bloc from '@/components/Bloc'
-import BlocText from '@/components/BlocText'
 import Content from '@/components/Content'
 import Header from '@/components/Header'
 import List from '@/components/List'
 import ListElement from '@/components/ListElement'
 import PageLayout from '@/components/PageLayout'
 import Parent from '@/components/Parent'
-import SingleTitle from '@/components/SingleTitle'
-import { textVariants } from '@/constantes/theme'
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Politique de confidentialité",
+};
 
 const Politique = () => {
     return (
@@ -22,23 +25,23 @@ const Politique = () => {
 
             <Content>
                 <Bloc>
-                    <BlocText>
+                    <Text>
                         Le CACBO Badminton, situé au 24 rue Pasteur, 33560 Carbon-Blanc, s&apos;engage à protéger la vie privée de ses adhérents et visiteurs. Cette politique explique de manière simple et transparente comment nous collectons, utilisons et protégeons vos données personnelles.
-                    </BlocText>
+                    </Text>
                 </Bloc>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Données collectées
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Nous ne collectons pas directement de données via le site internet <span className='font-medium'>cacbobad.fr</span>.
-                        </BlocText>
-                        <BlocText>
+                        </Text>
+                        <Text>
                             Dans le cadre des adhésions et de la vie associative, les informations personnelles sont recueillies par notre partenaire HelloAsso et peuvent inclure :
-                        </BlocText>
+                        </Text>
                         <List>
                             <ListElement>Nom et prénom</ListElement>
                             <ListElement>Adresse postale</ListElement>
@@ -50,18 +53,18 @@ const Politique = () => {
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Utilisation des données
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le CACBO Badminton ne collecte pas directement de données via ce site.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Les données collectées sont utilisées uniquement pour :
-                        </BlocText>
+                        </Text>
 
                         <List>
                             <ListElement>Gérer les adhésions, inscriptions aux activités du club et les paiements</ListElement>
@@ -70,106 +73,106 @@ const Politique = () => {
                             <ListElement>Respecter nos obligations légales et réglementaires (notamment comptables et fiscales)</ListElement>
                         </List>
 
-                        <BlocText>
+                        <Text>
                             Ces données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD – n°2016/679).
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             La politique de confidentialité d’HelloAsso est consultable sur <Link href="https://helloasso.com" className='underline'>helloasso.com</Link>
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Partage des données
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Vos données sont traitées de manière confidentielle.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Elles ne sont partagées qu’avec :
-                        </BlocText>
+                        </Text>
 
                         <List>
                             <ListElement>Les membres autorisés du Bureau du CACBO (Omnisports)</ListElement>
                             <ListElement>Les membres autorisés du Bureau du CACBO Badminton</ListElement>
                             <ListElement>La plateforme HelloAsso, conforme au RGPD, pour la gestion des inscriptions et paiements</ListElement>
                         </List>
-                        <BlocText>
+                        <Text>
                             Aucune donnée n&apos;est transmise ou vendue à des tiers à des fins commerciales.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Sécurité des données
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Nous mettons en œuvre, avec notre prestataire HelloAsso, des mesures techniques et organisationnelles appropriées pour protéger vos données contre toute perte, accès non autorisé, modification ou divulgation.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Vos droits
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             👉 Vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;opposition et de suppression de vos données personnelles.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Pour exercer vos droits :
-                        </BlocText>
+                        </Text>
 
-                        <p className={`${textVariants.h4} text-redcolor`}>
+                        <Text as="p" variant="h4" color="rouge">
                             CACBO Badminton – 24 rue Pasteur, 33560 Carbon-Blanc – <Link href="mailto:hello@cacbobad.fr" className='underline'>hello@cacbobad.fr</Link>
-                        </p>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Vous pouvez également saisir la CNIL pour toute réclamation : <Link href="https://www.cnil.fr" className='underline'>www.cnil.fr</Link>
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Cookies
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le site <span className='font-medium'>cacbobad.fr</span> utilise uniquement des cookies techniques nécessaires à son bon fonctionnement.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Aucun cookie publicitaire ou de suivi tiers n’est utilisé.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Vous pouvez configurer votre navigateur pour bloquer ou supprimer ces cookies, mais certaines fonctionnalités du site pourraient ne pas fonctionner correctement.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Modification de la politique
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Cette politique de confidentialité peut être mise à jour à tout moment afin de rester conforme aux évolutions légales et techniques. Toute modification sera publiée sur cette page et applicable dès sa mise en ligne.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 

@@ -1,4 +1,4 @@
-import { BriefcaseIcon, DocumentTextIcon, HeartIcon, MagnifyingGlassIcon, PaperAirplaneIcon, ShoppingBagIcon, TrophyIcon, UserPlusIcon } from "@heroicons/react/24/solid";
+import { BriefcaseIcon, DocumentTextIcon, HeartIcon, MagnifyingGlassIcon, PaperAirplaneIcon, ShieldCheckIcon, ShoppingBagIcon, TrophyIcon, UserPlusIcon } from "@heroicons/react/24/solid";
 import type { NavbarLinkType } from "..";
 
 export const navbarLinks: NavbarLinkType[] = [
@@ -55,6 +55,12 @@ export const navbarLinks: NavbarLinkType[] = [
         href: "/raquette",
         description: "Tout savoir sur sa raquette",
         icon: <DocumentTextIcon className="w-5" />
+    },
+    {
+        title: "Respect & prévention",
+        href: "/respect",
+        description: "Un club ouvert à tous",
+        icon: <ShieldCheckIcon className="w-5" />
     },
     {
         title: "FAQ",

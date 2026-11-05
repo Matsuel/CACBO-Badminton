@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import File from "@/assets/file.svg";
 import FileRed from "@/assets/fileRed.svg";
-import { textVariants } from "@/constantes/theme";
+import Text from "@/components/Text";
 
 interface DocumentsProps {
     content: string;
@@ -25,7 +25,7 @@ export const Documents = ({
                 href={href}
                 passHref
                 target={"_blank"}
-                className="text-redcolor hover:text"
+                className="text-rouge hover:text"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
@@ -43,9 +43,9 @@ export const Documents = ({
                 </div>
             </Link>
 
-            <h5 className={textVariants.text}>
+            <Text as="h5">
                 {content}
-            </h5>
+            </Text>
         </div>
     )
 }

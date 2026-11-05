@@ -1,6 +1,3 @@
-import Image from "next/image";
-import ExternalLink from "@/assets/ExternalLink";
-import BlocText from "@/components/BlocText";
 import Button from "@/components/Button";
 import Caroussel from "@/components/Caroussel";
 import Content from "@/components/Content";
@@ -9,15 +6,16 @@ import ImageLegend from "@/components/ImageLegend";
 import List from "@/components/List";
 import ListElement from "@/components/ListElement";
 import PageLayout from "@/components/PageLayout";
-import Send from "@/components/UI/Send";
-import { textVariants } from "@/constantes/theme";
 import Bloc from "../components/Bloc";
+import Banner from "@/components/Banner";
+import Text from "@/components/Text";
+import Creneaux from "@/components/Creneaux";
 
 export default function Home() {
 	return (
 		<PageLayout>
 			<Header
-				h2="Bienvenue"
+				eyebrow="Bienvenue"
 				title="CACBO Badminton"
 				h1ClassName="break-normal"
 				className="gap-5!"
@@ -28,39 +26,32 @@ export default function Home() {
 					</div>
 				}
 				cta={
-					<Button href="/adherer" variant="inverted">
-						<Send />
+					<Button href="/adherer" icon="send">
 						Nous rejoindre
 					</Button>
 				}
 			/>
 
-			<Image
-				src="/acceuil/1.png"
-				alt="Photo de groupe de badminton"
-				width={2000}
-				height={2000}
-			/>
+			<Banner src="/acceuil/1.png" alt="Photo de groupe de badminton" />
 
 			<Content>
 				<Bloc title="Créé en 2007 à Carbon-Blanc." key={"created-in-2007"}>
-					<BlocText>
+					<Text>
 						Notre club réunit des passionnés de badminton de tous niveaux.
 						L’ambiance y est familiale et conviviale, propice à la détente et au
 						partage.
-					</BlocText>
+					</Text>
 
-					<h4 className={`${textVariants.h4} text-redcolor`}>
+					<Text variant="h4" color="rouge">
 						Que vous soyez compétiteur ou simplement en quête de loisirs, vous
 						trouverez chez nous un cadre chaleureux pour pratiquer sans
 						pression.
-					</h4>
+					</Text>
 
-					<BlocText>Envie d&apos;en savoir plus ?</BlocText>
+					<Text>Envie d&apos;en savoir plus ?</Text>
 
-					<Button href="/histoire" variant="inverted">
+					<Button href="/histoire" icon="external">
 						Découvrir notre histoire
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 
@@ -77,23 +68,18 @@ export default function Home() {
 					title="Envie de taper dans le volant ?"
 					key={"want-to-hit-the-shuttlecock"}
 				>
-					<h4 className={`${textVariants.h4}`}>Nos créneaux sont les :</h4>
+					<Text variant="h4">Nos créneaux sont les :</Text>
 
-					<List>
-						<ListElement className="font-bold">lundis → 21h - 23h</ListElement>
-						<ListElement className="font-bold">mardis → 18h - 21h</ListElement>
-						<ListElement className="font-bold">vendredis → 18h30 - 21h</ListElement>
-					</List>
+					<Creneaux strong />
 
-					<BlocText>
+					<Text>
 						Notre complexe sportif se situe au{" "}
 						<span className="font-medium">24 rue Pasteur</span> à Carbon-Blanc.
 						📍
-					</BlocText>
+					</Text>
 
-					<Button href="/contact" variant="inverted">
+					<Button href="/contact" icon="external">
 						En savoir plus
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 
@@ -103,13 +89,13 @@ export default function Home() {
 				/>
 
 				<Bloc title="Venez jouer avec nous ! 🤝">
-					<BlocText>
+					<Text>
 						Le badminton, c&apos;est encore mieux à plusieurs ! Que vous soyez
 						débutant ou confirmé, rejoignez-nous et profitez de créneaux adaptés
 						à tous les niveaux.
-					</BlocText>
+					</Text>
 
-					<h4 className={textVariants.h4}>Tarifs d’adhésion :</h4>
+					<Text variant="h4">Tarifs d’adhésion :</Text>
 
 					<List>
 						<ListElement>
@@ -120,14 +106,13 @@ export default function Home() {
 						</ListElement>
 					</List>
 
-					<BlocText>
+					<Text>
 						Jouez en toute liberté, échangez avec d&apos;autres passionnés et
 						participez à nos soirées ! ⚡
-					</BlocText>
+					</Text>
 
-					<Button href="/adherer" variant="inverted">
+					<Button href="/adherer" icon="external">
 						Nous rejoindre
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 
@@ -137,9 +122,9 @@ export default function Home() {
 				/>
 
 				<Bloc title="Les règles essentielles du bad’">
-					<h4 className={textVariants.h4}>
+					<Text variant="h4">
 						Avant d’entrer sur le terrain, un rappel des bases :
-					</h4>
+					</Text>
 
 					<List>
 						<ListElement>
@@ -150,9 +135,8 @@ export default function Home() {
 						</ListElement>
 						<ListElement>Le volant touche la ligne ? Il est bon !</ListElement>
 					</List>
-					<Button variant="inverted" href="/regles">
+					<Button href="/regles" icon="external">
 						En savoir plus
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 
@@ -162,14 +146,13 @@ export default function Home() {
 				/>
 
 				<Bloc title="Une question ? On a la réponse !">
-					<BlocText>
+					<Text>
 						Vous avez des interrogations sur le fonctionnement du club, les
 						inscriptions ou les équipements nécessaires ?
-					</BlocText>
+					</Text>
 
-					<Button variant="inverted" href="/faq">
+					<Button href="/faq" icon="external">
 						Voir notre FAQ
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 
@@ -180,17 +163,16 @@ export default function Home() {
 
 				<Bloc
 					title="Eh, qu’est-ce t’attends ?"
-					subtitile="Rejoins-nous ! 😉"
-					className="border border-redcolor"
+					subtitle="Rejoins-nous ! 😉"
+					variant="outline"
 				>
-					<BlocText>
+					<Text>
 						Fais partie de l&apos;aventure : rejoins une équipe où convivialité
 						rime avec passion.
-					</BlocText>
+					</Text>
 
-					<Button variant="inverted" href="/adherer">
+					<Button href="/adherer" icon="external">
 						Je m’inscris
-						<ExternalLink size={10} />
 					</Button>
 				</Bloc>
 			</Content>

@@ -1,14 +1,18 @@
-import Image from 'next/image';
+import type { Metadata } from "next";
 import Bloc from '@/components/Bloc';
-import BlocText from '@/components/BlocText';
 import Content from '@/components/Content';
 import Header from '@/components/Header';
 import Membre from '@/components/Membre';
 import PageLayout from '@/components/PageLayout';
 import Parent from '@/components/Parent';
-import SingleTitle from '@/components/SingleTitle';
 import { personnel } from '@/constantes/bureau';
 import Documents from '@/components/Document';
+import Banner from "@/components/Banner";
+import Text from "@/components/Text";
+
+export const metadata: Metadata = {
+	title: "Le Bureau",
+};
 
 const Bureau = () => {
 
@@ -19,39 +23,34 @@ const Bureau = () => {
                 subtitle="Équipe dirigeante du club"
             />
 
-            <Image
-                src="/bureau/1.png"
-                alt="Photo devant une table avec des raquettes"
-                width={2000}
-                height={2000}
-            />
+            <Banner src="/bureau/1.png" alt="Photo devant une table avec des raquettes" />
 
             <Content>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Quésaco ?
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le Bureau veille au bon fonctionnement du club et au respect des règlements en vigueur, il s&apos;occupe de la trésorerie (suivi des dépenses et des recettes, cotisations des adhérents, gestion du compte bancaire) et de la résolution des problèmes et des conflits en son sein.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Il assure l’organisation des séances, le suivi des inscriptions, les achats de matériel, la communication interne, ainsi que toutes les décisions permettant au club d’offrir un cadre convivial et sécurisé.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Entièrement composé de bénévoles, il représente la section auprès du CACBO et travaille main dans la main avec la collectivité pour garantir la meilleure expérience possible aux adhérents.
-                        </BlocText>
+                        </Text>
                     </Bloc>
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Composition du Bureau
-                    </SingleTitle>
+                    </Text>
 
                     {personnel.map((personnel, index) => (
                         <Membre
@@ -67,25 +66,25 @@ const Bureau = () => {
                 </Parent>
 
                 <Parent>
-                    <SingleTitle>
+                    <Text variant="h2" color="rouge">
                         Élection et mandat
-                    </SingleTitle>
+                    </Text>
 
                     <Bloc>
-                        <BlocText>
+                        <Text>
                             Le Bureau est élu lors de l’Assemblée Générale de la section, conformément au règlement intérieur du CACBO.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Les adhérents présents votent à main levée ou à bulletins secrets.
-                        </BlocText>
+                        </Text>
 
-                        <BlocText>
+                        <Text>
                             Le Bureau est élu pour une olympiade (4 ans).
-                        </BlocText>
+                        </Text>
                     </Bloc>
 
-                    <Bloc subtitile="Les documents officiels">
+                    <Bloc subtitle="Les documents officiels">
                         <Documents href="/bureau/Statuts + RI (CACBO).pdf" content="Statuts & règlement intérieur du Club omnisports (CACBO)" />
                         <Documents href="/bureau/Règlement intérieur (club - 2026).pdf" content="Règlement intérieur de la section badminton" />
                     </Bloc>
