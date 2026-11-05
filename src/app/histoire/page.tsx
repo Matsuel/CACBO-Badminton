@@ -114,7 +114,7 @@ const Histoire = () => {
 				/>
 
 				<Parent>
-					<Text variant="h2" color="rouge">Une nouvelle dynamique (2010-2013)</Text>
+					<Text variant="h2" color="rouge">Une nouvelle dynamique (2011-2013)</Text>
 
 					<Bloc>
 						<Text>
@@ -532,13 +532,13 @@ const Histoire = () => {
 					<Text variant="h2" color="rouge">Nos présidents depuis 2007</Text>
 
 					<Bloc>
-						<President date="2007-2010" name="Ahmed KASSIM" />
+						<President date="2006-2011" name="Ahmed KASSIM" />
 
-						<President date="2010-2013" name="Pierre DANGAYS" />
+						<President date="2011-2013" name="Pierre DANGAYS" />
 
 						<President date="2013-2015" name="Wolfgang SCHRADER" />
 
-						<President date="2015-2018" name="Éric PRIVAT" />
+						<President date="2015-2018" name="Eric PRIVAT" />
 
 						<President date="2017-2018" name="Guillaume BENTABET" />
 

@@ -76,17 +76,17 @@ Ordre conseillé : chaque étape prépare la suivante. Les tokens et le footer p
   - [x] téléphone en `tel:`, mail en `mailto:`
   - [x] `alt` de la photo (copié d'Adhérer)
   - [x] `aria-label` et `target="_blank"` sur les réseaux (`SocialLinks`)
-- [ ] **Accueil**
+- [x] **Accueil**
   - [x] jours avec majuscule (`Creneaux`, données dans `constantes/club.ts`)
   - [x] carrousel : `caroussel2.png` affiché deux fois
-  - [ ] légendes différentes pour `ensemble.png` et `ensemble2.png`
+  - [x] légendes : `ensemble.png` sans légende, comme dans le Figma
 - [x] **Adhérer** : « Prêts à nous rejoindre ? » → « Prêt à nous rejoindre ? »
 - [x] **Respect** : passer le numéro en constante et ajouter `tel:` (TODO `respect/page.tsx`)
 - [x] **Boutique** : redirection (déjà corrigée)
 - [x] **Contenus alignés sur le Figma** : politique de confidentialité (réécrite), mentions légales (SIREN, RNA, données & cookies), Respect (« Nos engagements », liens `tel:`), Bureau, Règles (comptage en 15 points), Histoire, Volant, 404, logos rouges du footer
-- [ ] **Histoire** : dates à trancher, le Figma se contredit (section « 2011-2013 » mais élection en mars 2010 ; présidence d'Ahmed KASSIM « 2006-2011 » alors que le club est fondé en 2007). Les dates actuelles du code sont conservées
+- [x] **Histoire** : dates reprises du Figma (section « 2011-2013 », présidents « 2006-2011 » et « 2011-2013 »)
 - [ ] **Respect** : fichiers manquants pour « Fiche de signalement (CDOS) » et « Associations en Gironde » (liens `/manque`)
-- [ ] **Politique / mentions** : le Figma mentionne un « formulaire de contact » qui n'existe pas sur le site
+- [x] **Politique / mentions** : texte du Figma conservé, y compris le « formulaire de contact » (absent du site : à ajouter ou à retirer du texte)
 - [x] Arrondir les cartes de `/contact` et `/adherer` (Patch « Arrondir les bords »)
 
 ### 5. Assets et performance

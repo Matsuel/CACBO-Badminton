@@ -141,7 +141,7 @@ export default function Home() {
 
 				<ImageLegend
 					src="/acceuil/ensemble.png"
-					description="Ici, on joue, on rigole et on progresse ensemble !"
+					alt="Joueurs du club en pleine séance au gymnase"
 				/>
 
 				<Bloc title="Une question ? On a la réponse !">
